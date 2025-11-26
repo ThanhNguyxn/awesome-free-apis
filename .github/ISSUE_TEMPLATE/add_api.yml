@@ -1,0 +1,115 @@
+name: 🚀 Add New API
+description: Suggest a new API to add to the awesome-free-apis list
+title: "[API]: "
+labels: ["new-api", "enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to suggest a new API! Please fill out the information below.
+
+  - type: input
+    id: api-name
+    attributes:
+      label: API Name
+      description: What is the name of the API?
+      placeholder: e.g., OpenWeatherMap
+    validations:
+      required: true
+
+  - type: input
+    id: website-url
+    attributes:
+      label: Website URL
+      description: What is the official website or documentation URL?
+      placeholder: e.g., https://openweathermap.org/api
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Provide a brief description of what this API does
+      placeholder: Tell us what this API provides and why it's useful for developers
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: Which category does this API belong to?
+      options:
+        - Animals
+        - Anime
+        - Anti-Malware
+        - Books & Literature
+        - Cryptocurrency
+        - Development
+        - Dictionaries
+        - Design & Colors
+        - Entertainment
+        - Finance
+        - Food & Drink
+        - Games & Comics
+        - Geocoding
+        - Geography & Countries
+        - Health
+        - Jobs & Career
+        - Machine Learning
+        - Memes & Fun
+        - Mock Data & Testing
+        - Music
+        - News
+        - Photography
+        - Science & Space
+        - Security & Validation
+        - Shopping
+        - Social
+        - Sports
+        - Transportation
+        - Utilities & Tools
+        - Vietnam Services
+        - Weather
+        - Other (please specify in description)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: auth-required
+    attributes:
+      label: Authentication Required?
+      description: Does this API require authentication?
+      options:
+        - "No (No authentication required)"
+        - "API Key"
+        - "OAuth"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: https-support
+    attributes:
+      label: HTTPS Support
+      description: Does this API support HTTPS?
+      options:
+        - "Yes"
+        - "No"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: requirements
+    attributes:
+      label: Submission Requirements
+      description: Please confirm the following
+      options:
+        - label: This API is free to use (at least has a free tier)
+          required: true
+        - label: This API is publicly accessible and well-documented
+          required: true
+        - label: I have checked that this API is not already in the list
+          required: true
+        - label: The API is actively maintained and working
+          required: true

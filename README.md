@@ -16,37 +16,148 @@
 
 ## <a id="general-api-usage-guide"></a>📘 General API Usage Guide
 
-Welcome to the world of APIs! If you're new here, this guide will help you get started.
+> **👋 New to APIs?** Don't worry! This guide will help you understand the basics and get started quickly.
 
-### ❓ What is an API?
-**API** stands for **Application Programming Interface**. It allows two applications to talk to each other. Think of it like a waiter in a restaurant: you (the app) tell the waiter (the API) what you want, and they bring you the food (the data) from the kitchen (the server).
+---
 
-### 🔑 Authentication Methods
-Most APIs require you to identify yourself.
--   **No Auth**: Open for everyone. Just make a request!
--   **API Key**: A secret code provided by the service. usually sent in the URL (`?api_key=123`) or Headers (`Authorization: 123`).
--   **OAuth**: A secure way to log in users (like "Login with Google").
+### 💡 What is an API?
 
-### 📡 HTTP Methods
-How you interact with the API:
--   **GET**: Retrieve data (e.g., get a list of cats).
--   **POST**: Send new data (e.g., upload a photo).
--   **PUT/PATCH**: Update existing data.
--   **DELETE**: Remove data.
+**API** stands for **Application Programming Interface**. It's a way for different applications to communicate with each other.
 
-### 🚦 Status Codes
-The API tells you how it went with a number:
--   `200 OK`: Success! 🎉
--   `400 Bad Request`: You sent something wrong.
--   `401 Unauthorized`: You need a valid API key.
--   `404 Not Found`: The resource doesn't exist.
--   `429 Too Many Requests`: Slow down! You hit the rate limit.
--   `500 Server Error`: The API is having issues.
+```
+┌─────────┐      ┌─────────┐      ┌─────────┐
+│   YOU   │ ───▶│   API   │ ───▶│ SERVER  │
+│  (App)  │ ◀───│ (Waiter)│ ◀───│(Kitchen)│
+└─────────┘      └─────────┘      └─────────┘
+   Request         Process          Response
+```
 
-### 🛠️ Useful Tools
--   **[Postman](https://www.postman.com/)**: A popular tool for testing APIs without writing code.
--   **[cURL](https://curl.se/)**: A command-line tool for making requests.
--   **[Thunder Client](https://www.thunderclient.com/)**: A lightweight VS Code extension.
+**Think of it like a restaurant:**
+- 🙋 **You** (the app) place an order
+- 🍽️ **Waiter** (the API) takes your request to the kitchen
+- 👨‍🍳 **Kitchen** (the server) prepares your food (data)
+- ✨ The waiter brings it back to you!
+
+---
+
+### 📝 Authentication Methods
+
+Different APIs have different ways to verify who you are:
+
+| Method | Icon | Description | Example |
+|--------|------|-------------|---------|
+| **No Auth** | 🌐 | Open for everyone - just call it! | Weather APIs, public data |
+| **API Key** | 🔑 | Secret code you get when registering | `?api_key=abc123` or `Authorization: abc123` |
+| **OAuth** | 🔐 | Secure login (like "Login with Google") | Social media integrations |
+
+**💡 Pro Tip:** Always keep your API keys secret! Never commit them to GitHub.
+
+---
+
+### 📡 HTTP Request Methods
+
+Learn the common ways to interact with APIs:
+
+| Method | Icon | Purpose | Real-World Example |
+|--------|------|---------|-------------------|
+| `GET` | 📥 | **Retrieve** data | Get a list of cat pictures |
+| `POST` | 📤 | **Create** new data | Upload a new photo |
+| `PUT` | ✏️ | **Replace** existing data | Update entire user profile |
+| `PATCH` | 🔧 | **Modify** specific fields | Change just your username |
+| `DELETE` | 🗑️ | **Remove** data | Delete a comment |
+
+**Example GET Request:**
+```bash
+curl https://api.example.com/cats
+```
+
+**Example POST Request:**
+```bash
+curl -X POST https://api.example.com/cats \
+  -H "Content-Type: application/json" \
+  -d '{"name":"Fluffy","age":3}'
+```
+
+---
+
+### 🚦 HTTP Status Codes
+
+The API responds with a status code to tell you what happened:
+
+#### ✅ Success Codes (2xx)
+| Code | Icon | Meaning |
+|------|------|---------|
+| `200` | ✅ | **OK** - Request succeeded! |
+| `201` | 🎉 | **Created** - New resource created! |
+| `204` | 📭 | **No Content** - Success but no data to return |
+
+#### ⚠️ Client Error Codes (4xx)
+| Code | Icon | Meaning | What to Do |
+|------|------|---------|-----------|
+| `400` | ❌ | **Bad Request** - Invalid syntax | Check your request format |
+| `401` | 🔒 | **Unauthorized** - Authentication required | Add your API key |
+| `403` | 🚫 | **Forbidden** - You don't have permission | Check your access rights |
+| `404` | 🔍 | **Not Found** - Resource doesn't exist | Verify the URL |
+| `429` | 🐌 | **Too Many Requests** - Rate limit hit | Wait and try again |
+
+#### 🔴 Server Error Codes (5xx)
+| Code | Icon | Meaning |
+|------|------|---------|
+| `500` | 💥 | **Internal Server Error** - API is broken |
+| `503` | 🔧 | **Service Unavailable** - API is down |
+
+---
+
+### 🛠️ Essential Tools for Testing APIs
+
+| Tool | Best For | Platform | Free? |
+|------|----------|----------|-------|
+| [**Postman**](https://www.postman.com/) | 🎯 Complete API testing & documentation | Desktop/Web | ✅ Yes (free tier) |
+| [**Thunder Client**](https://www.thunderclient.com/) | ⚡ Lightweight testing in VS Code | VS Code Extension | ✅ Yes |
+| [**cURL**](https://curl.se/) | 💻 Command-line requests | Terminal | ✅ Yes (built-in) |
+| [**Insomnia**](https://insomnia.rest/) | 🎨 Beautiful UI for API testing | Desktop | ✅ Yes |
+
+---
+
+### 🚀 Quick Start Example
+
+Let's try a real API call! Here's how to get a random cat fact:
+
+**1️⃣ Using cURL (Terminal):**
+```bash
+curl https://catfact.ninja/fact
+```
+
+**2️⃣ Using JavaScript (Browser):**
+```javascript
+fetch('https://catfact.ninja/fact')
+  .then(response => response.json())
+  .then(data => console.log(data.fact));
+```
+
+**3️⃣ Using Python:**
+```python
+import requests
+response = requests.get('https://catfact.ninja/fact')
+print(response.json()['fact'])
+```
+
+**📦 Expected Response:**
+```json
+{
+  "fact": "Cats have 32 muscles in each ear.",
+  "length": 38
+}
+```
+
+---
+
+### 📚 Additional Resources
+
+- 📖 [What is REST API?](https://www.redhat.com/en/topics/api/what-is-a-rest-api) - RedHat Guide
+- 🎓 [HTTP Status Codes Cheat Sheet](https://httpstatuses.com/) - Quick reference
+- 🧪 [JSONPlaceholder](https://jsonplaceholder.typicode.com/) - Free fake API for practice
+- 💬 [API Best Practices](https://stackoverflow.blog/2020/03/02/best-practices-for-rest-api-design/) - Stack Overflow Blog
 
 ---
 
@@ -72,11 +183,16 @@ The API tells you how it went with a number:
 - [📰 News](#news)
 - [📸 Photography](#photography)
 - [🔬 Science](#science)
-- [🛍️ Shopping](#shopping)
-- [� Utilities & Tools](#utilities-tools)
-- [�💬 Social](#social)
+- [� Security & Validation](#security-validation)
+- [�🛍️ Shopping](#shopping)
+- [🔧 Utilities & Tools](#utilities-tools)
+- [💬 Social](#social)
 - [⚽ Sports](#sports)
+- [🎨 Design & Colors](#design-colors)
+- [🌎 Geography & Countries](#geography-countries)
 - [🚆 Transportation](#transportation)
+- [😂 Memes & Fun](#memes-fun)
+- [💼 Jobs & Career](#jobs-career)
 - [🇻🇳 Vietnam Services](#vietnam-services)
 - [🌤️ Weather](#weather)
 
@@ -159,13 +275,13 @@ The API tells you how it went with a number:
 | **VirusTotal** | File/URL analysis. | 🔑 ApiKey | ✅ | [Link](https://www.virustotal.com/en/documentation/public-api/) |
 | **Web of Trust** | IP/Domain/URL reputation. | 🔑 ApiKey | ✅ | [Link](https://support.mywot.com/hc/en-us/sections/360004477734-API-) |
 
-## <a id="books"></a>📚 Books
+## <a id="books"></a>📚 Books & Literature
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
 | **Google Books** | Search and preview books. | 🔐 OAuth | ✅ | [Link](https://developers.google.com/books/) |
-| **Gutendex** | Project Gutenberg books. | No | ✅ | [Link](https://gutendex.com/) |
-| **Open Library** | Books, covers, and related data. | No | ✅ | [Link](https://openlibrary.org/developers/api) |
+| **Gutendex** | JSON API for Project Gutenberg (public domain books). | No | ✅ | [Link](https://gutendex.com/) |
+| **Open Library** | Fetch data about millions of books and covers. | No | ✅ | [Link](https://openlibrary.org/developers/api) |
 | **Penguin Publishing** | Book data. | No | ✅ | [Link](http://www.penguinrandomhouse.biz/webservices/rest/) |
 
 ## <a id="cryptocurrency"></a>🪙 Cryptocurrency
@@ -208,7 +324,7 @@ The API tells you how it went with a number:
 | **APILayer** | Marketplace for various APIs. | 🔑 ApiKey | ✅ | [Link](https://apilayer.com/) |
 | **Azure DevOps** | DevOps tools. | 🔑 ApiKey | ✅ | [Link](https://docs.microsoft.com/en-us/rest/api/azure/devops) |
 | **Bitbucket** | Git solution. | 🔐 OAuth | ✅ | [Link](https://developer.atlassian.com/bitbucket/api/2/reference/) |
-| **Bored** | Let's find you something to do. | No | ✅ | [Link](https://www.boredapi.com/) |
+| **Bored API** | Random activity suggestions to fight boredom. | No | ✅ | [Link](https://www.boredapi.com/) |
 | **CDNJS** | Library info. | No | ✅ | [Link](https://api.cdnjs.com/libraries/jquery) |
 | **Cloudflare Trace** | Get IP Address and other info. | No | ✅ | [Link](https://github.com/fawazahmed0/cloudflare-trace-api) |
 | **Docker Hub** | Interact with Docker Hub. | 🔑 ApiKey | ✅ | [Link](https://docs.docker.com/docker-hub/api/latest/) |
@@ -224,9 +340,11 @@ The API tells you how it went with a number:
 | **IPinfo** | IP Address Information. | No | ✅ | [Link](https://ipinfo.io/developers) |
 | **Ipstack** | Locate and identify website visitors by IP address. | 🔑 ApiKey | ✅ | [Link](https://ipstack.com/) |
 | **JSONbin.io** | Free JSON storage. | 🔑 ApiKey | ✅ | [Link](https://jsonbin.io) |
+| **Nationalize.io** | Predict the nationality of a person based on their name. | No | ✅ | [Link](https://nationalize.io) |
 | **Netlify** | Netlify API. | 🔐 OAuth | ✅ | [Link](https://docs.netlify.com/api/get-started/) |
 | **Positionstack** | Forward & Reverse Geocoding. | 🔑 ApiKey | ✅ | [Link](https://positionstack.com/) |
 | **Serpstack** | Real-Time Google Search Results. | 🔑 ApiKey | ✅ | [Link](https://serpstack.com/) |
+| **UUID Generator** | Generate UUIDs (v1, v3, v4, v5). | No | ✅ | [Link](https://www.uuidgenerator.net/api) |
 | **Userstack** | User-Agent String Analysis. | 🔑 ApiKey | ✅ | [Link](https://userstack.com/) |
 | **Aviationstack** | Real-time flight status and global aviation data. | 🔑 ApiKey | ✅ | [Link](https://aviationstack.com/) |
 | **Mailboxlayer** | Email verification and validation. | 🔑 ApiKey | ✅ | [Link](https://mailboxlayer.com/) |
@@ -270,14 +388,16 @@ The API tells you how it went with a number:
 | :--- | :--- | :---: | :---: | :---: |
 | **Open Food Facts** | Food product data. | No | ✅ | [Link](https://world.openfoodfacts.org/data) |
 | **PunkAPI** | Brewdog beer recipes. | No | ✅ | [Link](https://punkapi.com/) |
-| **TheCocktailDB** | Cocktail recipes. | 🔑 ApiKey | ✅ | [Link](https://www.thecocktaildb.com/api.php) |
-| **TheMealDB** | Meal recipes. | 🔑 ApiKey | ✅ | [Link](https://www.themealdb.com/api.php) |
+| **TheCocktailDB** | Open database for drinks and cocktails. | 🔑 ApiKey | ✅ | [Link](https://www.thecocktaildb.com/api.php) |
+| **TheMealDB** | Open source database of recipes from around the world. | 🔑 ApiKey | ✅ | [Link](https://www.themealdb.com/api.php) |
 
 ## <a id="entertainment"></a>🎮 Entertainment
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
+| **Numbers API** | Interesting facts about numbers (math, trivia, dates). | No | ✅ | [Link](http://numbersapi.com/) |
 | **OMDb** | Open Movie Database. | 🔑 ApiKey | ✅ | [Link](http://www.omdbapi.com/) |
+| **Quotable** | Random quotes (**No Auth**). | No | ✅ | [Link](https://api.quotable.io) |
 | **Simkl** | Movies, TV, Anime metadata. | 🔑 ApiKey | ✅ | [Link](https://simkl.com/apidoc/) |
 | **TMDb** | The Movie Database. | 🔑 ApiKey | ✅ | [Link](https://developers.themoviedb.org/3) |
 | **Trakt** | TV and Movie tracking. | 🔐 OAuth | ✅ | [Link](https://trakt.docs.apiary.io/) |
@@ -371,6 +491,8 @@ The API tells you how it went with a number:
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
+| **DummyJSON** | Fake REST API with products, users, todos, and more (**No Auth**). | No | ✅ | [Link](https://dummyjson.com/) |
+| **Fake Store API** | Free fake e-commerce API for testing (products, carts, users). | No | ✅ | [Link](https://fakestoreapi.com/) |
 | **JSONPlaceholder** | Free fake API for testing and prototyping (posts, comments, users). | No | ✅ | [Link](https://jsonplaceholder.typicode.com/) |
 | **Mockaroo** | Generate custom realistic test data in JSON, CSV, SQL. | 🔑 ApiKey | ✅ | [Link](https://www.mockaroo.com/) |
 | **RandomUser.me** | Generate random user data (like Lorem Ipsum, but for people). | No | ✅ | [Link](https://randomuser.me/) |
@@ -403,6 +525,13 @@ The API tells you how it went with a number:
 | **NASA API** | Access NASA data, including Astronomy Picture of the Day (APOD). | 🔑 ApiKey | ✅ | [Link](https://api.nasa.gov/) |
 | **SpaceX** | SpaceX launch data. | No | ✅ | [Link](https://github.com/r-spacex/SpaceX-API) |
 
+## <a id="security-validation"></a>🔐 Security & Validation
+
+| API Name | Description | Auth | HTTPS | Link |
+| :--- | :--- | :---: | :---: | :---: |
+| **HaveIBeenPwned** | Check if email or password has been compromised in a data breach. | 🔑 ApiKey | ✅ | [Link](https://haveibeenpwned.com/API/v3) |
+| **Random Password API** | Simple API to generate random secure passwords (**No Auth**). | No | ✅ | [Link](https://passwordinator.onrender.com/) |
+
 ## <a id="shopping"></a>🛍️ Shopping
 
 | API Name | Description | Auth | HTTPS | Link |
@@ -412,7 +541,7 @@ The API tells you how it went with a number:
 | **Etsy** | E-commerce. | 🔐 OAuth | ✅ | [Link](https://www.etsy.com/developers/documentation/getting_started/api_basics) |
 | **Mercadolibre** | E-commerce. | 🔑 ApiKey | ✅ | [Link](https://developers.mercadolibre.cl/es_ar/api-docs-es) |
 | **Shopee** | E-commerce. | 🔑 ApiKey | ✅ | [Link](https://open.shopee.com/documents?version=1) |
-| **WooCommerce** | E-commerce. | 🔑 ApiKey | ✅ | [Link](https://woocommerce.github.io/woocommerce-rest-api-docs/) |
+| **WooCommerce** | E-commerce. | 🔑 ApiKey | ✅ | [Link](https://woocommerce.github. io/woocommerce-rest-api-docs/) |
 
 ## <a id="social"></a>💬 Social
 
@@ -445,9 +574,23 @@ The API tells you how it went with a number:
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
+| **DiceBear Avatars** | Generate random SVG avatars (**No Auth**). | No | ✅ | [Link](https://www.dicebear.com/) |
 | **goqr.me** | Create QR codes via URL parameters (**No Auth**). | No | ✅ | [Link](https://goqr.me/api/) |
 | **ipify** | A simple public IP address API. | No | ✅ | [Link](https://www.ipify.org/) |
 | **Shields.io** | Quality metadata badges for open source projects. | No | ✅ | [Link](https://shields.io/) |
+
+## <a id="design-colors"></a>🎨 Design & Colors
+
+| API Name | Description | Auth | HTTPS | Link |
+| :--- | :--- | :---: | :---: | :---: |
+| **Colormind** | AI-powered color palette generator (**No Auth**). | No | ✅ | [Link](http://colormind.io/api-access/) |
+| **The Color API** | Color conversion, schemes, and naming (**No Auth**). | No | ✅ | [Link](https://www.thecolorapi.com/) |
+
+## <a id="geography-countries"></a>🌎 Geography & Countries
+
+| API Name | Description | Auth | HTTPS | Link |
+| :--- | :--- | :---: | :---: | :---: |
+| **REST Countries** | Comprehensive country data (flags, capitals, currencies) (**No Auth**). | No | ✅ | [Link](https://restcountries.com/) |
 
 ## <a id="transportation"></a>🚆 Transportation
 
@@ -456,6 +599,19 @@ The API tells you how it went with a number:
 | **BART** | Bay Area Rapid Transit. | 🔑 ApiKey | ✅ | [Link](http://api.bart.gov) |
 | **OpenSky Network** | Flight tracking. | No | ✅ | [Link](https://opensky-network.org/apidoc/index.html) |
 | **Transport for London** | Public transport data. | 🔑 ApiKey | ✅ | [Link](https://api.tfl.gov.uk) |
+
+## <a id="memes-fun"></a>😂 Memes & Fun
+
+| API Name | Description | Auth | HTTPS | Link |
+| :--- | :--- | :---: | :---: | :---: |
+| **Advice Slip** | Generate random advice slips (**No Auth**, great for simple widgets). | No | ✅ | [Link](https://api.adviceslip.com/) |
+| **Imgflip** | Get popular meme templates to create your own memes. | No | ✅ | [Link](https://api.imgflip.com/) |
+
+## <a id="jobs-career"></a>💼 Jobs & Career
+
+| API Name | Description | Auth | HTTPS | Link |
+| :--- | :--- | :---: | :---: | :---: |
+| **Remoteok** | API for remote jobs (often used for job board projects). | No | ✅ | [Link](https://remoteok.com/api) |
 
 ## <a id="vietnam-services"></a>🇻🇳 Vietnam Services
 
@@ -478,6 +634,12 @@ The API tells you how it went with a number:
 | **Weatherbit** | Weather forecast. | 🔑 ApiKey | ✅ | [Link](https://www.weatherbit.io/api) |
 | **Weatherstack** | Real-time & historical world weather data. | 🔑 ApiKey | ✅ | [Link](https://weatherstack.com/) |
 | **wttr.in** | Console-oriented weather. | No | ✅ | [Link](https://github.com/chubin/wttr.in) |
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=ThanhNguyxn/awesome-free-apis&type=Date)](https://star-history.com/#ThanhNguyxn/awesome-free-apis&Date)
 
 ---
 

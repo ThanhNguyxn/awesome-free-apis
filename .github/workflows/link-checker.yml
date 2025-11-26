@@ -1,0 +1,47 @@
+name: Link Checker
+
+on:
+  # Run on push to main branch
+  push:
+    branches:
+      - main
+  
+  # Run on pull requests
+  pull_request:
+  
+  # Run daily at 00:00 UTC
+  schedule:
+    - cron: '0 0 * * *'
+  
+  # Allow manual trigger
+  workflow_dispatch:
+
+jobs:
+  link-checker:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Check links with Lychee
+        uses: lycheeverse/lychee-action@v1
+        with:
+          # Check all markdown files
+          args: --verbose --no-progress '**/*.md'
+          # Fail the action on broken links
+          fail: true
+          # Format for output
+          format: markdown
+          # Output file for results
+          output: ./lychee-report.md
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      
+      - name: Upload link check report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: link-checker-report
+          path: lychee-report.md
+          retention-days: 30
