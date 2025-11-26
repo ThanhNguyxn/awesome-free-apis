@@ -14,7 +14,7 @@
 
 ---
 
-## 📘 General API Usage Guide
+## <a id="general-api-usage-guide"></a>📘 General API Usage Guide
 
 Welcome to the world of APIs! If you're new here, this guide will help you get started.
 
@@ -52,32 +52,32 @@ The API tells you how it went with a number:
 
 ## 📖 Table of Contents
 
-- [📘 General Usage Guide](#-general-api-usage-guide)
-- [🐶 Animals](#-animals)
-- [🌸 Anime](#-anime)
+- [📘 General Usage Guide](#general-api-usage-guide)
+- [🐶 Animals](#animals)
+- [🌸 Anime](#anime)
 - [🛡️ Anti-Malware](#anti-malware)
-- [📚 Books](#-books)
-- [🪙 Cryptocurrency](#-cryptocurrency)
-- [💻 Development](#-development)
-- [🍿 Entertainment](#-entertainment)
-- [💰 Finance](#-finance)
-- [🍽️ Food & Drink](#-food--drink)
-- [🎮 Games & Comics](#-games--comics)
-- [🌍 Geocoding](#-geocoding)
+- [📚 Books](#books)
+- [🪙 Cryptocurrency](#cryptocurrency)
+- [💻 Development](#development)
+- [� Entertainment](#entertainment)
+- [💰 Finance](#finance)
+- [� Food & Drink](#food-drink)
+- [🎮 Games & Comics](#games-comics)
+- [🌍 Geocoding](#geocoding)
 - [❤️ Health](#health)
-- [🧠 Machine Learning](#-machine-learning)
-- [🎵 Music](#-music)
-- [📰 News](#-news)
-- [📸 Photography](#-photography)
-- [🔬 Science](#-science)
+- [🧠 Machine Learning](#machine-learning)
+- [🎵 Music](#music)
+- [📰 News](#news)
+- [� Photography](#photography)
+- [🔬 Science](#science)
 - [🛍️ Shopping](#shopping)
-- [💬 Social](#-social)
+- [💬 Social](#social)
 - [🚆 Transportation](#transportation)
 - [🌤️ Weather](#weather)
 
 ---
 
-## 🐶 Animals
+## <a id="animals"></a>🐶 Animals
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
@@ -108,7 +108,7 @@ The API tells you how it went with a number:
 | **xeno-canto** | Bird sounds from around the world. | No | ✅ | [Link](https://xeno-canto.org/explore/api) |
 | **Zoo Animals** | Facts and pictures of zoo animals. | No | ✅ | [Link](https://zoo-animal-api.herokuapp.com/) |
 
-## 🌸 Anime
+## <a id="anime"></a>🌸 Anime
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
@@ -152,7 +152,7 @@ The API tells you how it went with a number:
 | **VirusTotal** | File/URL analysis. | 🔑 ApiKey | ✅ | [Link](https://www.virustotal.com/en/documentation/public-api/) |
 | **Web of Trust** | IP/Domain/URL reputation. | 🔑 ApiKey | ✅ | [Link](https://support.mywot.com/hc/en-us/sections/360004477734-API-) |
 
-## 📚 Books
+## <a id="books"></a>📚 Books
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
@@ -161,7 +161,7 @@ The API tells you how it went with a number:
 | **Open Library** | Books, covers, and related data. | No | ✅ | [Link](https://openlibrary.org/developers/api) |
 | **Penguin Publishing** | Book data. | No | ✅ | [Link](http://www.penguinrandomhouse.biz/webservices/rest/) |
 
-## 🪙 Cryptocurrency
+## <a id="cryptocurrency"></a>🪙 Cryptocurrency
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
@@ -189,7 +189,7 @@ The API tells you how it went with a number:
 | **Nomics** | Cryptocurrency Market Data. | 🔑 ApiKey | ✅ | [Link](https://nomics.com/docs/) |
 | **Poloniex** | Exchange for Trading Cryptocurrencies. | 🔑 ApiKey | ✅ | [Link](https://docs.poloniex.com) |
 
-## 💻 Development
+## <a id="development"></a>💻 Development
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
@@ -227,7 +227,7 @@ The API tells you how it went with a number:
 | **Pdflayer** | HTML to PDF conversion. | 🔑 ApiKey | ✅ | [Link](https://pdflayer.com/) |
 | **Screenshotlayer** | Website screenshots. | 🔑 ApiKey | ✅ | [Link](https://screenshotlayer.com/) |
 
-## 💰 Finance
+## <a id="finance"></a>💰 Finance
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
@@ -250,7 +250,7 @@ The API tells you how it went with a number:
 | **Yahoo Finance** | Financial data. | 🔑 ApiKey | ✅ | [Link](https://www.yahoofinanceapi.com/) |
 | **Exchangerate.host** | Foreign exchange & crypto rates. | 🔑 ApiKey | ✅ | [Link](https://exchangerate.host/) |
 
-## 🍔 Food & Drink
+## <a id="food-drink"></a>🍔 Food & Drink
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
@@ -259,7 +259,7 @@ The API tells you how it went with a number:
 | **TheCocktailDB** | Cocktail recipes. | 🔑 ApiKey | ✅ | [Link](https://www.thecocktaildb.com/api.php) |
 | **TheMealDB** | Meal recipes. | 🔑 ApiKey | ✅ | [Link](https://www.themealdb.com/api.php) |
 
-## 🎮 Entertainment
+## <a id="entertainment"></a>🎮 Entertainment
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
@@ -269,7 +269,7 @@ The API tells you how it went with a number:
 | **Trakt** | TV and Movie tracking. | 🔐 OAuth | ✅ | [Link](https://trakt.docs.apiary.io/) |
 | **Watchmode** | Streaming availability. | 🔑 ApiKey | ✅ | [Link](https://api.watchmode.com/) |
 
-## 🌍 Geocoding
+## <a id="geocoding"></a>🌍 Geocoding
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
@@ -278,7 +278,7 @@ The API tells you how it went with a number:
 | **Nominatim** | OpenStreetMap Geocoding. | No | ✅ | [Link](https://nominatim.org/release-docs/latest/api/Overview/) |
 | **OpenStreetMap** | Map data. | 🔐 OAuth | ✅ | [Link](http://wiki.openstreetmap.org/wiki/API) |
 
-## 🎮 Games & Comics
+## <a id="games-comics"></a>🎮 Games & Comics
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
@@ -320,7 +320,7 @@ The API tells you how it went with a number:
 | **Edamam Nutrition** | Nutrition analysis. | 🔑 ApiKey | ✅ | [Link](https://developer.edamam.com/edamam-nutrition-api) |
 | **Nutritionix** | Nutrition database. | 🔑 ApiKey | ✅ | [Link](https://developer.nutritionix.com/) |
 
-## 🧠 Machine Learning
+## <a id="machine-learning"></a>🧠 Machine Learning
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
@@ -335,7 +335,7 @@ The API tells you how it went with a number:
 | **WolframAlpha** | Computational Knowledge. | 🔑 ApiKey | ✅ | [Link](https://products.wolframalpha.com/api/) |
 | **Languagelayer** | Language detection. | 🔑 ApiKey | ✅ | [Link](https://languagelayer.com/) |
 
-## 🎵 Music
+## <a id="music"></a>🎵 Music
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
@@ -351,7 +351,7 @@ The API tells you how it went with a number:
 | **SoundCloud** | Music streaming. | 🔐 OAuth | ✅ | [Link](https://developers.soundcloud.com/docs/api/guide) |
 | **Spotify** | Music streaming. | 🔐 OAuth | ✅ | [Link](https://beta.developer.spotify.com/documentation/web-api/) |
 
-## 📰 News
+## <a id="news"></a>📰 News
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
@@ -361,22 +361,10 @@ The API tells you how it went with a number:
 | **NewsData.io** | News search and tracking. | 🔑 ApiKey | ✅ | [Link](https://newsdata.io/) |
 | **The Guardian** | Guardian articles. | 🔑 ApiKey | ✅ | [Link](https://open-platform.theguardian.com/) |
 
-## 📷 Photography
+## <a id="photography"></a>📷 Photography
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
-| **Giphy** | GIFs. | � ApiKey | ✅ | [Link](https://developers.giphy.com/docs/) |
-| **Lorem Picsum** | Placeholder images. | No | ✅ | [Link](https://picsum.photos/) |
-| **Pexels** | Free stock photos. | 🔑 ApiKey | ✅ | [Link](https://www.pexels.com/api/) |
-| **Unsplash** | High-quality photos. | 🔐 OAuth | ✅ | [Link](https://unsplash.com/developers) |
-
-## �🔬 Science
-
-| API Name | Description | Auth | HTTPS | Link |
-| :--- | :--- | :---: | :---: | :---: |
-| **NASA** | NASA data (APOD, Mars, etc.). | 🔑 ApiKey | ✅ | [Link](https://api.nasa.gov/) |
-| **SpaceX** | SpaceX launch data. | No | ✅ | [Link](https://github.com/r-spacex/SpaceX-API) |
-
 ## <a id="shopping"></a>🛍️ Shopping
 
 | API Name | Description | Auth | HTTPS | Link |
@@ -388,7 +376,7 @@ The API tells you how it went with a number:
 | **Shopee** | E-commerce. | 🔑 ApiKey | ✅ | [Link](https://open.shopee.com/documents?version=1) |
 | **WooCommerce** | E-commerce. | 🔑 ApiKey | ✅ | [Link](https://woocommerce.github.io/woocommerce-rest-api-docs/) |
 
-## 💬 Social
+## <a id="social"></a>💬 Social
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
