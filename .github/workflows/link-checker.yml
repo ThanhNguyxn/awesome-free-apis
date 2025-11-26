@@ -61,10 +61,17 @@ jobs:
           name: link-check-report
           path: scripts/link_check_report.txt
           retention-days: 30
+      - name: Comment on PR
+        if: github.event_name == 'pull_request' && always()
+        uses: actions/github-script@v7
+        with:
+          script: |
             const fs = require('fs');
             if (fs.existsSync('scripts/link_check_report.txt')) {
               const report = fs.readFileSync('scripts/link_check_report.txt', 'utf8');
-              const summary = report.split('SUMMARY')[1]?.split('BROKEN LINKS')[0] || 'Check passed!';
+              // Extract summary or default message
+              const summaryPart = report.split('SUMMARY')[1];
+              const summary = summaryPart ? summaryPart.split('BROKEN LINKS')[0] : 'Check passed!';
               
               await github.rest.issues.createComment({
                 issue_number: context.issue.number,
