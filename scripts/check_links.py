@@ -1,29 +1,20 @@
 """
 Improved Link Checker for awesome-free-apis
-Handles bot protection, retries, and reduces false positives
+Based on approach from public-apis/public-apis (300k+ stars)
+
+Key improvements:
+- Cloudflare protection detection
+- Random User-Agent rotation
+- Host header setting
+- Smart error categorization
 """
 
 import re
 import requests
+import random
 from urllib.parse import urlparse
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import time
-from requests.adapters import HTTPAdapter
-from requests.packages.urllib3.util.retry import Retry
-
-def create_session():
-    """Create a session with retry strategy"""
-    session = requests.Session()
-    retry_strategy = Retry(
-        total=3,
-        backoff_factor=1,
-        status_forcelist=[429, 500, 502, 503, 504],
-        allowed_methods=["HEAD", "GET", "OPTIONS"]
-    )
-    adapter = HTTPAdapter(max_retries=retry_strategy)
-    session.mount("http://", adapter)
-    session.mount("https://", adapter)
-    return session
 
 def extract_links_from_readme(file_path='../README.md'):
     """Extract all API links from README.md"""
@@ -34,63 +25,119 @@ def extract_links_from_readme(file_path='../README.md'):
     links = re.findall(pattern, content)
     return links
 
-def check_link(url, session, timeout=20):
+def fake_user_agent():
+    """Random User-Agent to avoid bot detection"""
+    user_agents = [
+        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15',
+        'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:122.0) Gecko/20100101 Firefox/122.0',
+        'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+    ]
+    return random.choice(user_agents)
+
+def get_host_from_link(link):
+    """Extract host from URL"""
+    host = link.split('://', 1)[1] if '://' in link else link
+    
+    if '/' in host:
+        host = host.split('/', 1)[0]
+    elif '?' in host:
+        host = host.split('?', 1)[0]
+    elif '#' in host:
+        host = host.split('#', 1)[0]
+    
+    return host
+
+def has_cloudflare_protection(resp):
+    """
+    Detect Cloudflare or similar bot protection
+    Based on public-apis/public-apis implementation
+    """
+    code = resp.status_code
+    server = resp.headers.get('Server', '').lower()
+    
+    cloudflare_flags = [
+        '403 forbidden',
+        'cloudflare',
+        'security check',
+        'please wait...',
+        'checking your browser',
+        'ddos protection',
+        'ray id:',
+        '_cf_chl',
+        'cf-spinner',
+    ]
+    
+    if code in [403, 503] and 'cloudflare' in server:
+        html = resp.text.lower()
+        return any(flag in html for flag in cloudflare_flags)
+    
+    # Also consider 403 as potential bot protection
+    if code == 403:
+        return True
+    
+    return False
+
+def check_link(url, timeout=25):
     """
     Check if a link is accessible
     Returns: dict with status info
     """
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-        'Accept-Language': 'en-US,en;q=0.9',
-        'Accept-Encoding': 'gzip, deflate, br',
-        'DNT': '1',
-        'Connection': 'keep-alive',
-        'Upgrade-Insecure-Requests': '1',
-        'Sec-Fetch-Dest': 'document',
-        'Sec-Fetch-Mode': 'navigate',
-        'Sec-Fetch-Site': 'none',
-        'Cache-Control': 'max-age=0',
-    }
-    
     try:
-        # Try GET request (more compatible than HEAD)
-        response = session.get(url, headers=headers, timeout=timeout, allow_redirects=True)
-        status = response.status_code
+        headers = {
+            'User-Agent': fake_user_agent(),
+            'Host': get_host_from_link(url),
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+            'Accept-Language': 'en-US,en;q=0.5',
+            'Accept-Encoding': 'gzip, deflate, br',
+            'DNT': '1',
+            'Connection': 'keep-alive',
+            'Upgrade-Insecure-Requests': '1',
+        }
+        
+        response = requests.get(url, headers=headers, timeout=timeout, allow_redirects=True)
+        code = response.status_code
+        
+        #Check for bot protection
+        if code >= 400 and has_cloudflare_protection(response):
+            return {
+                'url': url,
+                'status': code,
+                'state': 'protected',
+                'note': 'Bot protection (Cloudflare/similar) - API likely works'
+            }
         
         # Interpret status codes
-        if status in [200, 201, 202, 204]:
-            return {'url': url, 'status': status, 'state': 'working', 'note': 'OK'}
-        elif status in [301, 302, 307, 308]:
-            return {'url': url, 'status': status, 'state': 'working', 'note': 'Redirect (OK)'}
-        elif status == 403:
-            return {'url': url, 'status': status, 'state': 'protected', 'note': 'Bot protection (API likely works)'}
-        elif status == 429:
-            return {'url': url, 'status': status, 'state': 'protected', 'note': 'Rate limited (API works)'}
-        elif status == 404:
-            return {'url': url, 'status': status, 'state': 'broken', 'note': 'Not found - likely dead'}
-        elif status == 410:
-            return {'url': url, 'status': status, 'state': 'broken', 'note': 'Gone - confirmed dead'}
-        elif status in [500, 502, 503, 504]:
-            return {'url': url, 'status': status, 'state': 'error', 'note': 'Server error (may be temporary)'}
+        if code in [200, 201, 202, 204]:
+            return {'url': url, 'status': code, 'state': 'working', 'note': 'OK'}
+        elif code in [301, 302, 307, 308]:
+            return {'url': url, 'status': code, 'state': 'working', 'note': 'Redirect (OK)'}
+        elif code == 429:
+            return {'url': url, 'status': code, 'state': 'protected', 'note': 'Rate limited (API works)'}
+        elif code == 404:
+            return {'url': url, 'status': code, 'state': 'broken', 'note': 'Not found - likely dead'}
+        elif code == 410:
+            return {'url': url, 'status': code, 'state': 'broken', 'note': 'Gone - confirmed dead'}
+        elif code in [500, 502, 503, 504]:
+            return {'url': url, 'status': code, 'state': 'error', 'note': 'Server error (may be temporary)'}
         else:
-            return {'url': url, 'status': status, 'state': 'unknown', 'note': f'HTTP {status}'}
+            return {'url': url, 'status': code, 'state': 'unknown', 'note': f'HTTP {code}'}
             
     except requests.exceptions.SSLError:
-        return {'url': url, 'status': None, 'state': 'warning', 'note': 'SSL error (cert issue, not necessarily dead)'}
+        return {'url': url, 'status': None, 'state': 'warning', 'note': 'SSL error (cert issue)'}
     except requests.exceptions.Timeout:
-        return {'url': url, 'status': None, 'state': 'warning', 'note': 'Timeout (slow server, not necessarily dead)'}
+        return {'url': url, 'status': None, 'state': 'warning', 'note': 'Timeout (slow server)'}
     except requests.exceptions.ConnectionError as e:
         if 'getaddrinfo failed' in str(e) or 'Name or service not known' in str(e):
             return {'url': url, 'status': None, 'state': 'broken', 'note': 'DNS failed - domain dead'}
         return {'url': url, 'status': None, 'state': 'broken', 'note': 'Connection refused - likely dead'}
     except requests.exceptions.TooManyRedirects:
-        return {'url': url, 'status': None, 'state': 'error', 'note': 'Too many redirects (misconfigured)'}
+        return {'url': url, 'status': None, 'state': 'error', 'note': 'Too many redirects'}
     except Exception as e:
         return {'url': url, 'status': None, 'state': 'error', 'note': f'Error: {type(e).__name__}'}
 
 def main():
-    print("Link Checker for awesome-free-apis")
+    print("Link Checker (based on public-apis approach)")
     print("=" * 80)
     
     # Extract and deduplicate links
@@ -110,12 +157,9 @@ def main():
         'unknown': []
     }
     
-    # Create session with retry logic
-    session = create_session()
-    
     # Check links with threading
     with ThreadPoolExecutor(max_workers=10) as executor:
-        future_to_url = {executor.submit(check_link, url, session): url for url in unique_links}
+        future_to_url = {executor.submit(check_link, url): url for url in unique_links}
         
         completed = 0
         for future in as_completed(future_to_url):
@@ -126,49 +170,46 @@ def main():
             state = result['state']
             results[state].append(result)
             
-            # Display
+            # Display with icons
             icons = {
-                'working': '✅',
-                'protected': '🛡️',
-                'warning': '⚠️',
-                'error': '🔶',
-                'broken': '❌',
-                'unknown': '❓'
+                'working': '[OK]',
+                'protected': '[PROTECTED]',
+                'warning': '[WARN]',
+                'error': '[ERR]',
+                'broken': '[DEAD]',
+                'unknown': '[?]'
             }
             
             icon = icons.get(state, '?')
             status_str = f"HTTP {result['status']}" if result['status'] else "N/A"
-            print(f"[{completed}/{len(unique_links)}] {icon} {status_str:12} {result['note']}")
+            print(f"[{completed}/{len(unique_links)}] {icon:12} {status_str:12} {result['note']}")
             print(f"    {result['url']}")
             
-            time.sleep(0.1)  # Be respectful
-    
-    session.close()
+            time.sleep(0.1)
     
     # Summary
     print("\n" + "=" * 80)
-    print("📈 SUMMARY")
+    print("SUMMARY")
     print("=" * 80)
     
     total_ok = len(results['working']) + len(results['protected'])
-    total_issues = len(results['broken'])
     
-    print(f"✅ Working: {len(results['working'])}")
-    print(f"🛡️  Protected (403/429): {len(results['protected'])}")
-    print(f"⚠️  Warnings: {len(results['warning'])}")
-    print(f"🔶 Errors: {len(results['error'])}")
-    print(f"❌ Broken: {len(results['broken'])}")
-    print(f"❓ Unknown: {len(results['unknown'])}")
-    print(f"\n📊 Healthy: {total_ok}/{len(unique_links)} ({total_ok/len(unique_links)*100:.1f}%)")
+    print(f"[OK] Working: {len(results['working'])}")
+    print(f"[PROTECTED] Bot protection (403/429): {len(results['protected'])}")
+    print(f"[WARN] Warnings: {len(results['warning'])}")
+    print(f"[ERR] Errors: {len(results['error'])}")
+    print(f"[DEAD] Broken: {len(results['broken'])}")
+    print(f"[?] Unknown: {len(results['unknown'])}")
+    print(f"\nHealthy: {total_ok}/{len(unique_links)} ({total_ok/len(unique_links)*100:.1f}%)")
     
     # Show only truly broken links
     if results['broken']:
         print("\n" + "=" * 80)
-        print("💔 TRULY BROKEN LINKS (Manual Review Needed)")
+        print("TRULY BROKEN LINKS (Manual Review Needed)")
         print("=" * 80)
         for r in sorted(results['broken'], key=lambda x: x['url']):
-            print(f"\n❌ {r['url']}")
-            print(f"   {r['note']}")
+            print(f"\n[DEAD] {r['url']}")
+            print(f"       {r['note']}")
     
     # Save report
     with open('link_check_report.txt', 'w', encoding='utf-8') as f:
@@ -185,10 +226,16 @@ def main():
             f.write("BROKEN LINKS:\n")
             f.write("-" * 80 + "\n")
             for r in results['broken']:
-                f.write(f"\n{r['url']}\n  → {r['note']}\n")
+                f.write(f"\n{r['url']}\n  -> {r['note']}\n")
     
-    print(f"\n📝 Report saved to: link_check_report.txt")
-    print("\n💡 Note: 403/429 (Protected) means bot protection - APIs still work!")
+    print(f"\nReport saved to: link_check_report.txt")
+    print("\nNote: 403/429 (Protected) = Bot protection - APIs still work!")
+    
+    # Exit with error only if truly broken links found
+    if results['broken']:
+        print(f"\nFound {len(results['broken'])} truly broken links!")
+        return 1
+    return 0
 
 if __name__ == "__main__":
-    main()
+    exit(main())
