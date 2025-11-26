@@ -183,8 +183,8 @@ print(response.json()['fact'])
 - [📰 News](#news)
 - [📸 Photography](#photography)
 - [🔬 Science](#science)
-- [� Security & Validation](#security-validation)
-- [�🛍️ Shopping](#shopping)
+- [🔒 Security & Validation](#security-validation)
+- [🛍️ Shopping](#shopping)
 - [🔧 Utilities & Tools](#utilities-tools)
 - [💬 Social](#social)
 - [⚽ Sports](#sports)
@@ -541,7 +541,7 @@ print(response.json()['fact'])
 | **Etsy** | E-commerce. | 🔐 OAuth | ✅ | [Link](https://www.etsy.com/developers/documentation/getting_started/api_basics) |
 | **Mercadolibre** | E-commerce. | 🔑 ApiKey | ✅ | [Link](https://developers.mercadolibre.cl/es_ar/api-docs-es) |
 | **Shopee** | E-commerce. | 🔑 ApiKey | ✅ | [Link](https://open.shopee.com/documents?version=1) |
-| **WooCommerce** | E-commerce. | 🔑 ApiKey | ✅ | [Link](https://woocommerce.github. io/woocommerce-rest-api-docs/) |
+| **WooCommerce** | E-commerce. | 🔑 ApiKey | ✅ | [Link](https://woocommerce.github.io/woocommerce-rest-api-docs/) |
 
 ## <a id="social"></a>💬 Social
 
