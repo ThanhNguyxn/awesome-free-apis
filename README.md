@@ -55,7 +55,7 @@ The API tells you how it went with a number:
 - [📘 General Usage Guide](#-general-api-usage-guide)
 - [🐶 Animals](#-animals)
 - [🌸 Anime](#-anime)
-- [🛡️ Anti-Malware](#🛡️-anti-malware)
+- [🛡️ Anti-Malware](#anti-malware)
 - [📚 Books](#-books)
 - [🪙 Cryptocurrency](#-cryptocurrency)
 - [💻 Development](#-development)
@@ -64,16 +64,16 @@ The API tells you how it went with a number:
 - [🍽️ Food & Drink](#-food--drink)
 - [🎮 Games & Comics](#-games--comics)
 - [🌍 Geocoding](#-geocoding)
-- [❤️ Health](#❤️-health)
+- [❤️ Health](#health)
 - [🧠 Machine Learning](#-machine-learning)
 - [🎵 Music](#-music)
 - [📰 News](#-news)
 - [📸 Photography](#-photography)
 - [🔬 Science](#-science)
-- [🛍️ Shopping](#🛍️-shopping)
+- [🛍️ Shopping](#shopping)
 - [💬 Social](#-social)
-- [🚆 Transportation](#🚆-transportation)
-- [🌤️ Weather](#🌤️-weather)
+- [🚆 Transportation](#transportation)
+- [🌤️ Weather](#weather)
 
 ---
 
@@ -132,7 +132,7 @@ The API tells you how it went with a number:
 | **Waifu.im** | Get waifu pictures. | No | ✅ | [Link](https://waifu.im/docs) |
 | **Waifu.pics** | Image sharing platform for anime images. | No | ✅ | [Link](https://waifu.pics/docs) |
 
-## 🛡️ Anti-Malware
+## <a id="anti-malware"></a>🛡️ Anti-Malware
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
@@ -311,7 +311,7 @@ The API tells you how it went with a number:
 | **Riot Games** | League of Legends data. | 🔑 ApiKey | ✅ | [Link](https://developer.riotgames.com/) |
 | **Steam** | Steam data. | 🔑 ApiKey | ✅ | [Link](https://steamcommunity.com/dev) |
 
-## ❤️ Health
+## <a id="health"></a>❤️ Health
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
@@ -377,7 +377,7 @@ The API tells you how it went with a number:
 | **NASA** | NASA data (APOD, Mars, etc.). | 🔑 ApiKey | ✅ | [Link](https://api.nasa.gov/) |
 | **SpaceX** | SpaceX launch data. | No | ✅ | [Link](https://github.com/r-spacex/SpaceX-API) |
 
-## 🛍️ Shopping
+## <a id="shopping"></a>🛍️ Shopping
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
@@ -408,7 +408,7 @@ The API tells you how it went with a number:
 | **Zalo** | Messaging and social platform. | 🔐 OAuth | ✅ | [Link](https://developers.zalo.me/) |
 | **LINE** | Messaging app. | 🔐 OAuth | ✅ | [Link](https://developers.line.biz/en/) |
 
-## 🚆 Transportation
+## <a id="transportation"></a>🚆 Transportation
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
@@ -416,7 +416,7 @@ The API tells you how it went with a number:
 | **OpenSky Network** | Flight tracking. | No | ✅ | [Link](https://opensky-network.org/apidoc/index.html) |
 | **Transport for London** | Public transport data. | 🔑 ApiKey | ✅ | [Link](https://api.tfl.gov.uk) |
 
-## 🌤️ Weather
+## <a id="weather"></a>🌤️ Weather
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
