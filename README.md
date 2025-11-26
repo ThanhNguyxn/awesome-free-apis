@@ -167,7 +167,7 @@ print(response.json()['fact'])
 - [🐶 Animals](#animals)
 - [🌸 Anime](#anime)
 - [🛡️ Anti-Malware](#anti-malware)
-- [📚 Books](#books)
+- [📚 Books & Literature](#books)
 - [🪙 Cryptocurrency](#cryptocurrency)
 - [💻 Development](#development)
 - [📖 Dictionaries](#dictionaries)
@@ -340,6 +340,7 @@ print(response.json()['fact'])
 | **IPinfo** | IP Address Information. | No | ✅ | [Link](https://ipinfo.io/developers) |
 | **Ipstack** | Locate and identify website visitors by IP address. | 🔑 ApiKey | ✅ | [Link](https://ipstack.com/) |
 | **JSONbin.io** | Free JSON storage. | 🔑 ApiKey | ✅ | [Link](https://jsonbin.io) |
+| **LibreTranslate** | Free and open-source translation API (**Self-hosted, No Auth**). | No | ✅ | [Link](https://libretranslate.com/) |
 | **Nationalize.io** | Predict the nationality of a person based on their name. | No | ✅ | [Link](https://nationalize.io) |
 | **Netlify** | Netlify API. | 🔐 OAuth | ✅ | [Link](https://docs.netlify.com/api/get-started/) |
 | **Positionstack** | Forward & Reverse Geocoding. | 🔑 ApiKey | ✅ | [Link](https://positionstack.com/) |
@@ -395,8 +396,9 @@ print(response.json()['fact'])
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
-| **Numbers API** | Interesting facts about numbers (math, trivia, dates). | No | ✅ | [Link](http://numbersapi.com/) |
+| **Numbers API** | Interesting facts about numbers (math, trivia, dates) (**No Auth**). | No | ✅ | [Link](http://numbersapi.com/) |
 | **OMDb** | Open Movie Database. | 🔑 ApiKey | ✅ | [Link](http://www.omdbapi.com/) |
+| **Quiz API** | Random trivia questions (**No Auth**). | No | ✅ | [Link](https://quizapi.io/) |
 | **Quotable** | Random quotes (**No Auth**). | No | ✅ | [Link](https://api.quotable.io) |
 | **Simkl** | Movies, TV, Anime metadata. | 🔑 ApiKey | ✅ | [Link](https://simkl.com/apidoc/) |
 | **TMDb** | The Movie Database. | 🔑 ApiKey | ✅ | [Link](https://developers.themoviedb.org/3) |
@@ -576,14 +578,21 @@ print(response.json()['fact'])
 | :--- | :--- | :---: | :---: | :---: |
 | **DiceBear Avatars** | Generate random SVG avatars (**No Auth**). | No | ✅ | [Link](https://www.dicebear.com/) |
 | **goqr.me** | Create QR codes via URL parameters (**No Auth**). | No | ✅ | [Link](https://goqr.me/api/) |
-| **ipify** | A simple public IP address API. | No | ✅ | [Link](https://www.ipify.org/) |
-| **Shields.io** | Quality metadata badges for open source projects. | No | ✅ | [Link](https://shields.io/) |
+| **Gravatar** | Global avatar service (use email MD5 hash). | No | ✅ | [Link](https://gravatar.com/site/implement/) |
+| **ipify** | A simple public IP address API (**No Auth**). | No | ✅ | [Link](https://www.ipify.org/) |
+| **Pravatar** | Placeholder avatar images (**No Auth**). | No | ✅ | [Link](https://pravatar.cc/) |
+| **QR Code Generator** | Dynamic QR code generation API. | No | ✅ | [Link](https://goqr.me/api/) |
+| **RoboHash** | Generate unique robot/monster avatars (**No Auth**). | No | ✅ | [Link](https://robohash.org/) |
+| **Shields.io** | Quality metadata badges for open source projects (**No Auth**). | No | ✅ | [Link](https://shields.io/) |
+| **UI Avatars** | Generate avatar placeholders from initials (**No Auth, 28M+ daily requests**). | No | ✅ | [Link](https://ui-avatars.com/) |
 
 ## <a id="design-colors"></a>🎨 Design & Colors
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
 | **Colormind** | AI-powered color palette generator (**No Auth**). | No | ✅ | [Link](http://colormind.io/api-access/) |
+| **Lorem Picsum** | Beautiful placeholder images (**No Auth**). | No | ✅ | [Link](https://picsum.photos/) |
+| **Placeholder.com** | Simple placeholder image service (**No Auth**). | No | ✅ | [Link](https://placeholder.com/) |
 | **The Color API** | Color conversion, schemes, and naming (**No Auth**). | No | ✅ | [Link](https://www.thecolorapi.com/) |
 
 ## <a id="geography-countries"></a>🌎 Geography & Countries
@@ -605,7 +614,11 @@ print(response.json()['fact'])
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
 | **Advice Slip** | Generate random advice slips (**No Auth**, great for simple widgets). | No | ✅ | [Link](https://api.adviceslip.com/) |
-| **Imgflip** | Get popular meme templates to create your own memes. | No | ✅ | [Link](https://api.imgflip.com/) |
+| **Chuck Norris Jokes** | Random Chuck Norris jokes (**No Auth**). | No | ✅ | [Link](https://api.chucknorris.io/) |
+| **Dad Jokes** | Random dad jokes (**No Auth**). | No | ✅ | [Link](https://icanhazdadjoke.com/api) |
+| **Imgflip** | Get popular meme templates to create your own memes (**No Auth**). | No | ✅ | [Link](https://api.imgflip.com/) |
+| **JokeAPI** | Jokes in various categories (**No Auth**). | No | ✅ | [Link](https://jokeapi.dev/) |
+| **Useless Facts** | Random useless facts (**No Auth**). | No | ✅ | [Link](https://uselessfacts.jsph.pl/) |
 
 ## <a id="jobs-career"></a>💼 Jobs & Career
 
