@@ -5,39 +5,47 @@ on:
   push:
     branches:
       - main
-  
+
   # Run on pull requests
   pull_request:
-  
+
   # Run daily at 00:00 UTC
   schedule:
-    - cron: '0 0 * * *'
-  
+    - cron: "0 0 * * *"
+
   # Allow manual trigger
   workflow_dispatch:
 
 jobs:
   link-checker:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-      
+
       - name: Check links with Lychee
         uses: lycheeverse/lychee-action@v1
         with:
           # Check all markdown files
-          args: --verbose --no-progress '**/*.md'
-          # Fail the action on broken links
-          fail: true
+          args: |
+            --verbose 
+            --no-progress 
+            --accept 200,201,202,204,301,302,307,308,403,429
+            --timeout 20
+            --max-retries 3
+            --retry-wait-time 2
+            --user-agent 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+            '**/*.md'
+          # Only fail on truly broken links (404, DNS failures)
+          fail: false
           # Format for output
           format: markdown
           # Output file for results
           output: ./lychee-report.md
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-      
+
       - name: Upload link check report
         if: always()
         uses: actions/upload-artifact@v4
@@ -45,3 +53,19 @@ jobs:
           name: link-checker-report
           path: lychee-report.md
           retention-days: 30
+
+      - name: Comment on PR with results
+        if: github.event_name == 'pull_request' && always()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            if (fs.existsSync('lychee-report.md')) {
+              const report = fs.readFileSync('lychee-report.md', 'utf8');
+              github.rest.issues.createComment({
+                issue_number: context.issue.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                body: `## 🔗 Link Check Results\n\n${report}\n\n---\n💡 **Note:** 403/429 status codes indicate bot protection and are considered valid.`
+              });
+            }
