@@ -55,25 +55,25 @@ The API tells you how it went with a number:
 - [📘 General Usage Guide](#-general-api-usage-guide)
 - [🐶 Animals](#-animals)
 - [🌸 Anime](#-anime)
-- [🛡️ Anti-Malware](#-anti-malware)
+- [🛡️ Anti-Malware](#🛡️-anti-malware)
 - [📚 Books](#-books)
 - [🪙 Cryptocurrency](#-cryptocurrency)
 - [💻 Development](#-development)
 - [🍿 Entertainment](#-entertainment)
 - [💰 Finance](#-finance)
-- [� Food & Drink](#-food--drink)
-- [�🎮 Games & Comics](#-games--comics)
+- [🍽️ Food & Drink](#-food--drink)
+- [🎮 Games & Comics](#-games--comics)
 - [🌍 Geocoding](#-geocoding)
-- [❤️ Health](#-health)
+- [❤️ Health](#❤️-health)
 - [🧠 Machine Learning](#-machine-learning)
 - [🎵 Music](#-music)
 - [📰 News](#-news)
-- [� Photography](#-photography)
-- [�🔬 Science](#-science)
-- [🛍️ Shopping](#-shopping)
+- [📸 Photography](#-photography)
+- [🔬 Science](#-science)
+- [🛍️ Shopping](#🛍️-shopping)
 - [💬 Social](#-social)
-- [🚆 Transportation](#-transportation)
-- [🌤️ Weather](#-weather)
+- [🚆 Transportation](#🚆-transportation)
+- [🌤️ Weather](#🌤️-weather)
 
 ---
 
@@ -259,7 +259,7 @@ The API tells you how it went with a number:
 | **TheCocktailDB** | Cocktail recipes. | 🔑 ApiKey | ✅ | [Link](https://www.thecocktaildb.com/api.php) |
 | **TheMealDB** | Meal recipes. | 🔑 ApiKey | ✅ | [Link](https://www.themealdb.com/api.php) |
 
-## � Entertainment
+## 🎮 Entertainment
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
@@ -278,7 +278,7 @@ The API tells you how it went with a number:
 | **Nominatim** | OpenStreetMap Geocoding. | No | ✅ | [Link](https://nominatim.org/release-docs/latest/api/Overview/) |
 | **OpenStreetMap** | Map data. | 🔐 OAuth | ✅ | [Link](http://wiki.openstreetmap.org/wiki/API) |
 
-## �🎮 Games & Comics
+## 🎮 Games & Comics
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
