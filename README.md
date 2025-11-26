@@ -365,6 +365,18 @@ The API tells you how it went with a number:
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
+| **Giphy** | GIFs. | 🔑 ApiKey | ✅ | [Link](https://developers.giphy.com/docs/) |
+| **Lorem Picsum** | Placeholder images. | No | ✅ | [Link](https://picsum.photos/) |
+| **Pexels** | Free stock photos. | 🔑 ApiKey | ✅ | [Link](https://www.pexels.com/api/) |
+| **Unsplash** | High-quality photos. | 🔐 OAuth | ✅ | [Link](https://unsplash.com/developers) |
+
+## <a id="science"></a>🔬 Science
+
+| API Name | Description | Auth | HTTPS | Link |
+| :--- | :--- | :---: | :---: | :---: |
+| **NASA** | NASA data (APOD, Mars, etc.). | 🔑 ApiKey | ✅ | [Link](https://api.nasa.gov/) |
+| **SpaceX** | SpaceX launch data. | No | ✅ | [Link](https://github.com/r-spacex/SpaceX-API) |
+
 ## <a id="shopping"></a>🛍️ Shopping
 
 | API Name | Description | Auth | HTTPS | Link |
