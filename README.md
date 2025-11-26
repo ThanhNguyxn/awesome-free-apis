@@ -59,20 +59,25 @@ The API tells you how it went with a number:
 - [📚 Books](#books)
 - [🪙 Cryptocurrency](#cryptocurrency)
 - [💻 Development](#development)
-- [� Entertainment](#entertainment)
+- [📖 Dictionaries](#dictionaries)
+- [🎮 Entertainment](#entertainment)
 - [💰 Finance](#finance)
-- [� Food & Drink](#food-drink)
+- [🍔 Food & Drink](#food-drink)
 - [🎮 Games & Comics](#games-comics)
 - [🌍 Geocoding](#geocoding)
 - [❤️ Health](#health)
 - [🧠 Machine Learning](#machine-learning)
+- [🧪 Mock Data & Testing](#mock-data-testing)
 - [🎵 Music](#music)
 - [📰 News](#news)
-- [� Photography](#photography)
+- [📸 Photography](#photography)
 - [🔬 Science](#science)
 - [🛍️ Shopping](#shopping)
-- [💬 Social](#social)
+- [� Utilities & Tools](#utilities-tools)
+- [�💬 Social](#social)
+- [⚽ Sports](#sports)
 - [🚆 Transportation](#transportation)
+- [🇻🇳 Vietnam Services](#vietnam-services)
 - [🌤️ Weather](#weather)
 
 ---
@@ -104,7 +109,9 @@ The API tells you how it went with a number:
 | **RandomFox** | Random pictures of foxes. | No | ✅ | [Link](https://randomfox.ca/floof/) |
 | **RescueGroups** | Adoption. | No | ✅ | [Link](https://userguide.rescuegroups.org/display/APIDG/API+Developers+Guide+Home) |
 | **Shibe.Online** | Random pictures of Shiba Inu, cats or birds. | No | ✅ | [Link](http://shibe.online/) |
+| **The Cat API** | Images of cats (great for testing image grids). | 🔑 ApiKey | ✅ | [Link](https://thecatapi.com/) |
 | **The Dog** | A public service all about Dogs, free to use. | 🔑 ApiKey | ✅ | [Link](https://thedogapi.com/) |
+| **The Dog API** | Images and data about dogs. | 🔑 ApiKey | ✅ | [Link](https://thedogapi.com/) |
 | **xeno-canto** | Bird sounds from around the world. | No | ✅ | [Link](https://xeno-canto.org/explore/api) |
 | **Zoo Animals** | Facts and pictures of zoo animals. | No | ✅ | [Link](https://zoo-animal-api.herokuapp.com/) |
 
@@ -129,7 +136,7 @@ The API tells you how it went with a number:
 | **Shikimori** | Anime and Manga Database. | 🔐 OAuth | ✅ | [Link](https://shikimori.one/api/doc) |
 | **Studio Ghibli** | Resources from Studio Ghibli films. | No | ✅ | [Link](https://ghibliapi.herokuapp.com) |
 | **Trace Moe** | Anime Scene Search Engine. | No | ✅ | [Link](https://soruly.github.io/trace.moe-api/#/) |
-| **Waifu.im** | Get waifu pictures. | No | ✅ | [Link](https://waifu.im/docs) |
+| **Waifu.im** | API for serving anime images (versatile query options). | No | ✅ | [Link](https://waifu.im/) |
 | **Waifu.pics** | Image sharing platform for anime images. | No | ✅ | [Link](https://waifu.pics/docs) |
 
 ## <a id="anti-malware"></a>🛡️ Anti-Malware
@@ -227,6 +234,12 @@ The API tells you how it went with a number:
 | **Pdflayer** | HTML to PDF conversion. | 🔑 ApiKey | ✅ | [Link](https://pdflayer.com/) |
 | **Screenshotlayer** | Website screenshots. | 🔑 ApiKey | ✅ | [Link](https://screenshotlayer.com/) |
 
+## <a id="dictionaries"></a>📖 Dictionaries
+
+| API Name | Description | Auth | HTTPS | Link |
+| :--- | :--- | :---: | :---: | :---: |
+| **Free Dictionary API** | Free English dictionary API. | No | ✅ | [Link](https://dictionaryapi.dev/) |
+
 ## <a id="finance"></a>💰 Finance
 
 | API Name | Description | Auth | HTTPS | Link |
@@ -249,6 +262,7 @@ The API tells you how it went with a number:
 | **Tax Data API** | Tax rates and validation. | 🔑 ApiKey | ✅ | [Link](https://apilayer.com/marketplace/tax_data-api) |
 | **Yahoo Finance** | Financial data. | 🔑 ApiKey | ✅ | [Link](https://www.yahoofinanceapi.com/) |
 | **Exchangerate.host** | Foreign exchange & crypto rates. | 🔑 ApiKey | ✅ | [Link](https://exchangerate.host/) |
+| **Frankfurter** | Open source exchange rates API. | No | ✅ | [Link](https://www.frankfurter.app/) |
 
 ## <a id="food-drink"></a>🍔 Food & Drink
 
@@ -326,14 +340,16 @@ The API tells you how it went with a number:
 | :--- | :--- | :---: | :---: | :---: |
 | **Clarifai** | Computer Vision. | 🔐 OAuth | ✅ | [Link](https://docs.clarifai.com/api-guide/api-overview) |
 | **Cloudmersive** | Image Recognition. | 🔑 ApiKey | ✅ | [Link](https://www.cloudmersive.com/image-recognition-and-processing-api) |
-| **DeepAI** | AI tools. | 🔑 ApiKey | ✅ | [Link](https://deepai.org/api-docs) |
+| **DeepAI** | Simple APIs for image generation and text processing. | 🔑 ApiKey | ✅ | [Link](https://deepai.org/api-docs) |
 | **Dialogflow** | Conversational AI. | 🔑 ApiKey | ✅ | [Link](https://cloud.google.com/dialogflow/docs/) |
+| **Google Gemini** | Google's latest multimodal AI models. | 🔑 ApiKey | ✅ | [Link](https://ai.google.dev/) |
+| **Hugging Face** | Access thousands of models for NLP, vision, and audio. | 🔑 ApiKey | ✅ | [Link](https://huggingface.co/docs/api-inference/index) |
 | **Imagga** | Image Recognition. | 🔑 ApiKey | ✅ | [Link](https://imagga.com/) |
+| **Languagelayer** | Language detection. | 🔑 ApiKey | ✅ | [Link](https://languagelayer.com/) |
 | **NLP Cloud** | NLP. | 🔑 ApiKey | ✅ | [Link](https://nlpcloud.io) |
-| **OpenAI** | GPT-3, DALL-E. | 🔑 ApiKey | ✅ | [Link](https://beta.openai.com/docs/) |
+| **OpenAI** | Access GPT models (offers free trial credits). | 🔑 ApiKey | ✅ | [Link](https://platform.openai.com/docs/api-reference) |
 | **Roboflow** | Computer Vision. | 🔑 ApiKey | ✅ | [Link](https://universe.roboflow.com) |
 | **WolframAlpha** | Computational Knowledge. | 🔑 ApiKey | ✅ | [Link](https://products.wolframalpha.com/api/) |
-| **Languagelayer** | Language detection. | 🔑 ApiKey | ✅ | [Link](https://languagelayer.com/) |
 
 ## <a id="music"></a>🎵 Music
 
@@ -350,6 +366,15 @@ The API tells you how it went with a number:
 | **Musixmatch** | Lyrics. | 🔑 ApiKey | ✅ | [Link](https://developer.musixmatch.com/) |
 | **SoundCloud** | Music streaming. | 🔐 OAuth | ✅ | [Link](https://developers.soundcloud.com/docs/api/guide) |
 | **Spotify** | Music streaming. | 🔐 OAuth | ✅ | [Link](https://beta.developer.spotify.com/documentation/web-api/) |
+
+## <a id="mock-data-testing"></a>🧪 Mock Data & Testing
+
+| API Name | Description | Auth | HTTPS | Link |
+| :--- | :--- | :---: | :---: | :---: |
+| **JSONPlaceholder** | Free fake API for testing and prototyping (posts, comments, users). | No | ✅ | [Link](https://jsonplaceholder.typicode.com/) |
+| **Mockaroo** | Generate custom realistic test data in JSON, CSV, SQL. | 🔑 ApiKey | ✅ | [Link](https://www.mockaroo.com/) |
+| **RandomUser.me** | Generate random user data (like Lorem Ipsum, but for people). | No | ✅ | [Link](https://randomuser.me/) |
+| **ReqRes** | A hosted REST-API ready to respond to your AJAX requests. | No | ✅ | [Link](https://reqres.in/) |
 
 ## <a id="news"></a>📰 News
 
@@ -368,13 +393,14 @@ The API tells you how it went with a number:
 | **Giphy** | GIFs. | 🔑 ApiKey | ✅ | [Link](https://developers.giphy.com/docs/) |
 | **Lorem Picsum** | Placeholder images. | No | ✅ | [Link](https://picsum.photos/) |
 | **Pexels** | Free stock photos. | 🔑 ApiKey | ✅ | [Link](https://www.pexels.com/api/) |
+| **Picsum Photos** | The Lorem Ipsum for photos. | No | ✅ | [Link](https://picsum.photos/) |
 | **Unsplash** | High-quality photos. | 🔐 OAuth | ✅ | [Link](https://unsplash.com/developers) |
 
-## <a id="science"></a>🔬 Science
+## <a id="science"></a>🔬 Science & Space
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
-| **NASA** | NASA data (APOD, Mars, etc.). | 🔑 ApiKey | ✅ | [Link](https://api.nasa.gov/) |
+| **NASA API** | Access NASA data, including Astronomy Picture of the Day (APOD). | 🔑 ApiKey | ✅ | [Link](https://api.nasa.gov/) |
 | **SpaceX** | SpaceX launch data. | No | ✅ | [Link](https://github.com/r-spacex/SpaceX-API) |
 
 ## <a id="shopping"></a>🛍️ Shopping
@@ -408,6 +434,21 @@ The API tells you how it went with a number:
 | **Zalo** | Messaging and social platform. | 🔐 OAuth | ✅ | [Link](https://developers.zalo.me/) |
 | **LINE** | Messaging app. | 🔐 OAuth | ✅ | [Link](https://developers.line.biz/en/) |
 
+## <a id="sports"></a>⚽ Sports
+
+| API Name | Description | Auth | HTTPS | Link |
+| :--- | :--- | :---: | :---: | :---: |
+| **Ergast F1** | Formula 1 motor racing data. | No | No | [Link](http://ergast.com/mrd/) |
+| **TheSportsDB** | Open crowd-sourced sports data and artwork. | 🔑 ApiKey | ✅ | [Link](https://www.thesportsdb.com/api.php) |
+
+## <a id="utilities-tools"></a>🔧 Utilities & Tools
+
+| API Name | Description | Auth | HTTPS | Link |
+| :--- | :--- | :---: | :---: | :---: |
+| **goqr.me** | Create QR codes via URL parameters (**No Auth**). | No | ✅ | [Link](https://goqr.me/api/) |
+| **ipify** | A simple public IP address API. | No | ✅ | [Link](https://www.ipify.org/) |
+| **Shields.io** | Quality metadata badges for open source projects. | No | ✅ | [Link](https://shields.io/) |
+
 ## <a id="transportation"></a>🚆 Transportation
 
 | API Name | Description | Auth | HTTPS | Link |
@@ -416,12 +457,21 @@ The API tells you how it went with a number:
 | **OpenSky Network** | Flight tracking. | No | ✅ | [Link](https://opensky-network.org/apidoc/index.html) |
 | **Transport for London** | Public transport data. | 🔑 ApiKey | ✅ | [Link](https://api.tfl.gov.uk) |
 
+## <a id="vietnam-services"></a>🇻🇳 Vietnam Services
+
+| API Name | Description | Auth | HTTPS | Link |
+| :--- | :--- | :---: | :---: | :---: |
+| **Lunar Date (Am Lich)** | Library/API for converting Solar to Lunar dates. | No | ✅ | [Link](https://github.com/hieuvp/lunisolar) |
+| **Provinces of Vietnam** | Open API for administrative divisions of Vietnam. | No | ✅ | [Link](https://provinces.open-api.vn/) |
+| **VietQR** | Generate QR codes for bank transfers in Vietnam standard. | No | ✅ | [Link](https://vietqr.io/) |
+
 ## <a id="weather"></a>🌤️ Weather
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
 | **7Timer!** | Weather forecast. | No | No | [Link](http://www.7timer.info/doc.php?lang=en) |
 | **AccuWeather** | Weather forecast. | 🔑 ApiKey | ✅ | [Link](https://developer.accuweather.com/apis) |
+| **Open-Meteo** | Open-source weather API (**No API key required**). | No | ✅ | [Link](https://open-meteo.com/) |
 | **OpenWeatherMap** | Weather forecast. | 🔑 ApiKey | ✅ | [Link](https://openweathermap.org/api) |
 | **RainViewer** | Weather radar. | No | ✅ | [Link](https://www.rainviewer.com/api.html) |
 | **WeatherAPI** | Weather forecast. | 🔑 ApiKey | ✅ | [Link](https://www.weatherapi.com/) |
