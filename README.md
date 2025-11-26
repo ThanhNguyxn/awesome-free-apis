@@ -244,12 +244,12 @@ print(response.json()['fact'])
 | **Danbooru Anime** | Thousands of anime artist database. | 🔑 ApiKey | ✅ | [Link](https://danbooru.donmai.us/wiki_pages/help:api) |
 | **Jikan** | Unofficial MyAnimeList API. | No | ✅ | [Link](https://jikan.moe) |
 | **Kitsu** | Anime and Manga Database. | 🔐 OAuth | ✅ | [Link](https://kitsu.docs.apiary.io/) |
-| **MangaDex** | Manga Database and Community. | 🔑 ApiKey | ✅ | [Link](https://api.mangadex.org/docs.html) |
+| **MangaDex** | Manga Database and Community. | 🔑 ApiKey | ✅ | [Link](https://api.mangadex.org/docs/) |
 | **Mangapi** | Translate manga pages. | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/pierre.carcellermeunier/api/mangapi3/) |
 | **MyAnimeList** | Anime and Manga Database. | 🔐 OAuth | ✅ | [Link](https://myanimelist.net/clubs.php?cid=13727) |
 | **NekosBest** | Neko Images & Anime GIFs. | No | ✅ | [Link](https://docs.nekos.best) |
 | **Shikimori** | Anime and Manga Database. | 🔐 OAuth | ✅ | [Link](https://shikimori.one/api/doc) |
-| **Studio Ghibli** | Resources from Studio Ghibli films. | No | ✅ | [Link](https://ghibliapi.herokuapp.com) |
+| **Studio Ghibli** | Resources from Studio Ghibli films. | No | ✅ | [Link](https://ghibliapi.vercel.app) |
 | **Trace Moe** | Anime Scene Search Engine. | No | ✅ | [Link](https://soruly.github.io/trace.moe-api/#/) |
 | **Waifu.im** | API for serving anime images (versatile query options). | No | ✅ | [Link](https://waifu.im/) |
 | **Waifu.pics** | Image sharing platform for anime images. | No | ✅ | [Link](https://waifu.pics/docs) |
@@ -267,7 +267,6 @@ print(response.json()['fact'])
 | **MalwareBazaar** | Malware analysis. | 🔑 ApiKey | ✅ | [Link](https://bazaar.abuse.ch/api/) |
 | **Metacert** | Link/Domain reputation. | 🔑 ApiKey | ✅ | [Link](https://metacert.com/) |
 | **NoPhishy** | Link/Domain reputation. | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/Amiichu/api/exerra-phishing-check/) |
-| **Phisherman** | Link/Domain reputation. | 🔑 ApiKey | ✅ | [Link](https://phisherman.gg/) |
 | **Scanii** | File/Link/Domain reputation. | 🔑 ApiKey | ✅ | [Link](https://docs.scanii.com/) |
 | **URLhaus** | Link/Domain reputation. | No | ✅ | [Link](https://urlhaus-api.abuse.ch/) |
 | **URLScan.io** | Link/Domain reputation. | 🔑 ApiKey | ✅ | [Link](https://urlscan.io/about-api/) |
@@ -287,13 +286,11 @@ print(response.json()['fact'])
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
-| **0x** | API for querying the 0x protocol. | No | ✅ | [Link](https://0x.org/api) |
 | **1inch** | API for querying the 1inch protocol. | No | ✅ | [Link](https://1inch.io/api/) |
 | **Alchemy** | Ethereum API. | 🔑 ApiKey | ✅ | [Link](https://docs.alchemy.com/alchemy/) |
 | **Binance** | Exchange for Trading Cryptocurrencies. | 🔑 ApiKey | ✅ | [Link](https://github.com/binance/binance-spot-api-docs) |
 | **Bitfinex** | Exchange for Trading Cryptocurrencies. | 🔑 ApiKey | ✅ | [Link](https://docs.bitfinex.com/docs) |
 | **Bitmex** | Exchange for Trading Cryptocurrencies. | 🔑 ApiKey | ✅ | [Link](https://www.bitmex.com/app/apiOverview) |
-| **Bittrex** | Exchange for Trading Cryptocurrencies. | 🔑 ApiKey | ✅ | [Link](https://bittrex.github.io/api/v3) |
 | **Block** | Bitcoin Payment, Wallet & Transaction Data. | 🔑 ApiKey | ✅ | [Link](https://block.io/docs/basic) |
 | **Blockchain** | Bitcoin Payment, Wallet & Transaction Data. | 🔑 ApiKey | ✅ | [Link](https://www.blockchain.com/api) |
 | **CoinAPI** | Market Data API. | 🔑 ApiKey | ✅ | [Link](https://docs.coinapi.io/) |
@@ -321,7 +318,6 @@ print(response.json()['fact'])
 | **APILayer** | Marketplace for various APIs. | 🔑 ApiKey | ✅ | [Link](https://apilayer.com/) |
 | **Azure DevOps** | DevOps tools. | 🔑 ApiKey | ✅ | [Link](https://docs.microsoft.com/en-us/rest/api/azure/devops) |
 | **Bitbucket** | Git solution. | 🔐 OAuth | ✅ | [Link](https://developer.atlassian.com/bitbucket/api/2/reference/) |
-| **Bored API** | Random activity suggestions to fight boredom. | No | ✅ | [Link](https://www.boredapi.com/) |
 | **CDNJS** | Library info. | No | ✅ | [Link](https://api.cdnjs.com/libraries/jquery) |
 | **Cloudflare Trace** | Get IP Address and other info. | No | ✅ | [Link](https://github.com/fawazahmed0/cloudflare-trace-api) |
 | **Docker Hub** | Interact with Docker Hub. | 🔑 ApiKey | ✅ | [Link](https://docs.docker.com/docker-hub/api/latest/) |
@@ -370,7 +366,7 @@ print(response.json()['fact'])
 | **Fixer** | Exchange rates and currency conversion. | 🔑 ApiKey | ✅ | [Link](https://fixer.io/) |
 | **FRED** | Economic data. | 🔑 ApiKey | ✅ | [Link](https://fred.stlouisfed.org/docs/api/fred/) |
 | **IEX Cloud** | Financial data. | 🔑 ApiKey | ✅ | [Link](https://iexcloud.io/docs/api/) |
-| **Klarna** | Payments. | 🔑 ApiKey | ✅ | [Link](https://docs.klarna.com/klarna-payments/api/payments-api/) |
+| **Klarna** | Payments. | 🔑 ApiKey | ✅ | [Link](https://docs.klarna.com/api/) |
 | **MercadoPago** | Payments. | 🔑 ApiKey | ✅ | [Link](https://www.mercadopago.com.br/developers/es/reference) |
 | **Plaid** | Connect bank accounts. | 🔑 ApiKey | ✅ | [Link](https://www.plaid.com/docs) |
 | **Polygon** | Stock market data. | 🔑 ApiKey | ✅ | [Link](https://polygon.io/) |
@@ -384,7 +380,6 @@ print(response.json()['fact'])
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
 | **Open Food Facts** | Food product data. | No | ✅ | [Link](https://world.openfoodfacts.org/data) |
-| **PunkAPI** | Brewdog beer recipes. | No | ✅ | [Link](https://punkapi.com/) |
 | **TheCocktailDB** | Open database for drinks and cocktails. | 🔑 ApiKey | ✅ | [Link](https://www.thecocktaildb.com/api.php) |
 | **TheMealDB** | Open source database of recipes from around the world. | 🔑 ApiKey | ✅ | [Link](https://www.themealdb.com/api.php) |
 
@@ -395,7 +390,7 @@ print(response.json()['fact'])
 | **Numbers API** | Interesting facts about numbers (math, trivia, dates) (**No Auth**). | No | ✅ | [Link](http://numbersapi.com/) |
 | **OMDb** | Open Movie Database. | 🔑 ApiKey | ✅ | [Link](http://www.omdbapi.com/) |
 | **Quiz API** | Random trivia questions (**No Auth**). | No | ✅ | [Link](https://quizapi.io/) |
-| **Quotable** | Random quotes (**No Auth**). | No | ✅ | [Link](https://api.quotable.io) |
+| **Quotable** | Random quotes (**No Auth**). | No | ✅ | [Link](https://github.com/lukePeavey/quotable) |
 | **Simkl** | Movies, TV, Anime metadata. | 🔑 ApiKey | ✅ | [Link](https://simkl.com/apidoc/) |
 | **TMDb** | The Movie Database. | 🔑 ApiKey | ✅ | [Link](https://developers.themoviedb.org/3) |
 | **Trakt** | TV and Movie tracking. | 🔐 OAuth | ✅ | [Link](https://trakt.docs.apiary.io/) |
@@ -423,7 +418,7 @@ print(response.json()['fact'])
 | **Deck of Cards** | Deck of cards. | No | No | [Link](http://deckofcardsapi.com/) |
 | **Dota 2** | Game data. | 🔑 ApiKey | ✅ | [Link](https://docs.opendota.com/) |
 | **Dungeons and Dragons** | 5th Edition SRD. | No | ✅ | [Link](https://www.dnd5eapi.co/docs/) |
-| **Eve Online** | Game data. | 🔐 OAuth | ✅ | [Link](https://esi.evetech.net/ui) |
+| **Eve Online** | Game data. | 🔐 OAuth | ✅ | [Link](https://esi.evetech.net/) |
 | **Final Fantasy XIV** | Game data. | No | ✅ | [Link](https://xivapi.com/) |
 | **Fortnite** | Game data. | 🔑 ApiKey | ✅ | [Link](https://fortnitetracker.com/site-api) |
 | **Genshin Impact** | Game data. | No | ✅ | [Link](https://genshin.dev) |
@@ -584,7 +579,7 @@ print(response.json()['fact'])
 | :--- | :--- | :---: | :---: | :---: |
 | **Colormind** | AI-powered color palette generator (**No Auth**). | No | ✅ | [Link](http://colormind.io/api-access/) |
 | **Lorem Picsum** | Beautiful placeholder images (**No Auth**). | No | ✅ | [Link](https://picsum.photos/) |
-| **Placeholder.com** | Simple placeholder image service (**No Auth**). | No | ✅ | [Link](https://placeholder.com/) |
+| **Placeholder.com** | Simple placeholder image service (**No Auth**). | No | ✅ | [Link](https://placehold.co/) |
 | **The Color API** | Color conversion, schemes, and naming (**No Auth**). | No | ✅ | [Link](https://www.thecolorapi.com/) |
 
 ## <a id="geography-countries"></a>🌎 Geography & Countries
@@ -598,7 +593,7 @@ print(response.json()['fact'])
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
 | **BART** | Bay Area Rapid Transit. | 🔑 ApiKey | ✅ | [Link](http://api.bart.gov) |
-| **OpenSky Network** | Flight tracking. | No | ✅ | [Link](https://opensky-network.org/apidoc/index.html) |
+| **OpenSky Network** | Flight tracking. | No | ✅ | [Link](https://openskynetwork.github.io/opensky-api/) |
 | **Transport for London** | Public transport data. | 🔑 ApiKey | ✅ | [Link](https://api.tfl.gov.uk) |
 
 ## <a id="memes-fun"></a>😂 Memes & Fun
@@ -622,7 +617,6 @@ print(response.json()['fact'])
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
-| **Lunar Date (Am Lich)** | Library/API for converting Solar to Lunar dates. | No | ✅ | [Link](https://github.com/hieuvp/lunisolar) |
 | **Provinces of Vietnam** | Open API for administrative divisions of Vietnam. | No | ✅ | [Link](https://provinces.open-api.vn/) |
 | **VietQR** | Generate QR codes for bank transfers in Vietnam standard. | No | ✅ | [Link](https://vietqr.io/) |
 

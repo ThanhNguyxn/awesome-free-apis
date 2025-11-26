@@ -90,15 +90,15 @@ def check_link(url, session, timeout=20):
         return {'url': url, 'status': None, 'state': 'error', 'note': f'Error: {type(e).__name__}'}
 
 def main():
-    print("🔍 Link Checker for awesome-free-apis")
+    print("Link Checker for awesome-free-apis")
     print("=" * 80)
     
     # Extract and deduplicate links
     links = extract_links_from_readme()
     unique_links = sorted(list(set(links)))
     
-    print(f"📊 Found {len(links)} total links ({len(unique_links)} unique)")
-    print(f"⏳ Checking links...\n")
+    print(f"Found {len(links)} total links ({len(unique_links)} unique)")
+    print(f"Checking links...\n")
     
     # Categories
     results = {
