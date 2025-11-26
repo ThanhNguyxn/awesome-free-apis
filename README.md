@@ -229,7 +229,6 @@ print(response.json()['fact'])
 | **The Dog** | A public service all about Dogs, free to use. | 🔑 ApiKey | ✅ | [Link](https://thedogapi.com/) |
 | **The Dog API** | Images and data about dogs. | 🔑 ApiKey | ✅ | [Link](https://thedogapi.com/) |
 | **xeno-canto** | Bird sounds from around the world. | No | ✅ | [Link](https://xeno-canto.org/explore/api) |
-| **Zoo Animals** | Facts and pictures of zoo animals. | No | ✅ | [Link](https://zoo-animal-api.herokuapp.com/) |
 
 ## <a id="anime"></a>🌸 Anime
 
@@ -303,13 +302,11 @@ print(response.json()['fact'])
 | **CoinMarketCap** | Cryptocurrency prices, market cap, exchange rates. | 🔑 ApiKey | ✅ | [Link](https://coinmarketcap.com/api/) |
 | **Coinlayer** | Real-time Crypto Exchange Rates. | 🔑 ApiKey | ✅ | [Link](https://coinlayer.com) |
 | **CryptoCompare** | Cryptocurrencies Comparison. | No | ✅ | [Link](https://www.cryptocompare.com/api) |
-| **FTX** | Exchange for Trading Cryptocurrencies. | 🔑 ApiKey | ✅ | [Link](https://docs.ftx.com/) |
 | **Gateio** | Exchange for Trading Cryptocurrencies. | 🔑 ApiKey | ✅ | [Link](https://www.gate.io/api2) |
 | **Gemini** | Exchange for Trading Cryptocurrencies. | No | ✅ | [Link](https://docs.gemini.com/rest-api/) |
 | **Kraken** | Exchange for Trading Cryptocurrencies. | 🔑 ApiKey | ✅ | [Link](https://docs.kraken.com/rest/) |
 | **KuCoin** | Exchange for Trading Cryptocurrencies. | 🔑 ApiKey | ✅ | [Link](https://docs.kucoin.com/) |
 | **Mempool** | Bitcoin API. | No | ✅ | [Link](https://mempool.space/api) |
-| **Nomics** | Cryptocurrency Market Data. | 🔑 ApiKey | ✅ | [Link](https://nomics.com/docs/) |
 | **Poloniex** | Exchange for Trading Cryptocurrencies. | 🔑 ApiKey | ✅ | [Link](https://docs.poloniex.com) |
 
 ## <a id="development"></a>💻 Development
@@ -379,7 +376,6 @@ print(response.json()['fact'])
 | **Polygon** | Stock market data. | 🔑 ApiKey | ✅ | [Link](https://polygon.io/) |
 | **Stripe** | Payments. | 🔑 ApiKey | ✅ | [Link](https://stripe.com/docs/api) |
 | **Tax Data API** | Tax rates and validation. | 🔑 ApiKey | ✅ | [Link](https://apilayer.com/marketplace/tax_data-api) |
-| **Yahoo Finance** | Financial data. | 🔑 ApiKey | ✅ | [Link](https://www.yahoofinanceapi.com/) |
 | **Exchangerate.host** | Foreign exchange & crypto rates. | 🔑 ApiKey | ✅ | [Link](https://exchangerate.host/) |
 | **Frankfurter** | Open source exchange rates API. | No | ✅ | [Link](https://www.frankfurter.app/) |
 
@@ -418,7 +414,6 @@ print(response.json()['fact'])
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
-| **Age of Empires II** | Game data. | No | ✅ | [Link](https://age-of-empires-2-api.herokuapp.com) |
 | **AmiiboAPI** | Nintendo Amiibo data. | No | ✅ | [Link](https://amiiboapi.com/) |
 | **Battle.net** | Blizzard games data. | 🔐 OAuth | ✅ | [Link](https://develop.battle.net/documentation/guides/getting-started) |
 | **Brawl Stars** | Game data. | 🔑 ApiKey | ✅ | [Link](https://developer.brawlstars.com) |
@@ -478,7 +473,6 @@ print(response.json()['fact'])
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
 | **Audiomack** | Music streaming. | 🔐 OAuth | ✅ | [Link](https://www.audiomack.com/data-api/docs) |
-| **Bandcamp** | Music streaming. | 🔐 OAuth | ✅ | [Link](https://bandcamp.com/developer) |
 | **Deezer** | Music streaming. | 🔐 OAuth | ✅ | [Link](https://developers.deezer.com/api) |
 | **Discogs** | Music database. | 🔐 OAuth | ✅ | [Link](https://www.discogs.com/developers/) |
 | **Genius** | Lyrics and knowledge. | 🔐 OAuth | ✅ | [Link](https://docs.genius.com/) |
@@ -532,7 +526,6 @@ print(response.json()['fact'])
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
 | **HaveIBeenPwned** | Check if email or password has been compromised in a data breach. | 🔑 ApiKey | ✅ | [Link](https://haveibeenpwned.com/API/v3) |
-| **Random Password API** | Simple API to generate random secure passwords (**No Auth**). | No | ✅ | [Link](https://passwordinator.onrender.com/) |
 
 ## <a id="shopping"></a>🛍️ Shopping
 
@@ -569,7 +562,6 @@ print(response.json()['fact'])
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
-| **Ergast F1** | Formula 1 motor racing data. | No | No | [Link](http://ergast.com/mrd/) |
 | **TheSportsDB** | Open crowd-sourced sports data and artwork. | 🔑 ApiKey | ✅ | [Link](https://www.thesportsdb.com/api.php) |
 
 ## <a id="utilities-tools"></a>🔧 Utilities & Tools
