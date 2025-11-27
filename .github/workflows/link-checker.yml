@@ -78,3 +78,49 @@ jobs:
             } catch (error) {
               console.log('Error commenting on PR:', error);
             }
+
+      - name: Create issue if broken links found
+        if: github.event_name == 'schedule' && steps.check.outputs.has_broken == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const reportPath = 'scripts/link_check_report.txt';
+
+            let reportContent = 'Report file not found.';
+            try {
+              reportContent = fs.readFileSync(reportPath, 'utf8');
+            } catch (err) {
+              console.log('Error reading report:', err);
+            }
+
+            const issue = await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: '🔴 Broken Links Detected - Daily Check',
+              labels: ['broken-links', 'automated'],
+              body: `## Link Checker Report
+
+            The automated daily link checker has found broken links in the repository.
+
+            **Date**: ${new Date().toISOString().split('T')[0]}
+            **Workflow Run**: [#${context.runNumber}](${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId})
+
+            ### Report
+
+            \`\`\`
+            ${reportContent}
+            \`\`\`
+
+            ### Next Steps
+
+            1. Review the broken links listed in the report above
+            2. Update or remove broken API links from README.md
+            3. Re-run the link checker to verify fixes
+            4. Close this issue once all broken links are resolved
+
+            ---
+            *This issue was automatically created by the [Link Checker workflow](${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/blob/main/.github/workflows/link-checker.yml) during the scheduled daily run.*`
+            });
+
+            console.log('Created issue:', issue.data.html_url);

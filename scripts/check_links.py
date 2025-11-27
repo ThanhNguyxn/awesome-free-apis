@@ -1,6 +1,5 @@
 """
 Improved Link Checker for awesome-free-apis
-Based on approach from public-apis/public-apis (300k+ stars)
 
 Key improvements:
 - Cloudflare protection detection
@@ -78,63 +77,76 @@ def has_cloudflare_protection(resp):
     
     return False
 
-def check_link(url, timeout=25):
+def check_link(url, timeout=25, max_retries=3):
     """
-    Check if a link is accessible
+    Check if a link is accessible with retry logic
     Returns: dict with status info
     """
-    try:
-        headers = {
-            'User-Agent': fake_user_agent(),
-            'Host': get_host_from_link(url),
-            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-            'Accept-Language': 'en-US,en;q=0.5',
-            'Accept-Encoding': 'gzip, deflate, br',
-            'DNT': '1',
-            'Connection': 'keep-alive',
-            'Upgrade-Insecure-Requests': '1',
-        }
-        
-        response = requests.get(url, headers=headers, timeout=timeout, allow_redirects=True)
-        code = response.status_code
-        
-        #Check for bot protection
-        if code >= 400 and has_cloudflare_protection(response):
-            return {
-                'url': url,
-                'status': code,
-                'state': 'protected',
-                'note': 'Bot protection (Cloudflare/similar) - API likely works'
+    last_error = None
+    
+    for attempt in range(max_retries):
+        try:
+            headers = {
+                'User-Agent': fake_user_agent(),
+                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+                'Accept-Language': 'en-US,en;q=0.5',
+                'Accept-Encoding': 'gzip, deflate, br',
+                'DNT': '1',
+                'Connection': 'keep-alive',
+                'Upgrade-Insecure-Requests': '1',
             }
-        
-        # Interpret status codes
-        if code in [200, 201, 202, 204]:
-            return {'url': url, 'status': code, 'state': 'working', 'note': 'OK'}
-        elif code in [301, 302, 307, 308]:
-            return {'url': url, 'status': code, 'state': 'working', 'note': 'Redirect (OK)'}
-        elif code == 429:
-            return {'url': url, 'status': code, 'state': 'protected', 'note': 'Rate limited (API works)'}
-        elif code == 404:
-            return {'url': url, 'status': code, 'state': 'broken', 'note': 'Not found - likely dead'}
-        elif code == 410:
-            return {'url': url, 'status': code, 'state': 'broken', 'note': 'Gone - confirmed dead'}
-        elif code in [500, 502, 503, 504]:
-            return {'url': url, 'status': code, 'state': 'error', 'note': 'Server error (may be temporary)'}
-        else:
-            return {'url': url, 'status': code, 'state': 'unknown', 'note': f'HTTP {code}'}
             
-    except requests.exceptions.SSLError:
-        return {'url': url, 'status': None, 'state': 'warning', 'note': 'SSL error (cert issue)'}
-    except requests.exceptions.Timeout:
-        return {'url': url, 'status': None, 'state': 'warning', 'note': 'Timeout (slow server)'}
-    except requests.exceptions.ConnectionError as e:
-        if 'getaddrinfo failed' in str(e) or 'Name or service not known' in str(e):
-            return {'url': url, 'status': None, 'state': 'broken', 'note': 'DNS failed - domain dead'}
-        return {'url': url, 'status': None, 'state': 'broken', 'note': 'Connection refused - likely dead'}
-    except requests.exceptions.TooManyRedirects:
-        return {'url': url, 'status': None, 'state': 'error', 'note': 'Too many redirects'}
-    except Exception as e:
-        return {'url': url, 'status': None, 'state': 'error', 'note': f'Error: {type(e).__name__}'}
+            response = requests.get(url, headers=headers, timeout=timeout, allow_redirects=True)
+            code = response.status_code
+            
+            #Check for bot protection
+            if code >= 400 and has_cloudflare_protection(response):
+                return {
+                    'url': url,
+                    'status': code,
+                    'state': 'protected',
+                    'note': 'Bot protection (Cloudflare/similar) - API likely works'
+                }
+            
+            # Interpret status codes
+            if code in [200, 201, 202, 204]:
+                return {'url': url, 'status': code, 'state': 'working', 'note': 'OK'}
+            elif code in [301, 302, 307, 308]:
+                return {'url': url, 'status': code, 'state': 'working', 'note': 'Redirect (OK)'}
+            elif code == 429:
+                return {'url': url, 'status': code, 'state': 'protected', 'note': 'Rate limited (API works)'}
+            elif code == 404:
+                return {'url': url, 'status': code, 'state': 'broken', 'note': 'Not found - likely dead'}
+            elif code == 410:
+                return {'url': url, 'status': code, 'state': 'broken', 'note': 'Gone - confirmed dead'}
+            elif code in [500, 502, 503, 504]:
+                return {'url': url, 'status': code, 'state': 'error', 'note': 'Server error (may be temporary)'}
+            else:
+                return {'url': url, 'status': code, 'state': 'unknown', 'note': f'HTTP {code}'}
+                
+        except requests.exceptions.SSLError:
+            return {'url': url, 'status': None, 'state': 'warning', 'note': 'SSL error (cert issue)'}
+        except requests.exceptions.Timeout:
+            return {'url': url, 'status': None, 'state': 'warning', 'note': 'Timeout (slow server)'}
+        except requests.exceptions.ConnectionError as e:
+            last_error = e
+            # Retry on connection errors (might be temporary)
+            if attempt < max_retries - 1:
+                import time
+                time.sleep(1)  # Wait 1 second before retry
+                continue
+            # After all retries, check if it's DNS failure
+            if 'getaddrinfo failed' in str(e) or 'Name or service not known' in str(e):
+                return {'url': url, 'status': None, 'state': 'broken', 'note': 'DNS failed - domain dead'}
+            # Other connection errors after retries -> warning
+            return {'url': url, 'status': None, 'state': 'warning', 'note': 'Connection issue (may be temporary)'}
+        except requests.exceptions.TooManyRedirects:
+            return {'url': url, 'status': None, 'state': 'error', 'note': 'Too many redirects'}
+        except Exception as e:
+            return {'url': url, 'status': None, 'state': 'error', 'note': f'Error: {type(e).__name__}'}
+    
+    # Should never reach here, but just in case
+    return {'url': url, 'status': None, 'state': 'error', 'note': 'Max retries exceeded'}
 
 def main():
     print("Link Checker (based on public-apis approach)")
@@ -220,7 +232,8 @@ def main():
         f.write(f"Protected: {len(results['protected'])}\n")
         f.write(f"Warnings: {len(results['warning'])}\n")
         f.write(f"Errors: {len(results['error'])}\n")
-        f.write(f"Broken: {len(results['broken'])}\n\n")
+        f.write(f"Broken: {len(results['broken'])}\n")
+        f.write(f"Unknown: {len(results['unknown'])}\n\n")
         
         if results['broken']:
             f.write("BROKEN LINKS:\n")
