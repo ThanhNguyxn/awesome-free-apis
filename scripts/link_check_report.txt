@@ -1,11 +1,11 @@
 LINK CHECK REPORT
 ================================================================================
 
-Total: 276
-Working: 247
+Total: 290
+Working: 257
 Protected: 6
-Warnings: 5
+Warnings: 8
 Errors: 0
 Broken: 0
-Unknown: 18
+Unknown: 19
 
