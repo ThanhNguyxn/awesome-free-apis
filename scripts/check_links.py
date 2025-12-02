@@ -17,6 +17,15 @@ import time
 
 def extract_links_from_readme(file_path='../README.md'):
     """Extract all API links from README.md"""
+    import os
+    # Get script directory and go up one level
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    readme_path = os.path.join(os.path.dirname(script_dir), 'README.md')
+    
+    # Use provided path if it exists, otherwise use computed path
+    if not os.path.exists(file_path):
+        file_path = readme_path
+        
     with open(file_path, 'r', encoding='utf-8') as f:
         content = f.read()
     
@@ -212,7 +221,10 @@ def main():
     print(f"[ERR] Errors: {len(results['error'])}")
     print(f"[DEAD] Broken: {len(results['broken'])}")
     print(f"[?] Unknown: {len(results['unknown'])}")
-    print(f"\nHealthy: {total_ok}/{len(unique_links)} ({total_ok/len(unique_links)*100:.1f}%)")
+    if len(unique_links) > 0:
+        print(f"\nHealthy: {total_ok}/{len(unique_links)} ({total_ok/len(unique_links)*100:.1f}%)")
+    else:
+        print(f"\nHealthy: {total_ok}/0 (0.0%)")
     
     # Show only truly broken links
     if results['broken']:

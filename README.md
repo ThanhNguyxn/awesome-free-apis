@@ -176,6 +176,8 @@ print(response.json()['fact'])
 - [🪙 Cryptocurrency](#cryptocurrency)
 - [💻 Development](#development)
 - [📖 Dictionaries](#dictionaries)
+- [📊 Public Data & Datasets](#public-data)
+- [📧 Email & SMS](#email-sms)
 - [🎮 Entertainment](#entertainment)
 - [💰 Finance](#finance)
 - [🍔 Food & Drink](#food-drink)
@@ -234,6 +236,8 @@ print(response.json()['fact'])
 | **The Dog API** | Images and data about dogs. | 🔑 ApiKey | ✅ | [Link](https://thedogapi.com/) |
 | **xeno-canto** | Bird sounds from around the world. | No | ✅ | [Link](https://xeno-canto.org/explore/api) |
 
+[⬆ Back to Table of Contents](#📖-table-of-contents)
+
 ## <a id="anime"></a>🌸 Anime
 
 | API Name | Description | Auth | HTTPS | Link |
@@ -258,6 +262,8 @@ print(response.json()['fact'])
 | **Waifu.im** | API for serving anime images (versatile query options). | No | ✅ | [Link](https://waifu.im/) |
 | **Waifu.pics** | Image sharing platform for anime images. | No | ✅ | [Link](https://waifu.pics/docs) |
 
+[⬆ Back to Table of Contents](#📖-table-of-contents)
+
 ## <a id="anti-malware"></a>🛡️ Anti-Malware
 
 | API Name | Description | Auth | HTTPS | Link |
@@ -277,6 +283,8 @@ print(response.json()['fact'])
 | **VirusTotal** | File/URL analysis. | 🔑 ApiKey | ✅ | [Link](https://www.virustotal.com/en/documentation/public-api/) |
 | **Web of Trust** | IP/Domain/URL reputation. | 🔑 ApiKey | ✅ | [Link](https://support.mywot.com/hc/en-us/sections/360004477734-API-) |
 
+[⬆ Back to Table of Contents](#📖-table-of-contents)
+
 ## <a id="books"></a>📚 Books & Literature
 
 | API Name | Description | Auth | HTTPS | Link |
@@ -285,6 +293,8 @@ print(response.json()['fact'])
 | **Gutendex** | JSON API for Project Gutenberg (public domain books). | No | ✅ | [Link](https://gutendex.com/) |
 | **Open Library** | Fetch data about millions of books and covers. | No | ✅ | [Link](https://openlibrary.org/developers/api) |
 | **Penguin Publishing** | Book data. | No | ✅ | [Link](http://www.penguinrandomhouse.biz/webservices/rest/) |
+
+[⬆ Back to Table of Contents](#📖-table-of-contents)
 
 ## <a id="cryptocurrency"></a>🪙 Cryptocurrency
 
@@ -310,6 +320,8 @@ print(response.json()['fact'])
 | **Mempool** | Bitcoin API. | No | ✅ | [Link](https://mempool.space/api) |
 | **Poloniex** | Exchange for Trading Cryptocurrencies. | 🔑 ApiKey | ✅ | [Link](https://docs.poloniex.com) |
 
+[⬆ Back to Table of Contents](#📖-table-of-contents)
+
 ## <a id="development"></a>💻 Development
 
 | API Name | Description | Auth | HTTPS | Link |
@@ -321,12 +333,19 @@ print(response.json()['fact'])
 | **ApiFlash** | Chrome based screenshot API. | 🔑 ApiKey | ✅ | [Link](https://apiflash.com/) |
 | **APIs.guru** | Wikipedia for Web APIs. | No | ✅ | [Link](https://apis.guru/api-doc/) |
 | **APILayer** | Marketplace for various APIs. | 🔑 ApiKey | ✅ | [Link](https://apilayer.com/) |
+| **Appwrite** | Open source backend server (database, auth, storage, functions). | 🔑 ApiKey | ✅ | [Link](https://appwrite.io/docs) |
+| **Auth0** | Authentication and authorization platform (free tier). | 🔐 OAuth | ✅ | [Link](https://auth0.com/docs/api) |
 | **Aviationstack** | Real-time flight status and global aviation data. | 🔑 ApiKey | ✅ | [Link](https://aviationstack.com/) |
 | **Azure DevOps** | DevOps tools. | 🔑 ApiKey | ✅ | [Link](https://docs.microsoft.com/en-us/rest/api/azure/devops) |
 | **Bitbucket** | Git solution. | 🔐 OAuth | ✅ | [Link](https://developer.atlassian.com/bitbucket/api/2/reference/) |
+| **Carbon** | Create and share beautiful code snippets. | No | ✅ | [Link](https://github.com/carbon-app/carbon) |
 | **CDNJS** | Library info. | No | ✅ | [Link](https://api.cdnjs.com/libraries/jquery) |
+| **Clerk** | User management and authentication (free tier). | 🔑 ApiKey | ✅ | [Link](https://clerk.com/docs/reference/backend-api) |
 | **Cloudflare Trace** | Get IP Address and other info. | No | ✅ | [Link](https://github.com/fawazahmed0/cloudflare-trace-api) |
+| **Codacy** | Code quality and security analysis. | 🔑 ApiKey | ✅ | [Link](https://api.codacy.com/api/api-docs) |
+| **CodeSandbox** | Online code editor API. | 🔑 ApiKey | ✅ | [Link](https://codesandbox.io/docs) |
 | **Docker Hub** | Interact with Docker Hub. | 🔑 ApiKey | ✅ | [Link](https://docs.docker.com/docker-hub/api/latest/) |
+| **Firebase** | Google's mobile/web app development platform. | 🔑 ApiKey | ✅ | [Link](https://firebase.google.com/docs/reference/rest) |
 | **Genderize.io** | Predict the gender of a person based on their name. | No | ✅ | [Link](https://genderize.io) |
 | **GitHub** | Make use of GitHub data. | 🔐 OAuth | ✅ | [Link](https://docs.github.com/en/free-pro-team@latest/rest) |
 | **Gitlab** | Automate GitLab. | 🔐 OAuth | ✅ | [Link](https://docs.gitlab.com/ee/api/) |
@@ -346,8 +365,10 @@ print(response.json()['fact'])
 | **Notion** | Access to Notion workspace data via API. | 🔐 OAuth | ✅ | [Link](https://developers.notion.com/) |
 | **Numverify** | Phone number validation. | 🔑 ApiKey | ✅ | [Link](https://numverify.com/) |
 | **Pdflayer** | HTML to PDF conversion. | 🔑 ApiKey | ✅ | [Link](https://pdflayer.com/) |
+| **PocketBase** | Open source backend (database, auth, files). | 🔑 ApiKey | ✅ | [Link](https://pocketbase.io/docs/api-records/) |
 | **Positionstack** | Forward & Reverse Geocoding. | 🔑 ApiKey | ✅ | [Link](https://positionstack.com/) |
 | **Railway** | Modern deployment platform API. | 🔑 ApiKey | ✅ | [Link](https://docs.railway.app/reference/public-api) |
+| **Render** | Cloud platform API for apps and databases. | 🔑 ApiKey | ✅ | [Link](https://api-docs.render.com/reference/introduction) |
 | **Screenshotlayer** | Website screenshots. | 🔑 ApiKey | ✅ | [Link](https://screenshotlayer.com/) |
 | **Serpstack** | Real-Time Google Search Results. | 🔑 ApiKey | ✅ | [Link](https://serpstack.com/) |
 | **Supabase** | Open source Firebase alternative (database, auth, storage). | 🔑 ApiKey | ✅ | [Link](https://supabase.com/docs/guides/api) |
@@ -355,11 +376,43 @@ print(response.json()['fact'])
 | **UUID Generator** | Generate UUIDs (v1, v3, v4, v5). | No | ✅ | [Link](https://www.uuidgenerator.net/api) |
 | **Vercel** | Deployment platform API. | 🔑 ApiKey | ✅ | [Link](https://vercel.com/docs/rest-api) |
 
+[⬆ Back to Table of Contents](#📖-table-of-contents)
+
 ## <a id="dictionaries"></a>📖 Dictionaries
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
 | **Free Dictionary API** | Free English dictionary API. | No | ✅ | [Link](https://dictionaryapi.dev/) |
+| **Merriam-Webster** | Dictionary and thesaurus. | 🔑 ApiKey | ✅ | [Link](https://dictionaryapi.com/) |
+| **Oxford Dictionaries** | English dictionary and language data. | 🔑 ApiKey | ✅ | [Link](https://developer.oxforddictionaries.com/) |
+| **Urban Dictionary** | Slang dictionary. | No | ✅ | [Link](https://github.com/zdict/zdict/wiki/Urban-dictionary-API-documentation) |
+| **WordsAPI** | Word definitions, synonyms, antonyms. | 🔑 ApiKey | ✅ | [Link](https://www.wordsapi.com/) |
+
+[⬆ Back to Table of Contents](#📖-table-of-contents)
+
+## <a id="public-data"></a>📊 Public Data & Datasets
+
+| API Name | Description | Auth | HTTPS | Link |
+| :--- | :--- | :---: | :---: | :---: |
+| **Data.gov** | US Government open data. | No | ✅ | [Link](https://api.data.gov/) |
+| **Open Data Network** | Access to thousands of public datasets. | No | ✅ | [Link](https://www.opendatanetwork.com/developers) |
+| **Socrata Open Data** | Access government and public sector data. | No | ✅ | [Link](https://dev.socrata.com/) |
+| **USDA FoodData** | Nutritional data for food products. | 🔑 ApiKey | ✅ | [Link](https://fdc.nal.usda.gov/api-guide.html) |
+| **World Bank** | Global development data. | No | ✅ | [Link](https://datahelpdesk.worldbank.org/knowledgebase/articles/889392-about-the-indicators-api-documentation) |
+
+[⬆ Back to Table of Contents](#📖-table-of-contents)
+
+## <a id="email-sms"></a>📧 Email & SMS
+
+| API Name | Description | Auth | HTTPS | Link |
+| :--- | :--- | :---: | :---: | :---: |
+| **Mailgun** | Email service for developers (free tier). | 🔑 ApiKey | ✅ | [Link](https://documentation.mailgun.com/) |
+| **Resend** | Modern email API for developers (free tier). | 🔑 ApiKey | ✅ | [Link](https://resend.com/docs/api-reference/introduction) |
+| **SendGrid** | Email delivery service (free tier: 100/day). | 🔑 ApiKey | ✅ | [Link](https://docs.sendgrid.com/api-reference) |
+| **Twilio** | SMS, voice, and messaging (trial credits). | 🔑 ApiKey | ✅ | [Link](https://www.twilio.com/docs/usage/api) |
+| **Vonage (Nexmo)** | SMS and voice APIs (trial credits). | 🔑 ApiKey | ✅ | [Link](https://developer.vonage.com/api) |
+
+[⬆ Back to Table of Contents](#📖-table-of-contents)
 
 ## <a id="finance"></a>💰 Finance
 
@@ -384,6 +437,8 @@ print(response.json()['fact'])
 | **Exchangerate.host** | Foreign exchange & crypto rates. | 🔑 ApiKey | ✅ | [Link](https://exchangerate.host/) |
 | **Frankfurter** | Open source exchange rates API. | No | ✅ | [Link](https://www.frankfurter.app/) |
 
+[⬆ Back to Table of Contents](#📖-table-of-contents)
+
 ## <a id="food-drink"></a>🍔 Food & Drink
 
 | API Name | Description | Auth | HTTPS | Link |
@@ -391,6 +446,8 @@ print(response.json()['fact'])
 | **Open Food Facts** | Food product data. | No | ✅ | [Link](https://world.openfoodfacts.org/data) |
 | **TheCocktailDB** | Open database for drinks and cocktails. | 🔑 ApiKey | ✅ | [Link](https://www.thecocktaildb.com/api.php) |
 | **TheMealDB** | Open source database of recipes from around the world. | 🔑 ApiKey | ✅ | [Link](https://www.themealdb.com/api.php) |
+
+[⬆ Back to Table of Contents](#📖-table-of-contents)
 
 ## <a id="entertainment"></a>🎮 Entertainment
 
@@ -405,6 +462,8 @@ print(response.json()['fact'])
 | **Trakt** | TV and Movie tracking. | 🔐 OAuth | ✅ | [Link](https://trakt.docs.apiary.io/) |
 | **Watchmode** | Streaming availability. | 🔑 ApiKey | ✅ | [Link](https://api.watchmode.com/) |
 
+[⬆ Back to Table of Contents](#📖-table-of-contents)
+
 ## <a id="geocoding"></a>🌍 Geocoding
 
 | API Name | Description | Auth | HTTPS | Link |
@@ -414,17 +473,22 @@ print(response.json()['fact'])
 | **Nominatim** | OpenStreetMap Geocoding. | No | ✅ | [Link](https://nominatim.org/release-docs/latest/api/Overview/) |
 | **OpenStreetMap** | Map data. | 🔐 OAuth | ✅ | [Link](http://wiki.openstreetmap.org/wiki/API) |
 
+[⬆ Back to Table of Contents](#📖-table-of-contents)
+
 ## <a id="games-comics"></a>🎮 Games & Comics
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
 | **AmiiboAPI** | Nintendo Amiibo data. | No | ✅ | [Link](https://amiiboapi.com/) |
 | **Battle.net** | Blizzard games data. | 🔐 OAuth | ✅ | [Link](https://develop.battle.net/documentation/guides/getting-started) |
+| **BoardGameGeek** | Board games database. | No | ✅ | [Link](https://boardgamegeek.com/wiki/page/BGG_XML_API2) |
 | **Brawl Stars** | Game data. | 🔑 ApiKey | ✅ | [Link](https://developer.brawlstars.com) |
+| **Chess.com** | Chess player stats and games. | No | ✅ | [Link](https://www.chess.com/news/view/published-data-api) |
 | **Chuck Norris Database** | Jokes. | No | No | [Link](http://www.icndb.com/api/) |
 | **Clash of Clans** | Game data. | 🔑 ApiKey | ✅ | [Link](https://developer.clashofclans.com) |
 | **Clash Royale** | Game data. | 🔑 ApiKey | ✅ | [Link](https://developer.clashroyale.com) |
 | **Deck of Cards** | Deck of cards. | No | No | [Link](http://deckofcardsapi.com/) |
+| **Digimon** | Digimon information. | No | ✅ | [Link](https://digimon-api.vercel.app/) |
 | **Dota 2** | Game data. | 🔑 ApiKey | ✅ | [Link](https://docs.opendota.com/) |
 | **Dungeons and Dragons** | 5th Edition SRD. | No | ✅ | [Link](https://www.dnd5eapi.co/docs/) |
 | **Eve Online** | Game data. | 🔐 OAuth | ✅ | [Link](https://esi.evetech.net/) |
@@ -432,19 +496,26 @@ print(response.json()['fact'])
 | **Fortnite** | Game data. | 🔑 ApiKey | ✅ | [Link](https://fortnitetracker.com/site-api) |
 | **Genshin Impact** | Game data. | No | ✅ | [Link](https://genshin.dev) |
 | **Guild Wars 2** | Game data. | 🔑 ApiKey | ✅ | [Link](https://wiki.guildwars2.com/wiki/API:Main) |
+| **Hyrule Compendium** | Legend of Zelda: BOTW data. | No | ✅ | [Link](https://github.com/gadhagod/Hyrule-Compendium-API) |
 | **Hypixel** | Minecraft server data. | 🔑 ApiKey | ✅ | [Link](https://api.hypixel.net/) |
 | **IGDB.com** | Game database. | 🔑 ApiKey | ✅ | [Link](https://api-docs.igdb.com) |
 | **JokeAPI** | Programming and general jokes. | No | ✅ | [Link](https://sv443.net/jokeapi/v2/) |
 | **Lichess** | Chess data. | 🔐 OAuth | ✅ | [Link](https://lichess.org/api) |
+| **Magic: The Gathering** | MTG card data. | No | ✅ | [Link](https://docs.magicthegathering.io/) |
 | **Marvel** | Comics data. | 🔑 ApiKey | ✅ | [Link](https://developer.marvel.com) |
 | **Minecraft Server Status** | Server status. | No | ✅ | [Link](https://api.mcsrvstat.us) |
 | **Mojang** | Minecraft data. | 🔑 ApiKey | ✅ | [Link](https://wiki.vg/Mojang_API) |
 | **Open Trivia** | Trivia questions. | No | ✅ | [Link](https://opentdb.com/api_config.php) |
 | **Pokéapi** | Pokémon data. | No | ✅ | [Link](https://pokeapi.co) |
 | **PUBG** | Game data. | 🔑 ApiKey | ✅ | [Link](https://developer.pubg.com/) |
+| **RAWG** | Video games database (500k+ games). | 🔑 ApiKey | ✅ | [Link](https://rawg.io/apidocs) |
 | **Rick and Morty** | Show data. | No | ✅ | [Link](https://rickandmortyapi.com) |
 | **Riot Games** | League of Legends data. | 🔑 ApiKey | ✅ | [Link](https://developer.riotgames.com/) |
+| **Scryfall** | Magic: The Gathering card search. | No | ✅ | [Link](https://scryfall.com/docs/api) |
 | **Steam** | Steam data. | 🔑 ApiKey | ✅ | [Link](https://steamcommunity.com/dev) |
+| **Yu-Gi-Oh!** | Yu-Gi-Oh! card data. | No | ✅ | [Link](https://ygoprodeck.com/api-guide/) |
+
+[⬆ Back to Table of Contents](#📖-table-of-contents)
 
 ## <a id="health"></a>❤️ Health
 
@@ -455,6 +526,8 @@ print(response.json()['fact'])
 | **Edamam Nutrition** | Nutrition analysis. | 🔑 ApiKey | ✅ | [Link](https://developer.edamam.com/edamam-nutrition-api) |
 | **Nutritionix** | Nutrition database. | 🔑 ApiKey | ✅ | [Link](https://developer.nutritionix.com/) |
 
+[⬆ Back to Table of Contents](#📖-table-of-contents)
+
 ## <a id="machine-learning"></a>🧠 Machine Learning
 
 | API Name | Description | Auth | HTTPS | Link |
@@ -462,6 +535,7 @@ print(response.json()['fact'])
 | **Anthropic Claude** | Access Claude AI models (offers free trial credits). | 🔑 ApiKey | ✅ | [Link](https://www.anthropic.com/api) |
 | **Clarifai** | Computer Vision. | 🔐 OAuth | ✅ | [Link](https://docs.clarifai.com/api-guide/api-overview) |
 | **Cloudmersive** | Image Recognition. | 🔑 ApiKey | ✅ | [Link](https://www.cloudmersive.com/image-recognition-and-processing-api) |
+| **Cohere** | NLP and text generation models (free trial tier). | 🔑 ApiKey | ✅ | [Link](https://docs.cohere.com/) |
 | **DeepAI** | Simple APIs for image generation and text processing. | 🔑 ApiKey | ✅ | [Link](https://deepai.org/api-docs) |
 | **Dialogflow** | Conversational AI. | 🔑 ApiKey | ✅ | [Link](https://cloud.google.com/dialogflow/docs/) |
 | **Google Gemini** | Google's latest multimodal AI models. | 🔑 ApiKey | ✅ | [Link](https://ai.google.dev/) |
@@ -469,12 +543,18 @@ print(response.json()['fact'])
 | **Hugging Face** | Access thousands of models for NLP, vision, and audio. | 🔑 ApiKey | ✅ | [Link](https://huggingface.co/docs/api-inference/index) |
 | **Imagga** | Image Recognition. | 🔑 ApiKey | ✅ | [Link](https://imagga.com/) |
 | **Languagelayer** | Language detection. | 🔑 ApiKey | ✅ | [Link](https://languagelayer.com/) |
+| **Mistral AI** | High-performance open-source LLMs (free tier available). | 🔑 ApiKey | ✅ | [Link](https://docs.mistral.ai/) |
 | **NLP Cloud** | NLP. | 🔑 ApiKey | ✅ | [Link](https://nlpcloud.io) |
+| **Ollama** | Run open-source LLMs locally (self-hosted, no auth). | No | ✅ | [Link](https://github.com/ollama/ollama/blob/main/docs/api.md) |
 | **OpenAI** | Access GPT models (offers free trial credits). | 🔑 ApiKey | ✅ | [Link](https://platform.openai.com/docs/api-reference) |
+| **Perplexity AI** | AI-powered search and answers (limited free tier). | 🔑 ApiKey | ✅ | [Link](https://docs.perplexity.ai/) |
 | **Replicate** | Run AI models via API (pay-as-you-go, free credits). | 🔑 ApiKey | ✅ | [Link](https://replicate.com/docs) |
 | **Roboflow** | Computer Vision. | 🔑 ApiKey | ✅ | [Link](https://universe.roboflow.com) |
+| **Stability AI** | Image generation (Stable Diffusion). | 🔑 ApiKey | ✅ | [Link](https://platform.stability.ai/docs/api-reference) |
+| **Together AI** | Fast inference for open-source LLMs (free credits). | 🔑 ApiKey | ✅ | [Link](https://docs.together.ai/) |
 | **WolframAlpha** | Computational Knowledge. | 🔑 ApiKey | ✅ | [Link](https://products.wolframalpha.com/api/) |
 
+[⬆ Back to Table of Contents](#📖-table-of-contents)
 
 ## <a id="music"></a>🎵 Music
 
@@ -491,6 +571,8 @@ print(response.json()['fact'])
 | **SoundCloud** | Music streaming. | 🔐 OAuth | ✅ | [Link](https://developers.soundcloud.com/docs/api/guide) |
 | **Spotify** | Music streaming. | 🔐 OAuth | ✅ | [Link](https://beta.developer.spotify.com/documentation/web-api/) |
 
+[⬆ Back to Table of Contents](#📖-table-of-contents)
+
 ## <a id="mock-data-testing"></a>🧪 Mock Data & Testing
 
 | API Name | Description | Auth | HTTPS | Link |
@@ -501,6 +583,8 @@ print(response.json()['fact'])
 | **Mockaroo** | Generate custom realistic test data in JSON, CSV, SQL. | 🔑 ApiKey | ✅ | [Link](https://www.mockaroo.com/) |
 | **RandomUser.me** | Generate random user data (like Lorem Ipsum, but for people). | No | ✅ | [Link](https://randomuser.me/) |
 | **ReqRes** | A hosted REST-API ready to respond to your AJAX requests. | No | ✅ | [Link](https://reqres.in/) |
+
+[⬆ Back to Table of Contents](#📖-table-of-contents)
 
 ## <a id="news"></a>📰 News
 
@@ -522,6 +606,8 @@ print(response.json()['fact'])
 | **Picsum Photos** | The Lorem Ipsum for photos. | No | ✅ | [Link](https://picsum.photos/) |
 | **Unsplash** | High-quality photos. | 🔐 OAuth | ✅ | [Link](https://unsplash.com/developers) |
 
+[⬆ Back to Table of Contents](#📖-table-of-contents)
+
 ## <a id="science"></a>🔬 Science & Space
 
 | API Name | Description | Auth | HTTPS | Link |
@@ -535,6 +621,8 @@ print(response.json()['fact'])
 | :--- | :--- | :---: | :---: | :---: |
 | **HaveIBeenPwned** | Check if email or password has been compromised in a data breach. | 🔑 ApiKey | ✅ | [Link](https://haveibeenpwned.com/API/v3) |
 
+[⬆ Back to Table of Contents](#📖-table-of-contents)
+
 ## <a id="shopping"></a>🛍️ Shopping
 
 | API Name | Description | Auth | HTTPS | Link |
@@ -546,6 +634,8 @@ print(response.json()['fact'])
 | **Shopee** | E-commerce. | 🔑 ApiKey | ✅ | [Link](https://open.shopee.com/documents?version=1) |
 | **WooCommerce** | E-commerce. | 🔑 ApiKey | ✅ | [Link](https://woocommerce.github.io/woocommerce-rest-api-docs/) |
 
+[⬆ Back to Table of Contents](#📖-table-of-contents)
+
 ## <a id="social"></a>💬 Social
 
 | API Name | Description | Auth | HTTPS | Link |
@@ -553,27 +643,36 @@ print(response.json()['fact'])
 | **Bluesky** | Decentralized social network API (AT Protocol). | 🔑 ApiKey | ✅ | [Link](https://docs.bsky.app/) |
 | **Discord** | Chat platform. | 🔐 OAuth | ✅ | [Link](https://discord.com/developers/docs/intro) |
 | **Facebook** | Social network. | 🔐 OAuth | ✅ | [Link](https://developers.facebook.com/) |
+| **Gravatar** | WordPress avatar service. | No | ✅ | [Link](https://gravatar.com/site/implement/images/) |
 | **Instagram** | Photo sharing. | 🔐 OAuth | ✅ | [Link](https://www.instagram.com/developer/) |
 | **LINE** | Messaging app. | 🔐 OAuth | ✅ | [Link](https://developers.line.biz/en/) |
 | **LinkedIn** | Professional network. | 🔐 OAuth | ✅ | [Link](https://docs.microsoft.com/en-us/linkedin/?context=linkedin/context) |
 | **Mastodon** | Decentralized microblogging platform. | 🔐 OAuth | ✅ | [Link](https://docs.joinmastodon.org/api/) |
+| **Microsoft Teams** | Team collaboration platform. | 🔐 OAuth | ✅ | [Link](https://docs.microsoft.com/en-us/graph/teams-concept-overview) |
 | **Pinterest** | Visual discovery. | 🔐 OAuth | ✅ | [Link](https://developers.pinterest.com/) |
 | **Reddit** | Social news. | 🔐 OAuth | ✅ | [Link](https://www.reddit.com/dev/api) |
 | **Slack** | Team communication. | 🔐 OAuth | ✅ | [Link](https://api.slack.com/) |
+| **Snapchat** | Photo and video sharing. | 🔐 OAuth | ✅ | [Link](https://developers.snap.com/) |
 | **Telegram** | Messaging app. | 🔑 ApiKey | ✅ | [Link](https://core.telegram.org/bots/api) |
 | **Threads** | Meta's microblogging platform. | 🔐 OAuth | ✅ | [Link](https://developers.facebook.com/docs/threads) |
 | **TikTok** | Video sharing. | 🔐 OAuth | ✅ | [Link](https://developers.tiktok.com/doc/login-kit-web) |
+| **Tumblr** | Microblogging platform. | 🔐 OAuth | ✅ | [Link](https://www.tumblr.com/docs/en/api/v2) |
 | **Twitch** | Live streaming. | 🔐 OAuth | ✅ | [Link](https://dev.twitch.tv/docs) |
 | **Twitter** | Microblogging. | 🔐 OAuth | ✅ | [Link](https://developer.twitter.com/en/docs) |
 | **Viber** | Messaging app. | 🔑 ApiKey | ✅ | [Link](https://developers.viber.com/) |
 | **WhatsApp** | Messaging app. | 🔐 OAuth | ✅ | [Link](https://developers.facebook.com/docs/whatsapp) |
+| **YouTube** | Video sharing platform. | 🔐 OAuth | ✅ | [Link](https://developers.google.com/youtube/v3) |
 | **Zalo** | Messaging and social platform. | 🔐 OAuth | ✅ | [Link](https://developers.zalo.me/) |
+
+[⬆ Back to Table of Contents](#📖-table-of-contents)
 
 ## <a id="sports"></a>⚽ Sports
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
 | **TheSportsDB** | Open crowd-sourced sports data and artwork. | 🔑 ApiKey | ✅ | [Link](https://www.thesportsdb.com/api.php) |
+
+[⬆ Back to Table of Contents](#📖-table-of-contents)
 
 ## <a id="utilities-tools"></a>🔧 Utilities & Tools
 
@@ -589,6 +688,8 @@ print(response.json()['fact'])
 | **Shields.io** | Quality metadata badges for open source projects (**No Auth**). | No | ✅ | [Link](https://shields.io/) |
 | **UI Avatars** | Generate avatar placeholders from initials (**No Auth, 28M+ daily requests**). | No | ✅ | [Link](https://ui-avatars.com/) |
 
+[⬆ Back to Table of Contents](#📖-table-of-contents)
+
 ## <a id="design-colors"></a>🎨 Design & Colors
 
 | API Name | Description | Auth | HTTPS | Link |
@@ -598,11 +699,15 @@ print(response.json()['fact'])
 | **Placeholder.com** | Simple placeholder image service (**No Auth**). | No | ✅ | [Link](https://placehold.co/) |
 | **The Color API** | Color conversion, schemes, and naming (**No Auth**). | No | ✅ | [Link](https://www.thecolorapi.com/) |
 
+[⬆ Back to Table of Contents](#📖-table-of-contents)
+
 ## <a id="geography-countries"></a>🌎 Geography & Countries
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
 | **REST Countries** | Comprehensive country data (flags, capitals, currencies) (**No Auth**). | No | ✅ | [Link](https://restcountries.com/) |
+
+[⬆ Back to Table of Contents](#📖-table-of-contents)
 
 ## <a id="transportation"></a>🚆 Transportation
 
@@ -611,6 +716,8 @@ print(response.json()['fact'])
 | **BART** | Bay Area Rapid Transit. | 🔑 ApiKey | ✅ | [Link](http://api.bart.gov) |
 | **OpenSky Network** | Flight tracking. | No | ✅ | [Link](https://openskynetwork.github.io/opensky-api/) |
 | **Transport for London** | Public transport data. | 🔑 ApiKey | ✅ | [Link](https://api.tfl.gov.uk) |
+
+[⬆ Back to Table of Contents](#📖-table-of-contents)
 
 ## <a id="memes-fun"></a>😂 Memes & Fun
 
@@ -623,6 +730,8 @@ print(response.json()['fact'])
 | **JokeAPI** | Jokes in various categories (**No Auth**). | No | ✅ | [Link](https://jokeapi.dev/) |
 | **Useless Facts** | Random useless facts (**No Auth**). | No | ✅ | [Link](https://uselessfacts.jsph.pl/) |
 
+[⬆ Back to Table of Contents](#📖-table-of-contents)
+
 ## <a id="jobs-career"></a>💼 Jobs & Career
 
 | API Name | Description | Auth | HTTPS | Link |
@@ -633,6 +742,8 @@ print(response.json()['fact'])
 | **Reed** | UK job board API. | 🔑 ApiKey | ✅ | [Link](https://www.reed.co.uk/developers) |
 | **The Muse** | Job search and company data. | 🔑 ApiKey | ✅ | [Link](https://www.themuse.com/developers/api/v2) |
 | **USAJOBS** | US government job listings. | 🔑 ApiKey | ✅ | [Link](https://developer.usajobs.gov/) |
+
+[⬆ Back to Table of Contents](#📖-table-of-contents)
 
 ## <a id="weather"></a>🌤️ Weather
 
@@ -647,6 +758,8 @@ print(response.json()['fact'])
 | **Weatherbit** | Weather forecast. | 🔑 ApiKey | ✅ | [Link](https://www.weatherbit.io/api) |
 | **Weatherstack** | Real-time & historical world weather data. | 🔑 ApiKey | ✅ | [Link](https://weatherstack.com/) |
 | **wttr.in** | Console-oriented weather. | No | ✅ | [Link](https://github.com/chubin/wttr.in) |
+
+[⬆ Back to Table of Contents](#📖-table-of-contents)
 
 ---
 
