@@ -19,6 +19,13 @@
 
 ---
 
+## 📚 Code Examples
+
+> **✨ New!** Check out [practical code examples](examples/) showing how to use popular APIs from this collection.  
+> Includes Python & JavaScript examples for Pokemon, Cryptocurrency, AI Chat, and more!
+
+---
+
 ## <a id="general-api-usage-guide"></a>📘 General API Usage Guide
 
 > **👋 New to APIs?** Don't worry! This guide will help you understand the basics and get started quickly.
