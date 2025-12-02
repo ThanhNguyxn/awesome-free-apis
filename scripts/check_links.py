@@ -78,7 +78,8 @@ def has_cloudflare_protection(resp):
     
     if code in [403, 503] and 'cloudflare' in server:
         html = resp.text.lower()
-        return any(flag in html for flag in cloudflare_flags)
+        if any(flag in html for flag in cloudflare_flags):
+            return True
     
     # Also consider 403 as potential bot protection
     if code == 403:
@@ -124,11 +125,15 @@ def check_link(url, timeout=25, max_retries=3):
                 return {'url': url, 'status': code, 'state': 'working', 'note': 'Redirect (OK)'}
             elif code == 429:
                 return {'url': url, 'status': code, 'state': 'protected', 'note': 'Rate limited (API works)'}
+            elif code in [401, 403]:
+                return {'url': url, 'status': code, 'state': 'protected', 'note': 'Auth required/Forbidden (API works)'}
+            elif code in [400, 405, 406]:
+                return {'url': url, 'status': code, 'state': 'working', 'note': 'API up (Invalid request/Method)'}
             elif code == 404:
                 return {'url': url, 'status': code, 'state': 'broken', 'note': 'Not found - likely dead'}
             elif code == 410:
                 return {'url': url, 'status': code, 'state': 'broken', 'note': 'Gone - confirmed dead'}
-            elif code in [500, 502, 503, 504]:
+            elif code in [500, 502, 503, 504, 521, 522, 523]:
                 return {'url': url, 'status': code, 'state': 'error', 'note': 'Server error (may be temporary)'}
             else:
                 return {'url': url, 'status': code, 'state': 'unknown', 'note': f'HTTP {code}'}
@@ -236,7 +241,11 @@ def main():
             print(f"       {r['note']}")
     
     # Save report
-    with open('link_check_report.txt', 'w', encoding='utf-8') as f:
+    import os
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    report_path = os.path.join(script_dir, 'link_check_report.txt')
+    
+    with open(report_path, 'w', encoding='utf-8') as f:
         f.write("LINK CHECK REPORT\n")
         f.write("=" * 80 + "\n\n")
         f.write(f"Total: {len(unique_links)}\n")
@@ -251,6 +260,18 @@ def main():
             f.write("BROKEN LINKS:\n")
             f.write("-" * 80 + "\n")
             for r in results['broken']:
+                f.write(f"\n{r['url']}\n  -> {r['note']}\n")
+        
+        if results['error']:
+            f.write("\nERROR LINKS:\n")
+            f.write("-" * 80 + "\n")
+            for r in results['error']:
+                f.write(f"\n{r['url']}\n  -> {r['note']}\n")
+
+        if results['unknown']:
+            f.write("\nUNKNOWN LINKS:\n")
+            f.write("-" * 80 + "\n")
+            for r in results['unknown']:
                 f.write(f"\n{r['url']}\n  -> {r['note']}\n")
     
     print(f"\nReport saved to: link_check_report.txt")
