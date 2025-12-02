@@ -243,7 +243,7 @@ print(response.json()['fact'])
 | **The Dog API** | Images and data about dogs. | 🔑 ApiKey | ✅ | [Link](https://thedogapi.com/) |
 | **xeno-canto** | Bird sounds from around the world. | No | ✅ | [Link](https://xeno-canto.org/explore/api) |
 
-[⬆ Back to Table of Contents](#📖-table-of-contents)
+[⬆ Back to Table of Contents](#-table-of-contents)
 
 ## <a id="anime"></a>🌸 Anime
 
@@ -269,7 +269,7 @@ print(response.json()['fact'])
 | **Waifu.im** | API for serving anime images (versatile query options). | No | ✅ | [Link](https://waifu.im/) |
 | **Waifu.pics** | Image sharing platform for anime images. | No | ✅ | [Link](https://waifu.pics/docs) |
 
-[⬆ Back to Table of Contents](#📖-table-of-contents)
+[⬆ Back to Table of Contents](#-table-of-contents)
 
 ## <a id="anti-malware"></a>🛡️ Anti-Malware
 
@@ -290,7 +290,7 @@ print(response.json()['fact'])
 | **VirusTotal** | File/URL analysis. | 🔑 ApiKey | ✅ | [Link](https://www.virustotal.com/en/documentation/public-api/) |
 | **Web of Trust** | IP/Domain/URL reputation. | 🔑 ApiKey | ✅ | [Link](https://support.mywot.com/hc/en-us/sections/360004477734-API-) |
 
-[⬆ Back to Table of Contents](#📖-table-of-contents)
+[⬆ Back to Table of Contents](#-table-of-contents)
 
 ## <a id="books"></a>📚 Books & Literature
 
@@ -301,7 +301,7 @@ print(response.json()['fact'])
 | **Open Library** | Fetch data about millions of books and covers. | No | ✅ | [Link](https://openlibrary.org/developers/api) |
 | **Penguin Publishing** | Book data. | No | ✅ | [Link](http://www.penguinrandomhouse.biz/webservices/rest/) |
 
-[⬆ Back to Table of Contents](#📖-table-of-contents)
+[⬆ Back to Table of Contents](#-table-of-contents)
 
 ## <a id="cryptocurrency"></a>🪙 Cryptocurrency
 
@@ -327,7 +327,7 @@ print(response.json()['fact'])
 | **Mempool** | Bitcoin API. | No | ✅ | [Link](https://mempool.space/api) |
 | **Poloniex** | Exchange for Trading Cryptocurrencies. | 🔑 ApiKey | ✅ | [Link](https://docs.poloniex.com) |
 
-[⬆ Back to Table of Contents](#📖-table-of-contents)
+[⬆ Back to Table of Contents](#-table-of-contents)
 
 ## <a id="development"></a>💻 Development
 
@@ -383,7 +383,7 @@ print(response.json()['fact'])
 | **UUID Generator** | Generate UUIDs (v1, v3, v4, v5). | No | ✅ | [Link](https://www.uuidgenerator.net/api) |
 | **Vercel** | Deployment platform API. | 🔑 ApiKey | ✅ | [Link](https://vercel.com/docs/rest-api) |
 
-[⬆ Back to Table of Contents](#📖-table-of-contents)
+[⬆ Back to Table of Contents](#-table-of-contents)
 
 ## <a id="dictionaries"></a>📖 Dictionaries
 
@@ -395,7 +395,7 @@ print(response.json()['fact'])
 | **Urban Dictionary** | Slang dictionary. | No | ✅ | [Link](https://github.com/zdict/zdict/wiki/Urban-dictionary-API-documentation) |
 | **WordsAPI** | Word definitions, synonyms, antonyms. | 🔑 ApiKey | ✅ | [Link](https://www.wordsapi.com/) |
 
-[⬆ Back to Table of Contents](#📖-table-of-contents)
+[⬆ Back to Table of Contents](#-table-of-contents)
 
 ## <a id="public-data"></a>📊 Public Data & Datasets
 
@@ -407,7 +407,7 @@ print(response.json()['fact'])
 | **USDA FoodData** | Nutritional data for food products. | 🔑 ApiKey | ✅ | [Link](https://fdc.nal.usda.gov/api-guide.html) |
 | **World Bank** | Global development data. | No | ✅ | [Link](https://datahelpdesk.worldbank.org/knowledgebase/articles/889392-about-the-indicators-api-documentation) |
 
-[⬆ Back to Table of Contents](#📖-table-of-contents)
+[⬆ Back to Table of Contents](#-table-of-contents)
 
 ## <a id="email-sms"></a>📧 Email & SMS
 
@@ -419,7 +419,7 @@ print(response.json()['fact'])
 | **Twilio** | SMS, voice, and messaging (trial credits). | 🔑 ApiKey | ✅ | [Link](https://www.twilio.com/docs/usage/api) |
 | **Vonage (Nexmo)** | SMS and voice APIs (trial credits). | 🔑 ApiKey | ✅ | [Link](https://developer.vonage.com/api) |
 
-[⬆ Back to Table of Contents](#📖-table-of-contents)
+[⬆ Back to Table of Contents](#-table-of-contents)
 
 ## <a id="finance"></a>💰 Finance
 
@@ -444,7 +444,7 @@ print(response.json()['fact'])
 | **Exchangerate.host** | Foreign exchange & crypto rates. | 🔑 ApiKey | ✅ | [Link](https://exchangerate.host/) |
 | **Frankfurter** | Open source exchange rates API. | No | ✅ | [Link](https://www.frankfurter.app/) |
 
-[⬆ Back to Table of Contents](#📖-table-of-contents)
+[⬆ Back to Table of Contents](#-table-of-contents)
 
 ## <a id="food-drink"></a>🍔 Food & Drink
 
@@ -454,7 +454,7 @@ print(response.json()['fact'])
 | **TheCocktailDB** | Open database for drinks and cocktails. | 🔑 ApiKey | ✅ | [Link](https://www.thecocktaildb.com/api.php) |
 | **TheMealDB** | Open source database of recipes from around the world. | 🔑 ApiKey | ✅ | [Link](https://www.themealdb.com/api.php) |
 
-[⬆ Back to Table of Contents](#📖-table-of-contents)
+[⬆ Back to Table of Contents](#-table-of-contents)
 
 ## <a id="entertainment"></a>🎮 Entertainment
 
@@ -469,7 +469,7 @@ print(response.json()['fact'])
 | **Trakt** | TV and Movie tracking. | 🔐 OAuth | ✅ | [Link](https://trakt.docs.apiary.io/) |
 | **Watchmode** | Streaming availability. | 🔑 ApiKey | ✅ | [Link](https://api.watchmode.com/) |
 
-[⬆ Back to Table of Contents](#📖-table-of-contents)
+[⬆ Back to Table of Contents](#-table-of-contents)
 
 ## <a id="geocoding"></a>🌍 Geocoding
 
@@ -480,7 +480,7 @@ print(response.json()['fact'])
 | **Nominatim** | OpenStreetMap Geocoding. | No | ✅ | [Link](https://nominatim.org/release-docs/latest/api/Overview/) |
 | **OpenStreetMap** | Map data. | 🔐 OAuth | ✅ | [Link](http://wiki.openstreetmap.org/wiki/API) |
 
-[⬆ Back to Table of Contents](#📖-table-of-contents)
+[⬆ Back to Table of Contents](#-table-of-contents)
 
 ## <a id="games-comics"></a>🎮 Games & Comics
 
@@ -522,7 +522,7 @@ print(response.json()['fact'])
 | **Steam** | Steam data. | 🔑 ApiKey | ✅ | [Link](https://steamcommunity.com/dev) |
 | **Yu-Gi-Oh!** | Yu-Gi-Oh! card data. | No | ✅ | [Link](https://ygoprodeck.com/api-guide/) |
 
-[⬆ Back to Table of Contents](#📖-table-of-contents)
+[⬆ Back to Table of Contents](#-table-of-contents)
 
 ## <a id="health"></a>❤️ Health
 
@@ -533,7 +533,7 @@ print(response.json()['fact'])
 | **Edamam Nutrition** | Nutrition analysis. | 🔑 ApiKey | ✅ | [Link](https://developer.edamam.com/edamam-nutrition-api) |
 | **Nutritionix** | Nutrition database. | 🔑 ApiKey | ✅ | [Link](https://developer.nutritionix.com/) |
 
-[⬆ Back to Table of Contents](#📖-table-of-contents)
+[⬆ Back to Table of Contents](#-table-of-contents)
 
 ## <a id="machine-learning"></a>🧠 Machine Learning
 
@@ -561,7 +561,7 @@ print(response.json()['fact'])
 | **Together AI** | Fast inference for open-source LLMs (free credits). | 🔑 ApiKey | ✅ | [Link](https://docs.together.ai/) |
 | **WolframAlpha** | Computational Knowledge. | 🔑 ApiKey | ✅ | [Link](https://products.wolframalpha.com/api/) |
 
-[⬆ Back to Table of Contents](#📖-table-of-contents)
+[⬆ Back to Table of Contents](#-table-of-contents)
 
 ## <a id="music"></a>🎵 Music
 
@@ -578,7 +578,7 @@ print(response.json()['fact'])
 | **SoundCloud** | Music streaming. | 🔐 OAuth | ✅ | [Link](https://developers.soundcloud.com/docs/api/guide) |
 | **Spotify** | Music streaming. | 🔐 OAuth | ✅ | [Link](https://beta.developer.spotify.com/documentation/web-api/) |
 
-[⬆ Back to Table of Contents](#📖-table-of-contents)
+[⬆ Back to Table of Contents](#-table-of-contents)
 
 ## <a id="mock-data-testing"></a>🧪 Mock Data & Testing
 
@@ -591,7 +591,7 @@ print(response.json()['fact'])
 | **RandomUser.me** | Generate random user data (like Lorem Ipsum, but for people). | No | ✅ | [Link](https://randomuser.me/) |
 | **ReqRes** | A hosted REST-API ready to respond to your AJAX requests. | No | ✅ | [Link](https://reqres.in/) |
 
-[⬆ Back to Table of Contents](#📖-table-of-contents)
+[⬆ Back to Table of Contents](#-table-of-contents)
 
 ## <a id="news"></a>📰 News
 
@@ -613,7 +613,7 @@ print(response.json()['fact'])
 | **Picsum Photos** | The Lorem Ipsum for photos. | No | ✅ | [Link](https://picsum.photos/) |
 | **Unsplash** | High-quality photos. | 🔐 OAuth | ✅ | [Link](https://unsplash.com/developers) |
 
-[⬆ Back to Table of Contents](#📖-table-of-contents)
+[⬆ Back to Table of Contents](#-table-of-contents)
 
 ## <a id="science"></a>🔬 Science & Space
 
@@ -628,7 +628,7 @@ print(response.json()['fact'])
 | :--- | :--- | :---: | :---: | :---: |
 | **HaveIBeenPwned** | Check if email or password has been compromised in a data breach. | 🔑 ApiKey | ✅ | [Link](https://haveibeenpwned.com/API/v3) |
 
-[⬆ Back to Table of Contents](#📖-table-of-contents)
+[⬆ Back to Table of Contents](#-table-of-contents)
 
 ## <a id="shopping"></a>🛍️ Shopping
 
@@ -641,7 +641,7 @@ print(response.json()['fact'])
 | **Shopee** | E-commerce. | 🔑 ApiKey | ✅ | [Link](https://open.shopee.com/documents?version=1) |
 | **WooCommerce** | E-commerce. | 🔑 ApiKey | ✅ | [Link](https://woocommerce.github.io/woocommerce-rest-api-docs/) |
 
-[⬆ Back to Table of Contents](#📖-table-of-contents)
+[⬆ Back to Table of Contents](#-table-of-contents)
 
 ## <a id="social"></a>💬 Social
 
@@ -671,7 +671,7 @@ print(response.json()['fact'])
 | **YouTube** | Video sharing platform. | 🔐 OAuth | ✅ | [Link](https://developers.google.com/youtube/v3) |
 | **Zalo** | Messaging and social platform. | 🔐 OAuth | ✅ | [Link](https://developers.zalo.me/) |
 
-[⬆ Back to Table of Contents](#📖-table-of-contents)
+[⬆ Back to Table of Contents](#-table-of-contents)
 
 ## <a id="sports"></a>⚽ Sports
 
@@ -679,7 +679,7 @@ print(response.json()['fact'])
 | :--- | :--- | :---: | :---: | :---: |
 | **TheSportsDB** | Open crowd-sourced sports data and artwork. | 🔑 ApiKey | ✅ | [Link](https://www.thesportsdb.com/api.php) |
 
-[⬆ Back to Table of Contents](#📖-table-of-contents)
+[⬆ Back to Table of Contents](#-table-of-contents)
 
 ## <a id="utilities-tools"></a>🔧 Utilities & Tools
 
@@ -695,7 +695,7 @@ print(response.json()['fact'])
 | **Shields.io** | Quality metadata badges for open source projects (**No Auth**). | No | ✅ | [Link](https://shields.io/) |
 | **UI Avatars** | Generate avatar placeholders from initials (**No Auth, 28M+ daily requests**). | No | ✅ | [Link](https://ui-avatars.com/) |
 
-[⬆ Back to Table of Contents](#📖-table-of-contents)
+[⬆ Back to Table of Contents](#-table-of-contents)
 
 ## <a id="design-colors"></a>🎨 Design & Colors
 
@@ -706,7 +706,7 @@ print(response.json()['fact'])
 | **Placeholder.com** | Simple placeholder image service (**No Auth**). | No | ✅ | [Link](https://placehold.co/) |
 | **The Color API** | Color conversion, schemes, and naming (**No Auth**). | No | ✅ | [Link](https://www.thecolorapi.com/) |
 
-[⬆ Back to Table of Contents](#📖-table-of-contents)
+[⬆ Back to Table of Contents](#-table-of-contents)
 
 ## <a id="geography-countries"></a>🌎 Geography & Countries
 
@@ -714,7 +714,7 @@ print(response.json()['fact'])
 | :--- | :--- | :---: | :---: | :---: |
 | **REST Countries** | Comprehensive country data (flags, capitals, currencies) (**No Auth**). | No | ✅ | [Link](https://restcountries.com/) |
 
-[⬆ Back to Table of Contents](#📖-table-of-contents)
+[⬆ Back to Table of Contents](#-table-of-contents)
 
 ## <a id="transportation"></a>🚆 Transportation
 
@@ -724,7 +724,7 @@ print(response.json()['fact'])
 | **OpenSky Network** | Flight tracking. | No | ✅ | [Link](https://openskynetwork.github.io/opensky-api/) |
 | **Transport for London** | Public transport data. | 🔑 ApiKey | ✅ | [Link](https://api.tfl.gov.uk) |
 
-[⬆ Back to Table of Contents](#📖-table-of-contents)
+[⬆ Back to Table of Contents](#-table-of-contents)
 
 ## <a id="memes-fun"></a>😂 Memes & Fun
 
@@ -737,7 +737,7 @@ print(response.json()['fact'])
 | **JokeAPI** | Jokes in various categories (**No Auth**). | No | ✅ | [Link](https://jokeapi.dev/) |
 | **Useless Facts** | Random useless facts (**No Auth**). | No | ✅ | [Link](https://uselessfacts.jsph.pl/) |
 
-[⬆ Back to Table of Contents](#📖-table-of-contents)
+[⬆ Back to Table of Contents](#-table-of-contents)
 
 ## <a id="jobs-career"></a>💼 Jobs & Career
 
@@ -750,7 +750,7 @@ print(response.json()['fact'])
 | **The Muse** | Job search and company data. | 🔑 ApiKey | ✅ | [Link](https://www.themuse.com/developers/api/v2) |
 | **USAJOBS** | US government job listings. | 🔑 ApiKey | ✅ | [Link](https://developer.usajobs.gov/) |
 
-[⬆ Back to Table of Contents](#📖-table-of-contents)
+[⬆ Back to Table of Contents](#-table-of-contents)
 
 ## <a id="weather"></a>🌤️ Weather
 
@@ -766,7 +766,7 @@ print(response.json()['fact'])
 | **Weatherstack** | Real-time & historical world weather data. | 🔑 ApiKey | ✅ | [Link](https://weatherstack.com/) |
 | **wttr.in** | Console-oriented weather. | No | ✅ | [Link](https://github.com/chubin/wttr.in) |
 
-[⬆ Back to Table of Contents](#📖-table-of-contents)
+[⬆ Back to Table of Contents](#-table-of-contents)
 
 ---
 
