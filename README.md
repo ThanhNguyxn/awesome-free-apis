@@ -205,6 +205,7 @@ print(response.json()['fact'])
 - [🎨 Design & Colors](#design-colors)
 - [🌎 Geography & Countries](#geography-countries)
 - [🚆 Transportation](#transportation)
+- [⚠️ Unofficial & Community APIs](#unofficial-community)
 - [😂 Memes & Fun](#memes-fun)
 - [💼 Jobs & Career](#jobs-career)
 - [🌤️ Weather](#weather)
@@ -730,6 +731,40 @@ print(response.json()['fact'])
 | **BART** | Bay Area Rapid Transit. | 🔑 ApiKey | ✅ | [Link](http://api.bart.gov) |
 | **OpenSky Network** | Flight tracking. | No | ✅ | [Link](https://openskynetwork.github.io/opensky-api/) |
 | **Transport for London** | Public transport data. | 🔑 ApiKey | ✅ | [Link](https://api.tfl.gov.uk) |
+
+[⬆ Back to Table of Contents](#-table-of-contents)
+
+## <a id="unofficial-community"></a>⚠️ Unofficial & Community APIs
+
+> **⚠️ Important Disclaimer:**  
+> These APIs are **not officially supported** by the original services. They are community-maintained, reverse-engineered, or use unofficial methods. Use at your own risk:  
+> - 🚨 May break at any time without notice  
+> - ⚖️ May violate Terms of Service of the original platform  
+> - 🔒 No official support or guarantees  
+> - 📉 Rate limits and availability may change  
+>  
+> **When to use:** Development, testing, or when official APIs are too restrictive/expensive. For production, consider official APIs when available.
+
+| API Name | Description | Auth | HTTPS | Link |
+| :--- | :--- | :---: | :---: | :---: |
+| **Invidious** | Privacy-focused YouTube front-end and API (no tracking, no ads). | No | ✅ | [Link](https://docs.invidious.io/api/) |
+| **Piped** | Alternative YouTube API (privacy-respecting, no Google tracking). | No | ✅ | [Link](https://docs.piped.video/docs/api-documentation/) |
+| **NewPipe Extractor** | YouTube, SoundCloud, PeerTube data extraction library. | No | ✅ | [Link](https://teamnewpipe.github.io/NewPipeExtractor/javadoc/) |
+| **Bibliogram** | Instagram front-end (read-only, no login required) ⚠️ **Many instances down**. | No | ✅ | [Link](https://bibliogram.art/) |
+| **Libreddit** | Reddit alternative front-end (fast, private, lightweight). | No | ✅ | [Link](https://github.com/libreddit/libreddit) |
+| **ProxiTok** | TikTok alternative front-end with API support. | No | ✅ | [Link](https://github.com/pablouser1/ProxiTok) |
+| **Scribe** | Medium alternative front-end (no tracking, no paywall). | No | ✅ | [Link](https://sr.ht/~edwardloveall/Scribe/) |
+| **Rimgo** | Imgur alternative front-end (privacy-respecting). | No | ✅ | [Link](https://codeberg.org/video-prize-ranch/rimgo) |
+| **Searx/SearxNG** | Meta search engine with JSON API (aggregates results). | No | ✅ | [Link](https://docs.searxng.org/dev/search_api.html) |
+| **yt-dlp API** | YouTube (and 1000+ sites) video/audio download API. | No | ✅ | [Link](https://github.com/yt-dlp/yt-dlp) |
+| **Scraptube** | Simple YouTube scraper (no official API needed). | No | ✅ | [Link](https://github.com/dermasmid/scrapetube) |
+| **Instaloader** | Instagram scraper (posts, stories, profiles). | No | ✅ | [Link](https://instaloader.github.io/) |
+| **TikTok API (Unofficial)** | Various community TikTok scrapers on GitHub. | No | ✅ | [Link](https://github.com/topics/tiktok-api) |
+| **Twitter API Alternatives** | Community alternatives like tweet-harvest, twint forks. | No | ✅ | [Link](https://github.com/topics/twitter-scraper) |
+
+**🔍 How to find instances:** Many of these services have multiple public instances. Check their GitHub repos for updated instance lists.
+
+**💡 Self-hosting recommended:** For reliability and privacy, consider self-hosting these services rather than relying on public instances.
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 
