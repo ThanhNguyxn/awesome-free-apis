@@ -258,7 +258,7 @@ print(response.json()['fact'])
 | **AnimeChan** | Anime quotes (over 10k+). | No | ✅ | [Link](https://github.com/RocktimSaikia/anime-chan) |
 | **AnimeFacts** | Anime facts (over 100+). | No | ✅ | [Link](https://chandan-02.github.io/anime-facts-rest-api/) |
 | **AnimeNewsNetwork** | Anime industry news. | No | ✅ | [Link](https://www.animenewsnetwork.com/encyclopedia/api.php) |
-| **Catboy** | Neko images, funny GIFs and more. | No | ✅ | [Link](https://catboys.com/api) |
+
 | **Danbooru Anime** | Thousands of anime artist database. | 🔑 ApiKey | ✅ | [Link](https://danbooru.donmai.us/wiki_pages/help:api) |
 | **Jikan** | Unofficial MyAnimeList API. | No | ✅ | [Link](https://jikan.moe) |
 | **Kitsu** | Anime and Manga Database. | 🔐 OAuth | ✅ | [Link](https://kitsu.docs.apiary.io/) |
@@ -424,7 +424,7 @@ print(response.json()['fact'])
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
 | **Data.gov** | US Government open data. | No | ✅ | [Link](https://api.data.gov/) |
-| **Open Data Network** | Access to thousands of public datasets. | No | ✅ | [Link](https://www.opendatanetwork.com/developers) |
+
 | **Socrata Open Data** | Access government and public sector data. | No | ✅ | [Link](https://dev.socrata.com/) |
 | **USDA FoodData** | Nutritional data for food products. | 🔑 ApiKey | ✅ | [Link](https://fdc.nal.usda.gov/api-guide.html) |
 | **World Bank** | Global development data. | No | ✅ | [Link](https://datahelpdesk.worldbank.org/knowledgebase/articles/889392-about-the-indicators-api-documentation) |
@@ -459,7 +459,7 @@ print(response.json()['fact'])
 | **Finnhub** | Stock market data. | 🔑 ApiKey | ✅ | [Link](https://finnhub.io/docs/api) |
 | **Fixer** | Exchange rates and currency conversion. | 🔑 ApiKey | ✅ | [Link](https://fixer.io/) |
 | **FRED** | Economic data. | 🔑 ApiKey | ✅ | [Link](https://fred.stlouisfed.org/docs/api/fred/) |
-| **IEX Cloud** | Financial data. | 🔑 ApiKey | ✅ | [Link](https://iexcloud.io/docs/api/) |
+
 | **Klarna** | Payments. | 🔑 ApiKey | ✅ | [Link](https://docs.klarna.com/api/) |
 | **MercadoPago** | Payments. | 🔑 ApiKey | ✅ | [Link](https://www.mercadopago.com.br/developers/es/reference) |
 | **Plaid** | Connect bank accounts. | 🔑 ApiKey | ✅ | [Link](https://www.plaid.com/docs) |
@@ -487,7 +487,7 @@ print(response.json()['fact'])
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
-| **Numbers API** | Interesting facts about numbers (math, trivia, dates) (**No Auth**). | No | ✅ | [Link](http://numbersapi.com/) |
+
 | **OMDb** | Open Movie Database. | 🔑 ApiKey | ✅ | [Link](http://www.omdbapi.com/) |
 | **Quiz API** | Random trivia questions (**No Auth**). | No | ✅ | [Link](https://quizapi.io/) |
 | **Quotable** | Random quotes (**No Auth**). | No | ✅ | [Link](https://github.com/lukePeavey/quotable) |
@@ -543,7 +543,7 @@ print(response.json()['fact'])
 | **Magic: The Gathering** | MTG card data. | No | ✅ | [Link](https://docs.magicthegathering.io/) |
 | **Marvel** | Comics data. | 🔑 ApiKey | ✅ | [Link](https://developer.marvel.com) |
 | **Minecraft Server Status** | Server status. | No | ✅ | [Link](https://api.mcsrvstat.us) |
-| **Mojang** | Minecraft data. | 🔑 ApiKey | ✅ | [Link](https://wiki.vg/Mojang_API) |
+
 | **Open Trivia** | Trivia questions. | No | ✅ | [Link](https://opentdb.com/api_config.php) |
 | **Pokéapi** | Pokémon data. | No | ✅ | [Link](https://pokeapi.co) |
 | **PUBG** | Game data. | 🔑 ApiKey | ✅ | [Link](https://developer.pubg.com/) |
@@ -566,7 +566,7 @@ print(response.json()['fact'])
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
 | **BMI Calculator** | Calculate BMI and other metrics. | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/navii/api/bmi-calculator/) |
-| **Covid-19** | Global COVID-19 data. | No | ✅ | [Link](https://covid19api.com/) |
+
 | **Edamam Nutrition** | Nutrition analysis. | 🔑 ApiKey | ✅ | [Link](https://developer.edamam.com/edamam-nutrition-api) |
 | **Nutritionix** | Nutrition database. | 🔑 ApiKey | ✅ | [Link](https://developer.nutritionix.com/) |
 
@@ -733,7 +733,7 @@ print(response.json()['fact'])
 | **Football-Data.org** | Football data and statistics (**Free tier**). | 🔑 ApiKey | ✅ | [Link](https://www.football-data.org/documentation/quickstart) |
 | **NBA API** | NBA stats and scores (**No Auth**). | No | ✅ | [Link](https://github.com/swar/nba_api) |
 | **ESPN** | Sports scores and news. | No | ✅ | [Link](https://gist.github.com/akeaswaran/b48b02f1c94f873c6655e7129910fc3b) |
-| **Formula 1** | F1 race results, standings, drivers (**No Auth**). | No | ✅ | [Link](https://ergast.com/mrd/) |
+
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 
@@ -843,7 +843,7 @@ print(response.json()['fact'])
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
 | **Adzuna** | Job board aggregator with salary data. | 🔑 ApiKey | ✅ | [Link](https://developer.adzuna.com/overview) |
-| **Indeed** | Job search engine API. | 🔑 ApiKey | ✅ | [Link](https://opensource.indeedeng.io/api-documentation/) |
+
 | **Remoteok** | API for remote jobs (often used for job board projects). | No | ✅ | [Link](https://remoteok.com/api) |
 | **Reed** | UK job board API. | 🔑 ApiKey | ✅ | [Link](https://www.reed.co.uk/developers) |
 | **The Muse** | Job search and company data. | 🔑 ApiKey | ✅ | [Link](https://www.themuse.com/developers/api/v2) |

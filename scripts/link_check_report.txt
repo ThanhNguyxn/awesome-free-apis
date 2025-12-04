@@ -1,11 +1,16 @@
 LINK CHECK REPORT
 ================================================================================
 
-Total: 404
-Working: 374
+Total: 396
+Working: 372
 Protected: 23
-Warnings: 7
+Warnings: 0
 Errors: 0
-Broken: 0
+Broken: 1
 Unknown: 0
 
+BROKEN LINKS:
+--------------------------------------------------------------------------------
+
+https://developers.line.biz/en/
+  -> Timeout (slow server)

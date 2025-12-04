@@ -139,9 +139,9 @@ def check_link(url, timeout=25, max_retries=3):
                 return {'url': url, 'status': code, 'state': 'unknown', 'note': f'HTTP {code}'}
                 
         except requests.exceptions.SSLError:
-            return {'url': url, 'status': None, 'state': 'warning', 'note': 'SSL error (cert issue)'}
+            return {'url': url, 'status': None, 'state': 'broken', 'note': 'SSL error (cert issue)'}
         except requests.exceptions.Timeout:
-            return {'url': url, 'status': None, 'state': 'warning', 'note': 'Timeout (slow server)'}
+            return {'url': url, 'status': None, 'state': 'broken', 'note': 'Timeout (slow server)'}
         except requests.exceptions.ConnectionError as e:
             last_error = e
             # Retry on connection errors (might be temporary)
@@ -152,8 +152,8 @@ def check_link(url, timeout=25, max_retries=3):
             # After all retries, check if it's DNS failure
             if 'getaddrinfo failed' in str(e) or 'Name or service not known' in str(e):
                 return {'url': url, 'status': None, 'state': 'broken', 'note': 'DNS failed - domain dead'}
-            # Other connection errors after retries -> warning
-            return {'url': url, 'status': None, 'state': 'warning', 'note': 'Connection issue (may be temporary)'}
+            # Other connection errors after retries -> broken
+            return {'url': url, 'status': None, 'state': 'broken', 'note': 'Connection issue (refused/failed)'}
         except requests.exceptions.TooManyRedirects:
             return {'url': url, 'status': None, 'state': 'error', 'note': 'Too many redirects'}
         except Exception as e:
@@ -272,6 +272,12 @@ def main():
             f.write("\nUNKNOWN LINKS:\n")
             f.write("-" * 80 + "\n")
             for r in results['unknown']:
+                f.write(f"\n{r['url']}\n  -> {r['note']}\n")
+
+        if results['warning']:
+            f.write("\nWARNING LINKS:\n")
+            f.write("-" * 80 + "\n")
+            for r in results['warning']:
                 f.write(f"\n{r['url']}\n  -> {r['note']}\n")
     
     print(f"\nReport saved to: link_check_report.txt")
