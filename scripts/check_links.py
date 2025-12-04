@@ -87,7 +87,7 @@ def has_cloudflare_protection(resp):
     
     return False
 
-def check_link(url, timeout=25, max_retries=3):
+def check_link(url, timeout=30, max_retries=3):
     """
     Check if a link is accessible with retry logic
     Returns: dict with status info
@@ -133,15 +133,24 @@ def check_link(url, timeout=25, max_retries=3):
                 return {'url': url, 'status': code, 'state': 'broken', 'note': 'Not found - likely dead'}
             elif code == 410:
                 return {'url': url, 'status': code, 'state': 'broken', 'note': 'Gone - confirmed dead'}
-            elif code in [500, 502, 503, 504, 521, 522, 523]:
+            elif code in [500, 502, 504, 521, 522, 523]:
                 return {'url': url, 'status': code, 'state': 'error', 'note': 'Server error (may be temporary)'}
+            elif code == 503:
+                # 503 could be Cloudflare or temporary, treat as warning
+                if has_cloudflare_protection(response):
+                    return {'url': url, 'status': code, 'state': 'protected', 'note': 'Cloudflare protection (503)'}
+                return {'url': url, 'status': code, 'state': 'warning', 'note': 'Service unavailable (503) - may be temporary'}
             else:
                 return {'url': url, 'status': code, 'state': 'unknown', 'note': f'HTTP {code}'}
                 
         except requests.exceptions.SSLError:
             return {'url': url, 'status': None, 'state': 'broken', 'note': 'SSL error (cert issue)'}
         except requests.exceptions.Timeout:
-            return {'url': url, 'status': None, 'state': 'broken', 'note': 'Timeout (slow server)'}
+            # Retry on timeout
+            if attempt < max_retries - 1:
+                time.sleep(2)  # Wait 2 seconds before retry
+                continue
+            return {'url': url, 'status': None, 'state': 'warning', 'note': 'Timeout after retries (slow server)'}
         except requests.exceptions.ConnectionError as e:
             last_error = e
             # Retry on connection errors (might be temporary)

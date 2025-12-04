@@ -1,16 +1,19 @@
 LINK CHECK REPORT
 ================================================================================
 
-Total: 396
-Working: 372
+Total: 412
+Working: 387
 Protected: 23
 Warnings: 0
 Errors: 0
-Broken: 1
+Broken: 2
 Unknown: 0
 
 BROKEN LINKS:
 --------------------------------------------------------------------------------
 
-https://developers.line.biz/en/
-  -> Timeout (slow server)
+https://api.mangadex.org/docs/
+  -> DNS failed - domain dead
+
+https://steamcommunity.com/dev
+  -> Connection issue (refused/failed)

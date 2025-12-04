@@ -52,6 +52,20 @@ jobs:
           else
             echo "has_broken=false" >> $GITHUB_OUTPUT
           fi
+
+          # Check if error links found
+          if grep -q "ERROR LINKS:" output.txt; then
+            echo "has_errors=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_errors=false" >> $GITHUB_OUTPUT
+          fi
+
+          # Check if warning links found
+          if grep -q "WARNING LINKS:" output.txt; then
+            echo "has_warnings=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_warnings=false" >> $GITHUB_OUTPUT
+          fi
         continue-on-error: true
 
       - name: Upload check report
@@ -79,8 +93,8 @@ jobs:
               console.log('Error commenting on PR:', error);
             }
 
-      - name: Create issue if broken links found
-        if: github.event_name == 'schedule' && steps.check.outputs.has_broken == 'true'
+      - name: Create issue if broken or error links found
+        if: github.event_name == 'schedule' && (steps.check.outputs.has_broken == 'true' || steps.check.outputs.has_errors == 'true')
         uses: actions/github-script@v7
         with:
           script: |
