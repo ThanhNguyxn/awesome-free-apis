@@ -183,6 +183,7 @@ print(response.json()['fact'])
 - [🪙 Cryptocurrency](#cryptocurrency)
 - [💻 Development](#development)
 - [📖 Dictionaries](#dictionaries)
+- [🎓 Education](#education)
 - [📊 Public Data & Datasets](#public-data)
 - [📧 Email & SMS](#email-sms)
 - [🎮 Entertainment](#entertainment)
@@ -421,6 +422,14 @@ print(response.json()['fact'])
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 
+## <a id="education"></a>🎓 Education
+
+| API Name | Description | Auth | HTTPS | Link |
+| :--- | :--- | :---: | :---: | :---: |
+| **Universities List** | List of universities worldwide. | No | ✅ | [Link](http://universities.hipolabs.com/) |
+
+[⬆ Back to Table of Contents](#-table-of-contents)
+
 ## <a id="public-data"></a>📊 Public Data & Datasets
 
 | API Name | Description | Auth | HTTPS | Link |
@@ -627,6 +636,7 @@ print(response.json()['fact'])
 | **Musixmatch** | Lyrics. | 🔑 ApiKey | ✅ | [Link](https://developer.musixmatch.com/) |
 | **SoundCloud** | Music streaming. | 🔐 OAuth | ✅ | [Link](https://developers.soundcloud.com/docs/api/guide) |
 | **Spotify** | Music streaming. | 🔐 OAuth | ✅ | [Link](https://beta.developer.spotify.com/documentation/web-api/) |
+| **TheAudioDB** | Music metadata, charts, and more. | 🔑 ApiKey | ✅ | [Link](https://www.theaudiodb.com/api_guide.php) |
 | **Shazam (RapidAPI)** | Music recognition and track details. | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/apidojo/api/shazam) |
 | **iTunes Search** | Search iTunes store for music, movies, apps (**No Auth**). | No | ✅ | [Link](https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/iTuneSearchAPI/) |
 | **Radio Browser** | Community database of internet radio stations (**No Auth**). | No | ✅ | [Link](https://api.radio-browser.info/) |
@@ -687,6 +697,7 @@ print(response.json()['fact'])
 | **USGS Earthquake** | Real-time earthquake data (**No Auth**). | No | ✅ | [Link](https://earthquake.usgs.gov/fdsnws/event/1/) |
 | **Newton** | Symbolic and arithmetic math calculator API (**No Auth**). | No | ✅ | [Link](https://newton.vercel.app/) |
 | **Wolfram Short Answers** | Computational knowledge answers. | 🔑 ApiKey | ✅ | [Link](https://products.wolframalpha.com/short-answers-api/documentation) |
+| **Open Science Framework** | Open source research management platform. | 🔐 OAuth | ✅ | [Link](https://developer.osf.io/) |
 | **People in Space** | Current number of people in space (**No Auth**). | No | ✅ | [Link](http://open-notify.org/Open-Notify-API/People-In-Space/) |
 | **Solar System OpenData** | Solar system planets and moons data (**No Auth**). | No | ✅ | [Link](https://api.le-systeme-solaire.net/en/) |
 
