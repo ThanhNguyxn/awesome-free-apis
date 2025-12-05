@@ -47,21 +47,21 @@ jobs:
           cat output.txt
 
           # Check if broken links found
-          if grep -q "TRULY BROKEN LINKS" output.txt; then
+          if grep -q "BROKEN LINKS:" link_check_report.txt; then
             echo "has_broken=true" >> $GITHUB_OUTPUT
           else
             echo "has_broken=false" >> $GITHUB_OUTPUT
           fi
 
           # Check if error links found
-          if grep -q "ERROR LINKS:" output.txt; then
+          if grep -q "ERROR LINKS:" link_check_report.txt; then
             echo "has_errors=true" >> $GITHUB_OUTPUT
           else
             echo "has_errors=false" >> $GITHUB_OUTPUT
           fi
 
           # Check if warning links found
-          if grep -q "WARNING LINKS:" output.txt; then
+          if grep -q "WARNING LINKS:" link_check_report.txt; then
             echo "has_warnings=true" >> $GITHUB_OUTPUT
           else
             echo "has_warnings=false" >> $GITHUB_OUTPUT
