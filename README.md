@@ -262,7 +262,6 @@ print(response.json()['fact'])
 | **Danbooru Anime** | Thousands of anime artist database. | 🔑 ApiKey | ✅ | [Link](https://danbooru.donmai.us/wiki_pages/help:api) |
 | **Jikan** | Unofficial MyAnimeList API. | No | ✅ | [Link](https://jikan.moe) |
 | **Kitsu** | Anime and Manga Database. | 🔐 OAuth | ✅ | [Link](https://kitsu.docs.apiary.io/) |
-| **MangaDex** | Manga Database and Community. | 🔑 ApiKey | ✅ | [Link](https://api.mangadex.org/docs/) |
 | **Mangapi** | Translate manga pages. | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/pierre.carcellermeunier/api/mangapi3/) |
 | **MyAnimeList** | Anime and Manga Database. | 🔐 OAuth | ✅ | [Link](https://myanimelist.net/clubs.php?cid=13727) |
 | **NekosBest** | Neko Images & Anime GIFs. | No | ✅ | [Link](https://docs.nekos.best) |
@@ -404,6 +403,7 @@ print(response.json()['fact'])
 | **EmailJS** | Send emails directly from JavaScript (**Free tier**). | 🔑 ApiKey | ✅ | [Link](https://www.emailjs.com/docs/) |
 | **Abstract API** | Suite of useful APIs (IP geolocation, holidays, exchange rates). | 🔑 ApiKey | ✅ | [Link](https://www.abstractapi.com/) |
 | **Rebrandly** | URL shortener API. | 🔑 ApiKey | ✅ | [Link](https://developers.rebrandly.com/docs) |
+| **QuickChart** | Generate charts and QR codes. | No | ✅ | [Link](https://quickchart.io/) |
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 
@@ -467,6 +467,7 @@ print(response.json()['fact'])
 
 | **Klarna** | Payments. | 🔑 ApiKey | ✅ | [Link](https://docs.klarna.com/api/) |
 | **MercadoPago** | Payments. | 🔑 ApiKey | ✅ | [Link](https://www.mercadopago.com.br/developers/es/reference) |
+| **Marketstack** | Real-time, intraday and historical market data. | 🔑 ApiKey | ✅ | [Link](https://marketstack.com/) |
 | **Plaid** | Connect bank accounts. | 🔑 ApiKey | ✅ | [Link](https://www.plaid.com/docs) |
 | **Polygon** | Stock market data. | 🔑 ApiKey | ✅ | [Link](https://polygon.io/) |
 | **Stripe** | Payments. | 🔑 ApiKey | ✅ | [Link](https://stripe.com/docs/api) |
@@ -497,6 +498,7 @@ print(response.json()['fact'])
 | **OMDb** | Open Movie Database. | 🔑 ApiKey | ✅ | [Link](http://www.omdbapi.com/) |
 | **Quiz API** | Random trivia questions (**No Auth**). | No | ✅ | [Link](https://quizapi.io/) |
 | **Quotable** | Random quotes (**No Auth**). | No | ✅ | [Link](https://github.com/lukePeavey/quotable) |
+| **Activities when get bored** | Random suggestions for activities. | No | ✅ | [Link](https://rapidapi.com/bored/api/bored-api/) |
 | **Simkl** | Movies, TV, Anime metadata. | 🔑 ApiKey | ✅ | [Link](https://simkl.com/apidoc/) |
 | **TMDb** | The Movie Database. | 🔑 ApiKey | ✅ | [Link](https://developers.themoviedb.org/3) |
 | **TVmaze** | TV shows and episode data (**No Auth**). | No | ✅ | [Link](https://www.tvmaze.com/api) |
@@ -558,7 +560,6 @@ print(response.json()['fact'])
 | **Rick and Morty** | Show data. | No | ✅ | [Link](https://rickandmortyapi.com) |
 | **Riot Games** | League of Legends data. | 🔑 ApiKey | ✅ | [Link](https://developer.riotgames.com/) |
 | **Scryfall** | Magic: The Gathering card search. | No | ✅ | [Link](https://scryfall.com/docs/api) |
-| **Steam** | Steam data. | 🔑 ApiKey | ✅ | [Link](https://steamcommunity.com/dev) |
 | **Valorant** | Valorant game data (unofficial). | No | ✅ | [Link](https://valorant-api.com/) |
 | **PokéAPI v2** | Comprehensive Pokémon data (**No Auth, 300M+ requests/month**). | No | ✅ | [Link](https://pokeapi.co/docs/v2) |
 
@@ -578,6 +579,7 @@ print(response.json()['fact'])
 
 | **Edamam Nutrition** | Nutrition analysis. | 🔑 ApiKey | ✅ | [Link](https://developer.edamam.com/edamam-nutrition-api) |
 | **Nutritionix** | Nutrition database. | 🔑 ApiKey | ✅ | [Link](https://developer.nutritionix.com/) |
+| **OpenFDA** | Public FDA data about drugs, devices, and foods. | No | ✅ | [Link](https://open.fda.gov/apis/) |
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 
@@ -590,6 +592,7 @@ print(response.json()['fact'])
 | **Cloudmersive** | Image Recognition. | 🔑 ApiKey | ✅ | [Link](https://www.cloudmersive.com/image-recognition-and-processing-api) |
 | **Cohere** | NLP and text generation models (free trial tier). | 🔑 ApiKey | ✅ | [Link](https://docs.cohere.com/) |
 | **DeepAI** | Simple APIs for image generation and text processing. | 🔑 ApiKey | ✅ | [Link](https://deepai.org/api-docs) |
+| **Deepgram** | Speech-to-text and audio intelligence. | 🔑 ApiKey | ✅ | [Link](https://deepgram.com/) |
 | **Dialogflow** | Conversational AI. | 🔑 ApiKey | ✅ | [Link](https://cloud.google.com/dialogflow/docs/) |
 | **Google Gemini** | Google's latest multimodal AI models. | 🔑 ApiKey | ✅ | [Link](https://ai.google.dev/) |
 | **Groq** | Ultra-fast LLM inference API. | 🔑 ApiKey | ✅ | [Link](https://groq.com/) |
@@ -598,6 +601,7 @@ print(response.json()['fact'])
 | **Languagelayer** | Language detection. | 🔑 ApiKey | ✅ | [Link](https://languagelayer.com/) |
 | **Mistral AI** | High-performance open-source LLMs (free tier available). | 🔑 ApiKey | ✅ | [Link](https://docs.mistral.ai/) |
 | **NLP Cloud** | NLP. | 🔑 ApiKey | ✅ | [Link](https://nlpcloud.io) |
+| **Twinword Sentiment Analysis** | Sentiment analysis, emotion analysis, and more. | 🔑 ApiKey | ✅ | [Link](https://www.twinword.com/api/sentiment-analysis.php) |
 | **Ollama** | Run open-source LLMs locally (self-hosted, no auth). | No | ✅ | [Link](https://github.com/ollama/ollama/blob/main/docs/api.md) |
 | **OpenAI** | Access GPT models (offers free trial credits). | 🔑 ApiKey | ✅ | [Link](https://platform.openai.com/docs/api-reference) |
 | **Perplexity AI** | AI-powered search and answers (limited free tier). | 🔑 ApiKey | ✅ | [Link](https://docs.perplexity.ai/) |
@@ -650,6 +654,8 @@ print(response.json()['fact'])
 | **GNews** | Global news search. | 🔑 ApiKey | ✅ | [Link](https://gnews.io/) |
 | **NewsAPI** | Headlines and articles. | 🔑 ApiKey | ✅ | [Link](https://newsapi.org/) |
 | **NewsData.io** | News search and tracking. | 🔑 ApiKey | ✅ | [Link](https://newsdata.io/) |
+| **TheNewsAPI** | Global news API. | 🔑 ApiKey | ✅ | [Link](https://www.thenewsapi.com/) |
+| **NewsAPI.ai** | AI-powered news API. | 🔑 ApiKey | ✅ | [Link](https://newsapi.ai/) |
 | **The Guardian** | Guardian articles. | 🔑 ApiKey | ✅ | [Link](https://open-platform.theguardian.com/) |
 
 ## <a id="photography"></a>📷 Photography
@@ -766,6 +772,7 @@ print(response.json()['fact'])
 | **UI Avatars** | Generate avatar placeholders from initials (**No Auth, 28M+ daily requests**). | No | ✅ | [Link](https://ui-avatars.com/) |
 | **URLBox** | Website screenshot API. | 🔑 ApiKey | ✅ | [Link](https://www.urlbox.io/) |
 | **TinyURL** | URL shortener API (**No Auth**). | No | ✅ | [Link](https://tinyurl.com/app/dev) |
+| **DuckDuckGo Instant Answer** | Quick, concise answers for definitions, calculations, and conversions. | No | ✅ | [Link](https://duckduckgo.com/api) |
 | **Country.is** | Get country from IP address (**No Auth**). | No | ✅ | [Link](https://country.is/) |
 
 [⬆ Back to Table of Contents](#-table-of-contents)
@@ -780,6 +787,7 @@ print(response.json()['fact'])
 | **The Color API** | Color conversion, schemes, and naming (**No Auth**). | No | ✅ | [Link](https://www.thecolorapi.com/) |
 | **Dribbble** | Design community and portfolio. | 🔐 OAuth | ✅ | [Link](https://developer.dribbble.com/) |
 | **Behance** | Creative work showcase. | 🔑 ApiKey | ✅ | [Link](https://www.behance.net/dev) |
+| **Icon Horse** | Favicon grabber API. | No | ✅ | [Link](https://icon.horse/) |
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 

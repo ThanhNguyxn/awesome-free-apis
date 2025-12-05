@@ -193,7 +193,7 @@ def main():
     }
     
     # Check links with threading
-    with ThreadPoolExecutor(max_workers=10) as executor:
+    with ThreadPoolExecutor(max_workers=5) as executor:
         future_to_url = {executor.submit(check_link, url): url for url in unique_links}
         
         completed = 0
