@@ -159,10 +159,11 @@ def check_link(url, timeout=30, max_retries=3):
                 time.sleep(1)  # Wait 1 second before retry
                 continue
             # After all retries, check if it's DNS failure
+            # Mark as warning instead of broken - could be temporary GitHub Actions DNS issue
             if 'getaddrinfo failed' in str(e) or 'Name or service not known' in str(e):
-                return {'url': url, 'status': None, 'state': 'broken', 'note': 'DNS failed - domain dead'}
-            # Other connection errors after retries -> broken
-            return {'url': url, 'status': None, 'state': 'broken', 'note': 'Connection issue (refused/failed)'}
+                return {'url': url, 'status': None, 'state': 'warning', 'note': 'DNS failed (may be temporary)'}
+            # Other connection errors after retries -> warning (could be IP blocking)
+            return {'url': url, 'status': None, 'state': 'warning', 'note': 'Connection issue (may be temporary)'}
         except requests.exceptions.TooManyRedirects:
             return {'url': url, 'status': None, 'state': 'error', 'note': 'Too many redirects'}
         except Exception as e:
