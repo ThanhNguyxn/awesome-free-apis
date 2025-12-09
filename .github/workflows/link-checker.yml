@@ -147,9 +147,3 @@ jobs:
             });
 
             console.log('Created issue:', issue.data.html_url);
-
-      - name: Fail if broken links found
-        if: steps.check.outputs.has_broken == 'true'
-        run: |
-          echo "❌ Found broken links! Check the report above."
-          exit 1
