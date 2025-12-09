@@ -338,6 +338,7 @@ print(response.json()['fact'])
 | **CoinCap** | Real-time cryptocurrency market data (**No Auth**). | No | ✅ | [Link](https://docs.coincap.io/) |
 | **Messari** | Crypto research and data. | 🔑 ApiKey | ✅ | [Link](https://messari.io/api) |
 | **CoinPaprika** | Cryptocurrency market data (**No Auth, generous limits**). | No | ✅ | [Link](https://api.coinpaprika.com/) |
+| **Coinlore** | Cryptocurrency prices and market data (**No Auth**). | No | ✅ | [Link](https://www.coinlore.com/cryptocurrency-data-api) |
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 
@@ -515,6 +516,7 @@ print(response.json()['fact'])
 
 | **Cocktail** | Random cocktail recipes and ingredients. | No | ✅ | [Link](https://www.thecocktaildb.com/api.php) |
 | **Trivia API** | Trivia questions in various categories (**No Auth**). | No | ✅ | [Link](https://the-trivia-api.com/) |
+| **Type.fit Quotes** | Collection of inspiring quotes (**No Auth**). | No | ✅ | [Link](https://type.fit/api/quotes) |
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 
