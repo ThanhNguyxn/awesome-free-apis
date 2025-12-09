@@ -8,6 +8,7 @@ on:
     paths:
       - "README.md"
       - "scripts/check_links.py"
+      - ".github/workflows/link-checker.yml"
 
   # Run on pull requests
   pull_request:
