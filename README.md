@@ -578,7 +578,7 @@ print(response.json()['fact'])
 | **GamerPower** | Free games, loot, and giveaways (**No Auth**). | No | ✅ | [Link](https://www.gamerpower.com/api-read) |
 | **Monster Hunter World** | MHW items, monsters, weapons, armor data (**No Auth**). | No | ✅ | [Link](https://docs.mhw-db.com/) |
 | **Free to Play Games** | Database of free-to-play games (**No Auth**). | No | ✅ | [Link](https://www.freetogame.com/api-doc) |
-| **Elden Ring API** | Elden Ring game data (**No Auth**). | No | ✅ | [Link](https://eldenring.fanapis.com/docs) |
+| **Elden Ring API** | Elden Ring game data (**No Auth**). | No | ✅ | [Link](https://docs.eldenring.fanapis.com/) |
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 
@@ -659,7 +659,7 @@ print(response.json()['fact'])
 | **RandomUser.me** | Generate random user data (like Lorem Ipsum, but for people). | No | ✅ | [Link](https://randomuser.me/) |
 | **ReqRes** | A hosted REST-API ready to respond to your AJAX requests. | No | ✅ | [Link](https://reqres.in/) |
 | **Httpbin** | HTTP request and response testing (**No Auth**). | No | ✅ | [Link](https://httpbin.org/) |
-| **Mocky** | Create custom mock API responses (**No Auth**). | No | ✅ | [Link](https://designer.mocky.io/) |
+| **Beeceptor** | Mock REST APIs in seconds (**No Auth**). | No | ✅ | [Link](https://beeceptor.com/) |
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 
@@ -674,6 +674,8 @@ print(response.json()['fact'])
 | **TheNewsAPI** | Global news API. | 🔑 ApiKey | ✅ | [Link](https://www.thenewsapi.com/) |
 | **NewsAPI.ai** | AI-powered news API. | 🔑 ApiKey | ✅ | [Link](https://newsapi.ai/) |
 | **The Guardian** | Guardian articles. | 🔑 ApiKey | ✅ | [Link](https://open-platform.theguardian.com/) |
+| **Hacker News** | Tech news from Y Combinator (**No Auth**). | No | ✅ | [Link](https://github.com/HackerNews/API) |
+| **Dev.to** | Developer community articles (**No Auth**). | No | ✅ | [Link](https://developers.forem.com/api) |
 
 ## <a id="photography"></a>📷 Photography
 
@@ -792,8 +794,8 @@ print(response.json()['fact'])
 | **TinyURL** | URL shortener API (**No Auth**). | No | ✅ | [Link](https://tinyurl.com/app/dev) |
 | **DuckDuckGo Instant Answer** | Quick, concise answers for definitions, calculations, and conversions. | No | ✅ | [Link](https://duckduckgo.com/api) |
 | **Country.is** | Get country from IP address (**No Auth**). | No | ✅ | [Link](https://country.is/) |
-| **ASCII Art Generator** | Generate ASCII art from text (**No Auth**). | No | ✅ | [Link](https://artii.herokuapp.com/) |
-| **JSONFormatter** | Format, validate, and beautify JSON (**No Auth**). | No | ✅ | [Link](https://jsonformatter.org/api) |
+| **Text Art API** | Generate text-based art (**No Auth**). | No | ✅ | [Link](http://patorjk.com/software/taag/) |
+| **JSONLint** | JSON validation API. | No | ✅ | [Link](https://jsonlint.com/) |
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 
@@ -881,6 +883,9 @@ print(response.json()['fact'])
 | **Affirmations** | Get random positive affirmations (**No Auth**). | No | ✅ | [Link](https://www.affirmations.dev/) |
 | **Evil Insult** | Generate evil insults (**No Auth**). | No | ✅ | [Link](https://evilinsult.com/api/) |
 | **Tronald Dump** | Random Donald Trump quotes (**No Auth**). | No | ✅ | [Link](https://tronalddump.io/) |
+| **Numbers API** | Fun facts about numbers (**No Auth**). | No | ✅ | [Link](http://numbersapi.com/) |
+| **Quote Garden** | Collection of 5000+ quotes (**No Auth**). | No | ✅ | [Link](https://pprathameshmore.github.io/QuoteGarden/) |
+| **Fun Translations** | Translate text to Yoda, Pirate, etc. | 🔑 ApiKey | ✅ | [Link](https://funtranslations.com/api) |
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 
