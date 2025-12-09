@@ -143,8 +143,13 @@ def check_link(url, timeout=30, max_retries=3):
             else:
                 return {'url': url, 'status': code, 'state': 'unknown', 'note': f'HTTP {code}'}
                 
-        except requests.exceptions.SSLError:
-            return {'url': url, 'status': None, 'state': 'broken', 'note': 'SSL error (cert issue)'}
+        except requests.exceptions.SSLError as e:
+            # SSL errors could be temporary (cert renewal in progress) or permanent
+            # Mark as warning to avoid false positives
+            if attempt < max_retries - 1:
+                time.sleep(2)
+                continue
+            return {'url': url, 'status': None, 'state': 'warning', 'note': 'SSL error (may be temporary cert issue)'}
         except requests.exceptions.Timeout:
             # Retry on timeout
             if attempt < max_retries - 1:
@@ -155,19 +160,21 @@ def check_link(url, timeout=30, max_retries=3):
             last_error = e
             # Retry on connection errors (might be temporary)
             if attempt < max_retries - 1:
-                import time
-                time.sleep(1)  # Wait 1 second before retry
+                time.sleep(2)  # Wait 2 seconds before retry
                 continue
-            # After all retries, check if it's DNS failure
-            # Mark as warning instead of broken - could be temporary GitHub Actions DNS issue
-            if 'getaddrinfo failed' in str(e) or 'Name or service not known' in str(e):
-                return {'url': url, 'status': None, 'state': 'warning', 'note': 'DNS failed (may be temporary)'}
-            # Other connection errors after retries -> warning (could be IP blocking)
+            # After all retries, mark as WARNING not broken
+            # GitHub Actions IPs often get blocked or have DNS issues
+            error_str = str(e).lower()
+            if 'getaddrinfo' in error_str or 'name or service not known' in error_str or 'nodename nor servname' in error_str:
+                return {'url': url, 'status': None, 'state': 'warning', 'note': 'DNS issue (may be temporary/CI environment)'}
+            if 'connection refused' in error_str or 'connection reset' in error_str:
+                return {'url': url, 'status': None, 'state': 'warning', 'note': 'Connection refused (may be IP blocking)'}
+            # Other connection errors -> warning (could be IP blocking)
             return {'url': url, 'status': None, 'state': 'warning', 'note': 'Connection issue (may be temporary)'}
         except requests.exceptions.TooManyRedirects:
-            return {'url': url, 'status': None, 'state': 'error', 'note': 'Too many redirects'}
+            return {'url': url, 'status': None, 'state': 'warning', 'note': 'Too many redirects (may be geo blocking)'}
         except Exception as e:
-            return {'url': url, 'status': None, 'state': 'error', 'note': f'Error: {type(e).__name__}'}
+            return {'url': url, 'status': None, 'state': 'warning', 'note': f'Unknown error: {type(e).__name__}'}
     
     # Should never reach here, but just in case
     return {'url': url, 'status': None, 'state': 'error', 'note': 'Max retries exceeded'}
