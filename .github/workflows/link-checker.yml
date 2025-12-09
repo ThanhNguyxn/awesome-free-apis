@@ -147,3 +147,9 @@ jobs:
             });
 
             console.log('Created issue:', issue.data.html_url);
+
+      - name: Fail if broken links found
+        if: steps.check.outputs.has_broken == 'true'
+        run: |
+          echo "❌ Broken links detected! Check the artifact for details."
+          exit 1
