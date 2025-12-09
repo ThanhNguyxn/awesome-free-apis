@@ -51,22 +51,25 @@ jobs:
           python check_links.py > output.txt 2>&1 || true
           cat output.txt
 
-          # Check if broken links found
-          if grep -q "BROKEN LINKS:" link_check_report.txt; then
+          # Check if broken links found (count > 0)
+          BROKEN_COUNT=$(grep -oP "Broken: \K[0-9]+" link_check_report.txt || echo "0")
+          if [ "$BROKEN_COUNT" -gt 0 ]; then
             echo "has_broken=true" >> $GITHUB_OUTPUT
           else
             echo "has_broken=false" >> $GITHUB_OUTPUT
           fi
 
-          # Check if error links found
-          if grep -q "ERROR LINKS:" link_check_report.txt; then
+          # Check if error links found (count > 0)
+          ERROR_COUNT=$(grep -oP "Errors: \K[0-9]+" link_check_report.txt || echo "0")
+          if [ "$ERROR_COUNT" -gt 0 ]; then
             echo "has_errors=true" >> $GITHUB_OUTPUT
           else
             echo "has_errors=false" >> $GITHUB_OUTPUT
           fi
 
-          # Check if warning links found
-          if grep -q "WARNING LINKS:" link_check_report.txt; then
+          # Check if warning links found (count > 0)
+          WARNING_COUNT=$(grep -oP "Warnings: \K[0-9]+" link_check_report.txt || echo "0")
+          if [ "$WARNING_COUNT" -gt 0 ]; then
             echo "has_warnings=true" >> $GITHUB_OUTPUT
           else
             echo "has_warnings=false" >> $GITHUB_OUTPUT
