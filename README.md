@@ -231,7 +231,6 @@ print(response.json()['fact'])
 | **IUCN** | IUCN Red List of Threatened Species. | 🔑 ApiKey | No | [Link](http://apiv3.iucnredlist.org/api/v3/docs) |
 | **MeowFacts** | Get random cat facts. | No | ✅ | [Link](https://github.com/wh-iterabb-it/meowfacts) |
 | **Movebank** | Movement and Bio-logging Data. | No | ✅ | [Link](https://github.com/movebank/movebank-api-doc) |
-| **Petfinder** | Pet adoption data. | 🔑 ApiKey | ✅ | [Link](https://www.petfinder.com/developers/) |
 | **PlaceBear** | Placeholder bear pictures. | No | ✅ | [Link](https://placebear.com/) |
 | **PlaceDog** | Placeholder Dog pictures. | No | ✅ | [Link](https://place.dog) |
 | **RandomDog** | Random pictures of dogs. | No | ✅ | [Link](https://random.dog/woof.json) |
