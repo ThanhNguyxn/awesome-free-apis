@@ -232,7 +232,6 @@ print(response.json()['fact'])
 | **MeowFacts** | Get random cat facts. | No | ✅ | [Link](https://github.com/wh-iterabb-it/meowfacts) |
 | **Movebank** | Movement and Bio-logging Data. | No | ✅ | [Link](https://github.com/movebank/movebank-api-doc) |
 | **PlaceBear** | Placeholder bear pictures. | No | ✅ | [Link](https://placebear.com/) |
-| **PlaceDog** | Placeholder Dog pictures. | No | ✅ | [Link](https://place.dog) |
 | **RandomDog** | Random pictures of dogs. | No | ✅ | [Link](https://random.dog/woof.json) |
 | **RandomDuck** | Random pictures of ducks. | No | ✅ | [Link](https://random-d.uk/api) |
 | **RandomFox** | Random pictures of foxes. | No | ✅ | [Link](https://randomfox.ca/floof/) |
@@ -516,7 +515,6 @@ print(response.json()['fact'])
 
 | **Cocktail** | Random cocktail recipes and ingredients. | No | ✅ | [Link](https://www.thecocktaildb.com/api.php) |
 | **Trivia API** | Trivia questions in various categories (**No Auth**). | No | ✅ | [Link](https://the-trivia-api.com/) |
-| **Type.fit Quotes** | Collection of inspiring quotes (**No Auth**). | No | ✅ | [Link](https://type.fit/api/quotes) |
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 
