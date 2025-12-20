@@ -316,7 +316,7 @@ print(response.json()['fact'])
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
 | **1inch** | API for querying the 1inch protocol. | No | ✅ | [Link](https://1inch.io/api/) |
-| **Alchemy** | Ethereum API. | 🔑 ApiKey | ✅ | [Link](https://docs.alchemy.com/alchemy/) |
+| **Alchemy** | Ethereum API. | 🔑 ApiKey | ✅ | [Link](https://docs.alchemy.com/) |
 | **Binance** | Exchange for Trading Cryptocurrencies. | 🔑 ApiKey | ✅ | [Link](https://github.com/binance/binance-spot-api-docs) |
 | **Bitfinex** | Exchange for Trading Cryptocurrencies. | 🔑 ApiKey | ✅ | [Link](https://docs.bitfinex.com/docs) |
 | **Bitmex** | Exchange for Trading Cryptocurrencies. | 🔑 ApiKey | ✅ | [Link](https://www.bitmex.com/app/apiOverview) |
@@ -396,7 +396,7 @@ print(response.json()['fact'])
 | **Supabase** | Open source Firebase alternative (database, auth, storage). | 🔑 ApiKey | ✅ | [Link](https://supabase.com/docs/guides/api) |
 | **Userstack** | User-Agent String Analysis. | 🔑 ApiKey | ✅ | [Link](https://userstack.com/) |
 | **UUID Generator** | Generate UUIDs (v1, v3, v4, v5). | No | ✅ | [Link](https://www.uuidgenerator.net/api) |
-| **Vercel** | Deployment platform API. | 🔑 ApiKey | ✅ | [Link](https://vercel.com/docs/rest-api) |
+| **Vercel** | Deployment platform API. | 🔑 ApiKey | ✅ | [Link](https://vercel.com/docs/rest-api/endpoints) |
 | **Cloudinary** | Image and video management API. | 🔑 ApiKey | ✅ | [Link](https://cloudinary.com/documentation/image_upload_api_reference) |
 | **QRServer** | Generate QR codes dynamically (**No Auth**). | No | ✅ | [Link](https://goqr.me/api/) |
 | **Web Scraper** | Web scraping service (ScrapingBee). | 🔑 ApiKey | ✅ | [Link](https://www.scrapingbee.com/documentation/) |
