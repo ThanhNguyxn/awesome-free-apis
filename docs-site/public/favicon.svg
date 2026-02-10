@@ -1,12 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
   <defs>
-    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="bolt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24"/>
+      <stop offset="100%" style="stop-color:#f59e0b"/>
     </linearGradient>
   </defs>
-  <rect width="128" height="128" rx="24" fill="url(#grad)"/>
-  <text x="64" y="88" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="white" text-anchor="middle">A</text>
-  <circle cx="100" cy="28" r="14" fill="#fbbf24"/>
-  <text x="100" y="34" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1e1e1e" text-anchor="middle">PI</text>
+  <rect width="128" height="128" rx="24" fill="url(#bg)"/>
+  <!-- Left curly brace { -->
+  <path d="M38 32 C38 32 28 32 28 44 L28 54 C28 60 22 64 22 64 C22 64 28 68 28 74 L28 84 C28 96 38 96 38 96" fill="none" stroke="white" stroke-width="6" stroke-linecap="round"/>
+  <!-- Right curly brace } -->
+  <path d="M90 32 C90 32 100 32 100 44 L100 54 C100 60 106 64 106 64 C106 64 100 68 100 74 L100 84 C100 96 90 96 90 96" fill="none" stroke="white" stroke-width="6" stroke-linecap="round"/>
+  <!-- Lightning bolt -->
+  <polygon points="70,38 54,68 66,68 58,90 74,60 62,60" fill="url(#bolt)"/>
 </svg>
