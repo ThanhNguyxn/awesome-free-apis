@@ -20,6 +20,13 @@
 }
 
 :root[data-theme='light'] {
+  --sl-color-white: #ffffff;
+  --sl-color-gray-1: #f5f7fb;
+  --sl-color-gray-2: #d8deea;
+  --sl-color-gray-3: #667085;
+  --sl-color-gray-4: #475467;
+  --sl-color-gray-5: #1f2937;
+  --sl-color-gray-6: #e9eef7;
   --sl-color-accent-low: #dbeafe;
   --sl-color-accent: #2563eb;
   --sl-color-accent-high: #1e40af;
@@ -109,8 +116,8 @@
 }
 
 :root[data-theme='light'] .sl-markdown-content table thead th {
-  background: var(--sl-color-gray-1);
-  color: var(--sl-color-gray-5);
+  background: #eef2f9;
+  color: #111827;
 }
 
 .sl-markdown-content table tbody tr {
@@ -181,7 +188,7 @@
 :root[data-theme='light'] .stat-card {
   background: var(--sl-color-white);
   border-color: var(--sl-color-gray-2);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.08);
 }
 
 .stat-card:hover {
@@ -232,6 +239,7 @@
   background: var(--sl-color-white);
   border-color: var(--sl-color-gray-2);
   color: var(--sl-color-gray-5) !important;
+  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.05);
 }
 
 .category-card:hover {
@@ -268,10 +276,17 @@
 .hero-section h1 {
   font-size: 2.5rem;
   font-weight: 800;
-  background: linear-gradient(135deg, var(--sl-color-accent), #8b5cf6);
+  background: linear-gradient(135deg, var(--sl-color-accent), #0ea5e9);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+:root[data-theme='light'] .hero-section {
+  background: radial-gradient(1200px 400px at 50% -200px, #e6f0ff 0%, transparent 70%);
+  border: 1px solid var(--sl-color-gray-2);
+  border-radius: 1rem;
+  margin-bottom: 1rem;
 }
 
 /* --- Responsive table on mobile --- */
@@ -306,6 +321,106 @@
 .sl-markdown-content pre::-webkit-scrollbar-thumb {
   background: var(--sl-color-gray-4);
   border-radius: 3px;
+}
+
+site-search button[data-open-modal]:focus-visible,
+site-search button[data-close-modal]:focus-visible,
+#starlight__search input:focus-visible,
+#starlight__search .pagefind-ui__search-clear:focus-visible,
+#starlight__search .pagefind-ui__result-link:focus-visible {
+  outline: 2px solid var(--sl-color-accent) !important;
+  outline-offset: 2px;
+}
+
+:root[data-theme='light'] site-search button[data-open-modal] {
+  border-color: var(--sl-color-gray-2);
+  background-color: var(--sl-color-white);
+  color: var(--sl-color-gray-4);
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08);
+}
+
+:root[data-theme='light'] site-search button[data-open-modal]:hover {
+  border-color: var(--sl-color-accent);
+  color: #0f172a;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.15);
+}
+
+:root[data-theme='light'] site-search dialog {
+  background-color: #ffffff;
+  border-color: var(--sl-color-gray-2);
+  box-shadow: 0 16px 60px rgba(15, 23, 42, 0.2);
+}
+
+:root[data-theme='light'] #starlight__search {
+  --pagefind-ui-primary: #0f172a;
+  --pagefind-ui-text: #1f2937;
+  --pagefind-ui-background: #ffffff;
+  --pagefind-ui-border: var(--sl-color-gray-2);
+  --pagefind-ui-tag: #eef2ff;
+}
+
+:root[data-theme='light'] #starlight__search .pagefind-ui__search-input {
+  border: 1px solid #cfd8e8;
+  border-radius: 0.65rem;
+  background: #ffffff;
+}
+
+:root[data-theme='light'] #starlight__search .pagefind-ui__search-input {
+  color: #111827;
+  font-weight: 500;
+}
+
+:root[data-theme='light'] #starlight__search .pagefind-ui__search-input::placeholder {
+  color: #64748b;
+  opacity: 0.9;
+}
+
+:root[data-theme='light'] #starlight__search .pagefind-ui__result-title,
+:root[data-theme='light'] #starlight__search .pagefind-ui__result-nested,
+:root[data-theme='light'] #starlight__search .pagefind-ui__result-tags {
+  background-color: #f8fafc;
+}
+
+:root[data-theme='light'] #starlight__search .pagefind-ui__result {
+  border-color: #dbe3f0;
+}
+
+:root[data-theme='light'] #starlight__search .pagefind-ui__result:hover {
+  background: #f8fbff;
+}
+
+:root[data-theme='light'] #starlight__search .pagefind-ui__result-link {
+  --pagefind-ui-text: #0f172a;
+}
+
+:root[data-theme='light'] #starlight__search mark {
+  color: #1e3a8a;
+}
+
+.generated-note {
+  text-align: center;
+  opacity: 0.7;
+  font-size: 0.85rem;
+}
+
+:root[data-theme='light'] .generated-note {
+  color: #475467;
+}
+
+@media (max-width: 50rem) {
+  site-search button[data-open-modal] {
+    min-width: 2.5rem;
+    min-height: 2.5rem;
+    border-radius: 0.6rem;
+  }
+
+  #starlight__search {
+    --pagefind-ui-scale: 0.92;
+  }
+
+  #starlight__search .pagefind-ui__search-input {
+    min-height: 44px;
+  }
 }
 
 /* --- Starlight overrides for polish --- */
