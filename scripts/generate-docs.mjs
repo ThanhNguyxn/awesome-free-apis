@@ -16,7 +16,7 @@ const EXAMPLES_OUTPUT = join(ROOT, 'docs-site', 'src', 'content', 'docs', 'examp
 const CATEGORY_ORDER = [
   'animals', 'anime', 'anti-malware', 'authentication-identity', 'books',
   'blockchain-web3', 'cryptocurrency', 'cloud-storage-files', 'development',
-  'dictionaries', 'education', 'public-data', 'email-sms', 'finance',
+  'dictionaries', 'education', 'calendar-holidays', 'public-data', 'email-sms', 'finance',
   'food-drink', 'entertainment', 'geocoding', 'games-comics', 'health',
   'machine-learning', 'music', 'mock-data-testing', 'news', 'photography',
   'science', 'security-validation', 'shopping', 'social', 'sports',
@@ -277,10 +277,10 @@ hero:
 
 ---
 
-<p style="text-align: center; opacity: 0.6; font-size: 0.85rem;">
+<div class="generated-note">
   Built with ❤️ by <a href="https://github.com/ThanhNguyxn">ThanhNguyxn</a> · 
   Auto-generated from <a href="https://github.com/ThanhNguyxn/awesome-free-apis/blob/main/README.md">README.md</a>
-</p>
+</div>
 `;
 
   return mdx;
