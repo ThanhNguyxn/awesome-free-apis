@@ -1,0 +1,149 @@
+---
+title: "📘 API Usage Guide"
+description: "Learn the basics of working with APIs - authentication, HTTP methods, status codes, and essential tools."
+---
+
+> **👋 New to APIs?** Don't worry! This guide will help you understand the basics and get started quickly.
+
+---
+
+### 💡 What is an API?
+
+**API** stands for **Application Programming Interface**. It's a way for different applications to communicate with each other.
+
+```
+┌─────────┐      ┌─────────┐      ┌─────────┐
+│   YOU   │ ───▶│   API   │ ───▶ │ SERVER  │
+│  (App)  │ ◀───│ (Waiter)│ ◀─── │(Kitchen)│
+└─────────┘      └─────────┘      └─────────┘
+   Request         Process          Response
+```
+
+**Think of it like a restaurant:**
+- 🙋 **You** (the app) place an order
+- 🍽️ **Waiter** (the API) takes your request to the kitchen
+- 👨‍🍳 **Kitchen** (the server) prepares your food (data)
+- ✨ The waiter brings it back to you!
+
+---
+
+### 📝 Authentication Methods
+
+Different APIs have different ways to verify who you are:
+
+| Method | Icon | Description | Example |
+|--------|------|-------------|---------|
+| **No Auth** | 🌐 | Open for everyone - just call it! | Weather APIs, public data |
+| **API Key** | 🔑 | Secret code you get when registering | `?api_key=abc123` or `Authorization: abc123` |
+| **OAuth** | 🔐 | Secure login (like "Login with Google") | Social media integrations |
+
+**💡 Pro Tip:** Always keep your API keys secret! Never commit them to GitHub.
+
+---
+
+### 📡 HTTP Request Methods
+
+Learn the common ways to interact with APIs:
+
+| Method | Icon | Purpose | Real-World Example |
+|--------|------|---------|-------------------|
+| `GET` | 📥 | **Retrieve** data | Get a list of cat pictures |
+| `POST` | 📤 | **Create** new data | Upload a new photo |
+| `PUT` | ✏️ | **Replace** existing data | Update entire user profile |
+| `PATCH` | 🔧 | **Modify** specific fields | Change just your username |
+| `DELETE` | 🗑️ | **Remove** data | Delete a comment |
+
+**Example GET Request:**
+```bash
+curl https://api.example.com/cats
+```
+
+**Example POST Request:**
+```bash
+curl -X POST https://api.example.com/cats \
+  -H "Content-Type: application/json" \
+  -d '{"name":"Fluffy","age":3}'
+```
+
+---
+
+### 🚦 HTTP Status Codes
+
+The API responds with a status code to tell you what happened:
+
+#### ✅ Success Codes (2xx)
+| Code | Icon | Meaning |
+|------|------|---------|
+| `200` | ✅ | **OK** - Request succeeded! |
+| `201` | 🎉 | **Created** - New resource created! |
+| `204` | 📭 | **No Content** - Success but no data to return |
+
+#### ⚠️ Client Error Codes (4xx)
+| Code | Icon | Meaning | What to Do |
+|------|------|---------|-----------|
+| `400` | ❌ | **Bad Request** - Invalid syntax | Check your request format |
+| `401` | 🔒 | **Unauthorized** - Authentication required | Add your API key |
+| `403` | 🚫 | **Forbidden** - You don't have permission | Check your access rights |
+| `404` | 🔍 | **Not Found** - Resource doesn't exist | Verify the URL |
+| `429` | 🐌 | **Too Many Requests** - Rate limit hit | Wait and try again |
+
+#### 🔴 Server Error Codes (5xx)
+| Code | Icon | Meaning |
+|------|------|---------|
+| `500` | 💥 | **Internal Server Error** - API is broken |
+| `503` | 🔧 | **Service Unavailable** - API is down |
+
+---
+
+### 🛠️ Essential Tools for Testing APIs
+
+| Tool | Best For | Platform | Free? |
+|------|----------|----------|-------|
+| [**Postman**](https://www.postman.com/) | 🎯 Complete API testing & documentation | Desktop/Web | ✅ Yes (free tier) |
+| [**Thunder Client**](https://www.thunderclient.com/) | ⚡ Lightweight testing in VS Code | VS Code Extension | ✅ Yes |
+| [**cURL**](https://curl.se/) | 💻 Command-line requests | Terminal | ✅ Yes (built-in) |
+| [**Insomnia**](https://insomnia.rest/) | 🎨 Beautiful UI for API testing | Desktop | ✅ Yes |
+
+---
+
+### 🚀 Quick Start Example
+
+Let's try a real API call! Here's how to get a random cat fact:
+
+**1️⃣ Using cURL (Terminal):**
+```bash
+curl https://catfact.ninja/fact
+```
+
+**2️⃣ Using JavaScript (Browser):**
+```javascript
+fetch('https://catfact.ninja/fact')
+  .then(response => response.json())
+  .then(data => console.log(data.fact));
+```
+
+**3️⃣ Using Python:**
+```python
+import requests
+response = requests.get('https://catfact.ninja/fact')
+print(response.json()['fact'])
+```
+
+**📦 Expected Response:**
+```json
+{
+  "fact": "Cats have 32 muscles in each ear.",
+  "length": 38
+}
+```
+
+---
+
+### 📚 Additional Resources
+
+- 📖 [What is REST API?](https://www.redhat.com/en/topics/api/what-is-a-rest-api) - RedHat Guide
+- 🎓 [HTTP Status Codes Cheat Sheet](https://httpstatuses.com/) - Quick reference
+- 🧪 [JSONPlaceholder](https://jsonplaceholder.typicode.com/) - Free fake API for practice
+- 💬 [API Best Practices](https://stackoverflow.blog/2020/03/02/best-practices-for-rest-api-design/) - Stack Overflow Blog
+
+---

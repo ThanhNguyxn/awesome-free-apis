@@ -1,0 +1,20 @@
+{
+  "name": "awesome-free-apis-docs",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "generate": "node ../scripts/generate-docs.mjs",
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "prebuild": "node ../scripts/generate-docs.mjs"
+  },
+  "dependencies": {
+    "@astrojs/starlight": "^0.37.3",
+    "astro": "^5.6.1",
+    "sharp": "^0.34.2"
+  }
+}
