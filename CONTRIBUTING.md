@@ -1,44 +1,82 @@
-# Contributing to Awesome Dev APIs
+# Contributing to Awesome Free APIs
 
-Thank you for your interest in contributing to Awesome Dev APIs! We welcome contributions from everyone.
+Thanks for helping improve this project.
 
-## How to Contribute
+This repository is a curated list of **free/freemium APIs**. We prioritize quality, reliability, and clean formatting.
 
-1.  **Fork the repository**: Click the "Fork" button at the top right of this page to create your own copy of the repository.
-2.  **Clone your fork**: Clone the repository to your local machine.
-    ```bash
-    git clone https://github.com/YOUR-USERNAME/awesome-dev-apis.git
-    ```
-3.  **Create a branch**: Create a new branch for your changes.
-    ```bash
-    git checkout -b add-new-api
-    ```
-4.  **Make your changes**: Add the new API to the appropriate category in `README.md`.
-5.  **Commit your changes**: Commit your changes with a descriptive message.
-    ```bash
-    git commit -m "Add [API Name] to [Category]"
-    ```
-6.  **Push to your fork**: Push your changes to your fork on GitHub.
-    ```bash
-    git push origin add-new-api
-    ```
-7.  **Submit a Pull Request**: Go to the original repository and click "New Pull Request".
+## What You Can Contribute
 
-## Rules for Adding a New API
+- Add new APIs
+- Fix broken links
+- Improve descriptions and formatting
+- Improve tooling/workflows/docs
 
-To ensure the quality of this list, please follow these rules:
+## Requirements for New API Entries
 
-*   **Working API**: The API must be currently active and working.
-*   **Free or Freemium**: The API must be free to use or have a generous free tier.
-*   **Public**: The API must be publicly accessible.
-*   **Documentation**: The API must have clear documentation.
+An API should meet all of the following:
 
-## Pull Request Format
+- Be publicly documented
+- Be free or provide a meaningful free tier
+- Be active and reachable
+- Fit an existing category (or justify a new category)
 
-When submitting a Pull Request, please ensure the following:
+## Entry Format
 
-*   **Category**: Place the API in the correct category. If a suitable category doesn't exist, you may propose a new one.
-*   **Format**: Follow the existing table format: `| API Name | Description | Auth | HTTPS | Link |`.
-*   **Alphabetical Order**: Please try to keep the APIs in alphabetical order within each category.
+Follow this exact table format in `README.md`:
 
-Thank you for contributing!
+```md
+| **API Name** | Short description. | No/🔑 ApiKey/🔐 OAuth | ✅/No | [Link](https://example.com/docs) |
+```
+
+Guidelines:
+
+- Keep descriptions concise and practical
+- Use `No`, `🔑 ApiKey`, or `🔐 OAuth` for auth
+- Use `✅` or `No` for HTTPS
+- Keep entries alphabetized within each category where possible
+- Avoid duplicate APIs and duplicate links
+
+## Local Validation Before Opening a PR
+
+Run link checks:
+
+```bash
+python scripts/check_links.py
+```
+
+If your changes affect docs structure/content generation, also run:
+
+```bash
+node scripts/generate-docs.mjs
+```
+
+Optional docs build check:
+
+```bash
+cd docs-site
+npm ci
+npm run build
+```
+
+## Suggested Contribution Workflow
+
+```bash
+git fork https://github.com/ThanhNguyxn/awesome-free-apis
+git clone https://github.com/YOUR-USERNAME/awesome-free-apis.git
+cd awesome-free-apis
+git checkout -b feat/add-api-name
+```
+
+Make your changes, run validation, then open a PR using the PR template.
+
+## Pull Request Checklist
+
+- API(s) are not duplicates
+- Link(s) are reachable
+- Entry format matches the README table
+- Category placement is correct
+- Local checks were run (or reason provided)
+
+## Community Standards
+
+By participating, you agree to follow our [Code of Conduct](./CODE_OF_CONDUCT.md).

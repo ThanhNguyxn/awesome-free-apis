@@ -45,18 +45,25 @@ body:
         - Anime
         - Anti-Malware
         - "Books & Literature"
+        - "Cloud Storage & Files"
         - Cryptocurrency
         - Development
         - Dictionaries
+        - Education
+        - "Public Data & Datasets"
+        - "Email & SMS"
         - "Design & Colors"
+        - "Environment & Climate"
         - Entertainment
         - Finance
         - "Food & Drink"
         - "Games & Comics"
         - Geocoding
         - "Geography & Countries"
+        - "Government & Civic"
         - Health
         - "Jobs & Career"
+        - "Math & Computation"
         - Machine Learning
         - "Memes & Fun"
         - "Mock Data & Testing"
@@ -69,9 +76,12 @@ body:
         - Social
         - Sports
         - Transportation
+        - "Unofficial & Community APIs"
         - "Utilities & Tools"
-        - Vietnam Services
+        - Video
         - Weather
+        - "Authentication & Identity"
+        - "Blockchain & Web3"
         - Other (please specify in description)
     validations:
       required: true

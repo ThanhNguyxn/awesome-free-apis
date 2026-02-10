@@ -1,0 +1,74 @@
+name: "🐛 Bug Report"
+description: Report a bug in README entries, scripts, workflows, or docs site
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug. Please provide enough detail so we can reproduce it.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      description: Where is the bug?
+      options:
+        - README (API entries/formatting)
+        - Docs site (Astro/Starlight)
+        - Link checker script
+        - GitHub Actions workflow
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the bug clearly
+      placeholder: When I run X, Y happens...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+      placeholder: I expected...
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Provide exact steps
+      placeholder: |
+        1. Go to ...
+        2. Run ...
+        3. See error ...
+    validations:
+      required: true
+
+  - type: input
+    id: related-url
+    attributes:
+      label: Related URL or file path (optional)
+      placeholder: https://... or README.md
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or screenshots (optional)
+      render: shell
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues
+          required: true
+        - label: I can reproduce this issue on the latest main branch
+          required: true

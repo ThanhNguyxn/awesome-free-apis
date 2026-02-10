@@ -1,5 +1,7 @@
 # 🚀 Awesome Dev APIs
 
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+
 > A curated collection of awesome free APIs for developers. Open source and community-driven.
 > This repository aims to provide a comprehensive collection of free and freemium APIs to help you build your next project.
 
@@ -179,8 +181,11 @@ print(response.json()['fact'])
 - [🐶 Animals](#animals)
 - [🌸 Anime](#anime)
 - [🛡️ Anti-Malware](#anti-malware)
+- [🔐 Authentication & Identity](#authentication-identity)
 - [📚 Books & Literature](#books)
+- [⛓️ Blockchain & Web3](#blockchain-web3)
 - [🪙 Cryptocurrency](#cryptocurrency)
+- [☁️ Cloud Storage & Files](#cloud-storage-files)
 - [💻 Development](#development)
 - [📖 Dictionaries](#dictionaries)
 - [🎓 Education](#education)
@@ -227,7 +232,6 @@ print(response.json()['fact'])
 | **Cataas** | Cat as a service (cats pictures and gifs). | No | ✅ | [Link](https://cataas.com/) |
 | **Cats** | Pictures of cats from Tumblr. | 🔑 ApiKey | ✅ | [Link](https://docs.thecatapi.com/) |
 | **Dog Facts** | Random dog facts. | No | ✅ | [Link](https://dukengn.github.io/Dog-facts-API/) |
-| **Dogs** | Based on the Stanford Dogs Dataset. | No | ✅ | [Link](https://dog.ceo/dog-api/) |
 | **eBird** | Retrieve recent or notable birding observations within a region. | 🔑 ApiKey | ✅ | [Link](https://documenter.getpostman.com/view/664302/S1ENwy59) |
 | **FishWatch** | Information and pictures about individual fish species. | No | ✅ | [Link](https://www.fishwatch.gov/developers) |
 | **HTTP Cat** | Cat for every HTTP Status. | No | ✅ | [Link](https://http.cat/) |
@@ -242,7 +246,6 @@ print(response.json()['fact'])
 | **RescueGroups** | Adoption. | No | ✅ | [Link](https://userguide.rescuegroups.org/display/APIDG/API+Developers+Guide+Home) |
 | **Shibe.Online** | Random pictures of Shiba Inu, cats or birds. | No | ✅ | [Link](http://shibe.online/) |
 | **The Cat API** | Images of cats (great for testing image grids). | 🔑 ApiKey | ✅ | [Link](https://thecatapi.com/) |
-| **The Dog** | A public service all about Dogs, free to use. | 🔑 ApiKey | ✅ | [Link](https://thedogapi.com/) |
 | **The Dog API** | Images and data about dogs. | 🔑 ApiKey | ✅ | [Link](https://thedogapi.com/) |
 | **TheCatDB** | Cat breeds and facts database. | 🔑 ApiKey | ✅ | [Link](https://www.thecatapi.com/) |
 | **Dog CEO** | Dog breeds and random dog images. | No | ✅ | [Link](https://dog.ceo/dog-api/) |
@@ -296,6 +299,28 @@ print(response.json()['fact'])
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 
+## <a id="authentication-identity"></a>🔐 Authentication & Identity
+
+| API Name | Description | Auth | HTTPS | Link |
+| :--- | :--- | :---: | :---: | :---: |
+| **Descope** | Customer identity and authentication flows. | 🔑 ApiKey | ✅ | [Link](https://docs.descope.com/api/) |
+| **Frontegg** | Authentication, user management, and multi-tenant identity. | 🔑 ApiKey | ✅ | [Link](https://developers.frontegg.com/) |
+| **FusionAuth** | Identity and access management platform. | 🔑 ApiKey | ✅ | [Link](https://fusionauth.io/docs/apis/) |
+| **GetOTP** | OTP verification and passwordless login APIs. | 🔑 ApiKey | ✅ | [Link](https://otp.dev/en/docs/) |
+| **Keycloak** | Open-source identity and access management APIs. | No | ✅ | [Link](https://www.keycloak.org/docs-api/latest/rest-api/index.html) |
+| **Kinde** | Authentication platform for modern apps. | 🔐 OAuth | ✅ | [Link](https://kinde.com/docs/developer-tools/) |
+| **Logto** | Open-source auth infrastructure and identity APIs. | 🔑 ApiKey | ✅ | [Link](https://docs.logto.io/) |
+| **Magic** | Passwordless authentication and wallet login. | 🔑 ApiKey | ✅ | [Link](https://magic.link/docs/api) |
+| **MojoAuth** | Passwordless authentication API and OTP flows. | 🔑 ApiKey | ✅ | [Link](https://mojoauth.com/docs/api) |
+| **Ory** | Identity, session, and authorization APIs. | No | ✅ | [Link](https://www.ory.sh/docs/reference/api) |
+| **Permit.io** | Authorization and policy management APIs for RBAC/ABAC. | 🔑 ApiKey | ✅ | [Link](https://docs.permit.io/) |
+| **Stytch** | Authentication APIs for passwords, OTP, magic links, and OAuth. | 🔑 ApiKey | ✅ | [Link](https://stytch.com/docs/api) |
+| **SuperTokens** | Open-source auth solution for session and user management. | No | ✅ | [Link](https://supertokens.com/docs) |
+| **Warrant** | Fine-grained authorization and RBAC APIs. | 🔑 ApiKey | ✅ | [Link](https://docs.warrant.dev/) |
+| **WorkOS** | Enterprise SSO, SCIM, and user management APIs. | 🔑 ApiKey | ✅ | [Link](https://workos.com/docs/reference) |
+
+[⬆ Back to Table of Contents](#-table-of-contents)
+
 ## <a id="books"></a>📚 Books & Literature
 
 | API Name | Description | Auth | HTTPS | Link |
@@ -344,6 +369,27 @@ print(response.json()['fact'])
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 
+## <a id="blockchain-web3"></a>⛓️ Blockchain & Web3
+
+| API Name | Description | Auth | HTTPS | Link |
+| :--- | :--- | :---: | :---: | :---: |
+| **Ankr RPC** | Multi-chain RPC infrastructure for Web3 apps. | 🔑 ApiKey | ✅ | [Link](https://www.ankr.com/rpc/) |
+| **BlockCypher** | Blockchain data APIs for Bitcoin, Litecoin, Dogecoin, and Dash. | 🔑 ApiKey | ✅ | [Link](https://www.blockcypher.com/dev/bitcoin/) |
+| **Chainbase** | Unified blockchain data API across multiple chains. | 🔑 ApiKey | ✅ | [Link](https://docs.chainbase.com/) |
+| **Covalent** | Unified API for blockchain transaction and token data. | 🔑 ApiKey | ✅ | [Link](https://www.covalenthq.com/docs/api/) |
+| **dRPC** | Distributed RPC provider for EVM and non-EVM chains. | 🔑 ApiKey | ✅ | [Link](https://drpc.org/docs) |
+| **Etherscan** | Ethereum explorer and smart contract data APIs. | 🔑 ApiKey | ✅ | [Link](https://docs.etherscan.io/) |
+| **FreeRPC** | Free public RPC endpoints for many blockchains. | No | ✅ | [Link](https://www.freerpc.com/) |
+| **Helius** | Solana infrastructure APIs for transactions, NFTs, and webhooks. | 🔑 ApiKey | ✅ | [Link](https://docs.helius.dev/) |
+| **Infura** | Scalable Ethereum, IPFS, and Web3 APIs. | 🔑 ApiKey | ✅ | [Link](https://docs.infura.io/) |
+| **QuickNode** | Multi-chain RPC infrastructure and blockchain APIs. | 🔑 ApiKey | ✅ | [Link](https://www.quicknode.com/docs) |
+| **Solscan** | Solana data APIs for addresses, tokens, and transactions. | 🔑 ApiKey | ✅ | [Link](https://pro-api.solscan.io/pro-api-docs/v2.0) |
+| **Tatum** | Blockchain infrastructure and wallet APIs for many chains. | 🔑 ApiKey | ✅ | [Link](https://apidoc.tatum.io/) |
+| **The Graph** | GraphQL indexing protocol for querying blockchain data. | 🔑 ApiKey | ✅ | [Link](https://thegraph.com/docs/en/subgraphs/querying/introduction/) |
+| **thirdweb** | Developer tooling APIs for smart contracts and wallets. | 🔑 ApiKey | ✅ | [Link](https://portal.thirdweb.com/typescript/v5) |
+
+[⬆ Back to Table of Contents](#-table-of-contents)
+
 ## <a id="development"></a>💻 Development
 
 | API Name | Description | Auth | HTTPS | Link |
@@ -379,7 +425,6 @@ print(response.json()['fact'])
 | **Hunter** | Email Verifier. | 🔑 ApiKey | ✅ | [Link](https://hunter.io/api) |
 | **IP2Location** | IP geolocation database (**Free tier**). | 🔑 ApiKey | ✅ | [Link](https://www.ip2location.com/web-service/ip2location) |
 | **IPGeolocation** | IP geolocation and timezone API (**Free tier: 30k/month**). | 🔑 ApiKey | ✅ | [Link](https://ipgeolocation.io/) |
-| **IPify** | A simple IP Address API. | No | ✅ | [Link](https://www.ipify.org/) |
 | **IPinfo** | IP Address Information. | No | ✅ | [Link](https://ipinfo.io/developers) |
 | **Ipstack** | Locate and identify website visitors by IP address. | 🔑 ApiKey | ✅ | [Link](https://ipstack.com/) |
 | **JSONbin.io** | Free JSON storage. | 🔑 ApiKey | ✅ | [Link](https://jsonbin.io) |
@@ -401,7 +446,6 @@ print(response.json()['fact'])
 | **UUID Generator** | Generate UUIDs (v1, v3, v4, v5). | No | ✅ | [Link](https://www.uuidgenerator.net/api) |
 | **Vercel** | Deployment platform API. | 🔑 ApiKey | ✅ | [Link](https://vercel.com/docs/rest-api/endpoints) |
 | **Cloudinary** | Image and video management API. | 🔑 ApiKey | ✅ | [Link](https://cloudinary.com/documentation/image_upload_api_reference) |
-| **QRServer** | Generate QR codes dynamically (**No Auth**). | No | ✅ | [Link](https://goqr.me/api/) |
 | **Web Scraper** | Web scraping service (ScrapingBee). | 🔑 ApiKey | ✅ | [Link](https://www.scrapingbee.com/documentation/) |
 | **EmailJS** | Send emails directly from JavaScript (**Free tier**). | 🔑 ApiKey | ✅ | [Link](https://www.emailjs.com/docs/) |
 | **Abstract API** | Suite of useful APIs (IP geolocation, holidays, exchange rates). | 🔑 ApiKey | ✅ | [Link](https://www.abstractapi.com/) |
@@ -411,6 +455,27 @@ print(response.json()['fact'])
 | **Upstash** | Serverless Redis and Kafka (free tier). | 🔑 ApiKey | ✅ | [Link](https://upstash.com/docs/redis/overall/getstarted) |
 | **Novu** | Open-source notification infrastructure. | 🔑 ApiKey | ✅ | [Link](https://docs.novu.co/api-reference/overview) |
 | **PostHog** | Open-source product analytics (free tier). | 🔑 ApiKey | ✅ | [Link](https://posthog.com/docs/api) |
+
+[⬆ Back to Table of Contents](#-table-of-contents)
+
+## <a id="cloud-storage-files"></a>☁️ Cloud Storage & Files
+
+| API Name | Description | Auth | HTTPS | Link |
+| :--- | :--- | :---: | :---: | :---: |
+| **Backblaze B2** | Cloud object storage API with S3-compatible endpoints. | 🔑 ApiKey | ✅ | [Link](https://www.backblaze.com/apidocs/introduction-to-the-s3-compatible-api) |
+| **Box** | Cloud content management and file storage API. | 🔐 OAuth | ✅ | [Link](https://developer.box.com/reference/) |
+| **Cloudflare R2** | S3-compatible object storage API without egress fees. | 🔑 ApiKey | ✅ | [Link](https://developers.cloudflare.com/r2/api/s3/api/) |
+| **Dropbox** | File storage and sharing APIs. | 🔐 OAuth | ✅ | [Link](https://www.dropbox.com/developers/documentation/http/documentation) |
+| **Filebase** | S3-compatible object storage backed by decentralized networks. | 🔑 ApiKey | ✅ | [Link](https://docs.filebase.com/api-documentation) |
+| **Filestack** | File uploads, processing, and content delivery APIs. | 🔑 ApiKey | ✅ | [Link](https://www.filestack.com/docs/api/) |
+| **Google Drive** | File storage, sharing, and metadata APIs. | 🔐 OAuth | ✅ | [Link](https://developers.google.com/drive/api) |
+| **ImageKit** | Image and media upload, optimization, and delivery APIs. | 🔑 ApiKey | ✅ | [Link](https://imagekit.io/docs/api-reference/) |
+| **OneDrive (Microsoft Graph)** | OneDrive file and folder APIs via Microsoft Graph. | 🔐 OAuth | ✅ | [Link](https://learn.microsoft.com/en-us/graph/api/resources/onedrive) |
+| **Pinata** | IPFS pinning and decentralized file storage APIs. | 🔑 ApiKey | ✅ | [Link](https://docs.pinata.cloud/) |
+| **Storj** | Decentralized cloud object storage APIs. | 🔑 ApiKey | ✅ | [Link](https://docs.storj.io/) |
+| **Uploadcare** | File uploads, media processing, and delivery APIs. | 🔑 ApiKey | ✅ | [Link](https://uploadcare.com/docs/api_reference/) |
+| **UploadThing** | File upload infrastructure for modern web apps. | 🔑 ApiKey | ✅ | [Link](https://docs.uploadthing.com/) |
+| **Web3.Storage** | Decentralized storage API built on IPFS/Filecoin. | 🔑 ApiKey | ✅ | [Link](https://web3.storage/docs/) |
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 
@@ -541,7 +606,6 @@ print(response.json()['fact'])
 | **TVmaze** | TV shows and episode data (**No Auth**). | No | ✅ | [Link](https://www.tvmaze.com/api) |
 | **Trakt** | TV and Movie tracking. | 🔐 OAuth | ✅ | [Link](https://trakt.docs.apiary.io/) |
 | **Watchmode** | Streaming availability. | 🔑 ApiKey | ✅ | [Link](https://api.watchmode.com/) |
-| **Cocktail** | Random cocktail recipes and ingredients. | No | ✅ | [Link](https://www.thecocktaildb.com/api.php) |
 | **Trivia API** | Trivia questions in various categories (**No Auth**). | No | ✅ | [Link](https://the-trivia-api.com/) |
 | **StreamElements** | Twitch/YouTube live streaming data & overlays. | 🔑 ApiKey | ✅ | [Link](https://dev.streamelements.com/) |
 | **TheTVDB** | TV database with episodes and artwork. | 🔑 ApiKey | ✅ | [Link](https://thetvdb.github.io/v4-api/) |
@@ -733,7 +797,6 @@ print(response.json()['fact'])
 | :--- | :--- | :---: | :---: | :---: |
 | **Art Institute of Chicago** | Museum artwork data (**No Auth**). | No | ✅ | [Link](https://api.artic.edu/docs/) |
 | **Giphy** | GIFs. | 🔑 ApiKey | ✅ | [Link](https://developers.giphy.com/docs/) |
-| **Lorem Picsum** | Placeholder images. | No | ✅ | [Link](https://picsum.photos/) |
 | **Met Museum** | Metropolitan Museum of Art collection (**No Auth**). | No | ✅ | [Link](https://metmuseum.github.io/) |
 | **Pexels** | Free stock photos. | 🔑 ApiKey | ✅ | [Link](https://www.pexels.com/api/) |
 | **Picsum Photos** | The Lorem Ipsum for photos. | No | ✅ | [Link](https://picsum.photos/) |
@@ -853,7 +916,6 @@ print(response.json()['fact'])
 | :--- | :--- | :---: | :---: | :---: |
 | **DiceBear Avatars** | Generate random SVG avatars (**No Auth**). | No | ✅ | [Link](https://www.dicebear.com/) |
 | **FakerAPI** | Generate fake data for testing (**No Auth, 1000 req/day**). | No | ✅ | [Link](https://fakerapi.it/en) |
-| **goqr.me** | Create QR codes via URL parameters (**No Auth**). | No | ✅ | [Link](https://goqr.me/api/) |
 | **ipify** | A simple public IP address API (**No Auth**). | No | ✅ | [Link](https://www.ipify.org/) |
 | **Pravatar** | Placeholder avatar images (**No Auth**). | No | ✅ | [Link](https://pravatar.cc/) |
 | **QR Code Generator** | Dynamic QR code generation API. | No | ✅ | [Link](https://goqr.me/api/) |
@@ -1076,6 +1138,22 @@ print(response.json()['fact'])
 | **Sunrise-Sunset** | Sunrise and sunset times for any location (**No Auth**). | No | ✅ | [Link](https://sunrise-sunset.org/api) |
 
 [⬆ Back to Table of Contents](#-table-of-contents)
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome. Please read [CONTRIBUTING.md](./CONTRIBUTING.md) before opening a pull request.
+
+You can also use the GitHub issue templates to suggest new APIs, report bugs, or request improvements.
+
+## 🛡️ Code of Conduct
+
+This project follows the [Code of Conduct](./CODE_OF_CONDUCT.md). Please be respectful and constructive.
+
+## 📄 License
+
+This project is licensed under the [MIT License](./LICENSE).
 
 ---
 

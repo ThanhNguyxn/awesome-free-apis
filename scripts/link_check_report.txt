@@ -1,25 +1,14 @@
 LINK CHECK REPORT
 ================================================================================
 
-Total: 574
-Working: 527
-Protected: 34
+Total: 617
+Working: 574
+Protected: 33
 Warnings: 10
 Errors: 0
-Broken: 3
+Broken: 0
 Unknown: 0
 
-BROKEN LINKS:
---------------------------------------------------------------------------------
-
-https://api-web.nhle.com/
-  -> Not found - likely dead
-
-https://mailtrap.io/api/
-  -> Not found - likely dead
-
-https://www.climatiq.io/docs/api-reference/introduction
-  -> Not found - likely dead
 
 WARNING LINKS:
 --------------------------------------------------------------------------------

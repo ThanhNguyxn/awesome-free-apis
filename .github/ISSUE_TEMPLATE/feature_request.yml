@@ -1,0 +1,63 @@
+name: "✨ Feature Request"
+description: Propose an improvement for the repository, workflows, scripts, or docs
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your suggestion. Please describe the problem and the desired outcome.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem statement
+      description: What problem are you trying to solve?
+      placeholder: It is difficult to...
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe your idea in detail
+      placeholder: We should add...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: impact-area
+    attributes:
+      label: Impact area
+      options:
+        - API curation quality
+        - Documentation website
+        - Contribution workflow
+        - CI/CD and automation
+        - Developer experience
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered (optional)
+      placeholder: I also considered...
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Additional context (optional)
+      description: Links, references, mockups, or examples
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and discussions
+          required: true
+        - label: This request is aligned with the repo focus on free APIs and professional curation
+          required: true

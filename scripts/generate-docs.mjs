@@ -14,12 +14,14 @@ const GUIDE_OUTPUT = join(ROOT, 'docs-site', 'src', 'content', 'docs', 'guide', 
 const EXAMPLES_OUTPUT = join(ROOT, 'docs-site', 'src', 'content', 'docs', 'examples', 'index.mdx');
 
 const CATEGORY_ORDER = [
-  'animals', 'anime', 'anti-malware', 'books', 'cryptocurrency',
-  'development', 'dictionaries', 'education', 'public-data', 'email-sms',
-  'entertainment', 'finance', 'food-drink', 'games-comics', 'geocoding',
-  'health', 'machine-learning', 'mock-data-testing', 'music', 'news',
-  'photography', 'science', 'security-validation', 'shopping', 'utilities-tools',
-  'social', 'sports', 'design-colors', 'geography-countries', 'transportation',
+  'animals', 'anime', 'anti-malware', 'authentication-identity', 'books',
+  'blockchain-web3', 'cryptocurrency', 'cloud-storage-files', 'development',
+  'dictionaries', 'education', 'public-data', 'email-sms', 'finance',
+  'food-drink', 'entertainment', 'geocoding', 'games-comics', 'health',
+  'machine-learning', 'music', 'mock-data-testing', 'news', 'photography',
+  'science', 'security-validation', 'shopping', 'social', 'sports',
+  'utilities-tools', 'design-colors', 'geography-countries', 'transportation',
+  'environment-climate', 'government-civic', 'video', 'math-computation',
   'unofficial-community', 'memes-fun', 'jobs-career', 'weather'
 ];
 
