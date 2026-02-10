@@ -12,7 +12,7 @@ export default defineConfig({
         src: './public/logo.png',
         alt: 'Awesome Free APIs Logo',
       },
-      favicon: '/favicon.svg',
+      favicon: '/favicon.png',
       social: [
         { icon: 'github', label: 'GitHub', href: 'https://github.com/ThanhNguyxn/awesome-free-apis' },
       ],
