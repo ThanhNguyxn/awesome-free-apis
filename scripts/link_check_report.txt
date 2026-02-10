@@ -1,19 +1,55 @@
 LINK CHECK REPORT
 ================================================================================
 
-Total: 412
-Working: 387
-Protected: 23
-Warnings: 0
+Total: 574
+Working: 527
+Protected: 34
+Warnings: 10
 Errors: 0
-Broken: 2
+Broken: 3
 Unknown: 0
 
 BROKEN LINKS:
 --------------------------------------------------------------------------------
 
-https://api.mangadex.org/docs/
-  -> DNS failed - domain dead
+https://api-web.nhle.com/
+  -> Not found - likely dead
 
-https://steamcommunity.com/dev
-  -> Connection issue (refused/failed)
+https://mailtrap.io/api/
+  -> Not found - likely dead
+
+https://www.climatiq.io/docs/api-reference/introduction
+  -> Not found - likely dead
+
+WARNING LINKS:
+--------------------------------------------------------------------------------
+
+https://amiiboapi.com/
+  -> SSL error (may be temporary cert issue)
+
+https://api.countapi.xyz/
+  -> DNS issue (may be temporary/CI environment)
+
+https://build.coursera.org/app-platform/catalog
+  -> DNS issue (may be temporary/CI environment)
+
+http://numbersapi.com/
+  -> Timeout after retries (slow server)
+
+https://malshare.com/doc.php
+  -> SSL error (may be temporary cert issue)
+
+https://placeholder.com/
+  -> DNS issue (may be temporary/CI environment)
+
+https://pprathameshmore.github.io/QuoteGarden/
+  -> DNS issue (may be temporary/CI environment)
+
+https://punkapi.com/documentation/v2
+  -> DNS issue (may be temporary/CI environment)
+
+https://worldtimeapi.org/
+  -> SSL error (may be temporary cert issue)
+
+https://www.boardgameatlas.com/api/docs
+  -> Service unavailable (503) - may be temporary
