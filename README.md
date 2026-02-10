@@ -450,7 +450,7 @@ print(response.json()['fact'])
 | **TimeZoneDB** | Time zone data and conversion (**No Auth**). | No | ✅ | [Link](https://timezonedb.com/api) |
 | **US Census** | US demographics, economics, housing data. | 🔑 ApiKey | ✅ | [Link](https://www.census.gov/data/developers/data-sets.html) |
 | **USPTO** | US patent data and applications (**No Auth**). | No | ✅ | [Link](https://developer.uspto.gov/api-catalog) |
-| **Eurostat** | European Union statistics database (**No Auth**). | No | ✅ | [Link](https://wikis.ec.europa.eu/display/EUROSTATHELP/API) |
+| **Eurostat** | European Union statistics database (**No Auth**). | No | ✅ | [Link](https://ec.europa.eu/eurostat/web/main/data/web-services) |
 
 
 
