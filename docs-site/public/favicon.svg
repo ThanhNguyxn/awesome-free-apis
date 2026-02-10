@@ -1,19 +1,71 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#3b82f6"/>
-      <stop offset="100%" style="stop-color:#8b5cf6"/>
+    <linearGradient id="gearGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a3a5c"/>
+      <stop offset="100%" style="stop-color:#0a1628"/>
     </linearGradient>
-    <linearGradient id="bolt" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#fbbf24"/>
-      <stop offset="100%" style="stop-color:#f59e0b"/>
+    <linearGradient id="circuitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4ff"/>
+      <stop offset="100%" style="stop-color:#0088cc"/>
     </linearGradient>
+    <linearGradient id="birdGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2196F3"/>
+      <stop offset="50%" style="stop-color:#1565C0"/>
+      <stop offset="100%" style="stop-color:#0D47A1"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#00a2ff;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#000033;stop-opacity:0"/>
+    </radialGradient>
   </defs>
-  <rect width="128" height="128" rx="24" fill="url(#bg)"/>
-  <!-- Left curly brace { -->
-  <path d="M38 32 C38 32 28 32 28 44 L28 54 C28 60 22 64 22 64 C22 64 28 68 28 74 L28 84 C28 96 38 96 38 96" fill="none" stroke="white" stroke-width="6" stroke-linecap="round"/>
-  <!-- Right curly brace } -->
-  <path d="M90 32 C90 32 100 32 100 44 L100 54 C100 60 106 64 106 64 C106 64 100 68 100 74 L100 84 C100 96 90 96 90 96" fill="none" stroke="white" stroke-width="6" stroke-linecap="round"/>
-  <!-- Lightning bolt -->
-  <polygon points="70,38 54,68 66,68 58,90 74,60 62,60" fill="url(#bolt)"/>
+  <!-- Background circle -->
+  <circle cx="64" cy="68" r="56" fill="#0a1628"/>
+  <circle cx="64" cy="68" r="56" fill="url(#glow)"/>
+  <!-- Gear teeth -->
+  <g fill="#3a5f8a" stroke="#4a7faa" stroke-width="0.5">
+    <rect x="58" y="10" width="12" height="10" rx="1"/>
+    <rect x="58" y="116" width="12" height="10" rx="1"/>
+    <rect x="10" y="62" width="10" height="12" rx="1"/>
+    <rect x="108" y="62" width="10" height="12" rx="1"/>
+    <rect x="22" y="25" width="11" height="10" rx="1" transform="rotate(-45 27.5 30)"/>
+    <rect x="95" y="25" width="11" height="10" rx="1" transform="rotate(45 100.5 30)"/>
+    <rect x="22" y="101" width="11" height="10" rx="1" transform="rotate(45 27.5 106)"/>
+    <rect x="95" y="101" width="11" height="10" rx="1" transform="rotate(-45 100.5 106)"/>
+  </g>
+  <!-- Gear ring -->
+  <circle cx="64" cy="68" r="46" fill="none" stroke="#4a7faa" stroke-width="4"/>
+  <circle cx="64" cy="68" r="42" fill="url(#gearGrad)" stroke="#2a4f7a" stroke-width="1.5"/>
+  <!-- Circuit traces inside -->
+  <g stroke="#00d4ff" stroke-width="1.2" fill="none" opacity="0.6">
+    <line x1="30" y1="68" x2="42" y2="68"/>
+    <line x1="42" y1="68" x2="42" y2="55"/>
+    <line x1="42" y1="55" x2="50" y2="55"/>
+    <circle cx="50" cy="55" r="2" fill="#00d4ff"/>
+    <line x1="86" y1="68" x2="98" y2="68"/>
+    <line x1="86" y1="68" x2="86" y2="80"/>
+    <line x1="86" y1="80" x2="78" y2="80"/>
+    <circle cx="78" cy="80" r="2" fill="#00d4ff"/>
+    <line x1="64" y1="95" x2="64" y2="88"/>
+    <line x1="64" y1="88" x2="50" y2="88"/>
+    <circle cx="50" cy="88" r="2" fill="#00d4ff"/>
+    <line x1="64" y1="40" x2="78" y2="40"/>
+    <line x1="78" y1="40" x2="78" y2="50"/>
+    <circle cx="78" cy="50" r="2" fill="#00d4ff"/>
+  </g>
+  <!-- API text -->
+  <text x="64" y="76" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="26" fill="white" letter-spacing="3">API</text>
+  <!-- Hawk head silhouette on top -->
+  <g transform="translate(44, 2) scale(0.55)">
+    <!-- Hawk body/head shape -->
+    <path d="M64 8 C52 8 40 16 36 28 C32 40 34 50 38 56 L32 62 C28 66 30 68 34 66 L42 60 C48 64 56 66 64 64 C72 62 80 56 84 48 C88 40 90 28 84 18 C80 12 72 8 64 8 Z" fill="url(#birdGrad)" stroke="#1565C0" stroke-width="1"/>
+    <!-- Feather detail lines -->
+    <path d="M50 30 C54 34 60 36 66 34" fill="none" stroke="#0D47A1" stroke-width="1.5" opacity="0.5"/>
+    <path d="M46 40 C52 44 60 46 68 42" fill="none" stroke="#0D47A1" stroke-width="1.5" opacity="0.5"/>
+    <!-- Eye -->
+    <circle cx="58" cy="24" r="5" fill="#FFC107"/>
+    <circle cx="59" cy="23" r="2.5" fill="#1a1a1a"/>
+    <circle cx="60" cy="22" r="1" fill="white" opacity="0.8"/>
+    <!-- Beak -->
+    <path d="M74 24 L86 28 L78 32 C76 30 74 28 74 24 Z" fill="#FFB300" stroke="#E65100" stroke-width="0.5"/>
+  </g>
 </svg>

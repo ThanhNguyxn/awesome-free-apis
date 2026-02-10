@@ -7,9 +7,9 @@ export default defineConfig({
   integrations: [
     starlight({
       title: 'Awesome Free APIs',
-      description: 'A curated collection of 450+ free APIs for developers. Find the perfect API for your next project.',
+      description: 'A curated collection of 500+ free APIs for developers. Find the perfect API for your next project.',
       logo: {
-        src: './public/favicon.svg',
+        src: './public/logo.png',
         alt: 'Awesome Free APIs Logo',
       },
       favicon: '/favicon.svg',
