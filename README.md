@@ -842,7 +842,6 @@ print(response.json()['fact'])
 | **OpenSanctions** | Data on international sanctions, crime and politically exposed persons. | No | ✅ | [Link](https://www.opensanctions.org/docs/api/) |
 | **PeakMetrics** | News articles and public datasets. | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/peakmetrics-peakmetrics-default/api/peakmetrics-news) |
 | **Recreation Information Database** | Recreational areas, federal lands, historic sites, museums, and other attract... | 🔑 ApiKey | ✅ | [Link](https://ridb.recreation.gov/) |
-| **Scoop.it** | Content Curation Service. | 🔑 ApiKey | No | [Link](http://www.scoop.it/dev) |
 | **Teleport** | Quality of Life Data. | No | ✅ | [Link](https://developers.teleport.org/) |
 | **Umeå Open Data** | Open data of the city Umeå in northen Sweden. | No | ✅ | [Link](https://opendata.umea.se/api/) |
 | **University of Oslo** | Courses, lecture videos, detailed information for courses etc. for the Univer... | No | ✅ | [Link](https://data.uio.no/) |

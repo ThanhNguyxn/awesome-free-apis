@@ -1,10 +1,10 @@
 LINK CHECK REPORT
 ================================================================================
 
-Total: 1661
-Working: 1462
-Protected: 84
-Warnings: 106
+Total: 1660
+Working: 1463
+Protected: 83
+Warnings: 105
 Errors: 3
 Broken: 0
 Unknown: 6
@@ -64,14 +64,14 @@ http://hearthstoneapi.com/
 http://iinei.inei.gob.pe/microdatos/
   -> Timeout after retries (slow server)
 
-http://numbersapi.com/
-  -> Timeout after retries (slow server)
-
 https://anonfiles.com/docs/api
   -> DNS issue (may be temporary/CI environment)
 
 https://amiiboapi.com/
   -> SSL error (may be temporary cert issue)
+
+http://numbersapi.com/
+  -> Timeout after retries (slow server)
 
 https://api-docs.pgamerx.com/
   -> DNS issue (may be temporary/CI environment)
@@ -103,11 +103,11 @@ https://api.virushee.com/
 https://apidocs.geekflare.com/docs/geekflare-api
   -> DNS issue (may be temporary/CI environment)
 
-https://bayfiles.com/docs/api
-  -> DNS issue (may be temporary/CI environment)
-
 https://avaandmed.eesti.ee/instructions/opendata-dataset-api
   -> SSL error (may be temporary cert issue)
+
+https://bayfiles.com/docs/api
+  -> DNS issue (may be temporary/CI environment)
 
 https://biriyani.anoram.com/
   -> Service unavailable (503) - may be temporary
@@ -118,14 +118,14 @@ https://breakingbadapi.com/documentation
 https://build.coursera.org/app-platform/catalog
   -> DNS issue (may be temporary/CI environment)
 
-https://corona.dnsforfamily.com/api.txt
-  -> DNS issue (may be temporary/CI environment)
-
 https://brainshop.ai/
   -> Timeout after retries (slow server)
 
 https://api.catalogopolis.xyz/docs/
   -> Timeout after retries (slow server)
+
+https://corona.dnsforfamily.com/api.txt
+  -> DNS issue (may be temporary/CI environment)
 
 https://crxcavator.io/apidocs
   -> DNS issue (may be temporary/CI environment)
@@ -133,34 +133,34 @@ https://crxcavator.io/apidocs
 https://bitcoincharts.com/about/exchanges/
   -> Timeout after retries (slow server)
 
-https://cutt.ly/api-documentation/cuttly-links-api
-  -> SSL error (may be temporary cert issue)
-
 https://covid19api.com/
   -> Timeout after retries (slow server)
+
+https://cutt.ly/api-documentation/cuttly-links-api
+  -> SSL error (may be temporary cert issue)
 
 https://data.nationalgrideso.com/
   -> DNS issue (may be temporary/CI environment)
 
-https://data.covid19.go.id/public/api/prov.json
-  -> Timeout after retries (slow server)
-
 https://designer.mocky.io/
   -> SSL error (may be temporary cert issue)
 
-https://data.gov.in/
+https://data.covid19.go.id/public/api/prov.json
   -> Timeout after retries (slow server)
 
 https://developer.ciscospark.com
   -> SSL error (may be temporary cert issue)
 
+https://data.gov.in/
+  -> Timeout after retries (slow server)
+
 https://developer.gitter.im/docs/welcome
   -> DNS issue (may be temporary/CI environment)
 
-https://developers.decathlon.com/products/sport-places
+https://developers.decathlon.com/products/sport-vision
   -> DNS issue (may be temporary/CI environment)
 
-https://developers.decathlon.com/products/sport-vision
+https://developers.decathlon.com/products/sport-places
   -> DNS issue (may be temporary/CI environment)
 
 https://developers.decathlon.com/products/sports
@@ -186,9 +186,6 @@ https://docs.identity.ps/docs
 
 https://docs.impala.travel/docs/booking-api/
   -> DNS issue (may be temporary/CI environment)
-
-https://disqus.com/api/docs/auth/
-  -> Connection issue (may be temporary)
 
 https://eva.pingutil.com/
   -> DNS issue (may be temporary/CI environment)
@@ -217,13 +214,13 @@ https://logs.to/
 https://malshare.com/doc.php
   -> SSL error (may be temporary cert issue)
 
+https://geodata.gov.gr/en/
+  -> Timeout after retries (slow server)
+
 https://mercury.postlight.com/web-parser/
   -> DNS issue (may be temporary/CI environment)
 
 https://iexcloud.io/docs/api/
-  -> Timeout after retries (slow server)
-
-https://geodata.gov.gr/en/
   -> Timeout after retries (slow server)
 
 https://networkcalc.com/api/docs
@@ -247,11 +244,11 @@ https://placeholder.com/
 https://pprathameshmore.github.io/QuoteGarden/
   -> DNS issue (may be temporary/CI environment)
 
-https://pastebin.com/doc_api
-  -> SSL error (may be temporary cert issue)
-
 https://proxykingdom.com
   -> DNS issue (may be temporary/CI environment)
+
+https://pastebin.com/doc_api
+  -> SSL error (may be temporary cert issue)
 
 https://quarantine.country/coronavirus/api/
   -> DNS issue (may be temporary/CI environment)
@@ -283,10 +280,10 @@ https://support.clickmeter.com/hc/en-us/categories/201474986
 https://tenders.guru/es/api
   -> Timeout after retries (slow server)
 
-https://tenders.guru/pl/api
+https://tenders.guru/hu/api
   -> Timeout after retries (slow server)
 
-https://tenders.guru/hu/api
+https://tenders.guru/pl/api
   -> Timeout after retries (slow server)
 
 https://tenders.guru/ro/api
@@ -307,6 +304,9 @@ https://tenders.guru/ua/api
 https://walltime.info/api.html
   -> DNS issue (may be temporary/CI environment)
 
+https://worldtimeapi.org/
+  -> SSL error (may be temporary cert issue)
+
 https://www.Styvio.com
   -> DNS issue (may be temporary/CI environment)
 
@@ -316,11 +316,11 @@ https://www.apisetu.gov.in/
 https://www.boredapi.com/
   -> DNS issue (may be temporary/CI environment)
 
-https://www.boardgameatlas.com/api/docs
-  -> Service unavailable (503) - may be temporary
-
 https://www.bugsnaxapi.com/
   -> DNS issue (may be temporary/CI environment)
+
+https://www.boardgameatlas.com/api/docs
+  -> Service unavailable (503) - may be temporary
 
 https://wiki.vg/Mojang_API
   -> Timeout after retries (slow server)
@@ -356,9 +356,6 @@ https://www.roadgoat.com/business/cities-api
   -> Timeout after retries (slow server)
 
 https://www.yahoofinanceapi.com/
-  -> Timeout after retries (slow server)
-
-https://www.thegazette.co.uk/data
   -> Timeout after retries (slow server)
 
 https://www.ups.com/upsdeveloperkit
