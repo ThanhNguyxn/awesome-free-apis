@@ -1,10 +1,10 @@
 LINK CHECK REPORT
 ================================================================================
 
-Total: 1660
-Working: 1463
+Total: 1558
+Working: 1362
 Protected: 83
-Warnings: 105
+Warnings: 104
 Errors: 3
 Broken: 0
 Unknown: 6
@@ -118,14 +118,14 @@ https://breakingbadapi.com/documentation
 https://build.coursera.org/app-platform/catalog
   -> DNS issue (may be temporary/CI environment)
 
+https://corona.dnsforfamily.com/api.txt
+  -> DNS issue (may be temporary/CI environment)
+
 https://brainshop.ai/
   -> Timeout after retries (slow server)
 
 https://api.catalogopolis.xyz/docs/
   -> Timeout after retries (slow server)
-
-https://corona.dnsforfamily.com/api.txt
-  -> DNS issue (may be temporary/CI environment)
 
 https://crxcavator.io/apidocs
   -> DNS issue (may be temporary/CI environment)
@@ -133,20 +133,20 @@ https://crxcavator.io/apidocs
 https://bitcoincharts.com/about/exchanges/
   -> Timeout after retries (slow server)
 
-https://covid19api.com/
-  -> Timeout after retries (slow server)
-
 https://cutt.ly/api-documentation/cuttly-links-api
   -> SSL error (may be temporary cert issue)
+
+https://covid19api.com/
+  -> Timeout after retries (slow server)
 
 https://data.nationalgrideso.com/
   -> DNS issue (may be temporary/CI environment)
 
-https://designer.mocky.io/
-  -> SSL error (may be temporary cert issue)
-
 https://data.covid19.go.id/public/api/prov.json
   -> Timeout after retries (slow server)
+
+https://designer.mocky.io/
+  -> SSL error (may be temporary cert issue)
 
 https://developer.ciscospark.com
   -> SSL error (may be temporary cert issue)
@@ -157,10 +157,10 @@ https://data.gov.in/
 https://developer.gitter.im/docs/welcome
   -> DNS issue (may be temporary/CI environment)
 
-https://developers.decathlon.com/products/sport-vision
+https://developers.decathlon.com/products/sport-places
   -> DNS issue (may be temporary/CI environment)
 
-https://developers.decathlon.com/products/sport-places
+https://developers.decathlon.com/products/sport-vision
   -> DNS issue (may be temporary/CI environment)
 
 https://developers.decathlon.com/products/sports
@@ -175,11 +175,11 @@ https://discord.riverside.rocks/docs/index.php
 https://datos.gob.ar/
   -> Timeout after retries (slow server)
 
-https://docs.bruzu.com
-  -> DNS issue (may be temporary/CI environment)
-
 https://docs.bhagavadgitaapi.in
   -> SSL error (may be temporary cert issue)
+
+https://docs.bruzu.com
+  -> DNS issue (may be temporary/CI environment)
 
 https://docs.identity.ps/docs
   -> DNS issue (may be temporary/CI environment)
@@ -214,9 +214,6 @@ https://logs.to/
 https://malshare.com/doc.php
   -> SSL error (may be temporary cert issue)
 
-https://geodata.gov.gr/en/
-  -> Timeout after retries (slow server)
-
 https://mercury.postlight.com/web-parser/
   -> DNS issue (may be temporary/CI environment)
 
@@ -230,6 +227,9 @@ https://nordigen.com/en/account_information_documenation/integration/quickstart_
   -> DNS issue (may be temporary/CI environment)
 
 https://kontests.net/api
+  -> Timeout after retries (slow server)
+
+https://geodata.gov.gr/en/
   -> Timeout after retries (slow server)
 
 https://openvisionapi.com
@@ -304,19 +304,16 @@ https://tenders.guru/ua/api
 https://walltime.info/api.html
   -> DNS issue (may be temporary/CI environment)
 
-https://worldtimeapi.org/
-  -> SSL error (may be temporary cert issue)
-
 https://www.Styvio.com
   -> DNS issue (may be temporary/CI environment)
 
 https://www.apisetu.gov.in/
   -> SSL error (may be temporary cert issue)
 
-https://www.boredapi.com/
+https://www.bugsnaxapi.com/
   -> DNS issue (may be temporary/CI environment)
 
-https://www.bugsnaxapi.com/
+https://www.boredapi.com/
   -> DNS issue (may be temporary/CI environment)
 
 https://www.boardgameatlas.com/api/docs
