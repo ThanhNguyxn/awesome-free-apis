@@ -245,7 +245,7 @@ print(response.json()['fact'])
 | **RandomDuck** | Random pictures of ducks. | No | ✅ | [Link](https://random-d.uk/api) |
 | **RandomFox** | Random pictures of foxes. | No | ✅ | [Link](https://randomfox.ca/floof/) |
 | **RescueGroups** | Adoption. | No | ✅ | [Link](https://userguide.rescuegroups.org/display/APIDG/API+Developers+Guide+Home) |
-| **Petfinder** | Pet adoption and shelter listings API. | 🔑 ApiKey | ✅ | [Link](https://www.petfinder.com/developers/) |
+| **Dog API v2** | Dog breeds and image endpoints for apps and bots. | No | ✅ | [Link](https://dogapi.dog/docs/api-v2) |
 | **Shibe.Online** | Random pictures of Shiba Inu, cats or birds. | No | ✅ | [Link](http://shibe.online/) |
 | **The Cat API** | Images of cats (great for testing image grids). | 🔑 ApiKey | ✅ | [Link](https://thecatapi.com/) |
 | **The Dog API** | Images and data about dogs. | 🔑 ApiKey | ✅ | [Link](https://thedogapi.com/) |
@@ -505,7 +505,7 @@ print(response.json()['fact'])
 | **Free Dictionary API** | Free English dictionary API. | No | ✅ | [Link](https://dictionaryapi.dev/) |
 | **Merriam-Webster** | Dictionary and thesaurus. | 🔑 ApiKey | ✅ | [Link](https://dictionaryapi.com/) |
 | **Oxford Dictionaries** | English dictionary and language data. | 🔑 ApiKey | ✅ | [Link](https://developer.oxforddictionaries.com/) |
-| **Urban Dictionary** | Slang dictionary. | No | ✅ | [Link](https://github.com/zdict/zdict/wiki/Urban-dictionary-API-documentation) |
+| **Urban Dictionary** | Slang dictionary. | No | ✅ | [Link](https://api.urbandictionary.com/v0/define?term=api) |
 | **WordsAPI** | Word definitions, synonyms, antonyms. | 🔑 ApiKey | ✅ | [Link](https://www.wordsapi.com/) |
 | **Lingua Robot** | Word definitions and language detection (**No Auth**). | No | ✅ | [Link](https://www.linguarobot.io/) |
 | **Datamuse** | Word-finding query engine (**No Auth**). | No | ✅ | [Link](https://www.datamuse.com/api/) |

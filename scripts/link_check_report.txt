@@ -2,9 +2,9 @@ LINK CHECK REPORT
 ================================================================================
 
 Total: 652
-Working: 607
-Protected: 35
-Warnings: 10
+Working: 609
+Protected: 34
+Warnings: 9
 Errors: 0
 Broken: 0
 Unknown: 0
@@ -36,9 +36,6 @@ https://pprathameshmore.github.io/QuoteGarden/
 
 https://punkapi.com/documentation/v2
   -> DNS issue (may be temporary/CI environment)
-
-https://worldtimeapi.org/
-  -> SSL error (may be temporary cert issue)
 
 https://www.boardgameatlas.com/api/docs
   -> Service unavailable (503) - may be temporary
