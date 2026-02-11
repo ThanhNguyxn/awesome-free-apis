@@ -92,6 +92,7 @@
 /* --- API Table Enhancements --- */
 .sl-markdown-content table {
   width: 100%;
+  table-layout: fixed;
   border-collapse: separate;
   border-spacing: 0;
   border-radius: 0.5rem;
@@ -99,6 +100,13 @@
   border: 1px solid var(--sl-color-gray-5);
   font-size: 0.9rem;
 }
+
+/* Column width distribution */
+.sl-markdown-content table thead th:nth-child(1) { width: 18%; }
+.sl-markdown-content table thead th:nth-child(2) { width: 42%; }
+.sl-markdown-content table thead th:nth-child(3) { width: 12%; }
+.sl-markdown-content table thead th:nth-child(4) { width: 10%; }
+.sl-markdown-content table thead th:nth-child(5) { width: 18%; }
 
 :root[data-theme='light'] .sl-markdown-content table {
   border-color: var(--sl-color-gray-2);
@@ -136,6 +144,8 @@
   padding: 0.6rem 1rem;
   border-bottom: 1px solid var(--sl-color-gray-5);
   vertical-align: middle;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 :root[data-theme='light'] .sl-markdown-content table tbody td {
@@ -149,7 +159,8 @@
 /* API name bold styling */
 .sl-markdown-content table tbody td:first-child {
   font-weight: 600;
-  white-space: nowrap;
+  white-space: normal;
+  word-break: break-word;
 }
 
 /* Link column styling */

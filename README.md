@@ -255,7 +255,7 @@ print(response.json()['fact'])
 | **WoRMS** | Marine species taxonomy and classification data. | No | ✅ | [Link](https://www.marinespecies.org/rest/) |
 | **Dog CEO** | Dog breeds and random dog images. | No | ✅ | [Link](https://dog.ceo/dog-api/) |
 | **xeno-canto** | Bird sounds from around the world. | No | ✅ | [Link](https://xeno-canto.org/explore/api) |
-| **Petfinder** | Petfinder is dedicated to helping pets find homes, another resource to get pe... | 🔑 ApiKey | ✅ | [Link](https://www.petfinder.com/developers/) |
+
 | **PlaceDog** | Placeholder Dog pictures. | No | ✅ | [Link](https://place.dog) |
 | **PlaceKitten** | Placeholder Kitten pictures. | No | ✅ | [Link](https://placekitten.com/) |
 
@@ -417,7 +417,7 @@ print(response.json()['fact'])
 | **INFURA Ethereum** | Interaction with the Ethereum mainnet and several testnets. | 🔑 ApiKey | ✅ | [Link](https://infura.io/product/ethereum) |
 | **MercadoBitcoin** | Brazilian Cryptocurrency Information. | No | ✅ | [Link](https://www.mercadobitcoin.com.br/api-doc/) |
 | **Nexchange** | Automated cryptocurrency exchange service. | No | No | [Link](https://nexchange2.docs.apiary.io/) |
-| **Nomics** | Historical and realtime cryptocurrency prices and market data. | 🔑 ApiKey | ✅ | [Link](https://nomics.com/docs/) |
+
 | **NovaDax** | NovaDAX API to access all market data, trading management endpoints. | 🔑 ApiKey | ✅ | [Link](https://doc.novadax.com/en-US/#introduction) |
 | **OKEx** | Cryptocurrency exchange based in Seychelles. | 🔑 ApiKey | ✅ | [Link](https://www.okex.com/docs/) |
 | **Solana JSON RPC** | Provides various endpoints to interact with the Solana Blockchain. | No | ✅ | [Link](https://docs.solana.com/developing/clients/jsonrpc-api) |
@@ -904,7 +904,7 @@ print(response.json()['fact'])
 | **Tasty** | Recipes from Tasty (via RapidAPI). | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/apidojo/api/tasty/) |
 | **Ninjas Recipe** | Recipe search with nutrition data. | 🔑 ApiKey | ✅ | [Link](https://api-ninjas.com/api/recipe) |
 | **Open Brewery DB** | Brewery database worldwide. | No | ✅ | [Link](https://www.openbrewerydb.org/) |
-| **Punk API** | BrewDog beer recipes and data. | No | ✅ | [Link](https://punkapi.com/documentation/v2) |
+| **Punk API** | BrewDog beer recipes and data (community fork). | No | ✅ | [Link](https://punkapi-alxiw.amvera.io/v3/) |
 | **Yelp Fusion** | Business and restaurant reviews. | 🔑 ApiKey | ✅ | [Link](https://docs.developer.yelp.com/) |
 | **Zomato** | Restaurant search and reviews. | 🔑 ApiKey | ✅ | [Link](https://developers.zomato.com/api) |
 | **BaconMockup** | Resizable bacon placeholder images. | No | ✅ | [Link](https://baconmockup.com/) |
@@ -914,7 +914,7 @@ print(response.json()['fact'])
 | **Fruityvice** | Data about all kinds of fruit. | No | ✅ | [Link](https://www.fruityvice.com) |
 | **Kroger** | Supermarket Data. | 🔑 ApiKey | ✅ | [Link](https://developer.kroger.com/reference) |
 | **LCBO** | Alcohol. | 🔑 ApiKey | ✅ | [Link](https://lcboapi.com/) |
-| **PunkAPI** | Brewdog Beer Recipes. | No | ✅ | [Link](https://punkapi.com/) |
+
 | **Systembolaget** | Govornment owned liqour store in Sweden. | 🔑 ApiKey | ✅ | [Link](https://api-portal.systembolaget.se) |
 | **TacoFancy** | Community-driven taco database. | No | No | [Link](https://github.com/evz/tacofancy-api) |
 | **The Report of the Week** | Food & Drink Reviews. | No | ✅ | [Link](https://github.com/andyklimczak/TheReportOfTheWeek-API) |
@@ -1110,7 +1110,7 @@ print(response.json()['fact'])
 | **Dungeons and Dragons (Alternate)** | Includes all monsters and spells from the SRD (System Reference Document) as ... | No | ✅ | [Link](https://open5e.com/) |
 | **FFXIV Collect** | Final Fantasy XIV data on collectables. | No | ✅ | [Link](https://ffxivcollect.com/) |
 | **FIFA Ultimate Team** | FIFA Ultimate Team items API. | No | ✅ | [Link](https://www.easports.com/fifa/ultimate-team/api/fut/item) |
-| **Forza** | Show random image of car from Forza. | No | ✅ | [Link](https://docs.forza-api.tk) |
+
 | **FunTranslations** | Translate Text into funny languages. | No | ✅ | [Link](https://api.funtranslations.com/) |
 | **GDBrowser** | Easy way to use the Geometry Dash Servers. | No | ✅ | [Link](https://gdbrowser.com/api) |
 | **Geek-Jokes** | Fetch a random geeky/programming related joke for use in all sorts of applica... | No | ✅ | [Link](https://github.com/sameerkumar18/geek-joke-api) |
@@ -1370,7 +1370,7 @@ print(response.json()['fact'])
 | **Dagpi** | Image manipulation and processing. | 🔑 ApiKey | ✅ | [Link](https://dagpi.xyz) |
 | **DynaPictures** | Generate Hundreds of Personalized Images in Minutes. | 🔑 ApiKey | ✅ | [Link](https://dynapictures.com/docs/) |
 | **Getty Images** | Build applications using the world's most powerful imagery. | 🔐 OAuth | ✅ | [Link](http://developers.gettyimages.com/en/) |
-| **Gfycat** | Jiffier GIFs. | 🔐 OAuth | ✅ | [Link](https://developers.gfycat.com/api/) |
+
 | **Google Photos** | Integrate Google Photos with your apps or devices. | 🔐 OAuth | ✅ | [Link](https://developers.google.com/photos) |
 | **Image Upload** | Image Optimization. | 🔑 ApiKey | ✅ | [Link](https://apilayer.com/marketplace/image_upload-api) |
 | **Imgur** | Images. | 🔐 OAuth | ✅ | [Link](https://apidocs.imgur.com/) |
@@ -1743,7 +1743,7 @@ print(response.json()['fact'])
 | **Transport for Budapest, Hungary** | Budapest public transport API. | No | ✅ | [Link](https://bkkfutar.docs.apiary.io) |
 | **Transport for Chicago, US** | Chicago Transit Authority (CTA) | 🔑 ApiKey | No | [Link](http://www.transitchicago.com/developers/) |
 | **Transport for Czech Republic** | Czech transport API. | No | ✅ | [Link](https://www.chaps.cz/eng/products/idos-internet) |
-| **Transport for Denver, US** | RTD. | No | No | [Link](http://www.rtd-denver.com/gtfs-developer-guide.shtml) |
+
 | **Transport for Finland** | Finnish transport API. | No | ✅ | [Link](https://digitransit.fi/en/developers/) |
 | **Transport for Grenoble, France** | Grenoble public transport. | No | No | [Link](https://www.mobilites-m.fr/pages/opendata/OpenDataApi.html) |
 | **Transport for Hessen, Germany** | RMV API (Public Transport in Hessen) | No | ✅ | [Link](https://opendata.rmv.de/site/start.html) |
@@ -1915,7 +1915,7 @@ print(response.json()['fact'])
 | **Dune** | A simple API which provides you with book, character, movie and quotes JSON data. | No | ✅ | [Link](https://github.com/ywalia01/dune-api) |
 | **Final Space** | Final Space API. | No | ✅ | [Link](https://finalspaceapi.com/docs/) |
 | **Game of Thrones Quotes** | Some Game of Thrones quotes. | No | ✅ | [Link](https://gameofthronesquotes.xyz/) |
-| **IMDb-API** | API for receiving movie, serial and cast information. | 🔑 ApiKey | ✅ | [Link](https://imdb-api.com/) |
+| **IMDb API** | Movie, serial and cast information. | 🔑 ApiKey | ✅ | [Link](https://imdbapi.dev/) |
 | **IMDbOT** | Unofficial IMDb Movie / Series Information. | No | ✅ | [Link](https://github.com/SpEcHiDe/IMDbOT) |
 | **JSON2Video** | Create and edit videos programmatically: watermarks,resizing,slideshows,voice... | 🔑 ApiKey | ✅ | [Link](https://json2video.com) |
 | **Lucifer Quotes** | Returns Lucifer quotes. | No | ✅ | [Link](https://github.com/shadowoff09/lucifer-quotes) |
@@ -2027,7 +2027,7 @@ print(response.json()['fact'])
 | **Careerjet** | Job search engine. | 🔑 ApiKey | No | [Link](https://www.careerjet.com/partners/api/) |
 | **DevITjobs UK** | Jobs with GraphQL. | No | ✅ | [Link](https://devitjobs.uk/job_feed.xml) |
 | **Findwork** | Job board. | 🔑 ApiKey | ✅ | [Link](https://findwork.dev/developers/) |
-| **GraphQL Jobs** | Jobs with GraphQL. | No | ✅ | [Link](https://graphql.jobs/docs/api/) |
+
 | **Jobs2Careers** | Job aggregator. | 🔑 ApiKey | ✅ | [Link](http://api.jobs2careers.com/api/spec.pdf) |
 | **Jooble** | Job search engine. | 🔑 ApiKey | ✅ | [Link](https://jooble.org/api/about) |
 | **Juju** | Job search engine. | 🔑 ApiKey | No | [Link](http://www.juju.com/publisher/spec/) |
