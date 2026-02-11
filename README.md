@@ -557,6 +557,7 @@ print(response.json()['fact'])
 | **Redash** | Query, dashboards, and data source automation API. | 🔑 ApiKey | ✅ | [Link](https://redash.io/help/user-guide/integrations-and-api/api) |
 | **Screenshotlayer** | Website screenshots. | 🔑 ApiKey | ✅ | [Link](https://screenshotlayer.com/) |
 | **Serpstack** | Real-Time Google Search Results. | 🔑 ApiKey | ✅ | [Link](https://serpstack.com/) |
+| **SnapAPI** | Screenshot, PDF, and markdown conversion API. | 🔑 ApiKey | ✅ | [Link](https://github.com/opspawn/screenshot-api) |
 | **Supabase** | Open source Firebase alternative (database, auth, storage). | 🔑 ApiKey | ✅ | [Link](https://supabase.com/docs/guides/api) |
 | **Userstack** | User-Agent String Analysis. | 🔑 ApiKey | ✅ | [Link](https://userstack.com/) |
 | **UUID Generator** | Generate UUIDs (v1, v3, v4, v5). | No | ✅ | [Link](https://www.uuidgenerator.net/api) |
