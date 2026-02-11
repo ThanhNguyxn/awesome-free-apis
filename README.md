@@ -187,13 +187,22 @@ print(response.json()['fact'])
 - [🪙 Cryptocurrency](#cryptocurrency)
 - [☁️ Cloud Storage & Files](#cloud-storage-files)
 - [💻 Development](#development)
+- [⚙️ Continuous Integration](#continuous-integration)
+- [📝 Text Analysis & NLP](#text-analysis-nlp)
+- [🏠 IoT & Smart Devices](#iot-smart-devices)
+- [🔓 Open Source Projects](#open-source-projects)
 - [📖 Dictionaries](#dictionaries)
 - [🎓 Education](#education)
 - [📅 Calendar & Holidays](#calendar-holidays)
 - [📊 Public Data & Datasets](#public-data)
 - [📧 Email & SMS](#email-sms)
+- [📱 Phone & Telephony](#phone-telephony)
 - [🎮 Entertainment](#entertainment)
+- [🎪 Events](#events)
+- [🎙️ Podcasts](#podcasts)
+- [💭 Personality & Quotes](#personality-quotes)
 - [💰 Finance](#finance)
+- [💱 Currency Exchange](#currency-exchange)
 - [🍔 Food & Drink](#food-drink)
 - [🎮 Games & Comics](#games-comics)
 - [🌍 Geocoding](#geocoding)
@@ -205,13 +214,16 @@ print(response.json()['fact'])
 - [📸 Photography](#photography)
 - [🔬 Science](#science)
 - [🔒 Security & Validation](#security-validation)
+- [✅ Data Validation](#data-validation)
 - [🛍️ Shopping](#shopping)
 - [🔧 Utilities & Tools](#utilities-tools)
+- [🔗 URL Shorteners](#url-shorteners)
 - [💬 Social](#social)
 - [⚽ Sports](#sports)
 - [🎨 Design & Colors](#design-colors)
 - [🌎 Geography & Countries](#geography-countries)
 - [🚆 Transportation](#transportation)
+- [📦 Tracking & Logistics](#tracking-logistics)
 - [🌿 Environment & Climate](#environment-climate)
 - [🏛️ Government & Civic](#government-civic)
 - [📹 Video](#video)
@@ -255,7 +267,6 @@ print(response.json()['fact'])
 | **WoRMS** | Marine species taxonomy and classification data. | No | ✅ | [Link](https://www.marinespecies.org/rest/) |
 | **Dog CEO** | Dog breeds and random dog images. | No | ✅ | [Link](https://dog.ceo/dog-api/) |
 | **xeno-canto** | Bird sounds from around the world. | No | ✅ | [Link](https://xeno-canto.org/explore/api) |
-
 | **PlaceDog** | Placeholder Dog pictures. | No | ✅ | [Link](https://place.dog) |
 | **PlaceKitten** | Placeholder Kitten pictures. | No | ✅ | [Link](https://placekitten.com/) |
 
@@ -362,6 +373,37 @@ print(response.json()['fact'])
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 
+## <a id="blockchain-web3"></a>⛓️ Blockchain & Web3
+
+| API Name | Description | Auth | HTTPS | Link |
+| :--- | :--- | :---: | :---: | :---: |
+| **Ankr RPC** | Multi-chain RPC infrastructure for Web3 apps. | 🔑 ApiKey | ✅ | [Link](https://www.ankr.com/rpc/) |
+| **BlockCypher** | Blockchain data APIs for Bitcoin, Litecoin, Dogecoin, and Dash. | 🔑 ApiKey | ✅ | [Link](https://www.blockcypher.com/dev/bitcoin/) |
+| **BscScan** | BNB Chain explorer and contract data APIs. | 🔑 ApiKey | ✅ | [Link](https://bscscan.com/apis) |
+| **Chainbase** | Unified blockchain data API across multiple chains. | 🔑 ApiKey | ✅ | [Link](https://docs.chainbase.com/) |
+| **Covalent** | Unified API for blockchain transaction and token data. | 🔑 ApiKey | ✅ | [Link](https://www.covalenthq.com/docs/api/) |
+| **Chainlink** | Developer resources for decentralized oracle data. | No | ✅ | [Link](https://chain.link/developer-resources) |
+| **dRPC** | Distributed RPC provider for EVM and non-EVM chains. | 🔑 ApiKey | ✅ | [Link](https://drpc.org/docs) |
+| **Etherscan** | Ethereum explorer and smart contract data APIs. | 🔑 ApiKey | ✅ | [Link](https://docs.etherscan.io/) |
+| **FreeRPC** | Free public RPC endpoints for many blockchains. | No | ✅ | [Link](https://www.freerpc.com/) |
+| **GetBlock** | Blockchain node infrastructure via unified API. | 🔑 ApiKey | ✅ | [Link](https://getblock.io/) |
+| **Helius** | Solana infrastructure APIs for transactions, NFTs, and webhooks. | 🔑 ApiKey | ✅ | [Link](https://docs.helius.dev/) |
+| **Infura** | Scalable Ethereum, IPFS, and Web3 APIs. | 🔑 ApiKey | ✅ | [Link](https://docs.infura.io/) |
+| **Nownodes** | Multi-chain RPC and blockchain access APIs. | 🔑 ApiKey | ✅ | [Link](https://nownodes.io/) |
+| **QuickNode** | Multi-chain RPC infrastructure and blockchain APIs. | 🔑 ApiKey | ✅ | [Link](https://www.quicknode.com/docs) |
+| **Solscan** | Solana data APIs for addresses, tokens, and transactions. | 🔑 ApiKey | ✅ | [Link](https://pro-api.solscan.io/pro-api-docs/v2.0) |
+| **Tatum** | Blockchain infrastructure and wallet APIs for many chains. | 🔑 ApiKey | ✅ | [Link](https://apidoc.tatum.io/) |
+| **The Graph** | GraphQL indexing protocol for querying blockchain data. | 🔑 ApiKey | ✅ | [Link](https://thegraph.com/docs/en/subgraphs/querying/introduction/) |
+| **thirdweb** | Developer tooling APIs for smart contracts and wallets. | 🔑 ApiKey | ✅ | [Link](https://portal.thirdweb.com/typescript/v5) |
+| **Watchdata** | Multi-chain wallet, NFT, and node APIs. | 🔑 ApiKey | ✅ | [Link](https://docs.watchdata.io/) |
+| **Bitquery** | Onchain GraphQL APIs & DEX APIs. | 🔑 ApiKey | ✅ | [Link](https://graphql.bitquery.io/ide) |
+| **Chainpoint** | Chainpoint is a global network for anchoring data to the Bitcoin blockchain. | No | ✅ | [Link](https://tierion.com/chainpoint/) |
+| **Helium** | Helium is a global, distributed network of Hotspots that create public, long-... | No | ✅ | [Link](https://docs.helium.com/api/blockchain/introduction/) |
+| **Steem** | Blockchain-based blogging and social media website. | No | No | [Link](https://developers.steem.io/) |
+| **Walltime** | To retrieve Walltime's market info. | No | ✅ | [Link](https://walltime.info/api.html) |
+
+[⬆ Back to Table of Contents](#-table-of-contents)
+
 ## <a id="cryptocurrency"></a>🪙 Cryptocurrency
 
 | API Name | Description | Auth | HTTPS | Link |
@@ -417,7 +459,6 @@ print(response.json()['fact'])
 | **INFURA Ethereum** | Interaction with the Ethereum mainnet and several testnets. | 🔑 ApiKey | ✅ | [Link](https://infura.io/product/ethereum) |
 | **MercadoBitcoin** | Brazilian Cryptocurrency Information. | No | ✅ | [Link](https://www.mercadobitcoin.com.br/api-doc/) |
 | **Nexchange** | Automated cryptocurrency exchange service. | No | No | [Link](https://nexchange2.docs.apiary.io/) |
-
 | **NovaDax** | NovaDAX API to access all market data, trading management endpoints. | 🔑 ApiKey | ✅ | [Link](https://doc.novadax.com/en-US/#introduction) |
 | **OKEx** | Cryptocurrency exchange based in Seychelles. | 🔑 ApiKey | ✅ | [Link](https://www.okex.com/docs/) |
 | **Solana JSON RPC** | Provides various endpoints to interact with the Solana Blockchain. | No | ✅ | [Link](https://docs.solana.com/developing/clients/jsonrpc-api) |
@@ -428,34 +469,37 @@ print(response.json()['fact'])
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 
-## <a id="blockchain-web3"></a>⛓️ Blockchain & Web3
+## <a id="cloud-storage-files"></a>☁️ Cloud Storage & Files
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
-| **Ankr RPC** | Multi-chain RPC infrastructure for Web3 apps. | 🔑 ApiKey | ✅ | [Link](https://www.ankr.com/rpc/) |
-| **BlockCypher** | Blockchain data APIs for Bitcoin, Litecoin, Dogecoin, and Dash. | 🔑 ApiKey | ✅ | [Link](https://www.blockcypher.com/dev/bitcoin/) |
-| **BscScan** | BNB Chain explorer and contract data APIs. | 🔑 ApiKey | ✅ | [Link](https://bscscan.com/apis) |
-| **Chainbase** | Unified blockchain data API across multiple chains. | 🔑 ApiKey | ✅ | [Link](https://docs.chainbase.com/) |
-| **Covalent** | Unified API for blockchain transaction and token data. | 🔑 ApiKey | ✅ | [Link](https://www.covalenthq.com/docs/api/) |
-| **Chainlink** | Developer resources for decentralized oracle data. | No | ✅ | [Link](https://chain.link/developer-resources) |
-| **dRPC** | Distributed RPC provider for EVM and non-EVM chains. | 🔑 ApiKey | ✅ | [Link](https://drpc.org/docs) |
-| **Etherscan** | Ethereum explorer and smart contract data APIs. | 🔑 ApiKey | ✅ | [Link](https://docs.etherscan.io/) |
-| **FreeRPC** | Free public RPC endpoints for many blockchains. | No | ✅ | [Link](https://www.freerpc.com/) |
-| **GetBlock** | Blockchain node infrastructure via unified API. | 🔑 ApiKey | ✅ | [Link](https://getblock.io/) |
-| **Helius** | Solana infrastructure APIs for transactions, NFTs, and webhooks. | 🔑 ApiKey | ✅ | [Link](https://docs.helius.dev/) |
-| **Infura** | Scalable Ethereum, IPFS, and Web3 APIs. | 🔑 ApiKey | ✅ | [Link](https://docs.infura.io/) |
-| **Nownodes** | Multi-chain RPC and blockchain access APIs. | 🔑 ApiKey | ✅ | [Link](https://nownodes.io/) |
-| **QuickNode** | Multi-chain RPC infrastructure and blockchain APIs. | 🔑 ApiKey | ✅ | [Link](https://www.quicknode.com/docs) |
-| **Solscan** | Solana data APIs for addresses, tokens, and transactions. | 🔑 ApiKey | ✅ | [Link](https://pro-api.solscan.io/pro-api-docs/v2.0) |
-| **Tatum** | Blockchain infrastructure and wallet APIs for many chains. | 🔑 ApiKey | ✅ | [Link](https://apidoc.tatum.io/) |
-| **The Graph** | GraphQL indexing protocol for querying blockchain data. | 🔑 ApiKey | ✅ | [Link](https://thegraph.com/docs/en/subgraphs/querying/introduction/) |
-| **thirdweb** | Developer tooling APIs for smart contracts and wallets. | 🔑 ApiKey | ✅ | [Link](https://portal.thirdweb.com/typescript/v5) |
-| **Watchdata** | Multi-chain wallet, NFT, and node APIs. | 🔑 ApiKey | ✅ | [Link](https://docs.watchdata.io/) |
-| **Bitquery** | Onchain GraphQL APIs & DEX APIs. | 🔑 ApiKey | ✅ | [Link](https://graphql.bitquery.io/ide) |
-| **Chainpoint** | Chainpoint is a global network for anchoring data to the Bitcoin blockchain. | No | ✅ | [Link](https://tierion.com/chainpoint/) |
-| **Helium** | Helium is a global, distributed network of Hotspots that create public, long-... | No | ✅ | [Link](https://docs.helium.com/api/blockchain/introduction/) |
-| **Steem** | Blockchain-based blogging and social media website. | No | No | [Link](https://developers.steem.io/) |
-| **Walltime** | To retrieve Walltime's market info. | No | ✅ | [Link](https://walltime.info/api.html) |
+| **Backblaze B2** | Cloud object storage API with S3-compatible endpoints. | 🔑 ApiKey | ✅ | [Link](https://www.backblaze.com/apidocs/introduction-to-the-s3-compatible-api) |
+| **Box** | Cloud content management and file storage API. | 🔐 OAuth | ✅ | [Link](https://developer.box.com/reference/) |
+| **Cloudflare R2** | S3-compatible object storage API without egress fees. | 🔑 ApiKey | ✅ | [Link](https://developers.cloudflare.com/r2/api/s3/api/) |
+| **Dropbox** | File storage and sharing APIs. | 🔐 OAuth | ✅ | [Link](https://www.dropbox.com/developers/documentation/http/documentation) |
+| **Filebase** | S3-compatible object storage backed by decentralized networks. | 🔑 ApiKey | ✅ | [Link](https://docs.filebase.com/api-documentation) |
+| **Filestack** | File uploads, processing, and content delivery APIs. | 🔑 ApiKey | ✅ | [Link](https://www.filestack.com/docs/api/) |
+| **GoFile** | File hosting and management APIs. | 🔑 ApiKey | ✅ | [Link](https://gofile.io/api) |
+| **Google Drive** | File storage, sharing, and metadata APIs. | 🔐 OAuth | ✅ | [Link](https://developers.google.com/drive/api) |
+| **Gyazo** | Image upload and screenshot APIs. | 🔑 ApiKey | ✅ | [Link](https://gyazo.com/api/docs) |
+| **ImgBB** | Simple image upload API with free tier. | 🔑 ApiKey | ✅ | [Link](https://api.imgbb.com/) |
+| **ImageKit** | Image and media upload, optimization, and delivery APIs. | 🔑 ApiKey | ✅ | [Link](https://imagekit.io/docs/api-reference/) |
+| **OneDrive (Microsoft Graph)** | OneDrive file and folder APIs via Microsoft Graph. | 🔐 OAuth | ✅ | [Link](https://learn.microsoft.com/en-us/graph/api/resources/onedrive) |
+| **Pinata** | IPFS pinning and decentralized file storage APIs. | 🔑 ApiKey | ✅ | [Link](https://docs.pinata.cloud/) |
+| **Storj** | Decentralized cloud object storage APIs. | 🔑 ApiKey | ✅ | [Link](https://docs.storj.io/) |
+| **Uploadcare** | File uploads, media processing, and delivery APIs. | 🔑 ApiKey | ✅ | [Link](https://uploadcare.com/docs/api_reference/) |
+| **UploadThing** | File upload infrastructure for modern web apps. | 🔑 ApiKey | ✅ | [Link](https://docs.uploadthing.com/) |
+| **Web3.Storage** | Decentralized storage API built on IPFS/Filecoin. | 🔑 ApiKey | ✅ | [Link](https://web3.storage/docs/) |
+| **AnonFiles** | Upload and share your files anonymously. | No | ✅ | [Link](https://anonfiles.com/docs/api) |
+| **BayFiles** | Upload and share your files. | No | ✅ | [Link](https://bayfiles.com/docs/api) |
+| **ddownload** | File Sharing and Storage. | 🔑 ApiKey | ✅ | [Link](https://ddownload.com/api) |
+| **File.io** | Super simple file sharing, convenient, anonymous and secure. | No | ✅ | [Link](https://www.file.io) |
+| **OneDrive** | File Sharing and Storage. | 🔐 OAuth | ✅ | [Link](https://developer.microsoft.com/onedrive) |
+| **Pantry** | Free JSON storage for small projects. | No | ✅ | [Link](https://getpantry.cloud/) |
+| **Pastebin** | Plain Text Storage. | 🔑 ApiKey | ✅ | [Link](https://pastebin.com/doc_api) |
+| **Quip** | File Sharing and Storage for groups. | 🔑 ApiKey | ✅ | [Link](https://quip.com/dev/automation/documentation) |
+| **The Null Pointer** | No-bullshit file hosting and URL shortening service. | No | ✅ | [Link](https://0x0.st) |
+| **Web3 Storage** | File Sharing and Storage for Free with 1TB Space. | 🔑 ApiKey | ✅ | [Link](https://web3.storage/) |
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 
@@ -500,7 +544,6 @@ print(response.json()['fact'])
 | **Ipstack** | Locate and identify website visitors by IP address. | 🔑 ApiKey | ✅ | [Link](https://ipstack.com/) |
 | **Instatus** | Status page and incident management API. | 🔑 ApiKey | ✅ | [Link](https://instatus.com/help/api) |
 | **JSONbin.io** | Free JSON storage. | 🔑 ApiKey | ✅ | [Link](https://jsonbin.io) |
-| **LibreTranslate** | Free and open-source translation API (**Self-hosted, No Auth**). | No | ✅ | [Link](https://libretranslate.com/) |
 | **Mailboxlayer** | Email verification and validation. | 🔑 ApiKey | ✅ | [Link](https://mailboxlayer.com/) |
 | **Nationalize.io** | Predict the nationality of a person based on their name. | No | ✅ | [Link](https://nationalize.io) |
 | **Netlify** | Netlify API. | 🔐 OAuth | ✅ | [Link](https://docs.netlify.com/api/get-started/) |
@@ -522,7 +565,6 @@ print(response.json()['fact'])
 | **Web Scraper** | Web scraping service (ScrapingBee). | 🔑 ApiKey | ✅ | [Link](https://www.scrapingbee.com/documentation/) |
 | **EmailJS** | Send emails directly from JavaScript (**Free tier**). | 🔑 ApiKey | ✅ | [Link](https://www.emailjs.com/docs/) |
 | **Abstract API** | Suite of useful APIs (IP geolocation, holidays, exchange rates). | 🔑 ApiKey | ✅ | [Link](https://www.abstractapi.com/) |
-| **Rebrandly** | URL shortener API. | 🔑 ApiKey | ✅ | [Link](https://developers.rebrandly.com/docs) |
 | **QuickChart** | Generate charts and QR codes. | No | ✅ | [Link](https://quickchart.io/) |
 | **Smartsheet** | Spreadsheet-style project management API. | 🔐 OAuth | ✅ | [Link](https://smartsheet.redoc.ly/) |
 | **Neon** | Serverless Postgres database (free tier). | 🔑 ApiKey | ✅ | [Link](https://neon.tech/docs/reference/api-reference) |
@@ -530,17 +572,11 @@ print(response.json()['fact'])
 | **Upstash** | Serverless Redis and Kafka (free tier). | 🔑 ApiKey | ✅ | [Link](https://upstash.com/docs/redis/overall/getstarted) |
 | **Novu** | Open-source notification infrastructure. | 🔑 ApiKey | ✅ | [Link](https://docs.novu.co/api-reference/overview) |
 | **PostHog** | Open-source product analytics (free tier). | 🔑 ApiKey | ✅ | [Link](https://posthog.com/docs/api) |
-| **Azure DevOps Health** | Resource health helps you diagnose and get support when an Azure issue impact... | 🔑 ApiKey | No | [Link](https://docs.microsoft.com/en-us/rest/api/resourcehealth) |
-| **Bitrise** | Build tool and processes integrations to create efficient development pipelines. | 🔑 ApiKey | ✅ | [Link](https://api-docs.bitrise.io/) |
-| **Buddy** | The fastest continuous integration and continuous delivery platform. | 🔐 OAuth | ✅ | [Link](https://buddy.works/docs/api/getting-started/overview) |
-| **Codeship** | Codeship is a Continuous Integration Platform in the cloud. | 🔑 ApiKey | ✅ | [Link](https://docs.cloudbees.com/docs/cloudbees-codeship/latest/api-overview/) |
-| **Travis CI** | Sync your GitHub projects with Travis CI to test your code in minutes. | 🔑 ApiKey | ✅ | [Link](https://docs.travis-ci.com/api/) |
 | **API Grátis** | Multiples services and public APIs. | No | ✅ | [Link](https://apigratis.com.br/) |
 | **ApicAgent** | Extract device details from user-agent string. | No | ✅ | [Link](https://www.apicagent.com) |
 | **Base** | Building quick backends. | 🔑 ApiKey | ✅ | [Link](https://www.base-api.io/) |
 | **Blague.xyz** | La plus grande API de Blagues FR/The biggest FR jokes API. | 🔑 ApiKey | ✅ | [Link](https://blague.xyz/) |
 | **Blitapp** | Schedule screenshots of web pages and sync them to your cloud. | 🔑 ApiKey | ✅ | [Link](https://blitapp.com/api/) |
-| **Blynk-Cloud** | Control IoT Devices from Blynk IoT Cloud. | 🔑 ApiKey | No | [Link](https://blynkapi.docs.apiary.io/#) |
 | **Bored** | Find random activities to fight boredom. | No | ✅ | [Link](https://www.boredapi.com/) |
 | **Brainshop.ai** | Make A Free A.I Brain. | 🔑 ApiKey | ✅ | [Link](https://brainshop.ai/) |
 | **Browshot** | Easily make screenshots of web pages in any screen size, as any device. | 🔑 ApiKey | ✅ | [Link](https://browshot.com/api/documentation) |
@@ -567,7 +603,6 @@ print(response.json()['fact'])
 | **IBM Text to Speech** | Convert text to speech. | 🔑 ApiKey | ✅ | [Link](https://cloud.ibm.com/docs/text-to-speech/getting-started.html) |
 | **Icanhazepoch** | Get Epoch time. | No | ✅ | [Link](https://icanhazepoch.com) |
 | **Icanhazip** | IP Address API. | No | ✅ | [Link](https://major.io/icanhazip-com-faq/) |
-| **IFTTT** | IFTTT Connect API. | No | ✅ | [Link](https://platform.ifttt.com/docs/connect_api) |
 | **Image-Charts** | Generate charts, QR codes and graph images. | No | ✅ | [Link](https://documentation.image-charts.com/) |
 | **import.io** | Retrieve structured data from a website or RSS feed. | 🔑 ApiKey | ✅ | [Link](http://api.docs.import.io/) |
 | **ip-fast.com** | IP address, country and city. | No | ✅ | [Link](https://ip-fast.com/docs/) |
@@ -618,63 +653,95 @@ print(response.json()['fact'])
 | **Supportivekoala** | Autogenerate images with template. | 🔑 ApiKey | ✅ | [Link](https://developers.supportivekoala.com/) |
 | **WebScraping.AI** | Web Scraping API with built-in proxies and JS rendering. | 🔑 ApiKey | ✅ | [Link](https://webscraping.ai/) |
 | **ZenRows** | Web Scraping API that bypasses anti-bot solutions while offering JS rendering... | 🔑 ApiKey | ✅ | [Link](https://www.zenrows.com/) |
-| **Countly** | Countly web analytics. | No | No | [Link](https://api.count.ly/reference) |
-| **Creative Commons Catalog** | Search among openly licensed and public domain works. | 🔐 OAuth | ✅ | [Link](https://api.creativecommons.engineering/) |
-| **Drupal.org** | Drupal.org. | No | ✅ | [Link](https://www.drupal.org/drupalorg/docs/api) |
-| **GitHub Contribution Chart Generator** | Create an image of your GitHub contributions. | No | ✅ | [Link](https://github-contributions.vercel.app) |
-| **GitHub ReadMe Stats** | Add dynamically generated statistics to your GitHub profile ReadMe. | No | ✅ | [Link](https://github.com/anuraghazra/github-readme-stats) |
-| **Metabase** | An open source Business Intelligence server to share data and analytics insid... | No | ✅ | [Link](https://www.metabase.com/) |
 | **Codeforces** | Get access to Codeforces data. | 🔑 ApiKey | ✅ | [Link](https://codeforces.com/apiHelp) |
 | **Hackerearth** | For compiling and running code in several languages. | 🔑 ApiKey | ✅ | [Link](https://www.hackerearth.com/docs/wiki/developers/v4/) |
 | **Judge0 CE** | Online code execution system. | 🔑 ApiKey | ✅ | [Link](https://ce.judge0.com/) |
 | **KONTESTS** | For upcoming and ongoing competitive coding contests. | No | ✅ | [Link](https://kontests.net/api) |
 | **Mintlify** | For programmatically generating documentation for code. | 🔑 ApiKey | ✅ | [Link](https://docs.mintlify.com) |
-| **Code Detection API** | Detect, label, format and enrich the code in your app or in your data pipeline. | 🔐 OAuth | ✅ | [Link](https://codedetectionapi.runtime.dev) |
+
+[⬆ Back to Table of Contents](#-table-of-contents)
+
+## <a id="continuous-integration"></a>⚙️ Continuous Integration
+
+| API Name | Description | Auth | HTTPS | Link |
+| :--- | :--- | :---: | :---: | :---: |
+| **AppVeyor** | CI/CD builds API (free for OSS). | 🔑 ApiKey | ✅ | [Link](https://www.appveyor.com/docs/api/) |
+| **Azure DevOps Health** | Resource health helps you diagnose and get support when an Azure issue impact... | 🔑 ApiKey | No | [Link](https://docs.microsoft.com/en-us/rest/api/resourcehealth) |
+| **Bitrise** | Build tool and processes integrations to create efficient development pipelines. | 🔑 ApiKey | ✅ | [Link](https://api-docs.bitrise.io/) |
+| **Buddy** | The fastest continuous integration and continuous delivery platform. | 🔐 OAuth | ✅ | [Link](https://buddy.works/docs/api/getting-started/overview) |
+| **Buildkite** | Pipeline and build automation API. | 🔑 ApiKey | ✅ | [Link](https://buildkite.com/docs/apis/rest-api) |
+| **CircleCI** | CI pipelines, workflows, and artifacts API. | 🔑 ApiKey | ✅ | [Link](https://circleci.com/docs/api/v2/) |
+| **Cirrus CI** | CI pipelines and task automation API. | 🔑 ApiKey | ✅ | [Link](https://cirrus-ci.org/api/) |
+| **Codeship** | Codeship is a Continuous Integration Platform in the cloud. | 🔑 ApiKey | ✅ | [Link](https://docs.cloudbees.com/docs/cloudbees-codeship/latest/api-overview/) |
+| **Drone** | CI pipeline API for Drone server. | 🔑 ApiKey | ✅ | [Link](https://docs.drone.io/api/) |
+| **Jenkins** | Automation server remote API. | 🔑 ApiKey | ✅ | [Link](https://www.jenkins.io/doc/book/using/remote-access-api/) |
+| **Semaphore** | CI/CD projects, workflows, and jobs API. | 🔑 ApiKey | ✅ | [Link](https://docs.semaphoreci.com/reference/api) |
+| **TeamCity** | Build server REST API. | 🔑 ApiKey | ✅ | [Link](https://www.jetbrains.com/help/teamcity/rest/teamcity-rest-api-documentation.html) |
+| **Travis CI** | Sync your GitHub projects with Travis CI to test your code in minutes. | 🔑 ApiKey | ✅ | [Link](https://docs.travis-ci.com/api/) |
+
+[⬆ Back to Table of Contents](#-table-of-contents)
+
+## <a id="text-analysis-nlp"></a>📝 Text Analysis & NLP
+
+| API Name | Description | Auth | HTTPS | Link |
+| :--- | :--- | :---: | :---: | :---: |
 | **Cloudmersive Natural Language Processing** | Natural language processing and text analysis. | 🔑 ApiKey | ✅ | [Link](https://www.cloudmersive.com/nlp-api) |
+| **Code Detection API** | Detect, label, format and enrich the code in your app or in your data pipeline. | 🔐 OAuth | ✅ | [Link](https://codedetectionapi.runtime.dev) |
+| **Dandelion** | Entity extraction and text analytics API. | 🔑 ApiKey | ✅ | [Link](https://dandelion.eu/docs/api/) |
+| **DeepL** | Translation and multilingual text API. | 🔑 ApiKey | ✅ | [Link](https://developers.deepl.com/docs-api) |
 | **Detect Language** | Detects text language. | 🔑 ApiKey | ✅ | [Link](https://detectlanguage.com/) |
+| **Eden AI** | Unified NLP APIs across providers. | 🔑 ApiKey | ✅ | [Link](https://docs.edenai.co/reference/introduction) |
 | **ELI** | Natural Language Processing Tools for Thai Language. | 🔑 ApiKey | ✅ | [Link](https://nlp.insightera.co.th/docs/v1.0) |
 | **Google Cloud Natural** | Natural language understanding technology, including sentiment, entity and sy... | 🔑 ApiKey | ✅ | [Link](https://cloud.google.com/natural-language/docs/) |
 | **Hirak OCR** | Image to text -text recognition- from image more than 100 language, accurate,... | 🔑 ApiKey | ✅ | [Link](https://ocr.hirak.site/) |
 | **Hirak Translation** | Translate between 21 of most used languages, accurate, unlimited requests. | 🔑 ApiKey | ✅ | [Link](https://translate.hirak.site/) |
+| **LanguageTool** | Grammar and style checking API. | No | ✅ | [Link](https://languagetool.org/http-api/swagger-ui/#/) |
 | **Lecto Translation** | Translation API with free tier and reasonable prices. | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/lecto-lecto-default/api/lecto-translation/) |
+| **LibreTranslate** | Free and open-source translation API (**Self-hosted, No Auth**). | No | ✅ | [Link](https://libretranslate.com/) |
+| **ParallelDots** | Sentiment and NLP analysis APIs. | 🔑 ApiKey | ✅ | [Link](https://komprehend.io/) |
+| **Sapling** | Grammar correction and writing APIs. | 🔑 ApiKey | ✅ | [Link](https://sapling.ai/docs/) |
 | **Semantria** | Text Analytics with sentiment analysis, categorization & named entity extraction. | 🔐 OAuth | ✅ | [Link](https://semantria.readme.io/docs) |
 | **Sentiment Analysis** | Multilingual sentiment analysis of texts from different sources. | 🔑 ApiKey | ✅ | [Link](https://www.meaningcloud.com/developer/sentiment-analysis) |
+| **TextRazor** | NLP extraction and classification API. | 🔑 ApiKey | ✅ | [Link](https://www.textrazor.com/docs/rest) |
 | **Tisane** | Text Analytics with focus on detection of abusive content and law enforcement... | 🔐 OAuth | ✅ | [Link](https://tisane.ai/) |
 | **Watson Natural Language Understanding** | Natural language processing for advanced text analysis. | 🔐 OAuth | ✅ | [Link](https://cloud.ibm.com/apidocs/natural-language-understanding/natural-language-understanding) |
+| **Wit.ai** | Intent/entity extraction for text/voice. | 🔑 ApiKey | ✅ | [Link](https://wit.ai/docs/http/20240304/) |
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 
-## <a id="cloud-storage-files"></a>☁️ Cloud Storage & Files
+## <a id="iot-smart-devices"></a>🏠 IoT & Smart Devices
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
-| **Backblaze B2** | Cloud object storage API with S3-compatible endpoints. | 🔑 ApiKey | ✅ | [Link](https://www.backblaze.com/apidocs/introduction-to-the-s3-compatible-api) |
-| **Box** | Cloud content management and file storage API. | 🔐 OAuth | ✅ | [Link](https://developer.box.com/reference/) |
-| **Cloudflare R2** | S3-compatible object storage API without egress fees. | 🔑 ApiKey | ✅ | [Link](https://developers.cloudflare.com/r2/api/s3/api/) |
-| **Dropbox** | File storage and sharing APIs. | 🔐 OAuth | ✅ | [Link](https://www.dropbox.com/developers/documentation/http/documentation) |
-| **Filebase** | S3-compatible object storage backed by decentralized networks. | 🔑 ApiKey | ✅ | [Link](https://docs.filebase.com/api-documentation) |
-| **Filestack** | File uploads, processing, and content delivery APIs. | 🔑 ApiKey | ✅ | [Link](https://www.filestack.com/docs/api/) |
-| **GoFile** | File hosting and management APIs. | 🔑 ApiKey | ✅ | [Link](https://gofile.io/api) |
-| **Google Drive** | File storage, sharing, and metadata APIs. | 🔐 OAuth | ✅ | [Link](https://developers.google.com/drive/api) |
-| **Gyazo** | Image upload and screenshot APIs. | 🔑 ApiKey | ✅ | [Link](https://gyazo.com/api/docs) |
-| **ImgBB** | Simple image upload API with free tier. | 🔑 ApiKey | ✅ | [Link](https://api.imgbb.com/) |
-| **ImageKit** | Image and media upload, optimization, and delivery APIs. | 🔑 ApiKey | ✅ | [Link](https://imagekit.io/docs/api-reference/) |
-| **OneDrive (Microsoft Graph)** | OneDrive file and folder APIs via Microsoft Graph. | 🔐 OAuth | ✅ | [Link](https://learn.microsoft.com/en-us/graph/api/resources/onedrive) |
-| **Pinata** | IPFS pinning and decentralized file storage APIs. | 🔑 ApiKey | ✅ | [Link](https://docs.pinata.cloud/) |
-| **Storj** | Decentralized cloud object storage APIs. | 🔑 ApiKey | ✅ | [Link](https://docs.storj.io/) |
-| **Uploadcare** | File uploads, media processing, and delivery APIs. | 🔑 ApiKey | ✅ | [Link](https://uploadcare.com/docs/api_reference/) |
-| **UploadThing** | File upload infrastructure for modern web apps. | 🔑 ApiKey | ✅ | [Link](https://docs.uploadthing.com/) |
-| **Web3.Storage** | Decentralized storage API built on IPFS/Filecoin. | 🔑 ApiKey | ✅ | [Link](https://web3.storage/docs/) |
-| **AnonFiles** | Upload and share your files anonymously. | No | ✅ | [Link](https://anonfiles.com/docs/api) |
-| **BayFiles** | Upload and share your files. | No | ✅ | [Link](https://bayfiles.com/docs/api) |
-| **ddownload** | File Sharing and Storage. | 🔑 ApiKey | ✅ | [Link](https://ddownload.com/api) |
-| **File.io** | Super simple file sharing, convenient, anonymous and secure. | No | ✅ | [Link](https://www.file.io) |
-| **OneDrive** | File Sharing and Storage. | 🔐 OAuth | ✅ | [Link](https://developer.microsoft.com/onedrive) |
-| **Pantry** | Free JSON storage for small projects. | No | ✅ | [Link](https://getpantry.cloud/) |
-| **Pastebin** | Plain Text Storage. | 🔑 ApiKey | ✅ | [Link](https://pastebin.com/doc_api) |
-| **Quip** | File Sharing and Storage for groups. | 🔑 ApiKey | ✅ | [Link](https://quip.com/dev/automation/documentation) |
-| **The Null Pointer** | No-bullshit file hosting and URL shortening service. | No | ✅ | [Link](https://0x0.st) |
-| **Web3 Storage** | File Sharing and Storage for Free with 1TB Space. | 🔑 ApiKey | ✅ | [Link](https://web3.storage/) |
+| **Adafruit IO** | IoT feed/data API with free tier. | 🔑 ApiKey | ✅ | [Link](https://io.adafruit.com/api/docs/) |
+| **Arduino IoT** | Arduino IoT Cloud API. | 🔑 ApiKey | ✅ | [Link](https://www.arduino.cc/reference/en/iot/) |
+| **Blynk** | IoT device control from cloud. | 🔑 ApiKey | ✅ | [Link](https://docs.blynk.io/) |
+| **Blynk-Cloud** | Control IoT Devices from Blynk IoT Cloud. | 🔑 ApiKey | No | [Link](https://blynkapi.docs.apiary.io/#) |
+| **Home Assistant** | Self-hosted home automation REST API. | 🔑 ApiKey | ✅ | [Link](https://developers.home-assistant.io/docs/api/rest/) |
+| **IFTTT** | IFTTT Connect API. | No | ✅ | [Link](https://platform.ifttt.com/docs/connect_api) |
+| **Particle Cloud** | IoT device management and data API. | 🔑 ApiKey | ✅ | [Link](https://docs.particle.io/reference/cloud-apis/api/) |
+| **ThingsBoard** | Open-source IoT platform REST API. | 🔑 ApiKey | ✅ | [Link](https://thingsboard.io/docs/reference/rest-api/) |
+| **Tuya Cloud** | Smart device management APIs. | 🔑 ApiKey | ✅ | [Link](https://developer.tuya.com/en/docs/cloud/) |
+
+[⬆ Back to Table of Contents](#-table-of-contents)
+
+## <a id="open-source-projects"></a>🔓 Open Source Projects
+
+| API Name | Description | Auth | HTTPS | Link |
+| :--- | :--- | :---: | :---: | :---: |
+| **Countly** | Countly web analytics. | No | No | [Link](https://api.count.ly/reference) |
+| **Creative Commons Catalog** | Search among openly licensed and public domain works. | 🔐 OAuth | ✅ | [Link](https://api.creativecommons.engineering/) |
+| **deps.dev** | Open package/dependency intelligence by Google. | No | ✅ | [Link](https://docs.deps.dev/api/) |
+| **Drupal.org** | Drupal.org. | No | ✅ | [Link](https://www.drupal.org/drupalorg/docs/api) |
+| **ecosyste.ms** | Open source ecosystem data APIs. | No | ✅ | [Link](https://docs.ecosyste.ms/) |
+| **GitHub Contribution Chart Generator** | Create an image of your GitHub contributions. | No | ✅ | [Link](https://github-contributions.vercel.app) |
+| **GitHub ReadMe Stats** | Add dynamically generated statistics to your GitHub profile ReadMe. | No | ✅ | [Link](https://github.com/anuraghazra/github-readme-stats) |
+| **Metabase** | An open source Business Intelligence server to share data and analytics insid... | No | ✅ | [Link](https://www.metabase.com/) |
+| **Packagist** | PHP package repository API. | No | ✅ | [Link](https://packagist.org/apidoc) |
+| **PyPI JSON API** | Python package metadata API. | No | ✅ | [Link](https://docs.pypi.org/api/json/) |
+| **Repology** | Package version tracking across repos. | No | ✅ | [Link](https://repology.org/api) |
+| **RubyGems** | Ruby package repository API. | No | ✅ | [Link](https://guides.rubygems.org/rubygems-org-api) |
+| **Shields.io** | Quality metadata badges for open source projects (**No Auth**). | No | ✅ | [Link](https://shields.io/) |
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 
@@ -785,8 +852,6 @@ print(response.json()['fact'])
 | **PatentsView** | API is intended to explore and visualize trends/patterns across the US innova... | No | ✅ | [Link](https://patentsview.org/apis/purpose) |
 | **TIPO** | Taiwan patent search system api. | 🔑 ApiKey | ✅ | [Link](https://tiponet.tipo.gov.tw/Gazette/OpenData/OD/OD05.aspx?QryDS=API00) |
 
-
-
 [⬆ Back to Table of Contents](#-table-of-contents)
 
 ## <a id="email-sms"></a>📧 Email & SMS
@@ -820,6 +885,109 @@ print(response.json()['fact'])
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 
+## <a id="phone-telephony"></a>📱 Phone & Telephony
+
+| API Name | Description | Auth | HTTPS | Link |
+| :--- | :--- | :---: | :---: | :---: |
+| **46elks** | SMS and voice telephony API. | 🔑 ApiKey | ✅ | [Link](https://46elks.com/docs) |
+| **Apifonica** | Voice call automation API. | 🔑 ApiKey | ✅ | [Link](https://www.apifonica.com/docs/voice-api/) |
+| **Bandwidth** | Voice, messaging, and phone number APIs. | 🔑 ApiKey | ✅ | [Link](https://dev.bandwidth.com/docs/) |
+| **MessageBird** | SMS and omnichannel messaging APIs. | 🔑 ApiKey | ✅ | [Link](https://developers.messagebird.com/api/) |
+| **NeutrinoAPI Phone Validate** | Phone validation and carrier lookup. | 🔑 ApiKey | ✅ | [Link](https://www.neutrinoapi.com/api/phone-validate/) |
+| **Phone Specification** | Rest Api for Phone specifications. | No | ✅ | [Link](https://github.com/azharimm/phone-specs-api) |
+| **Phone Validation** | Validate phone numbers globally. | 🔑 ApiKey | ✅ | [Link](https://www.abstractapi.com/phone-validation-api) |
+| **Plivo** | Voice and SMS communication APIs. | 🔑 ApiKey | ✅ | [Link](https://www.plivo.com/docs/home) |
+| **Sinch** | SMS, voice, and verification APIs. | 🔑 ApiKey | ✅ | [Link](https://developers.sinch.com/) |
+| **Telnyx** | Telephony, messaging, and SIP APIs. | 🔑 ApiKey | ✅ | [Link](https://developers.telnyx.com/api-reference/overview) |
+| **Textbelt** | Lightweight SMS sending API. | 🔑 ApiKey | ✅ | [Link](https://www.textbelt.com/) |
+| **Veriphone** | Phone number validation & carrier lookup. | 🔑 ApiKey | ✅ | [Link](https://veriphone.io) |
+
+[⬆ Back to Table of Contents](#-table-of-contents)
+
+## <a id="entertainment"></a>🎮 Entertainment
+
+| API Name | Description | Auth | HTTPS | Link |
+| :--- | :--- | :---: | :---: | :---: |
+| **OMDb** | Open Movie Database. | 🔑 ApiKey | ✅ | [Link](http://www.omdbapi.com/) |
+| **Quiz API** | Random trivia questions (**No Auth**). | No | ✅ | [Link](https://quizapi.io/) |
+| **Activities when get bored** | Random suggestions for activities. | No | ✅ | [Link](https://rapidapi.com/bored/api/bored-api/) |
+| **Simkl** | Movies, TV, Anime metadata. | 🔑 ApiKey | ✅ | [Link](https://simkl.com/apidoc/) |
+| **TMDb** | The Movie Database. | 🔑 ApiKey | ✅ | [Link](https://developers.themoviedb.org/3) |
+| **TVmaze** | TV shows and episode data (**No Auth**). | No | ✅ | [Link](https://www.tvmaze.com/api) |
+| **Trakt** | TV and Movie tracking. | 🔐 OAuth | ✅ | [Link](https://trakt.docs.apiary.io/) |
+| **Watchmode** | Streaming availability. | 🔑 ApiKey | ✅ | [Link](https://api.watchmode.com/) |
+| **Trivia API** | Trivia questions in various categories (**No Auth**). | No | ✅ | [Link](https://the-trivia-api.com/) |
+| **StreamElements** | Twitch/YouTube live streaming data & overlays. | 🔑 ApiKey | ✅ | [Link](https://dev.streamelements.com/) |
+| **TheTVDB** | TV database with episodes and artwork. | 🔑 ApiKey | ✅ | [Link](https://thetvdb.github.io/v4-api/) |
+| **Board Game Atlas** | Board game database and reviews. | 🔑 ApiKey | ✅ | [Link](https://www.boardgameatlas.com/api/docs) |
+| **Corporate Buzz Words** | REST API for Corporate Buzz Words. | No | ✅ | [Link](https://github.com/sameerkumar18/corporate-bs-generator-api) |
+| **Fun Fact** | A simple HTTPS api that can randomly select and return a fact from the FFA da... | No | ✅ | [Link](https://api.aakhilv.me) |
+| **Meme Maker** | REST API for create your own meme. | No | ✅ | [Link](https://mememaker.github.io/API/) |
+| **NaMoMemes** | Memes on Narendra Modi. | No | ✅ | [Link](https://github.com/theIYD/NaMoMemes) |
+| **Techy** | JSON and Plaintext API for tech-savvy sounding phrases. | No | ✅ | [Link](https://techy-api.vercel.app/) |
+| **Yo Momma Jokes** | REST API for Yo Momma Jokes. | No | ✅ | [Link](https://github.com/beanboi7/yomomma-apiv2) |
+| **Biriyani As A Service** | Biriyani images placeholder. | No | ✅ | [Link](https://biriyani.anoram.com/) |
+| **FOAAS** | Fuck Off As A Service. | No | No | [Link](http://www.foaas.com/) |
+
+[⬆ Back to Table of Contents](#-table-of-contents)
+
+## <a id="events"></a>🎪 Events
+
+| API Name | Description | Auth | HTTPS | Link |
+| :--- | :--- | :---: | :---: | :---: |
+| **Eventbrite** | Find events. | 🔐 OAuth | ✅ | [Link](https://www.eventbrite.com/platform/api/) |
+| **Eventyay** | Open-source event management API. | No | ✅ | [Link](https://api.eventyay.com/) |
+| **Luma** | Event creation and attendee APIs. | 🔑 ApiKey | ✅ | [Link](https://docs.luma.com/reference/getting-started) |
+| **OpenAgenda** | Event agenda and discovery API. | 🔑 ApiKey | ✅ | [Link](https://developers.openagenda.com/) |
+| **PredictHQ** | Event intelligence and impact API. | 🔑 ApiKey | ✅ | [Link](https://docs.predicthq.com/) |
+| **pretix** | Ticketing and event operations API. | 🔑 ApiKey | ✅ | [Link](https://docs.pretix.eu/dev/api/index.html) |
+| **SeatGeek** | Search events, venues and performers. | 🔑 ApiKey | ✅ | [Link](https://platform.seatgeek.com/) |
+| **Sessionize** | CFP sessions and speakers API. | No | ✅ | [Link](https://sessionize.com/playbook/api/) |
+| **Ti.to** | Event ticketing and registrations API. | 🔑 ApiKey | ✅ | [Link](https://ti.to/docs/api) |
+| **Ticket Tailor** | Ticketing and order management API. | 🔑 ApiKey | ✅ | [Link](https://developers.tickettailor.com/) |
+| **Ticketmaster** | Search events, attractions, or venues. | 🔑 ApiKey | ✅ | [Link](http://developer.ticketmaster.com/products-and-docs/apis/getting-started/) |
+
+[⬆ Back to Table of Contents](#-table-of-contents)
+
+## <a id="podcasts"></a>🎙️ Podcasts
+
+| API Name | Description | Auth | HTTPS | Link |
+| :--- | :--- | :---: | :---: | :---: |
+| **Acast** | Podcast platform and publisher APIs. | 🔑 ApiKey | ✅ | [Link](https://developers.acast.com/) |
+| **Audioboom** | Podcast metadata and episode endpoints. | No | ✅ | [Link](https://api.audioboom.com/) |
+| **Buzzsprout** | Podcast hosting and episodes API. | 🔑 ApiKey | ✅ | [Link](https://www.buzzsprout.com/api) |
+| **Fountain** | Podcast app developer API resources. | No | ✅ | [Link](https://fountain.fm/developer) |
+| **fyyd** | Podcast search and metadata API. | No | ✅ | [Link](https://api.fyyd.de/) |
+| **gpodder.net** | Podcast sync and subscriptions API. | No | ✅ | [Link](https://gpoddernet.readthedocs.io/en/latest/api/index.html) |
+| **Podbean** | Podcast hosting and distribution API. | 🔐 OAuth | ✅ | [Link](https://developers.podbean.com/) |
+| **Podcast Index** | Open podcast data and search. | 🔑 ApiKey | ✅ | [Link](https://podcastindex-org.github.io/docs-api/) |
+| **Taddy** | GraphQL podcast search and metadata API. | 🔑 ApiKey | ✅ | [Link](https://taddy.org/developers) |
+
+[⬆ Back to Table of Contents](#-table-of-contents)
+
+## <a id="personality-quotes"></a>💭 Personality & Quotes
+
+| API Name | Description | Auth | HTTPS | Link |
+| :--- | :--- | :---: | :---: | :---: |
+| **Affirmations.dev** | Daily affirmations API. | No | ✅ | [Link](https://www.affirmations.dev/) |
+| **API-Ninjas Quotes** | Curated quotes API. | 🔑 ApiKey | ✅ | [Link](https://api-ninjas.com/api/quotes) |
+| **Dictum** | API to get access to the collection of the most inspiring expressions of mankind. | No | ✅ | [Link](https://github.com/fisenkodv/dictum) |
+| **DummyJSON Quotes** | Fake quotes dataset API. | No | ✅ | [Link](https://dummyjson.com/docs/quotes) |
+| **FavQs.com** | FavQs allows you to collect, discover and share your favorite quotes. | 🔑 ApiKey | ✅ | [Link](https://favqs.com/api) |
+| **Forismatic** | Inspirational Quotes. | No | No | [Link](http://forismatic.com/en/api/) |
+| **Inspiration** | Motivational and Inspirational quotes. | No | ✅ | [Link](https://inspiration.goprogram.ai/docs/) |
+| **Medium** | Community of readers and writers offering unique perspectives on ideas. | 🔐 OAuth | ✅ | [Link](https://github.com/Medium/medium-api-docs) |
+| **Programming Quotes** | Programming Quotes API for open source projects. | No | ✅ | [Link](https://github.com/skolakoda/programming-quotes-api) |
+| **Quotable** | Random quotes (**No Auth**). | No | ✅ | [Link](https://github.com/lukePeavey/quotable) |
+| **Quotes on Design** | Inspirational Quotes. | No | ✅ | [Link](https://quotesondesign.com/api/) |
+| **Stoicism Quote** | Quotes about Stoicism. | No | ✅ | [Link](https://github.com/tlcheah2/stoic-quote-lambda-public-api) |
+| **They Said So Quotes** | Quotes Trusted by many fortune brands around the world. | No | ✅ | [Link](https://theysaidso.com/api/) |
+| **Traitify** | Assess, collect and analyze Personality. | No | ✅ | [Link](https://app.traitify.com/developer) |
+| **Udemy(instructor)** | API for instructors on Udemy. | 🔑 ApiKey | ✅ | [Link](https://www.udemy.com/developers/instructor/) |
+| **Vadivelu HTTP Codes** | On demand HTTP Codes with images. | No | ✅ | [Link](https://vadivelu.anoram.com/) |
+
+[⬆ Back to Table of Contents](#-table-of-contents)
+
 ## <a id="finance"></a>💰 Finance
 
 | API Name | Description | Auth | HTTPS | Link |
@@ -828,33 +996,17 @@ print(response.json()['fact'])
 | **Alpha Vantage** | Realtime and historical stock data. | 🔑 ApiKey | ✅ | [Link](https://www.alphavantage.co/) |
 | **Binlist** | BIN/IIN Lookup. | No | ✅ | [Link](https://binlist.net/) |
 | **CoinDesk** | Bitcoin Price Index (BPI) data (**No Auth**). | No | ✅ | [Link](https://www.coindesk.com/coindesk-api) |
-| **Currencylayer** | Exchange rates and currency conversion. | 🔑 ApiKey | ✅ | [Link](https://currencylayer.com/) |
-| **CurrencyAPI** | Real-time currency rates and conversion. | 🔑 ApiKey | ✅ | [Link](https://currencyapi.com/) |
-| **CurrencyFreaks** | Exchange rates and currency conversion API. | 🔑 ApiKey | ✅ | [Link](https://currencyfreaks.com/) |
-| **Exchangeratesapi** | Exchange rates and currency conversion. | 🔑 ApiKey | ✅ | [Link](https://exchangeratesapi.io/) |
 | **Financial Modeling Prep** | Stock market data. | 🔑 ApiKey | ✅ | [Link](https://site.financialmodelingprep.com/developer/docs) |
 | **Finnhub** | Stock market data. | 🔑 ApiKey | ✅ | [Link](https://finnhub.io/docs/api) |
-| **Fixer** | Exchange rates and currency conversion. | 🔑 ApiKey | ✅ | [Link](https://fixer.io/) |
 | **FRED** | Economic data. | 🔑 ApiKey | ✅ | [Link](https://fred.stlouisfed.org/docs/api/fred/) |
 | **Klarna** | Payments. | 🔑 ApiKey | ✅ | [Link](https://docs.klarna.com/api/) |
 | **MercadoPago** | Payments. | 🔑 ApiKey | ✅ | [Link](https://www.mercadopago.com.br/developers/es/reference) |
 | **Marketstack** | Real-time, intraday and historical market data. | 🔑 ApiKey | ✅ | [Link](https://marketstack.com/) |
-| **National Bank of Poland** | Official exchange rates from NBP. | No | ✅ | [Link](https://api.nbp.pl/en.html) |
 | **Plaid** | Connect bank accounts. | 🔑 ApiKey | ✅ | [Link](https://www.plaid.com/docs) |
 | **Polygon** | Stock market data. | 🔑 ApiKey | ✅ | [Link](https://polygon.io/) |
 | **Square** | Payments, checkout, and commerce APIs. | 🔐 OAuth | ✅ | [Link](https://developer.squareup.com/reference/square) |
 | **Stripe** | Payments. | 🔑 ApiKey | ✅ | [Link](https://stripe.com/docs/api) |
 | **Tax Data API** | Tax rates and validation. | 🔑 ApiKey | ✅ | [Link](https://apilayer.com/marketplace/tax_data-api) |
-| **Exchangerate.host** | Foreign exchange & crypto rates. | 🔑 ApiKey | ✅ | [Link](https://exchangerate.host/) |
-| **Frankfurter** | Open source exchange rates API. | No | ✅ | [Link](https://www.frankfurter.app/) |
-| **1Forge** | Forex currency market data. | 🔑 ApiKey | ✅ | [Link](https://1forge.com/forex-data-api/api-documentation) |
-| **Amdoren** | Free currency API with over 150 currencies. | 🔑 ApiKey | ✅ | [Link](https://www.amdoren.com/currency-api/) |
-| **Bank of Russia** | Exchange rates and currency conversion. | No | ✅ | [Link](https://www.cbr.ru/development/SXML/) |
-| **Currency-api** | Free Currency Exchange Rates API with 150+ Currencies & No Rate Limits. | No | ✅ | [Link](https://github.com/fawazahmed0/currency-api#readme) |
-| **CurrencyScoop** | Real-time and historical currency rates JSON API. | 🔑 ApiKey | ✅ | [Link](https://currencyscoop.com/api-documentation) |
-| **Czech National Bank** | A collection of exchange rates. | No | ✅ | [Link](https://www.cnb.cz/cs/financni_trhy/devizovy_trh/kurzy_devizoveho_trhu/denni_kurz.xml) |
-| **Economia.Awesome** | Portuguese free currency prices and conversion with no rate limits. | No | ✅ | [Link](https://docs.awesomeapi.com.br/api-de-moedas) |
-| **FreeForexAPI** | Real-time foreign exchange rates for major currency pairs. | No | ✅ | [Link](https://freeforexapi.com/Home/Api) |
 | **VAT Validation** | Validate VAT numbers and calculate VAT rates. | 🔑 ApiKey | ✅ | [Link](https://www.abstractapi.com/vat-validation-rates-api) |
 | **Aletheia** | Insider trading data, earnings call analysis, financial statements, and more. | 🔑 ApiKey | ✅ | [Link](https://aletheiaapi.com/) |
 | **Banco do Brasil** | All Banco do Brasil financial transaction APIs. | 🔐 OAuth | ✅ | [Link](https://developers.bb.com.br/home) |
@@ -891,6 +1043,38 @@ print(response.json()['fact'])
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 
+## <a id="currency-exchange"></a>💱 Currency Exchange
+
+| API Name | Description | Auth | HTTPS | Link |
+| :--- | :--- | :---: | :---: | :---: |
+| **1Forge** | Forex currency market data. | 🔑 ApiKey | ✅ | [Link](https://1forge.com/forex-data-api/api-documentation) |
+| **Amdoren** | Free currency API with over 150 currencies. | 🔑 ApiKey | ✅ | [Link](https://www.amdoren.com/currency-api/) |
+| **Bank of Canada Valet** | Free central-bank exchange/economic series API. | No | ✅ | [Link](https://www.bankofcanada.ca/valet/docs) |
+| **Bank of Russia** | Exchange rates and currency conversion. | No | ✅ | [Link](https://www.cbr.ru/development/SXML/) |
+| **Currency-api** | Free Currency Exchange Rates API with 150+ Currencies & No Rate Limits. | No | ✅ | [Link](https://github.com/fawazahmed0/currency-api#readme) |
+| **CurrencyAPI** | Real-time currency rates and conversion. | 🔑 ApiKey | ✅ | [Link](https://currencyapi.com/) |
+| **CurrencyBeacon** | Real-time and historical exchange rates. | 🔑 ApiKey | ✅ | [Link](https://currencybeacon.com/api-documentation) |
+| **CurrencyConverterAPI** | Free currency converter. | 🔑 ApiKey | ✅ | [Link](https://currencyconverterapi.com/docs) |
+| **CurrencyFreaks** | Exchange rates and currency conversion API. | 🔑 ApiKey | ✅ | [Link](https://currencyfreaks.com/) |
+| **Currencylayer** | Exchange rates and currency conversion. | 🔑 ApiKey | ✅ | [Link](https://currencylayer.com/) |
+| **CurrencyScoop** | Real-time and historical currency rates JSON API. | 🔑 ApiKey | ✅ | [Link](https://currencyscoop.com/api-documentation) |
+| **Czech National Bank** | A collection of exchange rates. | No | ✅ | [Link](https://www.cnb.cz/cs/financni_trhy/devizovy_trh/kurzy_devizoveho_trhu/denni_kurz.xml) |
+| **ECB Data API** | Public ECB data API for exchange rates. | No | ✅ | [Link](https://data.ecb.europa.eu/help/api/data) |
+| **Economia.Awesome** | Portuguese free currency prices and conversion with no rate limits. | No | ✅ | [Link](https://docs.awesomeapi.com.br/api-de-moedas) |
+| **ExchangeRate-API** | Currency exchange rate conversion data. | No | ✅ | [Link](https://www.exchangerate-api.com/docs/free) |
+| **Exchangerate.host** | Foreign exchange & crypto rates. | 🔑 ApiKey | ✅ | [Link](https://exchangerate.host/) |
+| **Exchangeratesapi** | Exchange rates and currency conversion. | 🔑 ApiKey | ✅ | [Link](https://exchangeratesapi.io/) |
+| **Fawaz Currency API** | Free exchange-rate API (200+ currencies). | No | ✅ | [Link](https://github.com/fawazahmed0/exchange-api) |
+| **Fixer** | Exchange rates and currency conversion. | 🔑 ApiKey | ✅ | [Link](https://fixer.io/) |
+| **Frankfurter** | Open source exchange rates API. | No | ✅ | [Link](https://www.frankfurter.app/) |
+| **FreeCurrencyAPI** | Free currency conversion API. | 🔑 ApiKey | ✅ | [Link](https://freecurrencyapi.com/docs) |
+| **FreeForexAPI** | Real-time foreign exchange rates for major currency pairs. | No | ✅ | [Link](https://freeforexapi.com/Home/Api) |
+| **National Bank of Poland** | Official exchange rates from NBP. | No | ✅ | [Link](https://api.nbp.pl/en.html) |
+| **Open Exchange Rates** | Currency conversion and exchange rates. | 🔑 ApiKey | ✅ | [Link](https://docs.openexchangerates.org/) |
+| **VATComply** | VAT rates and FX conversion data. | No | ✅ | [Link](https://www.vatcomply.com/documentation) |
+
+[⬆ Back to Table of Contents](#-table-of-contents)
+
 ## <a id="food-drink"></a>🍔 Food & Drink
 
 | API Name | Description | Auth | HTTPS | Link |
@@ -914,7 +1098,6 @@ print(response.json()['fact'])
 | **Fruityvice** | Data about all kinds of fruit. | No | ✅ | [Link](https://www.fruityvice.com) |
 | **Kroger** | Supermarket Data. | 🔑 ApiKey | ✅ | [Link](https://developer.kroger.com/reference) |
 | **LCBO** | Alcohol. | 🔑 ApiKey | ✅ | [Link](https://lcboapi.com/) |
-
 | **Systembolaget** | Govornment owned liqour store in Sweden. | 🔑 ApiKey | ✅ | [Link](https://api-portal.systembolaget.se) |
 | **TacoFancy** | Community-driven taco database. | No | No | [Link](https://github.com/evz/tacofancy-api) |
 | **The Report of the Week** | Food & Drink Reviews. | No | ✅ | [Link](https://github.com/andyklimczak/TheReportOfTheWeek-API) |
@@ -925,47 +1108,102 @@ print(response.json()['fact'])
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 
-## <a id="entertainment"></a>🎮 Entertainment
+## <a id="games-comics"></a>🎮 Games & Comics
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
-| **OMDb** | Open Movie Database. | 🔑 ApiKey | ✅ | [Link](http://www.omdbapi.com/) |
-| **Quiz API** | Random trivia questions (**No Auth**). | No | ✅ | [Link](https://quizapi.io/) |
-| **Quotable** | Random quotes (**No Auth**). | No | ✅ | [Link](https://github.com/lukePeavey/quotable) |
-| **Activities when get bored** | Random suggestions for activities. | No | ✅ | [Link](https://rapidapi.com/bored/api/bored-api/) |
-| **Simkl** | Movies, TV, Anime metadata. | 🔑 ApiKey | ✅ | [Link](https://simkl.com/apidoc/) |
-| **TMDb** | The Movie Database. | 🔑 ApiKey | ✅ | [Link](https://developers.themoviedb.org/3) |
-| **TVmaze** | TV shows and episode data (**No Auth**). | No | ✅ | [Link](https://www.tvmaze.com/api) |
-| **Trakt** | TV and Movie tracking. | 🔐 OAuth | ✅ | [Link](https://trakt.docs.apiary.io/) |
-| **Watchmode** | Streaming availability. | 🔑 ApiKey | ✅ | [Link](https://api.watchmode.com/) |
-| **Trivia API** | Trivia questions in various categories (**No Auth**). | No | ✅ | [Link](https://the-trivia-api.com/) |
-| **StreamElements** | Twitch/YouTube live streaming data & overlays. | 🔑 ApiKey | ✅ | [Link](https://dev.streamelements.com/) |
-| **TheTVDB** | TV database with episodes and artwork. | 🔑 ApiKey | ✅ | [Link](https://thetvdb.github.io/v4-api/) |
-| **Podcast Index** | Open podcast data and search. | 🔑 ApiKey | ✅ | [Link](https://podcastindex-org.github.io/docs-api/) |
-| **Board Game Atlas** | Board game database and reviews. | 🔑 ApiKey | ✅ | [Link](https://www.boardgameatlas.com/api/docs) |
-| **Corporate Buzz Words** | REST API for Corporate Buzz Words. | No | ✅ | [Link](https://github.com/sameerkumar18/corporate-bs-generator-api) |
-| **Fun Fact** | A simple HTTPS api that can randomly select and return a fact from the FFA da... | No | ✅ | [Link](https://api.aakhilv.me) |
-| **Meme Maker** | REST API for create your own meme. | No | ✅ | [Link](https://mememaker.github.io/API/) |
-| **NaMoMemes** | Memes on Narendra Modi. | No | ✅ | [Link](https://github.com/theIYD/NaMoMemes) |
-| **Techy** | JSON and Plaintext API for tech-savvy sounding phrases. | No | ✅ | [Link](https://techy-api.vercel.app/) |
-| **Yo Momma Jokes** | REST API for Yo Momma Jokes. | No | ✅ | [Link](https://github.com/beanboi7/yomomma-apiv2) |
-| **Eventbrite** | Find events. | 🔐 OAuth | ✅ | [Link](https://www.eventbrite.com/platform/api/) |
-| **SeatGeek** | Search events, venues and performers. | 🔑 ApiKey | ✅ | [Link](https://platform.seatgeek.com/) |
-| **Ticketmaster** | Search events, attractions, or venues. | 🔑 ApiKey | ✅ | [Link](http://developer.ticketmaster.com/products-and-docs/apis/getting-started/) |
-| **Biriyani As A Service** | Biriyani images placeholder. | No | ✅ | [Link](https://biriyani.anoram.com/) |
-| **Dictum** | API to get access to the collection of the most inspiring expressions of mankind. | No | ✅ | [Link](https://github.com/fisenkodv/dictum) |
-| **FavQs.com** | FavQs allows you to collect, discover and share your favorite quotes. | 🔑 ApiKey | ✅ | [Link](https://favqs.com/api) |
-| **FOAAS** | Fuck Off As A Service. | No | No | [Link](http://www.foaas.com/) |
-| **Forismatic** | Inspirational Quotes. | No | No | [Link](http://forismatic.com/en/api/) |
-| **Inspiration** | Motivational and Inspirational quotes. | No | ✅ | [Link](https://inspiration.goprogram.ai/docs/) |
-| **Medium** | Community of readers and writers offering unique perspectives on ideas. | 🔐 OAuth | ✅ | [Link](https://github.com/Medium/medium-api-docs) |
-| **Programming Quotes** | Programming Quotes API for open source projects. | No | ✅ | [Link](https://github.com/skolakoda/programming-quotes-api) |
-| **Quotes on Design** | Inspirational Quotes. | No | ✅ | [Link](https://quotesondesign.com/api/) |
-| **Stoicism Quote** | Quotes about Stoicism. | No | ✅ | [Link](https://github.com/tlcheah2/stoic-quote-lambda-public-api) |
-| **They Said So Quotes** | Quotes Trusted by many fortune brands around the world. | No | ✅ | [Link](https://theysaidso.com/api/) |
-| **Traitify** | Assess, collect and analyze Personality. | No | ✅ | [Link](https://app.traitify.com/developer) |
-| **Udemy(instructor)** | API for instructors on Udemy. | 🔑 ApiKey | ✅ | [Link](https://www.udemy.com/developers/instructor/) |
-| **Vadivelu HTTP Codes** | On demand HTTP Codes with images. | No | ✅ | [Link](https://vadivelu.anoram.com/) |
+| **AmiiboAPI** | Nintendo Amiibo data. | No | ✅ | [Link](https://amiiboapi.com/) |
+| **Battle.net** | Blizzard games data. | 🔐 OAuth | ✅ | [Link](https://develop.battle.net/documentation/guides/getting-started) |
+| **BoardGameGeek** | Board games database. | No | ✅ | [Link](https://boardgamegeek.com/wiki/page/BGG_XML_API2) |
+| **Brawl Stars** | Game data. | 🔑 ApiKey | ✅ | [Link](https://developer.brawlstars.com) |
+| **Chess.com** | Chess player stats and games. | No | ✅ | [Link](https://www.chess.com/news/view/published-data-api) |
+| **Chuck Norris Database** | Jokes. | No | No | [Link](http://www.icndb.com/api/) |
+| **Clash of Clans** | Game data. | 🔑 ApiKey | ✅ | [Link](https://developer.clashofclans.com) |
+| **Clash Royale** | Game data. | 🔑 ApiKey | ✅ | [Link](https://developer.clashroyale.com) |
+| **Deck of Cards** | Deck of cards. | No | No | [Link](http://deckofcardsapi.com/) |
+| **Digimon** | Digimon information. | No | ✅ | [Link](https://digimon-api.vercel.app/) |
+| **Dota 2** | Game data. | 🔑 ApiKey | ✅ | [Link](https://docs.opendota.com/) |
+| **Dungeons and Dragons** | 5th Edition SRD. | No | ✅ | [Link](https://www.dnd5eapi.co/docs/) |
+| **Eve Online** | Game data. | 🔐 OAuth | ✅ | [Link](https://esi.evetech.net/) |
+| **Final Fantasy XIV** | Game data. | No | ✅ | [Link](https://xivapi.com/) |
+| **Fortnite** | Game data. | 🔑 ApiKey | ✅ | [Link](https://fortnitetracker.com/site-api) |
+| **Genshin Impact** | Game data. | No | ✅ | [Link](https://genshin.dev) |
+| **Guild Wars 2** | Game data. | 🔑 ApiKey | ✅ | [Link](https://wiki.guildwars2.com/wiki/API:Main) |
+| **Hyrule Compendium** | Legend of Zelda: BOTW data. | No | ✅ | [Link](https://github.com/gadhagod/Hyrule-Compendium-API) |
+| **Hypixel** | Minecraft server data. | 🔑 ApiKey | ✅ | [Link](https://api.hypixel.net/) |
+| **IGDB.com** | Game database. | 🔑 ApiKey | ✅ | [Link](https://api-docs.igdb.com) |
+| **Lichess** | Chess data. | 🔐 OAuth | ✅ | [Link](https://lichess.org/api) |
+| **Magic: The Gathering** | MTG card data. | No | ✅ | [Link](https://docs.magicthegathering.io/) |
+| **Marvel** | Comics data. | 🔑 ApiKey | ✅ | [Link](https://developer.marvel.com) |
+| **Minecraft Server Status** | Server status. | No | ✅ | [Link](https://api.mcsrvstat.us) |
+| **Open Trivia** | Trivia questions. | No | ✅ | [Link](https://opentdb.com/api_config.php) |
+| **Pokéapi** | Pokémon data. | No | ✅ | [Link](https://pokeapi.co) |
+| **PUBG** | Game data. | 🔑 ApiKey | ✅ | [Link](https://developer.pubg.com/) |
+| **RAWG** | Video games database (500k+ games). | 🔑 ApiKey | ✅ | [Link](https://rawg.io/apidocs) |
+| **Rick and Morty** | Show data. | No | ✅ | [Link](https://rickandmortyapi.com) |
+| **Riot Games** | League of Legends data. | 🔑 ApiKey | ✅ | [Link](https://developer.riotgames.com/) |
+| **Scryfall** | Magic: The Gathering card search. | No | ✅ | [Link](https://scryfall.com/docs/api) |
+| **Valorant** | Valorant game data (unofficial). | No | ✅ | [Link](https://valorant-api.com/) |
+| **PokéAPI v2** | Comprehensive Pokémon data (**No Auth, 300M+ requests/month**). | No | ✅ | [Link](https://pokeapi.co/docs/v2) |
+| **MMO API** | MMORPG and RPG game items, achievements, characters. | 🔑 ApiKey | ✅ | [Link](https://raider.io/api) |
+| **MLB** | Major League Baseball scores and statistics. | No | ✅ | [Link](https://appac.github.io/mlb-data-api-docs/) |
+| **Yu-Gi-Oh!** | Yu-Gi-Oh! card data. | No | ✅ | [Link](https://ygoprodeck.com/api-guide/) |
+| **GamerPower** | Free games, loot, and giveaways (**No Auth**). | No | ✅ | [Link](https://www.gamerpower.com/api-read) |
+| **Monster Hunter World** | MHW items, monsters, weapons, armor data (**No Auth**). | No | ✅ | [Link](https://docs.mhw-db.com/) |
+| **Free to Play Games** | Database of free-to-play games (**No Auth**). | No | ✅ | [Link](https://www.freetogame.com/api-doc) |
+| **Elden Ring API** | Elden Ring game data (**No Auth**). | No | ✅ | [Link](https://docs.eldenring.fanapis.com/) |
+| **Balldontlie** | NBA players, teams, games & stats (**No Auth**). | No | ✅ | [Link](https://www.balldontlie.io/) |
+| **Overwatch API** | Overwatch 2 player stats and heroes (**No Auth**). | No | ✅ | [Link](https://overfast-api.tekrop.fr/) |
+| **Tarkov API** | Escape from Tarkov items, quests, maps (**No Auth**). | No | ✅ | [Link](https://tarkov.dev/api/) |
+| **Animal Crossing: New Horizons** | API for critters, fossils, art, music, furniture and villagers. | No | ✅ | [Link](http://acnhapi.com/) |
+| **Autochess VNG** | Rest Api for Autochess VNG. | No | ✅ | [Link](https://github.com/didadadida93/autochess-vng-api) |
+| **Barter.VG** | Provides information about Game, DLC, Bundles, Giveaways, Trading. | No | ✅ | [Link](https://github.com/bartervg/barter.vg/wiki) |
+| **Bugsnax** | Get information about Bugsnax. | No | ✅ | [Link](https://www.bugsnaxapi.com/) |
+| **CheapShark** | Steam/PC Game Prices and Deals. | No | ✅ | [Link](https://www.cheapshark.com/api) |
+| **Comic Vine** | Comics. | No | ✅ | [Link](https://comicvine.gamespot.com/api/documentation) |
+| **Cross Universe** | Cross Universe Card Data. | No | ✅ | [Link](https://crossuniverse.psychpsyo.com/apiDocs.html) |
+| **Destiny The Game** | Bungie Platform API. | 🔑 ApiKey | ✅ | [Link](https://bungie-net.github.io/multi/index.html) |
+| **Digimon TCG** | Search for Digimon cards in digimoncard.io. | No | ✅ | [Link](https://documenter.getpostman.com/view/14059948/TzecB4fH) |
+| **Disney** | Information of Disney characters. | No | ✅ | [Link](https://disneyapi.dev) |
+| **Dungeons and Dragons (Alternate)** | Includes all monsters and spells from the SRD (System Reference Document) as ... | No | ✅ | [Link](https://open5e.com/) |
+| **FFXIV Collect** | Final Fantasy XIV data on collectables. | No | ✅ | [Link](https://ffxivcollect.com/) |
+| **FIFA Ultimate Team** | FIFA Ultimate Team items API. | No | ✅ | [Link](https://www.easports.com/fifa/ultimate-team/api/fut/item) |
+| **FunTranslations** | Translate Text into funny languages. | No | ✅ | [Link](https://api.funtranslations.com/) |
+| **GDBrowser** | Easy way to use the Geometry Dash Servers. | No | ✅ | [Link](https://gdbrowser.com/api) |
+| **Geek-Jokes** | Fetch a random geeky/programming related joke for use in all sorts of applica... | No | ✅ | [Link](https://github.com/sameerkumar18/geek-joke-api) |
+| **Giant Bomb** | Video Games. | 🔑 ApiKey | ✅ | [Link](https://www.giantbomb.com/api/documentation) |
+| **GraphQL Pokemon** | GraphQL powered Pokemon API. Supports generations 1 through 8. | No | ✅ | [Link](https://github.com/favware/graphql-pokemon) |
+| **GW2Spidy** | GW2Spidy API, Items data on the Guild Wars 2 Trade Market. | No | ✅ | [Link](https://github.com/rubensayshi/gw2spidy/wiki) |
+| **Halo** | Halo 5 and Halo Wars 2 Information. | 🔑 ApiKey | ✅ | [Link](https://developer.haloapi.com/) |
+| **Hearthstone** | Hearthstone Cards Information. | 🔑 ApiKey | ✅ | [Link](http://hearthstoneapi.com/) |
+| **Humble Bundle** | Humble Bundle's current bundles. | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/Ziggoto/api/humble-bundle) |
+| **Humor** | Humor, Jokes, and Memes. | 🔑 ApiKey | ✅ | [Link](https://humorapi.com) |
+| **Hytale** | Hytale blog posts and jobs. | No | ✅ | [Link](https://hytale-api.com/) |
+| **Jokes One** | Joke of the day and large category of jokes accessible via REST API. | 🔑 ApiKey | ✅ | [Link](https://jokes.one/api/joke/) |
+| **Jservice** | Jeopardy Question Database. | No | No | [Link](http://jservice.io) |
+| **Magic The Gathering** | Magic The Gathering Game Information. | No | No | [Link](http://magicthegathering.io/) |
+| **MMO Games** | MMO Games Database, News and Giveaways. | No | ✅ | [Link](https://www.mmobomb.com/api) |
+| **mod.io** | Cross Platform Mod API. | 🔑 ApiKey | ✅ | [Link](https://docs.mod.io) |
+| **Mojang** | Mojang / Minecraft API. | 🔑 ApiKey | ✅ | [Link](https://wiki.vg/Mojang_API) |
+| **Path of Exile** | Path of Exile Game Information. | 🔐 OAuth | ✅ | [Link](https://www.pathofexile.com/developer/docs) |
+| **PlayerDB** | Query Minecraft, Steam and XBox Accounts. | No | ✅ | [Link](https://playerdb.co/) |
+| **PokéAPI (GraphQL)** | The Unofficial GraphQL for PokeAPI. | No | ✅ | [Link](https://github.com/mazipan/graphql-pokeapi) |
+| **Pokémon TCG** | Pokémon TCG Information. | No | ✅ | [Link](https://pokemontcg.io) |
+| **Psychonauts** | Psychonauts World Characters Information and PSI Powers. | No | ✅ | [Link](https://psychonauts-api.netlify.app/) |
+| **Puyo Nexus** | Puyo Puyo information from Puyo Nexus Wiki. | No | ✅ | [Link](https://github.com/deltadex7/puyodb-api-deno) |
+| **RPS 101** | Rock, Paper, Scissors with 101 objects. | No | ✅ | [Link](https://rps101.pythonanywhere.com/api) |
+| **RuneScape** | RuneScape and OSRS RPGs information. | No | ✅ | [Link](https://runescape.wiki/w/Application_programming_interface) |
+| **Sakura CardCaptor** | Sakura CardCaptor Cards Information. | No | ✅ | [Link](https://github.com/JessVel/sakura-card-captor-api) |
+| **SpaceTradersAPI** | A playable inter-galactic space trading MMOAPI. | 🔐 OAuth | ✅ | [Link](https://spacetraders.io?rel=pub-apis) |
+| **Steam** | Steam Web API documentation. | 🔑 ApiKey | ✅ | [Link](https://steamapi.xpaw.me/) |
+| **SuperHeroes** | All SuperHeroes and Villains data from all universes under a single API. | 🔑 ApiKey | ✅ | [Link](https://superheroapi.com) |
+| **Tebex** | Tebex API for information about game purchases. | 🔑 ApiKey | ✅ | [Link](https://docs.tebex.io/plugin/) |
+| **TETR.IO** | TETR.IO Tetra Channel API. | No | ✅ | [Link](https://tetr.io/about/api/) |
+| **Universalis** | Final Fantasy XIV market board data. | No | ✅ | [Link](https://universalis.app/docs/index.html) |
+| **Warface (non-official)** | Official API proxy with better data structure and more features. | No | ✅ | [Link](https://api.wfstats.cf) |
+| **Wargaming.net** | Wargaming.net info and stats. | 🔑 ApiKey | ✅ | [Link](https://developers.wargaming.net/) |
+| **When is next MCU film** | Upcoming MCU film information. | No | ✅ | [Link](https://github.com/DiljotSG/MCU-Countdown/blob/develop/docs/API.md) |
+| **xkcd** | Retrieve xkcd comics as JSON. | No | ✅ | [Link](https://xkcd.com/json.html) |
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 
@@ -1047,106 +1285,6 @@ print(response.json()['fact'])
 | **Yandex.Maps Geocoder** | Use geocoding to get an object's coordinates from its address. | 🔑 ApiKey | ✅ | [Link](https://yandex.com/dev/maps/geocoder) |
 | **ZipCodeAPI** | US zip code distance, radius and location API. | 🔑 ApiKey | ✅ | [Link](https://www.zipcodeapi.com) |
 | **Ziptastic** | Get the country, state, and city of any US zip-code. | No | ✅ | [Link](https://ziptasticapi.com/) |
-
-[⬆ Back to Table of Contents](#-table-of-contents)
-
-## <a id="games-comics"></a>🎮 Games & Comics
-
-| API Name | Description | Auth | HTTPS | Link |
-| :--- | :--- | :---: | :---: | :---: |
-| **AmiiboAPI** | Nintendo Amiibo data. | No | ✅ | [Link](https://amiiboapi.com/) |
-| **Battle.net** | Blizzard games data. | 🔐 OAuth | ✅ | [Link](https://develop.battle.net/documentation/guides/getting-started) |
-| **BoardGameGeek** | Board games database. | No | ✅ | [Link](https://boardgamegeek.com/wiki/page/BGG_XML_API2) |
-| **Brawl Stars** | Game data. | 🔑 ApiKey | ✅ | [Link](https://developer.brawlstars.com) |
-| **Chess.com** | Chess player stats and games. | No | ✅ | [Link](https://www.chess.com/news/view/published-data-api) |
-| **Chuck Norris Database** | Jokes. | No | No | [Link](http://www.icndb.com/api/) |
-| **Clash of Clans** | Game data. | 🔑 ApiKey | ✅ | [Link](https://developer.clashofclans.com) |
-| **Clash Royale** | Game data. | 🔑 ApiKey | ✅ | [Link](https://developer.clashroyale.com) |
-| **Deck of Cards** | Deck of cards. | No | No | [Link](http://deckofcardsapi.com/) |
-| **Digimon** | Digimon information. | No | ✅ | [Link](https://digimon-api.vercel.app/) |
-| **Dota 2** | Game data. | 🔑 ApiKey | ✅ | [Link](https://docs.opendota.com/) |
-| **Dungeons and Dragons** | 5th Edition SRD. | No | ✅ | [Link](https://www.dnd5eapi.co/docs/) |
-| **Eve Online** | Game data. | 🔐 OAuth | ✅ | [Link](https://esi.evetech.net/) |
-| **Final Fantasy XIV** | Game data. | No | ✅ | [Link](https://xivapi.com/) |
-| **Fortnite** | Game data. | 🔑 ApiKey | ✅ | [Link](https://fortnitetracker.com/site-api) |
-| **Genshin Impact** | Game data. | No | ✅ | [Link](https://genshin.dev) |
-| **Guild Wars 2** | Game data. | 🔑 ApiKey | ✅ | [Link](https://wiki.guildwars2.com/wiki/API:Main) |
-| **Hyrule Compendium** | Legend of Zelda: BOTW data. | No | ✅ | [Link](https://github.com/gadhagod/Hyrule-Compendium-API) |
-| **Hypixel** | Minecraft server data. | 🔑 ApiKey | ✅ | [Link](https://api.hypixel.net/) |
-| **IGDB.com** | Game database. | 🔑 ApiKey | ✅ | [Link](https://api-docs.igdb.com) |
-| **Lichess** | Chess data. | 🔐 OAuth | ✅ | [Link](https://lichess.org/api) |
-| **Magic: The Gathering** | MTG card data. | No | ✅ | [Link](https://docs.magicthegathering.io/) |
-| **Marvel** | Comics data. | 🔑 ApiKey | ✅ | [Link](https://developer.marvel.com) |
-| **Minecraft Server Status** | Server status. | No | ✅ | [Link](https://api.mcsrvstat.us) |
-| **Open Trivia** | Trivia questions. | No | ✅ | [Link](https://opentdb.com/api_config.php) |
-| **Pokéapi** | Pokémon data. | No | ✅ | [Link](https://pokeapi.co) |
-| **PUBG** | Game data. | 🔑 ApiKey | ✅ | [Link](https://developer.pubg.com/) |
-| **RAWG** | Video games database (500k+ games). | 🔑 ApiKey | ✅ | [Link](https://rawg.io/apidocs) |
-| **Rick and Morty** | Show data. | No | ✅ | [Link](https://rickandmortyapi.com) |
-| **Riot Games** | League of Legends data. | 🔑 ApiKey | ✅ | [Link](https://developer.riotgames.com/) |
-| **Scryfall** | Magic: The Gathering card search. | No | ✅ | [Link](https://scryfall.com/docs/api) |
-| **Valorant** | Valorant game data (unofficial). | No | ✅ | [Link](https://valorant-api.com/) |
-| **PokéAPI v2** | Comprehensive Pokémon data (**No Auth, 300M+ requests/month**). | No | ✅ | [Link](https://pokeapi.co/docs/v2) |
-| **MMO API** | MMORPG and RPG game items, achievements, characters. | 🔑 ApiKey | ✅ | [Link](https://raider.io/api) |
-| **MLB** | Major League Baseball scores and statistics. | No | ✅ | [Link](https://appac.github.io/mlb-data-api-docs/) |
-| **Yu-Gi-Oh!** | Yu-Gi-Oh! card data. | No | ✅ | [Link](https://ygoprodeck.com/api-guide/) |
-| **GamerPower** | Free games, loot, and giveaways (**No Auth**). | No | ✅ | [Link](https://www.gamerpower.com/api-read) |
-| **Monster Hunter World** | MHW items, monsters, weapons, armor data (**No Auth**). | No | ✅ | [Link](https://docs.mhw-db.com/) |
-| **Free to Play Games** | Database of free-to-play games (**No Auth**). | No | ✅ | [Link](https://www.freetogame.com/api-doc) |
-| **Elden Ring API** | Elden Ring game data (**No Auth**). | No | ✅ | [Link](https://docs.eldenring.fanapis.com/) |
-| **Balldontlie** | NBA players, teams, games & stats (**No Auth**). | No | ✅ | [Link](https://www.balldontlie.io/) |
-| **Overwatch API** | Overwatch 2 player stats and heroes (**No Auth**). | No | ✅ | [Link](https://overfast-api.tekrop.fr/) |
-| **Tarkov API** | Escape from Tarkov items, quests, maps (**No Auth**). | No | ✅ | [Link](https://tarkov.dev/api/) |
-| **Animal Crossing: New Horizons** | API for critters, fossils, art, music, furniture and villagers. | No | ✅ | [Link](http://acnhapi.com/) |
-| **Autochess VNG** | Rest Api for Autochess VNG. | No | ✅ | [Link](https://github.com/didadadida93/autochess-vng-api) |
-| **Barter.VG** | Provides information about Game, DLC, Bundles, Giveaways, Trading. | No | ✅ | [Link](https://github.com/bartervg/barter.vg/wiki) |
-| **Bugsnax** | Get information about Bugsnax. | No | ✅ | [Link](https://www.bugsnaxapi.com/) |
-| **CheapShark** | Steam/PC Game Prices and Deals. | No | ✅ | [Link](https://www.cheapshark.com/api) |
-| **Comic Vine** | Comics. | No | ✅ | [Link](https://comicvine.gamespot.com/api/documentation) |
-| **Cross Universe** | Cross Universe Card Data. | No | ✅ | [Link](https://crossuniverse.psychpsyo.com/apiDocs.html) |
-| **Destiny The Game** | Bungie Platform API. | 🔑 ApiKey | ✅ | [Link](https://bungie-net.github.io/multi/index.html) |
-| **Digimon TCG** | Search for Digimon cards in digimoncard.io. | No | ✅ | [Link](https://documenter.getpostman.com/view/14059948/TzecB4fH) |
-| **Disney** | Information of Disney characters. | No | ✅ | [Link](https://disneyapi.dev) |
-| **Dungeons and Dragons (Alternate)** | Includes all monsters and spells from the SRD (System Reference Document) as ... | No | ✅ | [Link](https://open5e.com/) |
-| **FFXIV Collect** | Final Fantasy XIV data on collectables. | No | ✅ | [Link](https://ffxivcollect.com/) |
-| **FIFA Ultimate Team** | FIFA Ultimate Team items API. | No | ✅ | [Link](https://www.easports.com/fifa/ultimate-team/api/fut/item) |
-
-| **FunTranslations** | Translate Text into funny languages. | No | ✅ | [Link](https://api.funtranslations.com/) |
-| **GDBrowser** | Easy way to use the Geometry Dash Servers. | No | ✅ | [Link](https://gdbrowser.com/api) |
-| **Geek-Jokes** | Fetch a random geeky/programming related joke for use in all sorts of applica... | No | ✅ | [Link](https://github.com/sameerkumar18/geek-joke-api) |
-| **Giant Bomb** | Video Games. | 🔑 ApiKey | ✅ | [Link](https://www.giantbomb.com/api/documentation) |
-| **GraphQL Pokemon** | GraphQL powered Pokemon API. Supports generations 1 through 8. | No | ✅ | [Link](https://github.com/favware/graphql-pokemon) |
-| **GW2Spidy** | GW2Spidy API, Items data on the Guild Wars 2 Trade Market. | No | ✅ | [Link](https://github.com/rubensayshi/gw2spidy/wiki) |
-| **Halo** | Halo 5 and Halo Wars 2 Information. | 🔑 ApiKey | ✅ | [Link](https://developer.haloapi.com/) |
-| **Hearthstone** | Hearthstone Cards Information. | 🔑 ApiKey | ✅ | [Link](http://hearthstoneapi.com/) |
-| **Humble Bundle** | Humble Bundle's current bundles. | 🔑 ApiKey | ✅ | [Link](https://rapidapi.com/Ziggoto/api/humble-bundle) |
-| **Humor** | Humor, Jokes, and Memes. | 🔑 ApiKey | ✅ | [Link](https://humorapi.com) |
-| **Hytale** | Hytale blog posts and jobs. | No | ✅ | [Link](https://hytale-api.com/) |
-| **Jokes One** | Joke of the day and large category of jokes accessible via REST API. | 🔑 ApiKey | ✅ | [Link](https://jokes.one/api/joke/) |
-| **Jservice** | Jeopardy Question Database. | No | No | [Link](http://jservice.io) |
-| **Magic The Gathering** | Magic The Gathering Game Information. | No | No | [Link](http://magicthegathering.io/) |
-| **MMO Games** | MMO Games Database, News and Giveaways. | No | ✅ | [Link](https://www.mmobomb.com/api) |
-| **mod.io** | Cross Platform Mod API. | 🔑 ApiKey | ✅ | [Link](https://docs.mod.io) |
-| **Mojang** | Mojang / Minecraft API. | 🔑 ApiKey | ✅ | [Link](https://wiki.vg/Mojang_API) |
-| **Path of Exile** | Path of Exile Game Information. | 🔐 OAuth | ✅ | [Link](https://www.pathofexile.com/developer/docs) |
-| **PlayerDB** | Query Minecraft, Steam and XBox Accounts. | No | ✅ | [Link](https://playerdb.co/) |
-| **PokéAPI (GraphQL)** | The Unofficial GraphQL for PokeAPI. | No | ✅ | [Link](https://github.com/mazipan/graphql-pokeapi) |
-| **Pokémon TCG** | Pokémon TCG Information. | No | ✅ | [Link](https://pokemontcg.io) |
-| **Psychonauts** | Psychonauts World Characters Information and PSI Powers. | No | ✅ | [Link](https://psychonauts-api.netlify.app/) |
-| **Puyo Nexus** | Puyo Puyo information from Puyo Nexus Wiki. | No | ✅ | [Link](https://github.com/deltadex7/puyodb-api-deno) |
-| **RPS 101** | Rock, Paper, Scissors with 101 objects. | No | ✅ | [Link](https://rps101.pythonanywhere.com/api) |
-| **RuneScape** | RuneScape and OSRS RPGs information. | No | ✅ | [Link](https://runescape.wiki/w/Application_programming_interface) |
-| **Sakura CardCaptor** | Sakura CardCaptor Cards Information. | No | ✅ | [Link](https://github.com/JessVel/sakura-card-captor-api) |
-| **SpaceTradersAPI** | A playable inter-galactic space trading MMOAPI. | 🔐 OAuth | ✅ | [Link](https://spacetraders.io?rel=pub-apis) |
-| **Steam** | Steam Web API documentation. | 🔑 ApiKey | ✅ | [Link](https://steamapi.xpaw.me/) |
-| **SuperHeroes** | All SuperHeroes and Villains data from all universes under a single API. | 🔑 ApiKey | ✅ | [Link](https://superheroapi.com) |
-| **Tebex** | Tebex API for information about game purchases. | 🔑 ApiKey | ✅ | [Link](https://docs.tebex.io/plugin/) |
-| **TETR.IO** | TETR.IO Tetra Channel API. | No | ✅ | [Link](https://tetr.io/about/api/) |
-| **Universalis** | Final Fantasy XIV market board data. | No | ✅ | [Link](https://universalis.app/docs/index.html) |
-| **Warface (non-official)** | Official API proxy with better data structure and more features. | No | ✅ | [Link](https://api.wfstats.cf) |
-| **Wargaming.net** | Wargaming.net info and stats. | 🔑 ApiKey | ✅ | [Link](https://developers.wargaming.net/) |
-| **When is next MCU film** | Upcoming MCU film information. | No | ✅ | [Link](https://github.com/DiljotSG/MCU-Countdown/blob/develop/docs/API.md) |
-| **xkcd** | Retrieve xkcd comics as JSON. | No | ✅ | [Link](https://xkcd.com/json.html) |
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 
@@ -1246,6 +1384,38 @@ print(response.json()['fact'])
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 
+## <a id="mock-data-testing"></a>🧪 Mock Data & Testing
+
+| API Name | Description | Auth | HTTPS | Link |
+| :--- | :--- | :---: | :---: | :---: |
+| **DummyJSON** | Fake REST API with products, users, todos, and more (**No Auth**). | No | ✅ | [Link](https://dummyjson.com/) |
+| **Fake Store API** | Free fake e-commerce API for testing (products, carts, users). | No | ✅ | [Link](https://fakestoreapi.com/) |
+| **JSONPlaceholder** | Free fake API for testing and prototyping (posts, comments, users). | No | ✅ | [Link](https://jsonplaceholder.typicode.com/) |
+| **Mockaroo** | Generate custom realistic test data in JSON, CSV, SQL. | 🔑 ApiKey | ✅ | [Link](https://www.mockaroo.com/) |
+| **RandomUser.me** | Generate random user data (like Lorem Ipsum, but for people). | No | ✅ | [Link](https://randomuser.me/) |
+| **ReqRes** | A hosted REST-API ready to respond to your AJAX requests. | No | ✅ | [Link](https://reqres.in/) |
+| **Httpbin** | HTTP request and response testing (**No Auth**). | No | ✅ | [Link](https://httpbin.org/) |
+| **Beeceptor** | Mock REST APIs in seconds (**No Auth**). | No | ✅ | [Link](https://beeceptor.com/) |
+| **SampleAPIs** | Playground for RESTful and GraphQL endpoints (**No Auth**). | No | ✅ | [Link](https://api.sampleapis.com/) |
+| **MockAPI.io** | Create custom mock REST APIs with fake data. | 🔑 ApiKey | ✅ | [Link](https://mockapi.io/docs) |
+| **Postman Echo** | Test REST clients with echo endpoint (**No Auth**). | No | ✅ | [Link](https://www.postman-echo.com/) |
+| **Bacon Ipsum** | A Meatier Lorem Ipsum Generator. | No | ✅ | [Link](https://baconipsum.com/json-api/) |
+| **FakeJSON** | Service to generate test and fake data. | 🔑 ApiKey | ✅ | [Link](https://fakejson.com) |
+| **GeneradorDNI** | Data generator API. Profiles, vehicles, banks and cards, etc. | 🔑 ApiKey | ✅ | [Link](https://api.generadordni.es) |
+| **ItsThisForThat** | Generate Random startup ideas. | No | ✅ | [Link](https://itsthisforthat.com/api.php) |
+| **Loripsum** | The "lorem ipsum" generator that doesn't suck. | No | No | [Link](http://loripsum.net/) |
+| **Mailsac** | Disposable Email. | 🔑 ApiKey | ✅ | [Link](https://mailsac.com/docs/api) |
+| **Metaphorsum** | Generate demo paragraphs giving number of words and sentences. | No | No | [Link](http://metaphorpsum.com/) |
+| **QuickMocker** | API mocking tool to generate contextual, fake or random data. | No | ✅ | [Link](https://quickmocker.com) |
+| **Random Data** | Random data generator. | No | ✅ | [Link](https://random-data-api.com) |
+| **Randommer** | Random data generator. | 🔑 ApiKey | ✅ | [Link](https://randommer.io/randommer-api) |
+| **This Person Does not Exist** | Generates real-life faces of people who do not exist. | No | ✅ | [Link](https://thispersondoesnotexist.com) |
+| **Toolcarton** | Generate random testimonial data. | No | ✅ | [Link](https://testimonialapi.toolcarton.com/) |
+| **What The Commit** | Random commit message generator. | No | No | [Link](http://whatthecommit.com/index.txt) |
+| **Yes No** | Generate yes or no randomly. | No | ✅ | [Link](https://yesno.wtf/api) |
+
+[⬆ Back to Table of Contents](#-table-of-contents)
+
 ## <a id="music"></a>🎵 Music
 
 | API Name | Description | Auth | HTTPS | Link |
@@ -1288,38 +1458,6 @@ print(response.json()['fact'])
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 
-## <a id="mock-data-testing"></a>🧪 Mock Data & Testing
-
-| API Name | Description | Auth | HTTPS | Link |
-| :--- | :--- | :---: | :---: | :---: |
-| **DummyJSON** | Fake REST API with products, users, todos, and more (**No Auth**). | No | ✅ | [Link](https://dummyjson.com/) |
-| **Fake Store API** | Free fake e-commerce API for testing (products, carts, users). | No | ✅ | [Link](https://fakestoreapi.com/) |
-| **JSONPlaceholder** | Free fake API for testing and prototyping (posts, comments, users). | No | ✅ | [Link](https://jsonplaceholder.typicode.com/) |
-| **Mockaroo** | Generate custom realistic test data in JSON, CSV, SQL. | 🔑 ApiKey | ✅ | [Link](https://www.mockaroo.com/) |
-| **RandomUser.me** | Generate random user data (like Lorem Ipsum, but for people). | No | ✅ | [Link](https://randomuser.me/) |
-| **ReqRes** | A hosted REST-API ready to respond to your AJAX requests. | No | ✅ | [Link](https://reqres.in/) |
-| **Httpbin** | HTTP request and response testing (**No Auth**). | No | ✅ | [Link](https://httpbin.org/) |
-| **Beeceptor** | Mock REST APIs in seconds (**No Auth**). | No | ✅ | [Link](https://beeceptor.com/) |
-| **SampleAPIs** | Playground for RESTful and GraphQL endpoints (**No Auth**). | No | ✅ | [Link](https://api.sampleapis.com/) |
-| **MockAPI.io** | Create custom mock REST APIs with fake data. | 🔑 ApiKey | ✅ | [Link](https://mockapi.io/docs) |
-| **Postman Echo** | Test REST clients with echo endpoint (**No Auth**). | No | ✅ | [Link](https://www.postman-echo.com/) |
-| **Bacon Ipsum** | A Meatier Lorem Ipsum Generator. | No | ✅ | [Link](https://baconipsum.com/json-api/) |
-| **FakeJSON** | Service to generate test and fake data. | 🔑 ApiKey | ✅ | [Link](https://fakejson.com) |
-| **GeneradorDNI** | Data generator API. Profiles, vehicles, banks and cards, etc. | 🔑 ApiKey | ✅ | [Link](https://api.generadordni.es) |
-| **ItsThisForThat** | Generate Random startup ideas. | No | ✅ | [Link](https://itsthisforthat.com/api.php) |
-| **Loripsum** | The "lorem ipsum" generator that doesn't suck. | No | No | [Link](http://loripsum.net/) |
-| **Mailsac** | Disposable Email. | 🔑 ApiKey | ✅ | [Link](https://mailsac.com/docs/api) |
-| **Metaphorsum** | Generate demo paragraphs giving number of words and sentences. | No | No | [Link](http://metaphorpsum.com/) |
-| **QuickMocker** | API mocking tool to generate contextual, fake or random data. | No | ✅ | [Link](https://quickmocker.com) |
-| **Random Data** | Random data generator. | No | ✅ | [Link](https://random-data-api.com) |
-| **Randommer** | Random data generator. | 🔑 ApiKey | ✅ | [Link](https://randommer.io/randommer-api) |
-| **This Person Does not Exist** | Generates real-life faces of people who do not exist. | No | ✅ | [Link](https://thispersondoesnotexist.com) |
-| **Toolcarton** | Generate random testimonial data. | No | ✅ | [Link](https://testimonialapi.toolcarton.com/) |
-| **What The Commit** | Random commit message generator. | No | No | [Link](http://whatthecommit.com/index.txt) |
-| **Yes No** | Generate yes or no randomly. | No | ✅ | [Link](https://yesno.wtf/api) |
-
-[⬆ Back to Table of Contents](#-table-of-contents)
-
 ## <a id="news"></a>📰 News
 
 | API Name | Description | Auth | HTTPS | Link |
@@ -1333,6 +1471,8 @@ print(response.json()['fact'])
 | **The Guardian** | Guardian articles. | 🔑 ApiKey | ✅ | [Link](https://open-platform.theguardian.com/) |
 | **Hacker News** | Tech news from Y Combinator (**No Auth**). | No | ✅ | [Link](https://github.com/HackerNews/API) |
 | **Dev.to** | Developer community articles (**No Auth**). | No | ✅ | [Link](https://developers.forem.com/api) |
+
+[⬆ Back to Table of Contents](#-table-of-contents)
 
 ## <a id="photography"></a>📷 Photography
 
@@ -1370,7 +1510,6 @@ print(response.json()['fact'])
 | **Dagpi** | Image manipulation and processing. | 🔑 ApiKey | ✅ | [Link](https://dagpi.xyz) |
 | **DynaPictures** | Generate Hundreds of Personalized Images in Minutes. | 🔑 ApiKey | ✅ | [Link](https://dynapictures.com/docs/) |
 | **Getty Images** | Build applications using the world's most powerful imagery. | 🔐 OAuth | ✅ | [Link](http://developers.gettyimages.com/en/) |
-
 | **Google Photos** | Integrate Google Photos with your apps or devices. | 🔐 OAuth | ✅ | [Link](https://developers.google.com/photos) |
 | **Image Upload** | Image Optimization. | 🔑 ApiKey | ✅ | [Link](https://apilayer.com/marketplace/image_upload-api) |
 | **Imgur** | Images. | 🔐 OAuth | ✅ | [Link](https://apidocs.imgur.com/) |
@@ -1440,11 +1579,6 @@ print(response.json()['fact'])
 | **SecurityTrails** | Domain and DNS intelligence. | 🔑 ApiKey | ✅ | [Link](https://securitytrails.com/corp/api) |
 | **CertSpotter** | Certificate transparency monitoring. | No | ✅ | [Link](https://sslmate.com/certspotter/api/) |
 | **FullHunt** | Attack surface discovery and monitoring. | 🔑 ApiKey | ✅ | [Link](https://api-docs.fullhunt.io/) |
-| **Lob.com** | US Address Verification. | 🔑 ApiKey | ✅ | [Link](https://lob.com/) |
-| **US Autocomplete** | Enter address data quickly with real-time address suggestions. | 🔑 ApiKey | ✅ | [Link](https://www.smarty.com/docs/cloud/us-autocomplete-pro-api) |
-| **US Extract** | Extract postal addresses from any text including emails. | 🔑 ApiKey | ✅ | [Link](https://www.smarty.com/products/apis/us-extract-api) |
-| **US Street Address** | Validate and append data for any US postal address. | 🔑 ApiKey | ✅ | [Link](https://www.smarty.com/docs/cloud/us-street-api) |
-| **vatlayer** | VAT number validation. | 🔑 ApiKey | ✅ | [Link](https://vatlayer.com/documentation) |
 | **Application Environment Verification** | Android library and API to verify the safety of user devices, detect rooted d... | 🔑 ApiKey | ✅ | [Link](https://github.com/fingerprintjs/aev) |
 | **BinaryEdge** | Provide access to BinaryEdge 40fy scanning platform. | 🔑 ApiKey | ✅ | [Link](https://docs.binaryedge.io/api-v2.html) |
 | **BitWarden** | Best open-source password manager. | 🔐 OAuth | ✅ | [Link](https://bitwarden.com/help/api/) |
@@ -1478,6 +1612,24 @@ print(response.json()['fact'])
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 
+## <a id="data-validation"></a>✅ Data Validation
+
+| API Name | Description | Auth | HTTPS | Link |
+| :--- | :--- | :---: | :---: | :---: |
+| **Byteplant Email Validator** | Email validation API. | 🔑 ApiKey | ✅ | [Link](https://www.email-validator.net/api.html) |
+| **DeBounce** | Email validation API with free credits. | 🔑 ApiKey | ✅ | [Link](https://developers.debounce.com/) |
+| **Emailable** | Email verification API with free tier. | 🔑 ApiKey | ✅ | [Link](https://emailable.com/docs/api) |
+| **Lob.com** | US Address Verification. | 🔑 ApiKey | ✅ | [Link](https://lob.com/) |
+| **Neutrino Email Validate** | Email syntax/DNS/disposable checks. | 🔑 ApiKey | ✅ | [Link](https://www.neutrinoapi.com/api/email-validate/) |
+| **US Autocomplete** | Enter address data quickly with real-time address suggestions. | 🔑 ApiKey | ✅ | [Link](https://www.smarty.com/docs/cloud/us-autocomplete-pro-api) |
+| **US Extract** | Extract postal addresses from any text including emails. | 🔑 ApiKey | ✅ | [Link](https://www.smarty.com/products/apis/us-extract-api) |
+| **US Street Address** | Validate and append data for any US postal address. | 🔑 ApiKey | ✅ | [Link](https://www.smarty.com/docs/cloud/us-street-api) |
+| **vatlayer** | VAT number validation. | 🔑 ApiKey | ✅ | [Link](https://vatlayer.com/documentation) |
+| **Verifalia** | Email verification API. | 🔑 ApiKey | ✅ | [Link](https://verifalia.com/developers) |
+| **ZeroBounce** | Email validation and scoring. | 🔑 ApiKey | ✅ | [Link](https://www.zerobounce.net/docs/email-validation-api-quickstart/v2-get-api-usage/) |
+
+[⬆ Back to Table of Contents](#-table-of-contents)
+
 ## <a id="shopping"></a>🛍️ Shopping
 
 | API Name | Description | Auth | HTTPS | Link |
@@ -1496,6 +1648,60 @@ print(response.json()['fact'])
 | **OLX Poland** | Integrate with local sites by posting, managing adverts and communicating wit... | 🔑 ApiKey | ✅ | [Link](https://developer.olx.pl/api/doc#section/) |
 | **Rappi** | Manage orders from Rappi's app. | 🔐 OAuth | ✅ | [Link](https://dev-portal.rappi.com/) |
 | **Tokopedia** | Tokopedia's Official API for integration of various services from Tokopedia. | 🔐 OAuth | ✅ | [Link](https://developer.tokopedia.com/openapi/guide/#/) |
+
+[⬆ Back to Table of Contents](#-table-of-contents)
+
+## <a id="utilities-tools"></a>🔧 Utilities & Tools
+
+| API Name | Description | Auth | HTTPS | Link |
+| :--- | :--- | :---: | :---: | :---: |
+| **DiceBear Avatars** | Generate random SVG avatars (**No Auth**). | No | ✅ | [Link](https://www.dicebear.com/) |
+| **FakerAPI** | Generate fake data for testing (**No Auth, 1000 req/day**). | No | ✅ | [Link](https://fakerapi.it/en) |
+| **ipify** | A simple public IP address API (**No Auth**). | No | ✅ | [Link](https://www.ipify.org/) |
+| **Pravatar** | Placeholder avatar images (**No Auth**). | No | ✅ | [Link](https://pravatar.cc/) |
+| **QR Code Generator** | Dynamic QR code generation API. | No | ✅ | [Link](https://goqr.me/api/) |
+| **RoboHash** | Generate unique robot/monster avatars (**No Auth**). | No | ✅ | [Link](https://robohash.org/) |
+| **UI Avatars** | Generate avatar placeholders from initials (**No Auth, 28M+ daily requests**). | No | ✅ | [Link](https://ui-avatars.com/) |
+| **URLBox** | Website screenshot API. | 🔑 ApiKey | ✅ | [Link](https://www.urlbox.io/) |
+| **DuckDuckGo Instant Answer** | Quick, concise answers for definitions, calculations, and conversions. | No | ✅ | [Link](https://duckduckgo.com/api) |
+| **Country.is** | Get country from IP address (**No Auth**). | No | ✅ | [Link](https://country.is/) |
+| **Text Art API** | Generate text-based art (**No Auth**). | No | ✅ | [Link](http://patorjk.com/software/taag/) |
+| **JSONLint** | JSON validation API. | No | ✅ | [Link](https://jsonlint.com/) |
+| **Carbon Screenshot** | Create beautiful images of code snippets. | No | ✅ | [Link](https://carbon.now.sh/) |
+| **PDF.co** | PDF generation, conversion and manipulation. | 🔑 ApiKey | ✅ | [Link](https://apidocs.pdf.co/) |
+| **Cal.com** | Open source scheduling API (Calendly alternative). | 🔑 ApiKey | ✅ | [Link](https://cal.com/docs/api-reference) |
+
+[⬆ Back to Table of Contents](#-table-of-contents)
+
+## <a id="url-shorteners"></a>🔗 URL Shorteners
+
+| API Name | Description | Auth | HTTPS | Link |
+| :--- | :--- | :---: | :---: | :---: |
+| **1pt** | A simple URL shortener. | No | ✅ | [Link](https://github.com/1pt-co/api/blob/main/README.md) |
+| **Bitly** | URL shortener and link management. | 🔐 OAuth | ✅ | [Link](http://dev.bitly.com/get_started.html) |
+| **BL.INK** | URL shortener and branded link management. | 🔑 ApiKey | ✅ | [Link](https://bl.ink/developers) |
+| **CleanURI** | URL shortener service. | No | ✅ | [Link](https://cleanuri.com/docs) |
+| **ClickMeter** | Monitor, compare and optimize your marketing links. | 🔑 ApiKey | ✅ | [Link](https://support.clickmeter.com/hc/en-us/categories/201474986) |
+| **Clico** | URL shortener service. | 🔑 ApiKey | ✅ | [Link](https://cli.com/swagger-ui/index.html?configUrl=/v3/api-docs/swagger-config) |
+| **Cutt.ly** | URL shortener service. | 🔑 ApiKey | ✅ | [Link](https://cutt.ly/api-documentation/cuttly-links-api) |
+| **Drivet URL Shortener** | Shorten a long URL easily and fast. | No | ✅ | [Link](https://wiki.drivet.xyz/en/url-shortener/add-links) |
+| **Dub** | Open-source short links and analytics. | 🔑 ApiKey | ✅ | [Link](https://dub.co/docs/api-reference/introduction) |
+| **Free Url Shortener** | Free URL Shortener offers a powerful API to interact with other sites. | No | ✅ | [Link](https://ulvis.net/developer.html) |
+| **Git.io** | Git.io URL shortener. | No | ✅ | [Link](https://github.blog/2011-11-10-git-io-github-url-shortener/) |
+| **GoTiny** | A lightweight URL shortener, focused on ease-of-use for the developer and end... | No | ✅ | [Link](https://github.com/robvanbakel/gotiny-api) |
+| **is.gd** | Simple free URL shortening API. | No | ✅ | [Link](https://is.gd/apishorteningreference.php) |
+| **Kutt** | Free Modern URL Shortener. | 🔑 ApiKey | ✅ | [Link](https://docs.kutt.it/) |
+| **Mgnet.me** | Torrent URL shorten API. | No | ✅ | [Link](http://mgnet.me/api.html) |
+| **Polr** | Open-source URL shortener API. | No | ✅ | [Link](https://docs.polrproject.org/en/latest/developer-guide/api/) |
+| **Rebrandly** | URL shortener API. | 🔑 ApiKey | ✅ | [Link](https://developers.rebrandly.com/docs) |
+| **Shlink** | Self-hosted URL shortener with REST API. | 🔑 ApiKey | ✅ | [Link](https://shlink.io/documentation/api-docs/) |
+| **Short.io** | URL shortener with analytics. | 🔑 ApiKey | ✅ | [Link](https://developers.short.io/) |
+| **Shrtcode** | URl Shortener with multiple Domains. | No | ✅ | [Link](https://shrtco.de/docs) |
+| **Tiny.cc** | Link shortening and management API. | 🔑 ApiKey | ✅ | [Link](https://tiny.cc/api-docs) |
+| **TinyURL** | URL shortener API (**No Auth**). | No | ✅ | [Link](https://tinyurl.com/app/dev) |
+| **UrlBae** | Simple and efficient short link creation. | 🔑 ApiKey | ✅ | [Link](https://urlbae.com/developers) |
+| **v.gd** | Free URL shortener API service. | No | ✅ | [Link](https://v.gd/apishorteningreference.php) |
+| **YOURLS** | Self-hosted shortener with extensible API. | 🔑 ApiKey | ✅ | [Link](https://yourls.org/#API) |
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 
@@ -1597,57 +1803,6 @@ print(response.json()['fact'])
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 
-## <a id="utilities-tools"></a>🔧 Utilities & Tools
-
-| API Name | Description | Auth | HTTPS | Link |
-| :--- | :--- | :---: | :---: | :---: |
-| **DiceBear Avatars** | Generate random SVG avatars (**No Auth**). | No | ✅ | [Link](https://www.dicebear.com/) |
-| **FakerAPI** | Generate fake data for testing (**No Auth, 1000 req/day**). | No | ✅ | [Link](https://fakerapi.it/en) |
-| **ipify** | A simple public IP address API (**No Auth**). | No | ✅ | [Link](https://www.ipify.org/) |
-| **Pravatar** | Placeholder avatar images (**No Auth**). | No | ✅ | [Link](https://pravatar.cc/) |
-| **QR Code Generator** | Dynamic QR code generation API. | No | ✅ | [Link](https://goqr.me/api/) |
-| **RoboHash** | Generate unique robot/monster avatars (**No Auth**). | No | ✅ | [Link](https://robohash.org/) |
-| **Shields.io** | Quality metadata badges for open source projects (**No Auth**). | No | ✅ | [Link](https://shields.io/) |
-| **UI Avatars** | Generate avatar placeholders from initials (**No Auth, 28M+ daily requests**). | No | ✅ | [Link](https://ui-avatars.com/) |
-| **URLBox** | Website screenshot API. | 🔑 ApiKey | ✅ | [Link](https://www.urlbox.io/) |
-| **TinyURL** | URL shortener API (**No Auth**). | No | ✅ | [Link](https://tinyurl.com/app/dev) |
-| **DuckDuckGo Instant Answer** | Quick, concise answers for definitions, calculations, and conversions. | No | ✅ | [Link](https://duckduckgo.com/api) |
-| **Country.is** | Get country from IP address (**No Auth**). | No | ✅ | [Link](https://country.is/) |
-| **Text Art API** | Generate text-based art (**No Auth**). | No | ✅ | [Link](http://patorjk.com/software/taag/) |
-| **JSONLint** | JSON validation API. | No | ✅ | [Link](https://jsonlint.com/) |
-| **Carbon Screenshot** | Create beautiful images of code snippets. | No | ✅ | [Link](https://carbon.now.sh/) |
-| **PDF.co** | PDF generation, conversion and manipulation. | 🔑 ApiKey | ✅ | [Link](https://apidocs.pdf.co/) |
-| **Short.io** | URL shortener with analytics. | 🔑 ApiKey | ✅ | [Link](https://developers.short.io/) |
-| **Cal.com** | Open source scheduling API (Calendly alternative). | 🔑 ApiKey | ✅ | [Link](https://cal.com/docs/api-reference) |
-| **Phone Validation** | Validate phone numbers globally. | 🔑 ApiKey | ✅ | [Link](https://www.abstractapi.com/phone-validation-api) |
-| **Phone Specification** | Rest Api for Phone specifications. | No | ✅ | [Link](https://github.com/azharimm/phone-specs-api) |
-| **Veriphone** | Phone number validation & carrier lookup. | 🔑 ApiKey | ✅ | [Link](https://veriphone.io) |
-| **Aftership** | API to update, manage and track shipment efficiently. | 🔑 ApiKey | ✅ | [Link](https://developers.aftership.com/reference/quick-start) |
-| **Correios** | Integration to provide information and prepare shipments using Correio's serv... | 🔑 ApiKey | ✅ | [Link](https://cws.correios.com.br/ajuda) |
-| **Pixela** | API for recording and tracking habits or effort, routines. | 🔑 ApiKey | ✅ | [Link](https://pixe.la) |
-| **PostalPinCode** | API for getting Pincode details in India. | No | ✅ | [Link](http://www.postalpincode.in/Api-Details) |
-| **Postmon** | An API to query Brazilian ZIP codes and orders easily, quickly and free. | No | No | [Link](http://postmon.com.br) |
-| **PostNord** | Provides information about parcels in transport for Sweden and Denmark. | 🔑 ApiKey | No | [Link](https://developer.postnord.com/api) |
-| **UPS** | Shipment and Address information. | 🔑 ApiKey | ✅ | [Link](https://www.ups.com/upsdeveloperkit) |
-| **WeCanTrack** | Automatically place subids in affiliate links to attribute affiliate conversi... | 🔑 ApiKey | ✅ | [Link](https://docs.wecantrack.com) |
-| **WhatPulse** | Small application that measures your keyboard/mouse usage. | No | ✅ | [Link](https://developer.whatpulse.org/#web-api) |
-| **1pt** | A simple URL shortener. | No | ✅ | [Link](https://github.com/1pt-co/api/blob/main/README.md) |
-| **Bitly** | URL shortener and link management. | 🔐 OAuth | ✅ | [Link](http://dev.bitly.com/get_started.html) |
-| **CleanURI** | URL shortener service. | No | ✅ | [Link](https://cleanuri.com/docs) |
-| **ClickMeter** | Monitor, compare and optimize your marketing links. | 🔑 ApiKey | ✅ | [Link](https://support.clickmeter.com/hc/en-us/categories/201474986) |
-| **Clico** | URL shortener service. | 🔑 ApiKey | ✅ | [Link](https://cli.com/swagger-ui/index.html?configUrl=/v3/api-docs/swagger-config) |
-| **Cutt.ly** | URL shortener service. | 🔑 ApiKey | ✅ | [Link](https://cutt.ly/api-documentation/cuttly-links-api) |
-| **Drivet URL Shortener** | Shorten a long URL easily and fast. | No | ✅ | [Link](https://wiki.drivet.xyz/en/url-shortener/add-links) |
-| **Free Url Shortener** | Free URL Shortener offers a powerful API to interact with other sites. | No | ✅ | [Link](https://ulvis.net/developer.html) |
-| **Git.io** | Git.io URL shortener. | No | ✅ | [Link](https://github.blog/2011-11-10-git-io-github-url-shortener/) |
-| **GoTiny** | A lightweight URL shortener, focused on ease-of-use for the developer and end... | No | ✅ | [Link](https://github.com/robvanbakel/gotiny-api) |
-| **Kutt** | Free Modern URL Shortener. | 🔑 ApiKey | ✅ | [Link](https://docs.kutt.it/) |
-| **Mgnet.me** | Torrent URL shorten API. | No | ✅ | [Link](http://mgnet.me/api.html) |
-| **Shrtcode** | URl Shortener with multiple Domains. | No | ✅ | [Link](https://shrtco.de/docs) |
-| **UrlBae** | Simple and efficient short link creation. | 🔑 ApiKey | ✅ | [Link](https://urlbae.com/developers) |
-
-[⬆ Back to Table of Contents](#-table-of-contents)
-
 ## <a id="design-colors"></a>🎨 Design & Colors
 
 | API Name | Description | Auth | HTTPS | Link |
@@ -1743,7 +1898,6 @@ print(response.json()['fact'])
 | **Transport for Budapest, Hungary** | Budapest public transport API. | No | ✅ | [Link](https://bkkfutar.docs.apiary.io) |
 | **Transport for Chicago, US** | Chicago Transit Authority (CTA) | 🔑 ApiKey | No | [Link](http://www.transitchicago.com/developers/) |
 | **Transport for Czech Republic** | Czech transport API. | No | ✅ | [Link](https://www.chaps.cz/eng/products/idos-internet) |
-
 | **Transport for Finland** | Finnish transport API. | No | ✅ | [Link](https://digitransit.fi/en/developers/) |
 | **Transport for Grenoble, France** | Grenoble public transport. | No | No | [Link](https://www.mobilites-m.fr/pages/opendata/OpenDataApi.html) |
 | **Transport for Hessen, Germany** | RMV API (Public Transport in Hessen) | No | ✅ | [Link](https://opendata.rmv.de/site/start.html) |
@@ -1775,6 +1929,27 @@ print(response.json()['fact'])
 | **Mercedes-Benz** | Telematics data, remotely access vehicle functions, car configurator, locate ... | 🔑 ApiKey | ✅ | [Link](https://developer.mercedes-benz.com/apis) |
 | **NHTSA** | NHTSA Product Information Catalog and Vehicle Listing. | No | ✅ | [Link](https://vpic.nhtsa.dot.gov/api/) |
 | **Smartcar** | Lock and unlock vehicles and get data like odometer reading and location. Wor... | 🔐 OAuth | ✅ | [Link](https://smartcar.com/docs/) |
+
+[⬆ Back to Table of Contents](#-table-of-contents)
+
+## <a id="tracking-logistics"></a>📦 Tracking & Logistics
+
+| API Name | Description | Auth | HTTPS | Link |
+| :--- | :--- | :---: | :---: | :---: |
+| **17TRACK** | Shipment tracking API with free quota. | 🔑 ApiKey | ✅ | [Link](https://asset.17track.net/api/document/v2_en/index.html) |
+| **Aftership** | API to update, manage and track shipment efficiently. | 🔑 ApiKey | ✅ | [Link](https://developers.aftership.com/reference/quick-start) |
+| **Correios** | Integration to provide information and prepare shipments using Correio's serv... | 🔑 ApiKey | ✅ | [Link](https://cws.correios.com.br/ajuda) |
+| **DHL Shipment Tracking** | DHL package tracking API. | 🔑 ApiKey | ✅ | [Link](https://developer.dhl.com/api-reference/shipment-tracking) |
+| **FedEx Tracking** | FedEx package tracking API. | 🔑 ApiKey | ✅ | [Link](https://developer.fedex.com/api/en-us/catalog/track.html) |
+| **Pixela** | API for recording and tracking habits or effort, routines. | 🔑 ApiKey | ✅ | [Link](https://pixe.la) |
+| **PostalPinCode** | API for getting Pincode details in India. | No | ✅ | [Link](http://www.postalpincode.in/Api-Details) |
+| **Postmon** | An API to query Brazilian ZIP codes and orders easily, quickly and free. | No | No | [Link](http://postmon.com.br) |
+| **PostNord** | Provides information about parcels in transport for Sweden and Denmark. | 🔑 ApiKey | No | [Link](https://developer.postnord.com/api) |
+| **Shippo** | Shipping API with free test mode. | 🔑 ApiKey | ✅ | [Link](https://docs.goshippo.com/) |
+| **UPS** | Shipment and Address information. | 🔑 ApiKey | ✅ | [Link](https://www.ups.com/upsdeveloperkit) |
+| **USPS Track & Confirm** | USPS tracking API. | 🔑 ApiKey | ✅ | [Link](https://www.usps.com/business/web-tools-apis/track-and-confirm-api.htm) |
+| **WeCanTrack** | Automatically place subids in affiliate links to attribute affiliate conversi... | 🔑 ApiKey | ✅ | [Link](https://docs.wecantrack.com) |
+| **WhatPulse** | Small application that measures your keyboard/mouse usage. | No | ✅ | [Link](https://developer.whatpulse.org/#web-api) |
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 
@@ -1944,23 +2119,11 @@ print(response.json()['fact'])
 | :--- | :--- | :---: | :---: | :---: |
 | **math.js** | Mathematical expression evaluation API. | No | ✅ | [Link](https://api.mathjs.org/) |
 | **CountAPI** | Free counting API for web pages. | No | ✅ | [Link](https://api.countapi.xyz/) |
-| **Open Exchange Rates** | Currency conversion and exchange rates. | 🔑 ApiKey | ✅ | [Link](https://docs.openexchangerates.org/) |
 | **Unit Converter** | Convert between various units. | No | ✅ | [Link](https://api-ninjas.com/api/convertcurrency) |
-| **ExchangeRate-API** | Currency exchange rate conversion data. | No | ✅ | [Link](https://www.exchangerate-api.com/docs/free) |
-| **VATComply** | VAT rates and FX conversion data. | No | ✅ | [Link](https://www.vatcomply.com/documentation) |
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 
 ## <a id="unofficial-community"></a>⚠️ Unofficial & Community APIs
-
-> **⚠️ Important Disclaimer:**  
-> These APIs are **not officially supported** by the original services. They are community-maintained, reverse-engineered, or use unofficial methods. Use at your own risk:  
-> - 🚨 May break at any time without notice  
-> - ⚖️ May violate Terms of Service of the original platform  
-> - 🔒 No official support or guarantees  
-> - 📉 Rate limits and availability may change  
->  
-> **When to use:** Development, testing, or when official APIs are too restrictive/expensive. For production, consider official APIs when available.
 
 | API Name | Description | Auth | HTTPS | Link |
 | :--- | :--- | :---: | :---: | :---: |
@@ -1978,10 +2141,6 @@ print(response.json()['fact'])
 | **Instaloader** | Instagram scraper (posts, stories, profiles). | No | ✅ | [Link](https://instaloader.github.io/) |
 | **TikTok API (Unofficial)** | Various community TikTok scrapers on GitHub. | No | ✅ | [Link](https://github.com/topics/tiktok-api) |
 | **Twitter API Alternatives** | Community alternatives like tweet-harvest, twint forks. | No | ✅ | [Link](https://github.com/topics/twitter-scraper) |
-
-**🔍 How to find instances:** Many of these services have multiple public instances. Check their GitHub repos for updated instance lists.
-
-**💡 Self-hosting recommended:** For reliability and privacy, consider self-hosting these services rather than relying on public instances.
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 
@@ -2027,7 +2186,6 @@ print(response.json()['fact'])
 | **Careerjet** | Job search engine. | 🔑 ApiKey | No | [Link](https://www.careerjet.com/partners/api/) |
 | **DevITjobs UK** | Jobs with GraphQL. | No | ✅ | [Link](https://devitjobs.uk/job_feed.xml) |
 | **Findwork** | Job board. | 🔑 ApiKey | ✅ | [Link](https://findwork.dev/developers/) |
-
 | **Jobs2Careers** | Job aggregator. | 🔑 ApiKey | ✅ | [Link](http://api.jobs2careers.com/api/spec.pdf) |
 | **Jooble** | Job search engine. | 🔑 ApiKey | ✅ | [Link](https://jooble.org/api/about) |
 | **Juju** | Job search engine. | 🔑 ApiKey | No | [Link](http://www.juju.com/publisher/spec/) |
@@ -2080,9 +2238,6 @@ print(response.json()['fact'])
 
 [⬆ Back to Table of Contents](#-table-of-contents)
 
----
-
-
 ## <a id="business"></a>💼 Business
 
 | API Name | Description | Auth | HTTPS | Link |
@@ -2103,7 +2258,6 @@ print(response.json()['fact'])
 | **Tenders in Ukraine** | Get data for procurements in Ukraine in JSON format. | No | ✅ | [Link](https://tenders.guru/ua/api) |
 
 [⬆ Back to Table of Contents](#-table-of-contents)
-
 
 ## <a id="documents-productivity"></a>📄 Documents & Productivity
 
@@ -2136,7 +2290,6 @@ print(response.json()['fact'])
 | **Zube** | Full stack project management. | 🔐 OAuth | ✅ | [Link](https://zube.io/docs/api) |
 
 [⬆ Back to Table of Contents](#-table-of-contents)
-
 ## 🤝 Contributing
 
 Contributions are welcome. Please read [CONTRIBUTING.md](./CONTRIBUTING.md) before opening a pull request.
