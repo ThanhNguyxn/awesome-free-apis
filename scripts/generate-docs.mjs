@@ -146,6 +146,16 @@ function slugify(id) {
   return id.toLowerCase().replace(/[^a-z0-9-]/g, '-');
 }
 
+function escapeMdxTableCell(value) {
+  return value
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/\{/g, '&#123;')
+    .replace(/\}/g, '&#125;')
+    .replace(/\|/g, '\\|');
+}
+
 function generateCategoryMdx(category, sortOrder) {
   const emoji = getEmojiFromTitle(category.title);
   const cleanTitle = getCleanTitle(category.title);
@@ -198,8 +208,9 @@ sidebar:
   for (const api of category.apis) {
     const authBadge = getAuthBadge(api.auth, api.authRaw);
     const httpsBadge = getHttpsBadge(api.https);
-    const desc = api.description.replace(/\|/g, '\\|');
-    mdx += `| **${api.name}** | ${desc} | ${authBadge} | ${httpsBadge} | [Docs →](${api.url}) |\n`;
+    const name = escapeMdxTableCell(api.name);
+    const desc = escapeMdxTableCell(api.description);
+    mdx += `| **${name}** | ${desc} | ${authBadge} | ${httpsBadge} | [Docs →](${api.url}) |\n`;
   }
 
   mdx += `\n---\n\n`;

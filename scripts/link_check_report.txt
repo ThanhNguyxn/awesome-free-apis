@@ -1,41 +1,413 @@
 LINK CHECK REPORT
 ================================================================================
 
-Total: 652
-Working: 609
-Protected: 34
-Warnings: 9
-Errors: 0
+Total: 1587
+Working: 1370
+Protected: 86
+Warnings: 122
+Errors: 3
 Broken: 0
-Unknown: 0
+Unknown: 6
 
+
+ERROR LINKS:
+--------------------------------------------------------------------------------
+
+https://placekitten.com/
+  -> Server error (may be temporary)
+
+https://suredbits.com/api/
+  -> Server error (may be temporary)
+
+https://www.cryptonator.com/api/
+  -> Server error (may be temporary)
+
+UNKNOWN LINKS:
+--------------------------------------------------------------------------------
+
+https://hotstoks.com?utm_source=public-apis
+  -> HTTP 525
+
+https://postali.app/api
+  -> HTTP 402
+
+https://svatky.adresa.info
+  -> HTTP 402
+
+https://trove.nla.gov.au/about/create-something/using-api
+  -> HTTP 418
+
+https://verifier.meetchopra.com/docs#/
+  -> HTTP 530
+
+https://www.songsterr.com/a/wa/api/
+  -> HTTP 103
 
 WARNING LINKS:
 --------------------------------------------------------------------------------
 
+http://api.cfl.ca/
+  -> DNS issue (may be temporary/CI environment)
+
+http://dev.npr.org/api/
+  -> DNS issue (may be temporary/CI environment)
+
+http://loripsum.net/
+  -> DNS issue (may be temporary/CI environment)
+
+http://bnb.data.bl.uk/
+  -> Timeout after retries (slow server)
+
+http://hearthstoneapi.com/
+  -> Timeout after retries (slow server)
+
+http://iinei.inei.gob.pe/microdatos/
+  -> Timeout after retries (slow server)
+
+http://numbersapi.com/
+  -> Timeout after retries (slow server)
+
+https://anonfiles.com/docs/api
+  -> DNS issue (may be temporary/CI environment)
+
 https://amiiboapi.com/
   -> SSL error (may be temporary cert issue)
 
+https://api-docs.pgamerx.com/
+  -> DNS issue (may be temporary/CI environment)
+
+https://api-portal.systembolaget.se
+  -> DNS issue (may be temporary/CI environment)
+
 https://api.countapi.xyz/
+  -> DNS issue (may be temporary/CI environment)
+
+https://api.amethyste.moe/
+  -> Connection issue (may be temporary)
+
+https://api.developer.monday.com/docs
+  -> DNS issue (may be temporary/CI environment)
+
+https://api.doge-meme.lol/docs
+  -> DNS issue (may be temporary/CI environment)
+
+https://api.orb-intelligence.com/docs/
+  -> Service unavailable (503) - may be temporary
+
+https://api.vagalume.com.br/docs/
+  -> Service unavailable (503) - may be temporary
+
+https://api.virushee.com/
+  -> DNS issue (may be temporary/CI environment)
+
+https://apidocs.geekflare.com/docs/geekflare-api
+  -> DNS issue (may be temporary/CI environment)
+
+https://avaandmed.eesti.ee/instructions/opendata-dataset-api
+  -> SSL error (may be temporary cert issue)
+
+https://bayfiles.com/docs/api
+  -> DNS issue (may be temporary/CI environment)
+
+https://biriyani.anoram.com/
+  -> Service unavailable (503) - may be temporary
+
+https://breakingbadapi.com/documentation
   -> DNS issue (may be temporary/CI environment)
 
 https://build.coursera.org/app-platform/catalog
   -> DNS issue (may be temporary/CI environment)
 
-http://numbersapi.com/
+https://corona.dnsforfamily.com/api.txt
+  -> DNS issue (may be temporary/CI environment)
+
+https://brainshop.ai/
   -> Timeout after retries (slow server)
+
+https://api.catalogopolis.xyz/docs/
+  -> Timeout after retries (slow server)
+
+https://crxcavator.io/apidocs
+  -> DNS issue (may be temporary/CI environment)
+
+https://bitcoincharts.com/about/exchanges/
+  -> Timeout after retries (slow server)
+
+https://cutt.ly/api-documentation/cuttly-links-api
+  -> SSL error (may be temporary cert issue)
+
+https://covid19api.com/
+  -> Timeout after retries (slow server)
+
+https://data.nationalgrideso.com/
+  -> DNS issue (may be temporary/CI environment)
+
+https://data.covid19.go.id/public/api/prov.json
+  -> Timeout after retries (slow server)
+
+https://designer.mocky.io/
+  -> SSL error (may be temporary cert issue)
+
+https://data.gov.in/
+  -> Timeout after retries (slow server)
+
+https://developer.ciscospark.com
+  -> SSL error (may be temporary cert issue)
+
+https://developer.gitter.im/docs/welcome
+  -> DNS issue (may be temporary/CI environment)
+
+https://datos.gob.ar/
+  -> Timeout after retries (slow server)
+
+https://developers.decathlon.com/products/sport-places
+  -> DNS issue (may be temporary/CI environment)
+
+https://developers.decathlon.com/products/sport-vision
+  -> DNS issue (may be temporary/CI environment)
+
+https://developers.decathlon.com/products/sports
+  -> DNS issue (may be temporary/CI environment)
+
+https://developers.gfycat.com/api/
+  -> DNS issue (may be temporary/CI environment)
+
+https://developers.teleport.org/
+  -> DNS issue (may be temporary/CI environment)
+
+https://discord.riverside.rocks/docs/index.php
+  -> DNS issue (may be temporary/CI environment)
+
+https://docs.bruzu.com
+  -> DNS issue (may be temporary/CI environment)
+
+https://docs.bhagavadgitaapi.in
+  -> SSL error (may be temporary cert issue)
+
+https://docs.forza-api.tk
+  -> DNS issue (may be temporary/CI environment)
+
+https://docs.identity.ps/docs
+  -> DNS issue (may be temporary/CI environment)
+
+https://docs.impala.travel/docs/booking-api/
+  -> DNS issue (may be temporary/CI environment)
+
+https://eva.pingutil.com/
+  -> DNS issue (may be temporary/CI environment)
+
+https://getpocket.com/developer/
+  -> Service unavailable (503) - may be temporary
+
+https://graphql.jobs/docs/api/
+  -> DNS issue (may be temporary/CI environment)
+
+https://hashable.space/pages/api/
+  -> DNS issue (may be temporary/CI environment)
+
+https://imdb-api.com/
+  -> DNS issue (may be temporary/CI environment)
+
+https://hytale-api.com/
+  -> Too many redirects (may be geo blocking)
+
+https://http2.pro/doc/api
+  -> SSL error (may be temporary cert issue)
+
+https://geodata.gov.gr/en/
+  -> DNS issue (may be temporary/CI environment)
+
+https://inspiration.goprogram.ai/docs/
+  -> DNS issue (may be temporary/CI environment)
+
+https://interpol.api.bund.dev/
+  -> DNS issue (may be temporary/CI environment)
+
+https://iexcloud.io/docs/api/
+  -> DNS issue (may be temporary/CI environment)
+
+https://jsonplaceholder.typicode.com/
+  -> DNS issue (may be temporary/CI environment)
+
+https://keen.io/
+  -> DNS issue (may be temporary/CI environment)
+
+https://irisnet.de/api/
+  -> DNS issue (may be temporary/CI environment)
+
+https://jsonlint.com/
+  -> DNS issue (may be temporary/CI environment)
+
+https://isdayoff.ru/
+  -> DNS issue (may be temporary/CI environment)
+
+https://kinde.com/docs/developer-tools/
+  -> Connection issue (may be temporary)
+
+https://kontests.net/api
+  -> SSL error (may be temporary cert issue)
+
+https://lua-decompiler.ferib.dev/
+  -> DNS issue (may be temporary/CI environment)
+
+https://logs.to/
+  -> Too many redirects (may be geo blocking)
 
 https://malshare.com/doc.php
   -> SSL error (may be temporary cert issue)
 
+https://mempool.space/api
+  -> SSL error (may be temporary cert issue)
+
+https://mercury.postlight.com/web-parser/
+  -> DNS issue (may be temporary/CI environment)
+
+https://musicbrainz.org/doc/Development/XML_Web_Service/Version_2
+  -> SSL error (may be temporary cert issue)
+
+https://networkcalc.com/api/docs
+  -> SSL error (may be temporary cert issue)
+
+https://nordigen.com/en/account_information_documenation/integration/quickstart_guide/
+  -> DNS issue (may be temporary/CI environment)
+
+https://nomics.com/docs/
+  -> DNS issue (may be temporary/CI environment)
+
+https://opendata.bordeaux-metropole.fr/explore/
+  -> DNS issue (may be temporary/CI environment)
+
+https://openvisionapi.com
+  -> SSL error (may be temporary cert issue)
+
+https://opengraphr.com/docs/1.0/overview
+  -> DNS issue (may be temporary/CI environment)
+
+https://opentransportdata.swiss/en/
+  -> SSL error (may be temporary cert issue)
+
+https://phisherman.gg/
+  -> DNS issue (may be temporary/CI environment)
+
 https://placeholder.com/
   -> DNS issue (may be temporary/CI environment)
 
-https://pprathameshmore.github.io/QuoteGarden/
+https://podatki.gov.si/
+  -> SSL error (may be temporary cert issue)
+
+https://punkapi.com/
   -> DNS issue (may be temporary/CI environment)
 
 https://punkapi.com/documentation/v2
   -> DNS issue (may be temporary/CI environment)
 
+https://pprathameshmore.github.io/QuoteGarden/
+  -> DNS issue (may be temporary/CI environment)
+
+https://quickmocker.com
+  -> DNS issue (may be temporary/CI environment)
+
+https://queimadas.dgi.inpe.br/queimadas/dados-abertos/
+  -> SSL error (may be temporary cert issue)
+
+https://proxykingdom.com
+  -> DNS issue (may be temporary/CI environment)
+
+https://quarantine.country/coronavirus/api/
+  -> DNS issue (may be temporary/CI environment)
+
+https://random-data-api.com
+  -> DNS issue (may be temporary/CI environment)
+
+https://rejax.io/
+  -> DNS issue (may be temporary/CI environment)
+
+https://scraperbox.com/
+  -> Connection issue (may be temporary)
+
+https://sawolabs.com
+  -> DNS issue (may be temporary/CI environment)
+
+https://support.clickmeter.com/hc/en-us/categories/201474986
+  -> SSL error (may be temporary cert issue)
+
+https://tenders.guru/es/api
+  -> Timeout after retries (slow server)
+
+https://tenders.guru/hu/api
+  -> Timeout after retries (slow server)
+
+https://tenders.guru/pl/api
+  -> Timeout after retries (slow server)
+
+https://tenders.guru/ro/api
+  -> Timeout after retries (slow server)
+
+https://testimonialapi.toolcarton.com/
+  -> DNS issue (may be temporary/CI environment)
+
+https://threatjammer.com/docs/index
+  -> DNS issue (may be temporary/CI environment)
+
+https://timedoor.io
+  -> DNS issue (may be temporary/CI environment)
+
+https://tenders.guru/ua/api
+  -> Timeout after retries (slow server)
+
+https://walltime.info/api.html
+  -> DNS issue (may be temporary/CI environment)
+
+https://www.Styvio.com
+  -> DNS issue (may be temporary/CI environment)
+
+https://www.apisetu.gov.in/
+  -> SSL error (may be temporary cert issue)
+
+https://www.boredapi.com/
+  -> DNS issue (may be temporary/CI environment)
+
+https://www.bugsnaxapi.com/
+  -> DNS issue (may be temporary/CI environment)
+
 https://www.boardgameatlas.com/api/docs
   -> Service unavailable (503) - may be temporary
+
+https://wiki.vg/Mojang_API
+  -> Timeout after retries (slow server)
+
+https://www.easports.com/fifa/ultimate-team/api/fut/item
+  -> Service unavailable (503) - may be temporary
+
+https://www.cloudbet.com/api/
+  -> SSL error (may be temporary cert issue)
+
+https://www.chaps.cz/eng/products/idos-internet
+  -> Timeout after retries (slow server)
+
+https://www.getping.info
+  -> Connection issue (may be temporary)
+
+https://www.gunpolicy.org/api
+  -> Too many redirects (may be geo blocking)
+
+https://www.meaningcloud.com/developer/sentiment-analysis
+  -> DNS issue (may be temporary/CI environment)
+
+https://www.metaweather.com/api/
+  -> SSL error (may be temporary cert issue)
+
+https://www.okex.com/docs/
+  -> DNS issue (may be temporary/CI environment)
+
+https://www.savepage.io
+  -> DNS issue (may be temporary/CI environment)
+
+https://www.roadgoat.com/business/cities-api
+  -> Timeout after retries (slow server)
+
+https://www.yahoofinanceapi.com/
+  -> Timeout after retries (slow server)
+
+https://www.ups.com/upsdeveloperkit
+  -> Timeout after retries (slow server)
