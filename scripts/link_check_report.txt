@@ -2,12 +2,12 @@ LINK CHECK REPORT
 ================================================================================
 
 Total: 1558
-Working: 1362
-Protected: 83
+Working: 1365
+Protected: 81
 Warnings: 104
 Errors: 3
 Broken: 0
-Unknown: 6
+Unknown: 5
 
 
 ERROR LINKS:
@@ -24,9 +24,6 @@ https://www.cryptonator.com/api/
 
 UNKNOWN LINKS:
 --------------------------------------------------------------------------------
-
-https://hotstoks.com?utm_source=public-apis
-  -> HTTP 525
 
 https://postali.app/api
   -> HTTP 402
@@ -64,14 +61,14 @@ http://hearthstoneapi.com/
 http://iinei.inei.gob.pe/microdatos/
   -> Timeout after retries (slow server)
 
+http://numbersapi.com/
+  -> Timeout after retries (slow server)
+
 https://anonfiles.com/docs/api
   -> DNS issue (may be temporary/CI environment)
 
 https://amiiboapi.com/
   -> SSL error (may be temporary cert issue)
-
-http://numbersapi.com/
-  -> Timeout after retries (slow server)
 
 https://api-docs.pgamerx.com/
   -> DNS issue (may be temporary/CI environment)
@@ -79,16 +76,16 @@ https://api-docs.pgamerx.com/
 https://api-portal.systembolaget.se
   -> DNS issue (may be temporary/CI environment)
 
-https://api.countapi.xyz/
-  -> DNS issue (may be temporary/CI environment)
-
 https://api.amethyste.moe/
   -> Connection issue (may be temporary)
 
-https://api.developer.monday.com/docs
+https://api.countapi.xyz/
   -> DNS issue (may be temporary/CI environment)
 
 https://api.doge-meme.lol/docs
+  -> DNS issue (may be temporary/CI environment)
+
+https://api.developer.monday.com/docs
   -> DNS issue (may be temporary/CI environment)
 
 https://api.orb-intelligence.com/docs/
@@ -118,13 +115,13 @@ https://breakingbadapi.com/documentation
 https://build.coursera.org/app-platform/catalog
   -> DNS issue (may be temporary/CI environment)
 
+https://api.catalogopolis.xyz/docs/
+  -> Timeout after retries (slow server)
+
 https://corona.dnsforfamily.com/api.txt
   -> DNS issue (may be temporary/CI environment)
 
 https://brainshop.ai/
-  -> Timeout after retries (slow server)
-
-https://api.catalogopolis.xyz/docs/
   -> Timeout after retries (slow server)
 
 https://crxcavator.io/apidocs
@@ -172,14 +169,11 @@ https://developers.teleport.org/
 https://discord.riverside.rocks/docs/index.php
   -> DNS issue (may be temporary/CI environment)
 
-https://datos.gob.ar/
-  -> Timeout after retries (slow server)
+https://docs.bruzu.com
+  -> DNS issue (may be temporary/CI environment)
 
 https://docs.bhagavadgitaapi.in
   -> SSL error (may be temporary cert issue)
-
-https://docs.bruzu.com
-  -> DNS issue (may be temporary/CI environment)
 
 https://docs.identity.ps/docs
   -> DNS issue (may be temporary/CI environment)
@@ -199,6 +193,9 @@ https://hashable.space/pages/api/
 https://http2.pro/doc/api
   -> DNS issue (may be temporary/CI environment)
 
+https://hotstoks.com?utm_source=public-apis
+  -> SSL error (may be temporary cert issue)
+
 https://inspiration.goprogram.ai/docs/
   -> DNS issue (may be temporary/CI environment)
 
@@ -214,14 +211,11 @@ https://logs.to/
 https://malshare.com/doc.php
   -> SSL error (may be temporary cert issue)
 
-https://mercury.postlight.com/web-parser/
-  -> DNS issue (may be temporary/CI environment)
-
 https://iexcloud.io/docs/api/
   -> Timeout after retries (slow server)
 
-https://networkcalc.com/api/docs
-  -> SSL error (may be temporary cert issue)
+https://mercury.postlight.com/web-parser/
+  -> DNS issue (may be temporary/CI environment)
 
 https://nordigen.com/en/account_information_documenation/integration/quickstart_guide/
   -> DNS issue (may be temporary/CI environment)
@@ -241,20 +235,23 @@ https://phisherman.gg/
 https://placeholder.com/
   -> DNS issue (may be temporary/CI environment)
 
-https://pprathameshmore.github.io/QuoteGarden/
-  -> DNS issue (may be temporary/CI environment)
-
-https://proxykingdom.com
-  -> DNS issue (may be temporary/CI environment)
+https://opendata.euskadi.eus/api-euskalmet/-/api-de-euskalmet/
+  -> Timeout after retries (slow server)
 
 https://pastebin.com/doc_api
   -> SSL error (may be temporary cert issue)
 
+https://pprathameshmore.github.io/QuoteGarden/
+  -> DNS issue (may be temporary/CI environment)
+
+https://open.caiyunapp.com/ColorfulClouds_Weather_API
+  -> Timeout after retries (slow server)
+
 https://quarantine.country/coronavirus/api/
   -> DNS issue (may be temporary/CI environment)
 
-https://opendata.euskadi.eus/api-euskalmet/-/api-de-euskalmet/
-  -> Timeout after retries (slow server)
+https://proxykingdom.com
+  -> DNS issue (may be temporary/CI environment)
 
 https://quickmocker.com
   -> DNS issue (may be temporary/CI environment)
@@ -292,10 +289,10 @@ https://tenders.guru/ro/api
 https://testimonialapi.toolcarton.com/
   -> DNS issue (may be temporary/CI environment)
 
-https://threatjammer.com/docs/index
+https://timedoor.io
   -> DNS issue (may be temporary/CI environment)
 
-https://timedoor.io
+https://threatjammer.com/docs/index
   -> DNS issue (may be temporary/CI environment)
 
 https://tenders.guru/ua/api
@@ -310,23 +307,23 @@ https://www.Styvio.com
 https://www.apisetu.gov.in/
   -> SSL error (may be temporary cert issue)
 
-https://www.bugsnaxapi.com/
-  -> DNS issue (may be temporary/CI environment)
-
 https://www.boredapi.com/
   -> DNS issue (may be temporary/CI environment)
 
 https://www.boardgameatlas.com/api/docs
   -> Service unavailable (503) - may be temporary
 
+https://www.bugsnaxapi.com/
+  -> DNS issue (may be temporary/CI environment)
+
 https://wiki.vg/Mojang_API
   -> Timeout after retries (slow server)
 
-https://www.easports.com/fifa/ultimate-team/api/fut/item
-  -> Service unavailable (503) - may be temporary
-
 https://www.cloudbet.com/api/
   -> SSL error (may be temporary cert issue)
+
+https://www.easports.com/fifa/ultimate-team/api/fut/item
+  -> Service unavailable (503) - may be temporary
 
 https://www.chaps.cz/eng/products/idos-internet
   -> Timeout after retries (slow server)
